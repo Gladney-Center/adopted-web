@@ -1,5 +1,5 @@
 <?php
 
-/* Page Template: Front Page */
+/* Template Name: Front Page */
 
 the_content();
