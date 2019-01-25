@@ -2,4 +2,7 @@
 
 /* Template Name: Front Page */
 
-the_content();
+global $post; ?>
+<pre>
+<?php echo $post->post_content; ?>
+</pre>
