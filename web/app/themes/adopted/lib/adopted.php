@@ -17,7 +17,7 @@ final class Main {
 	public function __construct() {
 		$this->constants();
 		$this->includes();
-		$this->setup();
+		$this->init_hooks();
 	}
 
 	private function constants() {
