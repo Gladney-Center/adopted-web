@@ -7,10 +7,10 @@ const globImporter = require('node-sass-glob-importer')
 module.exports = (env) => {
 
     return {
-        entry: ['@babel/polyfill','./web/app/themes/adopted/assets/js/entry.js'],
+        entry: ['@babel/polyfill','./web/app/themes/adopted/assets/js/entry.js','./web/app/themes/adopted/assets/sass/adopted.sass'],
         output: {
             path: path.resolve(__dirname, 'web'),
-            filename: './web/app/themes/adopted/adopted.min.js',
+            filename: 'app/themes/adopted/adopted.min.js',
             publicPath: '/'
         },
         devServer: {
@@ -21,24 +21,29 @@ module.exports = (env) => {
             rules: [
                 {
                     test: /\.sass$/,
-                    use: [
-                        {
-                            loader: 'style-loader'
-                        },
-                        {
-                            loader: 'css-loader'
-                        },
-                        {
-                            loader: 'resolve-url-loader'
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true,
-                                importer: globImporter()
+                    use: ExtractTextPlugin.extract({
+                        fallback: 'style-loader',
+                        use: [
+                            {
+                                loader: 'css-loader',
+                                options: {
+                                    url: false,
+                                    minimize: true,
+                                    sourceMap: true
+                                }
+                            },
+                            {
+                                loader: 'resolve-url-loader'
+                            },
+                            {
+                                loader: 'sass-loader',
+                                options: {
+                                    sourceMap: true,
+                                    importer: globImporter()
+                                }
                             }
-                        }
-                    ]
+                        ]
+                    })
                 },
                 {
                     test: /\.(js)$/,
@@ -62,7 +67,7 @@ module.exports = (env) => {
         },
         plugins: [
             new ExtractTextPlugin({
-                filename: './web/app/themes/adopted/style.css',
+                filename: 'app/themes/adopted/style.css',
                 disable: false,
                 allChunks: true
             }),
