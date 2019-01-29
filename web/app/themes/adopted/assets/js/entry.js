@@ -1,1 +1,1 @@
-const Fayboo = () => console.log('working')
+const Fayboo = () => console.log('Fayboo function')
