@@ -4,7 +4,7 @@
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
-    "gitpush": "git add -A && git commit -a && git push"
+    "devpush": "git add -A && git commit -a && git push"
   },
   "repository": {
     "type": "git",
