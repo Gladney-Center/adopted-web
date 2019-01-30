@@ -19,11 +19,14 @@ final class Gladney {
 		$this->constants();
 		$this->includes();
 		$this->init_hooks();
+
+		do_action('gladney_loaded');
 	}
 
 	private function constants() {
 		$this->define( 'GCFA_BRANDNAME', 'Gladney Center for Adoption' );
 		$this->define( 'GCFA_SHORTNAME', 'Gladney' );
+		$this->define( 'GCFA_ACRONYM', 'GCFA' );
         $this->define( 'GCFA_VERSION', '1.0.0' );
 	}
 
@@ -38,15 +41,25 @@ final class Gladney {
 	}
 
 	private function init_hooks() {
+
+		// plugin-specific hooks
 		register_activation_hook( GCFA_PLUGIN_FILE, [ __NAMESPACE__ . '\\Install', 'install' ] );
         register_deactivation_hook( GCFA_PLUGIN_FILE, [ __NAMESPACE__ . '\\Install', 'uninstall' ] );
-		add_action( 'after_setup_theme', [ $this, 'theme_setup' ] );
 		add_action( 'init', [ $this, 'init' ], 1 );
-		add_action( 'wp_enqueue_scripts', [ __NAMESPACE__ . '\\Scripts', 'init' ] );
+		add_action( 'after_setup_theme', [ $this, 'theme_setup' ] );
 		add_action( 'gladney_loaded', [ $this, 'gladney_loaded' ], 999 );
+
+		// front end hooks
+		add_action( 'wp_enqueue_scripts', [ __NAMESPACE__ . '\\Scripts', 'init' ] );
+
+		// admin hooks
+		add_action( 'admin_bar_menu', [ __NAMESPACE__ . '\\Branding', 'admin_bar' ], 999 );
+		add_action( 'admin_init', [ __NAMESPACE__ . '\\Branding', 'admin_footer' ], 999 );
 	}
 
 	public function init() {
+
+		// changes
 		add_filter( 'wp_mail_from', '__return_email_from' );
         add_filter( 'wp_mail_from_name', '__return_email_from_name' );
 		add_filter( 'wp_mail_content_type', '__return_email_content_type' );
