@@ -12,7 +12,7 @@ defined('ABSPATH') || die;
 
 if ( ! defined( 'GCFA_PLUGIN_FILE' ) ) define( 'GCFA_PLUGIN_FILE', __FILE__ );
 
-require_once __DIR__ . 'lib/gladney.class.php';
+require_once __DIR__ . '/lib/gladney.class.php';
 
 \Gladney\Gladney::instance();
 
