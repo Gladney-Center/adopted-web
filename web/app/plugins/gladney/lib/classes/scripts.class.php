@@ -1,6 +1,6 @@
 <?php 
 
-namespace AdoptED;
+namespace Gladney;
 
 defined( 'ABSPATH' ) || die;
 
@@ -10,6 +10,6 @@ class Scripts {
         wp_deregister_script('jquery');
         
         //styles
-        wp_enqueue_style('adopted-main', get_stylesheet_directory_uri().'/style.css', false, null);
+        wp_enqueue_style('gladney-main', get_stylesheet_directory_uri().'/style.css', false, null);
     }
 }

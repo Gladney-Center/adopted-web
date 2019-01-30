@@ -2,7 +2,7 @@
 
 namespace Gladney;
 
-defined('ABSPATH') || die;
+defined( 'ABSPATH' ) || die;
 
 class Install {
 
