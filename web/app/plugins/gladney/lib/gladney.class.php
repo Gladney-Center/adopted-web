@@ -67,7 +67,6 @@ final class Gladney {
 		// cleanup
 		if ( ! current_user_can('manage_options') ) show_admin_bar( false );
         add_filter( 'ls_meta_generator', '__return_false' );
-        add_filter( 'show_admin_bar', '__return_false' );
         add_filter( 'emoji_svg_url', '__return_false' );
         add_filter( 'pre_option_default_role', function($dr) {
             return '';
