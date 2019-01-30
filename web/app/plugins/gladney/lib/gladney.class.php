@@ -73,7 +73,7 @@ final class Gladney {
         } );
 		remove_action( 'wp_head', '_admin_bar_bump_cb' );
         remove_action( 'wp_head', 'wp_generator' );
-        remove_action( 'rest_api_init', 'create_initial_rest_routes', 99 );
+        //remove_action( 'rest_api_init', 'create_initial_rest_routes', 99 );
         remove_action( 'admin_print_styles', 'print_emoji_styles' );
         remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
         remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
