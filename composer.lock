@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c57763786511838caa5362d81e3ff32",
+    "content-hash": "bd9ffa8f7bf5144d043b47798e50027d",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,9 +132,17 @@
             "source": {
                 "type": "git",
                 "url": "https://enlightenedpie@bitbucket.org/enlightenedpie/gcfa-wordpress-plugin.git",
-                "reference": "f788faaa656df6d247d75eebf9d378053db5bec7"
+                "reference": "085cd82e20a842a059c5bfd9ac383c17ef7c7ef6"
             },
-            "type": "library",
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Gladney\\": "src/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -145,7 +153,7 @@
                 }
             ],
             "description": "Branding and set-up plugin for all GCFA Wordpress sites",
-            "time": "2019-01-30T19:48:00+00:00"
+            "time": "2019-02-04T17:37:29+00:00"
         },
         {
             "name": "oscarotero/env",

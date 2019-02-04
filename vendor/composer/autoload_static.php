@@ -21,6 +21,10 @@ class ComposerStaticInitc34eff4083e8dd01e8eacd977511ea5b
             'Roots\\WPConfig\\' => 15,
             'Roots\\Composer\\' => 15,
         ),
+        'G' => 
+        array (
+            'Gladney\\' => 8,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -43,6 +47,10 @@ class ComposerStaticInitc34eff4083e8dd01e8eacd977511ea5b
         'Roots\\Composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/roots/wordpress-core-installer/src',
+        ),
+        'Gladney\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/app/plugins/gcfa-wp-plugin/src',
         ),
         'Dotenv\\' => 
         array (

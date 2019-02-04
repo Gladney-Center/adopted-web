@@ -55,7 +55,7 @@
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin","gladney/gcfa-wp-plugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"

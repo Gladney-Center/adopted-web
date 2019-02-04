@@ -788,11 +788,19 @@
         "source": {
             "type": "git",
             "url": "https://enlightenedpie@bitbucket.org/enlightenedpie/gcfa-wordpress-plugin.git",
-            "reference": "f788faaa656df6d247d75eebf9d378053db5bec7"
+            "reference": "085cd82e20a842a059c5bfd9ac383c17ef7c7ef6"
         },
-        "time": "2019-01-30T19:48:00+00:00",
-        "type": "library",
+        "require": {
+            "php": ">=7.1"
+        },
+        "time": "2019-02-04T17:37:29+00:00",
+        "type": "wordpress-plugin",
         "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Gladney\\": "src/"
+            }
+        },
         "license": [
             "MIT"
         ],
