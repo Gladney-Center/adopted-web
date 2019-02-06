@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd9ffa8f7bf5144d043b47798e50027d",
+    "content-hash": "686e941d15ac2205d7268c5295189e5f",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,32 +128,14 @@
         },
         {
             "name": "gladney/gcfa-wp-plugin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://enlightenedpie@bitbucket.org/enlightenedpie/gcfa-wordpress-plugin.git",
-                "reference": "085cd82e20a842a059c5bfd9ac383c17ef7c7ef6"
+            "version": "1.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.4.zip",
+                "reference": null,
+                "shasum": "402f8d34c060b60df0c7b88fa6bd255fcbba91ba"
             },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "Gladney\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Paul",
-                    "email": "enlightenedpie@users.noreply.github.com"
-                }
-            ],
-            "description": "Branding and set-up plugin for all GCFA Wordpress sites",
-            "time": "2019-02-04T17:37:29+00:00"
+            "type": "wordpress-plugin"
         },
         {
             "name": "oscarotero/env",
@@ -547,12 +529,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "e1b9176e35e8a4521c8b9720f4b5601d5caa68c5"
+                "reference": "344bf4ed1263c75e7f96b87b80c52e8373561e19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/e1b9176e35e8a4521c8b9720f4b5601d5caa68c5",
-                "reference": "e1b9176e35e8a4521c8b9720f4b5601d5caa68c5",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/344bf4ed1263c75e7f96b87b80c52e8373561e19",
+                "reference": "344bf4ed1263c75e7f96b87b80c52e8373561e19",
                 "shasum": ""
             },
             "conflict": {
@@ -587,8 +569,8 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.62|>=8,<8.6.6",
-                "drupal/drupal": ">=7,<7.62|>=8,<8.6.6",
+                "drupal/core": ">=7,<7.62|>=8,<8.5.9|>=8.6,<8.6.6",
+                "drupal/drupal": ">=7,<7.62|>=8,<8.5.9|>=8.6,<8.6.6",
                 "erusev/parsedown": "<1.7",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.12.3|>=2011,<2017.12.4.3|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3",
@@ -743,7 +725,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-02-03T13:48:05+00:00"
+            "time": "2019-02-05T19:58:17+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -800,7 +782,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gladney/gcfa-wp-plugin": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
