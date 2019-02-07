@@ -1,23 +1,49 @@
 <?php
-
-namespace Gladney;
+/*
+Plugin Name:  Gladney Center for Adoption
+Plugin URI:   https://adoptionsbygladney.com
+Description:  Branding and set-up plugin for all GCFA Wordpress sites
+Version:      1.0.0
+Author:       David Paul Crouch
+License:      MIT License
+*/
 
 defined('ABSPATH') || die;
 
+if ( ! defined( 'GCFA_PLUGIN_FILE' ) ) define( 'GCFA_PLUGIN_FILE', __FILE__ );
+
+// DEFINE FUNCTIONS FIRST
+function gcfa_array_map_recursive($callback, &$array) {
+	$func = function ($item) use (&$func, &$callback) {
+		return is_array($item) ? array_map($func, $item) : call_user_func($callback, $item);
+	};
+	return array_map($func, $array);
+}
+
+function gcfa_404_redirect() {
+	global $wp_query;
+	$wp_query->set_404();
+	status_header( 404 );
+	get_template_part( 404 );
+}
+
+function __return_email_from() {
+	return get_option('admin_email');
+}
+
+function __return_email_from_name() {
+	return GCFA_BRANDNAME;
+}
+
+function __return_email_content_type() {
+	return 'text/html';
+}
+
+// MAIN INIT CLASS
 final class Gladney {
-
-	protected static $_instance = null;
-
-	public static function instance() {
-		if ( is_null( self::$_instance ) ) {
-			self::$_instance = new self();
-		}
-		return self::$_instance;
-    }
 
 	public function __construct() {
 		$this->constants();
-		$this->includes();
 		$this->init_hooks();
 
 		do_action('gladney_loaded');
@@ -30,31 +56,19 @@ final class Gladney {
         $this->define( 'GCFA_VERSION', '1.0.0' );
 	}
 
-	private function includes() {
-		// required functions
-		require_once 'functions/gladney.functions.php';
-
-		// required classes
-		require_once 'classes/install.class.php';
-		require_once 'classes/scripts.class.php';
-		require_once 'classes/branding.class.php';
-	}
-
 	private function init_hooks() {
 
 		// plugin-specific hooks
-		register_activation_hook( GCFA_PLUGIN_FILE, [ __NAMESPACE__ . '\\Install', 'install' ] );
-        register_deactivation_hook( GCFA_PLUGIN_FILE, [ __NAMESPACE__ . '\\Install', 'uninstall' ] );
 		add_action( 'init', [ $this, 'init' ], 1 );
 		add_action( 'after_setup_theme', [ $this, 'theme_setup' ] );
 		add_action( 'gladney_loaded', [ $this, 'gladney_loaded' ], 999 );
 
 		// front end hooks
-		add_action( 'wp_enqueue_scripts', [ __NAMESPACE__ . '\\Scripts', 'init' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'scripts' ] );
 
 		// admin hooks
-		add_action( 'admin_bar_menu', [ __NAMESPACE__ . '\\Branding', 'admin_bar' ], 999 );
-		add_action( 'admin_init', [ __NAMESPACE__ . '\\Branding', 'admin_footer' ], 999 );
+		add_action( 'admin_bar_menu', [ $this, 'admin_bar' ], 999 );
+		add_action( 'admin_init', [ $this, 'admin_footer' ], 999 );
 	}
 
 	public function init() {
@@ -87,6 +101,31 @@ final class Gladney {
 	public function theme_setup() {
         add_theme_support( 'custom-header' );
 	}
+
+	public function scripts() {
+        wp_dequeue_script('jquery');
+        wp_deregister_script('jquery');
+        
+        //styles
+        wp_enqueue_style('gladney-main', get_stylesheet_directory_uri().'/style.css', false, null);
+	}
+	
+	public function admin_bar( $wp_admin_bar ) {
+		$wp_admin_bar->remove_node( 'wp-logo' );
+	}
+
+	public function admin_footer() {
+		add_filter( 'admin_footer_text', function() {
+			return 'Customized by ' . GCFA_BRANDNAME;
+		} );
+		add_filter( 'update_footer', function() {
+			return 'Version ' . GCFA_VERSION;
+		}, 11 );
+	}
+
+	public function login_stuff() {
+		
+	}
 	
 	private function define( $const, $value ) {
         if ( ! defined( $const ) ) {
@@ -97,3 +136,6 @@ final class Gladney {
 	public function gladney_loaded() {}
       
 }
+new Gladney;
+
+// end of line, man.

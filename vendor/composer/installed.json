@@ -760,16 +760,16 @@
         "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it"
     },
     {
-        "name": "gladney/gcfa-wp-plugin",
-        "version": "1.0.6",
-        "version_normalized": "1.0.6.0",
+        "name": "gladney/gcfa-wp-muplugin",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
         "dist": {
             "type": "zip",
-            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.6.zip",
+            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-muplugin/gladney-gcfa-wp-muplugin-1.0.2.zip",
             "reference": null,
-            "shasum": "402f8d34c060b60df0c7b88fa6bd255fcbba91ba"
+            "shasum": "6cc021fab7d5c3fc42545703400c343a26674544"
         },
-        "type": "wordpress-plugin",
+        "type": "library",
         "installation-source": "dist"
     }
 ]
