@@ -45,7 +45,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wordpress-seo": "^9.5",
-    "gladney/gcfa-wp-muplugin": "^1.0.0"
+    "gladney/gcfa-wp-plugin": "^1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
@@ -53,7 +53,7 @@
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","gladney/gcfa-wp-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","gladney/gcfa-wp-plugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

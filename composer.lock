@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f059160e9f7af6ac2603d02aa1a3811",
+    "content-hash": "a6e72a73ec46ef9bb748335547075291",
     "packages": [
         {
             "name": "composer/installers",
@@ -127,13 +127,13 @@
             "time": "2018-08-27T06:10:37+00:00"
         },
         {
-            "name": "gladney/gcfa-wp-muplugin",
-            "version": "1.0.2",
+            "name": "gladney/gcfa-wp-plugin",
+            "version": "1.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-muplugin/gladney-gcfa-wp-muplugin-1.0.2.zip",
+                "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.3.zip",
                 "reference": null,
-                "shasum": "6cc021fab7d5c3fc42545703400c343a26674544"
+                "shasum": "402f8d34c060b60df0c7b88fa6bd255fcbba91ba"
             },
             "type": "library"
         },
