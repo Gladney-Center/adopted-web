@@ -761,13 +761,13 @@
     },
     {
         "name": "gladney/gcfa-wp-plugin",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
+        "version": "1.0.16",
+        "version_normalized": "1.0.16.0",
         "dist": {
             "type": "zip",
-            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.4.zip",
+            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.16.zip",
             "reference": null,
-            "shasum": "402f8d34c060b60df0c7b88fa6bd255fcbba91ba"
+            "shasum": "c2cfd5f310a3f1104c4421c6bfce35b414d239f0"
         },
         "type": "wordpress-plugin",
         "installation-source": "dist"

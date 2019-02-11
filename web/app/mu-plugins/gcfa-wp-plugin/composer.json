@@ -10,11 +10,7 @@
     ],
     "type": "wordpress-plugin",
     "require": {
-        "php": ">=7.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "Gladney\\": "src/"
-        }
+        "php": ">=7.1",
+        "composer/installers": "~1.0"
     }
 }
