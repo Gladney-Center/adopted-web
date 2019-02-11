@@ -7,4 +7,22 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="gladney-header"></header>
+<header class="adpt-header">
+	<div class="adpt-nav-dt">
+		<div class="adpt-nav-logo">
+			<a href="<?php echo site_url(); ?>">
+				<img
+					src="<?php header_image(); ?>"
+					alt="<?php echo bloginfo('name'); ?>"
+				/>
+			</a>
+		</div>
+		<div class="adpt-menu">
+			<?php wp_nav_menu(
+				[
+					'menu' => 'header-menu'
+				]
+			); ?>
+		</div>
+	</div>
+</header>
