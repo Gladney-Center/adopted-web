@@ -7,4 +7,4 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="gladney-header"></header>
+<header class="gladney-header header"></header>
