@@ -25,4 +25,5 @@
 			); ?>
 		</div>
 	</div>
+	<div class="adpt-header-apps"></div>
 </header>
