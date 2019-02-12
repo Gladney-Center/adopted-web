@@ -10,7 +10,7 @@
 <header class="adpt-header">
 	<div class="adpt-nav-dt">
 		<div class="adpt-nav-logo">
-			<a href="<?php echo site_url(); ?>">
+			<a href="<?php echo home_url(); ?>">
 				<img
 					src="<?php header_image(); ?>"
 					alt="<?php echo bloginfo('name'); ?>"
