@@ -26,5 +26,9 @@
 			); ?>
 		</div>
 	</div>
-	<div class="adpt-header-apps"></div>
+	<div class="adpt-header-apps">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
 </header>
