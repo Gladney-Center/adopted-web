@@ -28,7 +28,16 @@
 	</div>
 	<div class="adpt-header-apps">
 		<ul>
-			<li></li>
+			<li>
+				<a href="https://itunes.apple.com/us/app/gladney-cup/id1036365725?mt=8">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/apple-store-black.png" alt="AdoptED on the Apple App Store" />
+				</a>
+			</li>
+			<li>
+				<a href="https://play.google.com/store/apps/details?id=com.gladney.adopted&hl=en">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/google-play-store-black.png" alt="AdoptED on Google Play" />
+				</a>
+			</li>
 		</ul>
 	</div>
 </header>
