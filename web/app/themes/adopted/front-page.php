@@ -5,8 +5,6 @@
 global $post; 
 get_header();
 ?>
-<pre>
-<?php echo $post->post_content; ?>
-</pre>
+<?php //echo $post->post_content; ?>
 <?php
 get_footer();
