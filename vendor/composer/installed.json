@@ -420,28 +420,6 @@
         ]
     },
     {
-        "name": "wpackagist-plugin/wordpress-seo",
-        "version": "9.5",
-        "version_normalized": "9.5.0.0",
-        "source": {
-            "type": "svn",
-            "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-            "reference": "tags/9.5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.5.zip",
-            "reference": null,
-            "shasum": null
-        },
-        "require": {
-            "composer/installers": "~1.0"
-        },
-        "type": "wordpress-plugin",
-        "installation-source": "dist",
-        "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-    },
-    {
         "name": "symfony/polyfill-ctype",
         "version": "v1.10.0",
         "version_normalized": "1.10.0.0",
@@ -760,14 +738,36 @@
         "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it"
     },
     {
-        "name": "gladney/gcfa-wp-plugin",
-        "version": "1.0.16",
-        "version_normalized": "1.0.16.0",
+        "name": "wpackagist-plugin/wordpress-seo",
+        "version": "9.6",
+        "version_normalized": "9.6.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+            "reference": "tags/9.6"
+        },
         "dist": {
             "type": "zip",
-            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.16.zip",
+            "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.6.zip",
             "reference": null,
-            "shasum": "c2cfd5f310a3f1104c4421c6bfce35b414d239f0"
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+    },
+    {
+        "name": "gladney/gcfa-wp-plugin",
+        "version": "1.0.17",
+        "version_normalized": "1.0.17.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.17.zip",
+            "reference": null,
+            "shasum": "b79465f1eb72bb93d7cb39f847cb1e0347c10c18"
         },
         "type": "wordpress-plugin",
         "installation-source": "dist"

@@ -1,13 +1,14 @@
 <footer class="adpt-footer">
-	<div>
+	<div class="adpt-footer-block">
 		<img
+			class="constrained" 
 			src="<?php header_image(); ?>"
 			alt="<?php echo bloginfo('name'); ?>"
 		/>
 	</div>
-	<div></div>
-	<div></div>
-	<div></div>
+	<div class="adpt-footer-block"></div>
+	<div class="adpt-footer-block"></div>
+	<div class="adpt-footer-block"></div>
 </footer>
 <?php wp_footer(); ?>
 </body>
