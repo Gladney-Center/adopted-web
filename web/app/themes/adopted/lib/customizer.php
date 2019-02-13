@@ -12,12 +12,47 @@ function adpt_customize_register( $wp_customize ) {
 		'panel'  => 'gcfa_footer'
 	]);
 
-	$wp_customize->add_setting( 'footer_block_1_set' );
+	$wp_customize->add_section( 'footer_block_2', [
+		'title' => 'Footer Block 2',
+		'description' => 'Second footer block',
+		'priority' => 20,
+		'panel'  => 'gcfa_footer'
+	]);
 
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_ctl', [
-		'label' => 'Footer Block 1',
+	$wp_customize->add_section( 'footer_block_3', [
+		'title' => 'Footer Block 3',
+		'description' => 'Third footer block',
+		'priority' => 30,
+		'panel'  => 'gcfa_footer'
+	]);
+
+	$wp_customize->add_section( 'footer_block_4', [
+		'title' => 'Footer Block 4',
+		'description' => 'Fourth footer block',
+		'priority' => 40,
+		'panel'  => 'gcfa_footer'
+	]);
+
+	$wp_customize->add_setting( 'footer_block_1_email' );
+	$wp_customize->add_setting( 'footer_block_1_phone' );
+	$wp_customize->add_setting( 'footer_block_1_address' );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_email', [
+		'label' => 'Email Address',
 		'section' => 'footer_block_1',
-		'settings' => 'footer_block_1_set'
+		'settings' => 'footer_block_1_email'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_phone', [
+		'label' => 'Phone Number',
+		'section' => 'footer_block_1',
+		'settings' => 'footer_block_1_phone'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_address', [
+		'label' => 'Physical Address',
+		'section' => 'footer_block_1',
+		'settings' => 'footer_block_1_address'
 	]));
 
 }
