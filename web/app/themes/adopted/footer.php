@@ -1,5 +1,10 @@
 <footer class="adpt-footer">
-	<div></div>
+	<div>
+		<img
+			src="<?php header_image(); ?>"
+			alt="<?php echo bloginfo('name'); ?>"
+		/>
+	</div>
 	<div></div>
 	<div></div>
 	<div></div>
