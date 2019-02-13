@@ -1,4 +1,10 @@
 .adpt-footer
-	min-height: 20em
+	min-height: 16em
 	background-color: sunrise()
+	display: flex
 	+full-width-gutter
+
+	& > div
+		flex: 1 1 25%
+		padding: $huge 1em
+		border: 1 px solid navy()
