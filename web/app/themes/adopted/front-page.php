@@ -9,6 +9,8 @@ add_filter( 'body_class', function($classes) {
 global $post; 
 get_header();
 ?>
-<?php //echo $post->post_content; ?>
+<section class="adpt-stage">
+<?php echo $post->post_content; ?>
+</section>
 <?php
 get_footer();
