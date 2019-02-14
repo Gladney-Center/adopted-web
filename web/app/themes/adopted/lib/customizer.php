@@ -40,6 +40,7 @@ function adpt_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'footer_block_2_heading' );
 
 	$wp_customize->add_setting( 'footer_block_3_heading' );
+	$wp_customize->add_setting( 'footer_block_3_cta' );
 
 	$wp_customize->add_setting( 'footer_block_4_heading' );
 
@@ -71,6 +72,12 @@ function adpt_customize_register( $wp_customize ) {
 		'label' => 'Block 3 Heading',
 		'section' => 'footer_block_3',
 		'settings' => 'footer_block_3_heading'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_3_cta', [
+		'label' => 'Block 3 Call To Action',
+		'section' => 'footer_block_3',
+		'settings' => 'footer_block_3_cta'
 	]));
 
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_4_heading', [

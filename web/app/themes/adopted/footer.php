@@ -36,6 +36,15 @@
 			<div class="adpt-footer-heading">
 				<h4><?php echo unbold_filter(get_theme_mod('footer_block_3_heading')); ?></h4>
 			</div>
+			<div class="adpt-footer-info">
+				<span class="footer-info-inner">
+					<?php echo fa_filter(get_theme_mod('footer_block_3_cta')); ?>
+				</span>
+				<span class="footer-info-inner">
+					<a class="btn" href="#">Website</a>
+					<a class="btn" href="#">Call Now</a>
+				</span>
+			</div>
 		</div>
 	</div>
 	<div class="adpt-footer-block">
