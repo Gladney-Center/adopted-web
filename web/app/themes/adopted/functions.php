@@ -9,7 +9,7 @@ function unbold_filter($text) {
 }
 
 function fa_filter($text) {
-	return preg_replace('(<fa:(.*?)>)', '<i class="far fa-$1"></i>', $text);
+	return preg_replace('(<fa:(.*?)>)', '<i class="fas fa-$1"></i>', $text);
 }
 
 require_once __DIR__ . '/lib/customizer.php';
