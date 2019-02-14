@@ -28,6 +28,7 @@
 				<input type="text" placeholder="Username" name="adpt-user"/>
 				<input type="text" placeholder="Password" name="adpt-pwd"/>
 			</div>
+			<button>Login</button>
 		</div>
 	</div>
 	<div class="adpt-footer-block">
