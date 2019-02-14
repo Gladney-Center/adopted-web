@@ -24,8 +24,10 @@
 					echo unbold_filter(get_theme_mod('footer_block_2_heading'));
 				?></h4>
 			</div>
-			<input type="text" placeholder="Username" name="adpt-user"/><br>
-			<input type="text" placeholder="Password" name="adpt-pwd"/>
+			<div class="input-block">
+				<input type="text" placeholder="Username" name="adpt-user"/>
+				<input type="text" placeholder="Password" name="adpt-pwd"/>
+			</div>
 		</div>
 	</div>
 	<div class="adpt-footer-block">
