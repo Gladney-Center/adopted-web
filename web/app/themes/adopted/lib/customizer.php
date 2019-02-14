@@ -37,6 +37,12 @@ function adpt_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'footer_block_1_phone' );
 	$wp_customize->add_setting( 'footer_block_1_address' );
 
+	$wp_customize->add_setting( 'footer_block_2_heading' );
+
+	$wp_customize->add_setting( 'footer_block_3_heading' );
+
+	$wp_customize->add_setting( 'footer_block_4_heading' );
+
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_email', [
 		'label' => 'Email Address',
 		'section' => 'footer_block_1',
@@ -53,6 +59,24 @@ function adpt_customize_register( $wp_customize ) {
 		'label' => 'Physical Address',
 		'section' => 'footer_block_1',
 		'settings' => 'footer_block_1_address'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_2_heading', [
+		'label' => 'Block 2 Heading',
+		'section' => 'footer_block_2',
+		'settings' => 'footer_block_2_heading'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_3_heading', [
+		'label' => 'Block 3 Heading',
+		'section' => 'footer_block_3',
+		'settings' => 'footer_block_3_heading'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_4_heading', [
+		'label' => 'Block 4 Heading',
+		'section' => 'footer_block_4',
+		'settings' => 'footer_block_4_heading'
 	]));
 
 }

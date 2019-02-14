@@ -17,9 +17,27 @@
 			</div>
 		</div>
 	</div>
-	<div class="adpt-footer-block"></div>
-	<div class="adpt-footer-block"></div>
-	<div class="adpt-footer-block"></div>
+	<div class="adpt-footer-block">
+		<div class="adpt-footer-block-inner">
+			<div class="adpt-footer-heading">
+				<h4><?php echo get_theme_mod('footer_block_2_heading'); ?></h4>
+			</div>
+		</div>
+	</div>
+	<div class="adpt-footer-block">
+		<div class="adpt-footer-block-inner">
+			<div class="adpt-footer-heading">
+				<h4><?php echo get_theme_mod('footer_block_3_heading'); ?></h4>
+			</div>
+		</div>
+	</div>
+	<div class="adpt-footer-block">
+		<div class="adpt-footer-block-inner">
+			<div class="adpt-footer-heading">
+				<h4><?php echo get_theme_mod('footer_block_4_heading'); ?></h4>
+			</div>
+		</div>
+	</div>
 </footer>
 <?php wp_footer(); ?>
 </body>
