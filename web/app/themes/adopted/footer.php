@@ -6,13 +6,13 @@
 			</div>
 			<div class="adpt-footer-info">
 				<span class="footer-info-inner">
-					<?php echo get_theme_mod('footer_block_1_email'); ?>
+					<?php echo fa_filter(get_theme_mod('footer_block_1_email')); ?>
 				</span>
 				<span class="footer-info-inner">
-					<?php echo get_theme_mod('footer_block_1_phone'); ?>
+					<?php echo fa_filter(get_theme_mod('footer_block_1_phone')); ?>
 				</span>
 				<span class="footer-info-inner">
-					<?php echo get_theme_mod('footer_block_1_address'); ?>
+					<?php echo fa_filter(get_theme_mod('footer_block_1_address')); ?>
 				</span>
 			</div>
 		</div>
