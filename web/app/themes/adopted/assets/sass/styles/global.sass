@@ -32,9 +32,19 @@ h4
 
 // form styles
 
+.input-block
+	padding: 1em 0
+	width: 100%
+
+	input:not(:last-of-type)
+		margin-bottom: $teeny
+
 input, select, textarea
+	font-family: $font-stack !important
     font-size: $bodytext
     outline: none !important
+	border: 0
+	background-color: aecolor(#fff,.5)
 
 input[type="text"]
 	padding: $teeny 1em
