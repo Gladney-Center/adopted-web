@@ -1,8 +1,6 @@
-<section class="adpt-blog">
-<?php
-	print_r(get_body_class());
-?>
-</section>
+<?php if (!in_array('no-blog',get_body_class())): ?>
+<section class="adpt-blog"></section>
+<?php endif; ?>
 <footer class="adpt-footer">
 	<div class="adpt-footer-block block-1">
 		<div class="adpt-footer-block-inner">
