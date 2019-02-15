@@ -9,10 +9,12 @@ add_filter( 'body_class', function($classes) {
 });
  
 get_header();
+
+$blocks = parse_blocks($post->post_content);
 ?>
 <section class="adpt-stage">
 	<div class="adpt-stage-inner">
-		<?php echo $post->post_content; ?>
+		<?php print_r($blocks); ?>
 	</div>
 </section>
 <?php
