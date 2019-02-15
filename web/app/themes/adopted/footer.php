@@ -52,7 +52,12 @@
 			<div class="adpt-footer-heading">
 				<h4><?php echo unbold_filter(get_theme_mod('footer_block_4_heading')); ?></h4>
 			</div>
-			<?php echo wp_get_attachment_image(get_theme_mod('footer_block_4_logo'),'full'); ?>
+			<?php echo wp_get_attachment_image(
+				get_theme_mod('footer_block_4_logo'),
+				'full',
+				'',
+				['class' => 'constrained']
+			); ?>
 		</div>
 	</div>
 </footer>
