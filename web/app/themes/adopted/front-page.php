@@ -2,11 +2,12 @@
 
 /* Template Name: Front Page */
 
+global $post;
+
 add_filter( 'body_class', function($classes) {
 	return ['adpt-front-page'];
 });
-
-global $post; 
+ 
 get_header();
 ?>
 <section class="adpt-stage">
