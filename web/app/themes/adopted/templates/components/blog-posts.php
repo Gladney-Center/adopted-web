@@ -8,9 +8,9 @@
 		</div>
 		<div class="adpt-post-blocks">
 			<div class="adpt-post-block"></div>
-			<div class="adpt-post-spacer">s</div>
+			<div class="adpt-post-spacer">M</div>
 			<div class="adpt-post-block"></div>
-			<div class="adpt-post-spacer">s</div>
+			<div class="adpt-post-spacer">M</div>
 			<div class="adpt-post-block"></div>
 		</div>
 	</div>
