@@ -6,5 +6,6 @@
 				<a class="btn" href="#">View More</a>
 			</div>
 		</div>
+		<div class="adpt-post-blocks"></div>
 	</div>
 </section>
