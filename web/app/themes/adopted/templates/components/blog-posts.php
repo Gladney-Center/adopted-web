@@ -7,11 +7,17 @@
 			</div>
 		</div>
 		<div class="adpt-post-blocks">
-			<div class="adpt-post-block"></div>
+			<div class="adpt-post-block">
+				<div class="adpt-post-block-inner"></div>
+			</div>
 			<div class="adpt-post-spacer">M</div>
-			<div class="adpt-post-block"></div>
+			<div class="adpt-post-block">
+				<div class="adpt-post-block-inner"></div>
+			</div>
 			<div class="adpt-post-spacer">M</div>
-			<div class="adpt-post-block"></div>
+			<div class="adpt-post-block">
+				<div class="adpt-post-block-inner"></div>
+			</div>
 		</div>
 	</div>
 </section>
