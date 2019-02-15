@@ -5,6 +5,7 @@ defined('ABSPATH') || die;
 add_action( 'customize_register', 'adpt_customize_register', 999 );
 function adpt_customize_register( $wp_customize ) {
 
+	// Customizer Sections (hooked into global GCFA footer panel)
 	$wp_customize->add_section( 'footer_block_1', [
 		'title' => 'Footer Block 1',
 		'description' => 'First footer block',
@@ -33,6 +34,7 @@ function adpt_customize_register( $wp_customize ) {
 		'panel'  => 'gcfa_footer'
 	]);
 
+	// Customizer settings
 	$wp_customize->add_setting( 'footer_block_1_email' );
 	$wp_customize->add_setting( 'footer_block_1_phone' );
 	$wp_customize->add_setting( 'footer_block_1_address' );
@@ -43,7 +45,9 @@ function adpt_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'footer_block_3_cta' );
 
 	$wp_customize->add_setting( 'footer_block_4_heading' );
+	$wp_customize->add_setting( 'footer_block_4_logo' );
 
+	// Customizer Controls
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_block_1_email', [
 		'label' => 'Email Address',
 		'section' => 'footer_block_1',
@@ -84,6 +88,13 @@ function adpt_customize_register( $wp_customize ) {
 		'label' => 'Block 4 Heading',
 		'section' => 'footer_block_4',
 		'settings' => 'footer_block_4_heading'
+	]));
+
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_block_4_logo', [
+		'label' => 'Gladney Logo',
+		'section' => 'footer_block_4',
+		'settings' => 'footer_block_4_logo',
+		'mime_type' => 'image'
 	]));
 
 }
