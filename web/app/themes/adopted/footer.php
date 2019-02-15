@@ -1,6 +1,6 @@
 <section class="adpt-blog">
 <?php
-	print_r(apply_filters('body_class'));
+	print_r(get_body_class());
 ?>
 </section>
 <footer class="adpt-footer">
