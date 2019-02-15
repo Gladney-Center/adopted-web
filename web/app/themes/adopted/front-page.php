@@ -10,7 +10,9 @@ global $post;
 get_header();
 ?>
 <section class="adpt-stage">
-<?php echo $post->post_content; ?>
+	<div class="adpt-stage-inner">
+		<?php echo $post->post_content; ?>
+	</div>
 </section>
 <?php
 get_footer();
