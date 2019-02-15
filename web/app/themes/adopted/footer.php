@@ -41,8 +41,8 @@
 					<?php echo fa_filter(get_theme_mod('footer_block_3_cta')); ?>
 				</span>
 				<span class="footer-info-inner">
-					<a class="btn" href="#">Website</a>&nbsp;&nbsp;
-					<a class="btn" href="#">Call Now</a>
+					<a class="btn" href="#"><i class="fas fa-globe"></i>Website</a>&nbsp;&nbsp;
+					<a class="btn" href="#"><i class="fas fa-phone"></i>Call Now</a>
 				</span>
 			</div>
 		</div>
@@ -52,6 +52,7 @@
 			<div class="adpt-footer-heading">
 				<h4><?php echo unbold_filter(get_theme_mod('footer_block_4_heading')); ?></h4>
 			</div>
+			<img class="constrained" src="<?php header_image(); ?>" alt="<?php echo bloginfo('name'); ?>" />
 		</div>
 	</div>
 </footer>
