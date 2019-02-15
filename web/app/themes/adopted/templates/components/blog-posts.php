@@ -1,0 +1,1 @@
+<section class="adpt-blog">Hello World!</section>
