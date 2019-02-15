@@ -2,7 +2,7 @@
 	<div class="adpt-footer-block block-1">
 		<div class="adpt-footer-block-inner">
 			<div class="adpt-footer-heading">
-				<img class="constrained" src="<?php header_image(); ?>" alt="<?php echo bloginfo('name'); ?>" />
+				<img class="v-constrained" src="<?php header_image(); ?>" alt="<?php echo bloginfo('name'); ?>" />
 			</div>
 			<div class="adpt-footer-info">
 				<span class="footer-info-inner">
@@ -57,7 +57,7 @@
 					get_theme_mod('footer_block_4_logo'),
 					'full',
 					'',
-					['class' => 'constrained']
+					['class' => 'w-constrained']
 				); ?>
 			</div>
 		</div>

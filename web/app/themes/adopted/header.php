@@ -14,7 +14,7 @@
 		<div class="adpt-nav-logo">
 			<a href="<?php echo home_url(); ?>">
 				<img
-					class="constrained" 
+					class="v-constrained" 
 					src="<?php header_image(); ?>"
 					alt="<?php echo bloginfo('name'); ?>"
 				/>
