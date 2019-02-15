@@ -1,3 +1,8 @@
+<section class="adpt-blog">
+<?php
+	print_r(apply_filters('body_class'));
+?>
+</section>
 <footer class="adpt-footer">
 	<div class="adpt-footer-block block-1">
 		<div class="adpt-footer-block-inner">
