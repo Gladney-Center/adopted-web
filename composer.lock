@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6e72a73ec46ef9bb748335547075291",
+    "content-hash": "3abb40e18617fc499c87499059ad48b7",
     "packages": [
         {
             "name": "composer/installers",
@@ -480,6 +480,26 @@
                 "environment"
             ],
             "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/editor-blocks",
+            "version": "1.1.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/editor-blocks/",
+                "reference": "tags/1.1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/editor-blocks.1.1.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/editor-blocks/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
