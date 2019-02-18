@@ -555,19 +555,6 @@
         "homepage": "https://wordpress.org/plugins/wordpress-seo/"
     },
     {
-        "name": "gladney/gcfa-wp-plugin",
-        "version": "1.0.20",
-        "version_normalized": "1.0.20.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.20.zip",
-            "reference": null,
-            "shasum": "5bf31562614d79a2586293844d7b32b9e1d4dc9a"
-        },
-        "type": "wordpress-plugin",
-        "installation-source": "dist"
-    },
-    {
         "name": "roave/security-advisories",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -793,5 +780,18 @@
         "type": "wordpress-plugin",
         "installation-source": "dist",
         "homepage": "https://wordpress.org/plugins/editor-blocks/"
+    },
+    {
+        "name": "gladney/gcfa-wp-plugin",
+        "version": "1.0.21",
+        "version_normalized": "1.0.21.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://composer.gladneycenter.org/dist/gladney/gcfa-wp-plugin/gladney-gcfa-wp-plugin-1.0.21.zip",
+            "reference": null,
+            "shasum": "8468282901e1f0e1da640abce066560a2e9f5af5"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist"
     }
 ]
