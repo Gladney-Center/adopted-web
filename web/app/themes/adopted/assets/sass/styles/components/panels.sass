@@ -9,11 +9,17 @@
 
 		.adpt-panel
 			flex: 1
-			position: absolute
+			position: relative
 			background-color: teal()
 
 			&:nth-child(odd)
-				margin-right: 1em
+				margin-right: $teeny
 
 			&:nth-child(even)
-				margin-left: 1em
+				margin-left: $teeny
+
+			figure
+				width: 100%
+
+				img
+					display: block
