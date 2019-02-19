@@ -6,12 +6,6 @@
 		+body-max-width
 		display: flex
 		position: relative
-		opacity: .85
-		transition: opacity 100ms ease-in-out
-
-		&:hover
-			cursor: pointer
-			opacity: 1
 
 		.adpt-panel
 			flex: 1
@@ -19,6 +13,12 @@
 			background-color: teal()
 			border-radius: $tiny
 			overflow: hidden
+			opacity: .85
+			transition: opacity 100ms ease-in-out
+
+			&:hover
+				cursor: pointer
+				opacity: 1
 
 			&:nth-child(odd)
 				margin-right: $teeny
