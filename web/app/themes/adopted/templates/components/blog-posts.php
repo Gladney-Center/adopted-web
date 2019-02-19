@@ -1,4 +1,4 @@
-<section class="adpt-blog">
+<div class="adpt-blog">
 	<div class="adpt-blog-inner">
 		<div class="adpt-blog-top">
 			<div class="adpt-blog-heading"><h3>Blog</h3></div>
@@ -32,4 +32,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
