@@ -1,3 +1,5 @@
-const Fayboo = () => console.log('Fayboo function')
+const foobar = () => console.log('foobar function')
 
-window.fayboo = Fayboo
+window._adpt = {
+	foobar: foobar
+}
