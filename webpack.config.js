@@ -67,7 +67,7 @@ module.exports = (env) => {
         },
         plugins: [
             new ExtractTextPlugin({
-                filename: 'app/themes/adopted/style.css',
+                filename: 'app/themes/adopted/style.min.css',
                 disable: false,
                 allChunks: true
             }),
