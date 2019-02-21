@@ -8,6 +8,6 @@ add_filter( 'body_class', function($classes) use ($post) {
  
 get_header();
 
-echo $post->post_content;
+echo preg_replace('/(<!--\s+\/?wp:\w+\s+-->)/gi',$post->post_content);
 
 get_footer();
