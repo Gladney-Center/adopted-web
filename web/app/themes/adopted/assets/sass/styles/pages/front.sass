@@ -8,10 +8,10 @@ body.adpt-front-page
 	.adpt-header
 
 	.adpt-stage
-		background-color: sunrise()
+		background-color: $sunrise
 
 	.adpt-fold
-		background: linear-gradient(180deg, sunrise() 35%, sunrise(0) 35%)
+		background: linear-gradient(180deg, $sunrise 35%, sunrise(0) 35%)
 		margin-bottom: 1em
 		
 		.adpt-fold-inner
@@ -20,11 +20,11 @@ body.adpt-front-page
 				text-align: center
 
 	.adpt-podcast
-		background-color: navy()
+		background-color: $navy
 		min-height: 20em
 
 		h2, h5
-			color: teal()
+			color: $teal
 
 	.adpt-ctas
 		min-height: 10em
@@ -34,7 +34,7 @@ body.adpt-front-page
 			+body-max-width
 
 			.wp-block-column
-				background-color: taupe()
+				background-color: $taupe
 				min-height: 10em
 				margin: 0 $teeny
 
@@ -45,3 +45,6 @@ body.adpt-front-page
 				&:last-of-type
 					margin-left: $teeny
 					margin-right: 0
+
+				.adpt-icon
+					padding: 30%
