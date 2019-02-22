@@ -5,11 +5,11 @@ defined('ABSPATH') || die;
 final class ContentFilter {
 
 	public static function unbold($text) {
-		return preg_replace('/(<%(.*?)%>)/i', '<span class="notbold">$1</span>', $text);
+		return preg_replace('(<%(.*?)%>)', '<span class="notbold">$1</span>', $text);
 	}
 	
 	public static function fa($text) {
-		return preg_replace('/(<fa:(.*?)>)/i', '<i class="fas fa-$1"></i>', $text);
+		return preg_replace('(<fa:(.*?)>)', '<i class="fas fa-$1"></i>', $text);
 	}
 	
 	public static function html_comment($text) {
@@ -17,7 +17,7 @@ final class ContentFilter {
 	}
 	
 	public static function svg($text) {
-		return preg_replace('/(<adpt-icon:(\w+)>)/i',
+		return preg_replace('(<adpt-icon:(\w+)>)',
 			file_get_contents(__DIR__ . '/assets/svg/$1.svg') ?: '',
 			$text
 		);
