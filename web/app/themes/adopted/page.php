@@ -8,6 +8,8 @@ add_filter( 'body_class', function($classes) use ($post) {
  
 get_header();
 
-echo preg_replace('/(<!--\s+\/?wp:\w+\s+-->)/i','',$post->post_content);
+echo ContentFilter::html_comment(
+	ContentFilter::svg($post->post_content)
+);
 
 get_footer();

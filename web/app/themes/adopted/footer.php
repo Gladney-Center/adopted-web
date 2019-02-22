@@ -6,13 +6,13 @@
 			</div>
 			<div class="adpt-footer-info">
 				<span class="footer-info-inner">
-					<?php echo fa_filter(get_theme_mod('footer_block_1_email')); ?>
+					<?php echo ContentFilter::fa(get_theme_mod('footer_block_1_email')); ?>
 				</span>
 				<span class="footer-info-inner">
-					<?php echo fa_filter(get_theme_mod('footer_block_1_phone')); ?>
+					<?php echo ContentFilter::fa(get_theme_mod('footer_block_1_phone')); ?>
 				</span>
 				<span class="footer-info-inner">
-					<?php echo fa_filter(get_theme_mod('footer_block_1_address')); ?>
+					<?php echo ContentFilter::fa(get_theme_mod('footer_block_1_address')); ?>
 				</span>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 		<div class="adpt-footer-block-inner">
 			<div class="adpt-footer-heading">
 				<h4><?php
-					echo unbold_filter(get_theme_mod('footer_block_2_heading'));
+					echo ContentFilter::unbold(get_theme_mod('footer_block_2_heading'));
 				?></h4>
 			</div>
 			<div class="input-block">
@@ -34,11 +34,11 @@
 	<div class="adpt-footer-block block-3">
 		<div class="adpt-footer-block-inner">
 			<div class="adpt-footer-heading">
-				<h4><?php echo unbold_filter(get_theme_mod('footer_block_3_heading')); ?></h4>
+				<h4><?php echo ContentFilter::unbold(get_theme_mod('footer_block_3_heading')); ?></h4>
 			</div>
 			<div class="adpt-footer-info">
 				<span class="footer-info-inner">
-					<?php echo fa_filter(get_theme_mod('footer_block_3_cta')); ?>
+					<?php echo ContentFilter::fa(get_theme_mod('footer_block_3_cta')); ?>
 				</span>
 				<span class="footer-info-inner">
 					<a class="btn" href="#"><i class="fas fa-globe"></i>Website</a>&nbsp;&nbsp;
@@ -50,7 +50,7 @@
 	<div class="adpt-footer-block block-4">
 		<div class="adpt-footer-block-inner">
 			<div class="adpt-footer-heading">
-				<h4><?php echo unbold_filter(get_theme_mod('footer_block_4_heading')); ?></h4>
+				<h4><?php echo ContentFilter::unbold(get_theme_mod('footer_block_4_heading')); ?></h4>
 			</div>
 			<div class="gcfa-logo">
 				<?php echo wp_get_attachment_image(
