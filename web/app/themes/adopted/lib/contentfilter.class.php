@@ -17,8 +17,10 @@ final class ContentFilter {
 	}
 	
 	public static function svg($text) {
-		return preg_replace('(<adpt-icon:(\w+)>)',
-			file_get_contents(__DIR__ . "/assets/svg/$1.svg") ?: '',
+		return preg_replace_callback('(<adpt-icon:(\w+)>)',
+			function() {
+				file_get_contents(__DIR__ . "/assets/svg/$matches[1].svg") ?: '';
+			},
 			$text
 		);
 	}
