@@ -18,7 +18,7 @@ final class ContentFilter {
 	
 	public static function svg($text) {
 		return preg_replace_callback('(<adpt-icon:(\w+)>)',
-			function() {
+			function($matches) {
 				file_get_contents(__DIR__ . "/assets/svg/$matches[1].svg") ?: '';
 			},
 			$text
