@@ -1,0 +1,25 @@
+.adpt-ctas
+	min-height: 10em
+
+	.adpt-ctas-inner
+		display: flex
+		+body-max-width
+
+		.wp-block-column
+			background-color: $taupe
+			min-height: 10em
+			margin: 0 $teeny
+
+			&:first-of-type
+				margin-right: $teeny
+				margin-left: 0
+
+			&:last-of-type
+				margin-left: $teeny
+				margin-right: 0
+
+			.adpt-icon
+				padding: 25%
+
+				svg
+					max-height: $huge*3
