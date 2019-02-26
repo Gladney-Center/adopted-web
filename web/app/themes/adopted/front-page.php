@@ -37,7 +37,7 @@ get_header(); ?>
 				<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/Students-opt1.png" alt="AdoptED Students section background photo" class="wp-image-974"></figure>
 				<div class="adpt-panel-overlay">
 					<div class="adpt-panel-topright">
-						<?php echo Filter::svg(' <adpt-icon:rightarrow> '); ?>
+						<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
 						<span class="adpt-panel-vert">Learn More</span>
 					</div>
 					<div class="adpt-panel-info">
@@ -52,7 +52,7 @@ get_header(); ?>
 				<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/educators-opt1.png" alt="AdoptED Educators panel background image" class="wp-image-975"></figure>
 				<div class="adpt-panel-overlay">
 					<div class="adpt-panel-topright">
-						<?php echo Filter::svg(' <adpt-icon:rightarrow> '); ?>
+						<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
 						<span class="adpt-panel-vert">Learn More</span>
 					</div>
 					<div class="adpt-panel-info">
@@ -61,6 +61,28 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
+		</div>
+	</div>
+</section>
+<section class="adpt-podcast">
+	<h2>do you have questions about adoption or dating or pregnancy but just don’t know who to ask?</h2>
+</section>
+<section class="adpt-ctas">
+	<div class="adpt-ctas-inner wp-block-columns has-3-columns">
+		<div class="wp-block-column">
+			<div class="adpt-icon">
+				<?php echo Filter::svg('<adpt-icon:questionblock>'); ?>
+			</div>
+		</div>
+		<div class="wp-block-column">
+			<div class="adpt-icon">
+				<?php echo Filter::svg('<adpt-icon:videoblock>'); ?>
+			</div>
+		</div>
+		<div class="wp-block-column">
+			<div class="adpt-icon">
+				<?php echo Filter::svg('<adpt-icon:handsicon>'); ?>
+			</div>
 		</div>
 	</div>
 </section>
