@@ -42,7 +42,7 @@ if (!in_array('no-blog',get_body_class())) get_template_part('templates/componen
 			</div>
 			<div class="adpt-footer-info">
 				<span class="footer-info-inner">
-					<?php echo ContentFilter::fa(get_theme_mod('footer_block_3_cta')); ?>
+					<?php echo Filter::fa(get_theme_mod('footer_block_3_cta')); ?>
 				</span>
 				<span class="footer-info-inner">
 					<a class="btn" href="#"><i class="fas fa-globe"></i>Website</a>&nbsp;&nbsp;
