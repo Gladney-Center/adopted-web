@@ -86,4 +86,34 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+<section class="adpt-panel-block">
+	<div class="adpt-panel-block-inner has-2-columns">
+		<div class="adpt-panel">
+			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/pregnant-opt1.png" alt="AdoptED pregnant section background photo" class="wp-image-991"></figure>
+			<div class="adpt-panel-overlay">
+				<div class="adpt-panel-topright">
+					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+					<span class="adpt-panel-vert">Learn More</span>
+				</div>
+				<div class="adpt-panel-info">
+					<h4>pregnant?</h4>
+					<p>An unplanned pregnancy changes everything. Your body. Your relationships. Your plans. But Gladney wants you to know: Good things can come from this.</p>
+				</div>
+			</div>
+		</div>
+		<div class="adpt-panel">
+			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/adopt-opt1.png" alt="AdoptED adoption section background photo" class="wp-image-992"></figure>
+			<div class="adpt-panel-overlay">
+				<div class="adpt-panel-topright">
+					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+					<span class="adpt-panel-vert">Learn More</span>
+				</div>
+				<div class="adpt-panel-info">
+					<h4>i want to adopt</h4>
+					<p>Take a deep breath and consider your options. Take it from us: This child is worth it.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <?php get_footer();
