@@ -24,9 +24,19 @@ class Customizer {
 			'panel'  => 'gcfa_pages'
 		]);
 
+		$wp_customize->add_section( 'panel_block_1', [
+			'title' => 'Panel Blocks 1',
+			'description' => 'The first set of large square panel blocks on the front page',
+			'priority' => 20,
+			'panel'  => 'front_page'
+		]);
+
 		// Customizer settings
 		$wp_customize->add_setting( 'fp_stage_heading' );
 		$wp_customize->add_setting( 'fp_fold_copy' );
+
+		$wp_customize->add_setting( 'fp_panel_block_1_left_copy' );
+		$wp_customize->add_setting( 'fp_panel_block_1_right_copy' );
 
 		// Customizer Controls
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_stage_heading', [
@@ -40,6 +50,12 @@ class Customizer {
 			'section' => 'front_page',
 			'type' => 'textarea',
 			'settings' => 'fp_fold_copy'
+		]));
+
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_left_copy', [
+			'label' => 'Left Block Copy',
+			'section' => 'panel_block_1',
+			'settings' => 'fp_panel_block_1_left_copy'
 		]));
 	}
 
