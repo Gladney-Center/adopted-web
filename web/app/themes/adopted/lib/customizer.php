@@ -1,22 +1,20 @@
 <?php
 
+namespace AdoptED;
+
 defined('ABSPATH') || die;
 
 class Customizer {
 
-	private static $wp_customize;
-
-	public static function init($wp_customize) {
-		self::$wp_customize = $wp_customize;
-		self::header();
-		self::front_page();
-		self::footer();
+	public static function init() {
+		add_action( 'customize_register', [__CLASS__, 'header'], 900 );
+		add_action( 'customize_register', [__CLASS__, 'front_page'], 901 );
+		add_action( 'customize_register', [__CLASS__, 'footer'], 919 );
 	}
 
-	private static function header() {}
+	private static function header($wp_customize) {}
 
-	private static function front_page() {
-		$wp_customize = self::$wp_customize;
+	private static function front_page($wp_customize) {
 
 		// Customizer sections
 		$wp_customize->add_section( 'front_page', [
@@ -37,8 +35,8 @@ class Customizer {
 		]));
 	}
 
-	private static function footer() {
-		$wp_customize = self::$wp_customize;
+	private static function footer($wp_customize) {
+
 		// Customizer Sections (hooked into global GCFA footer panel)
 		$wp_customize->add_section( 'footer_block_1', [
 			'title' => 'Footer Block 1',
