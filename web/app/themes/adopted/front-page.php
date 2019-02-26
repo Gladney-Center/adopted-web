@@ -41,7 +41,7 @@ get_header(); ?>
 				</div>
 				<div class="adpt-panel-info">
 					<h4>students</h4>
-					<p>Learn what adoption really means in an engaging class that you definitely won't sleep through!</p>
+					<p><?php echo get_theme_mod('fp_panel_block_1_left_copy'); ?></p>
 				</div>
 			</div>
 		</div>

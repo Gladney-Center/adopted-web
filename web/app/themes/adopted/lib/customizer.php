@@ -59,6 +59,7 @@ class Customizer {
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_stage_heading', [
 			'label' => 'Stage Heading',
 			'section' => 'fp_stage',
+			'type' => 'textarea',
 			'settings' => 'fp_stage_heading'
 		]));
 
@@ -69,9 +70,16 @@ class Customizer {
 			'settings' => 'fp_fold_copy'
 		]));
 
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_left_title', [
+			'label' => 'Left Block Title',
+			'section' => 'panel_block_1',
+			'settings' => 'fp_panel_block_1_left_title'
+		]));
+
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_left_copy', [
 			'label' => 'Left Block Copy',
 			'section' => 'panel_block_1',
+			'type' => 'textarea',
 			'settings' => 'fp_panel_block_1_left_copy'
 		]));
 	}
