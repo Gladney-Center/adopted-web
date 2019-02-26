@@ -3,13 +3,14 @@
 namespace AdoptED;
 
 global $post;
+$meta = get_post_meta($post->ID);
 
-add_filter( 'body_class', function($classes) use ($post) {
-	return explode(' ',get_post_meta($post->ID, 'gcfa_page_classes', true));
+add_filter( 'body_class', function($classes) use ($meta) {
+	return explode(' ',$meta['gcfa_page_classes'][0]);
 });
  
 get_header(); ?>
 <pre>
-<?php print_r(get_post_meta($post->ID)); ?>
+<?php print_r(); ?>
 </pre>
 <?php get_footer();
