@@ -53,6 +53,7 @@ class Customizer {
 		$wp_customize->add_setting( 'fp_panel_block_1_left_title' );
 		$wp_customize->add_setting( 'fp_panel_block_1_left_copy' );
 		$wp_customize->add_setting( 'fp_panel_block_1_left_img' );
+		$wp_customize->add_setting( 'fp_panel_block_1_left_link' );
 		$wp_customize->add_setting( 'fp_panel_block_1_right_copy' );
 
 		// Customizer Controls
@@ -74,6 +75,13 @@ class Customizer {
 			'label' => 'Left Block Title',
 			'section' => 'panel_block_1',
 			'settings' => 'fp_panel_block_1_left_title'
+		]));
+
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_left_link', [
+			'label' => 'Left Block Page Link',
+			'section' => 'panel_block_1',
+			'type' => 'dropdown-pages',
+			'settings' => 'fp_panel_block_1_left_link'
 		]));
 
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_left_copy', [

@@ -40,7 +40,7 @@ get_header(); ?>
 					<span class="adpt-panel-vert">Learn More</span>
 				</div>
 				<div class="adpt-panel-info">
-					<h4>students</h4>
+					<h4><?php echo get_theme_mod('fp_panel_block_1_left_title'); ?></h4>
 					<p><?php echo get_theme_mod('fp_panel_block_1_left_copy'); ?></p>
 				</div>
 			</div>
