@@ -11,6 +11,6 @@ add_filter( 'body_class', function($classes) use ($meta) {
  
 get_header(); ?>
 <pre>
-<?php print_r(); ?>
+<?php print_r($meta); ?>
 </pre>
 <?php get_footer();
