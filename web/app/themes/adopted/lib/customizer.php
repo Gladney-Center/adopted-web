@@ -26,12 +26,19 @@ class Customizer {
 
 		// Customizer settings
 		$wp_customize->add_setting( 'fp_stage_heading' );
+		$wp_customize->add_setting( 'fp_fold_copy' );
 
 		// Customizer Controls
 		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fp_stage_heading', [
 			'label' => 'Stage Heading',
 			'section' => 'front_page',
 			'settings' => 'fp_stage_heading'
+		]));
+
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fp_fold_copy', [
+			'label' => 'Fold Copy (gray box)',
+			'section' => 'front_page',
+			'settings' => 'fp_fold_copy'
 		]));
 	}
 

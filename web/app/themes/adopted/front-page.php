@@ -22,4 +22,12 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+<section class="adpt-fold">
+	<div class="adpt-fold-inner">
+		<div class="adpt-fold-graybox">
+			<p>Through free in-classroom and online resources, AdoptED educates students on misconceptions of adoption. Our programs take students through adoption processes and challenge them to think critically about the life decisions they could face. Our goal is to empower students to make educated decisions based on factual information. </p>
+			<a class="btn" href="#">Learn More</a>
+		</div>
+	</div>
+</section>
 <?php get_footer();
