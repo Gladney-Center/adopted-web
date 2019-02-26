@@ -32,7 +32,7 @@ get_header(); ?>
 </section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner">
-		<?php echo get_theme_mod('fp_panel_block_1_left_link'); ?>
+		<?php echo get_permalink(get_theme_mod('fp_panel_block_1_left_link')); ?>
 		<div class="adpt-panel">
 			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/Students-opt1.png" alt="AdoptED Students section background photo" class="wp-image-974"></figure>
 			<div class="adpt-panel-overlay">
