@@ -10,6 +10,6 @@ add_filter( 'body_class', function($classes) use ($post) {
  
 get_header(); ?>
 <pre>
-<?php print_r(parse_blocks($post->post_content)); ?>
+<?php print_r(get_post_meta($post->ID)); ?>
 </pre>
 <?php get_footer();
