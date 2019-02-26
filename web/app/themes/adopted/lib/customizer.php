@@ -90,6 +90,26 @@ class Customizer {
 			'type' => 'textarea',
 			'settings' => 'fp_panel_block_1_left_copy'
 		]));
+
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_right_title', [
+			'label' => 'Right Block Title',
+			'section' => 'panel_block_1',
+			'settings' => 'fp_panel_block_1_right_title'
+		]));
+
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_right_link', [
+			'label' => 'Right Block Page Link',
+			'section' => 'panel_block_1',
+			'type' => 'dropdown-pages',
+			'settings' => 'fp_panel_block_1_right_link'
+		]));
+
+		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_panel_block_1_right_copy', [
+			'label' => 'Right Block Copy',
+			'section' => 'panel_block_1',
+			'type' => 'textarea',
+			'settings' => 'fp_panel_block_1_right_copy'
+		]));
 	}
 
 	public static function footer($wp_customize) {
