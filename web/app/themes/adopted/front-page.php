@@ -10,11 +10,6 @@ add_filter( 'body_class', function($classes) use ($post) {
  
 get_header(); ?>
 <pre>
-<?php print_r(
-	json_encode(
-		parse_blocks($post->post_content),
-		JSON_PRETTY_PRINT
-	)
-); ?>
+<?php print_r(parse_blocks($post->post_content)); ?>
 </pre>
 <?php get_footer();
