@@ -54,7 +54,10 @@ class Customizer {
 		$wp_customize->add_setting( 'fp_panel_block_1_left_copy' );
 		$wp_customize->add_setting( 'fp_panel_block_1_left_img' );
 		$wp_customize->add_setting( 'fp_panel_block_1_left_link' );
+		$wp_customize->add_setting( 'fp_panel_block_1_right_title' );
 		$wp_customize->add_setting( 'fp_panel_block_1_right_copy' );
+		$wp_customize->add_setting( 'fp_panel_block_1_right_img' );
+		$wp_customize->add_setting( 'fp_panel_block_1_right_link' );
 
 		// Customizer Controls
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_stage_heading', [
