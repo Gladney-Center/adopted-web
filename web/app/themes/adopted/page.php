@@ -8,8 +8,8 @@ add_filter( 'body_class', function($classes) use ($post) {
  
 get_header();
 
-echo ContentFilter::html_comment(
-	ContentFilter::svg($post->post_content)
+echo \Adopted\Filter::html_comment(
+	\Adopted\Filter::svg($post->post_content)
 );
 
 get_footer();

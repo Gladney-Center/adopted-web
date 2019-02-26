@@ -1,8 +1,10 @@
 <?php
 
+namespace AdoptED;
+
 defined('ABSPATH') || die;
 
-final class ContentFilter {
+final class Filter {
 
 	public static function unbold($text) {
 		return preg_replace('(<%(.*?)%>)', '<span class="notbold">$1</span>', $text);
