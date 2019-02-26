@@ -15,19 +15,34 @@ class Customizer {
 	public static function header($wp_customize) {}
 
 	public static function front_page($wp_customize) {
+		// front page panel
+		$wp_customize->add_panel( 'front_page', [
+			'title' => 'Front Page',
+			'capability'     => 'edit_theme_options',
+			'theme_supports' => '',
+			'description' => 'Edit content within the front page of this site',
+			'priority' => 140
+		]);
 
 		// Customizer sections
-		$wp_customize->add_section( 'front_page', [
-			'title' => 'Front Page',
-			'description' => 'Customize the AdoptED front page',
+		$wp_customize->add_section( 'fp_stage', [
+			'title' => 'Front Page Stage area',
+			'description' => 'Customize the AdoptED front page stage (above the fold)',
 			'priority' => 10,
-			'panel'  => 'gcfa_pages'
+			'panel'  => 'front_page'
+		]);
+
+		$wp_customize->add_section( 'fp_fold', [
+			'title' => 'Front Page Fold',
+			'description' => 'Customize the front page Fold (gray box)',
+			'priority' => 20,
+			'panel'  => 'front_page'
 		]);
 
 		$wp_customize->add_section( 'panel_block_1', [
 			'title' => 'Panel Blocks 1',
 			'description' => 'The first set of large square panel blocks on the front page',
-			'priority' => 20,
+			'priority' => 30,
 			'panel'  => 'front_page'
 		]);
 
@@ -35,19 +50,21 @@ class Customizer {
 		$wp_customize->add_setting( 'fp_stage_heading' );
 		$wp_customize->add_setting( 'fp_fold_copy' );
 
+		$wp_customize->add_setting( 'fp_panel_block_1_left_title' );
 		$wp_customize->add_setting( 'fp_panel_block_1_left_copy' );
+		$wp_customize->add_setting( 'fp_panel_block_1_left_img' );
 		$wp_customize->add_setting( 'fp_panel_block_1_right_copy' );
 
 		// Customizer Controls
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_stage_heading', [
 			'label' => 'Stage Heading',
-			'section' => 'front_page',
+			'section' => 'fp_stage',
 			'settings' => 'fp_stage_heading'
 		]));
 
 		$wp_customize->add_control( new \WP_Customize_Control( $wp_customize, 'fp_fold_copy', [
 			'label' => 'Fold Copy (gray box)',
-			'section' => 'front_page',
+			'section' => 'fp_fold',
 			'type' => 'textarea',
 			'settings' => 'fp_fold_copy'
 		]));
