@@ -13,7 +13,7 @@ get_header(); ?>
 <section class="adpt-stage">
 	<div class="wp-block-columns adpt-stage-inner">
 		<div class="wp-block-column">
-			<h1>only 17% of students believe adoption is a realistic option for them if they were to face an unplanned pregnancy.</h1>
+			<h1><?php echo get_theme_mod('fp_stage_heading'); ?></h1>
 		</div>
 		<div class="wp-block-column">
 			<figure class="wp-block-image">
