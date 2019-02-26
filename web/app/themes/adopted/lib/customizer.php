@@ -12,9 +12,9 @@ class Customizer {
 		add_action( 'customize_register', [__CLASS__, 'footer'], 919 );
 	}
 
-	private static function header($wp_customize) {}
+	public static function header($wp_customize) {}
 
-	private static function front_page($wp_customize) {
+	public static function front_page($wp_customize) {
 
 		// Customizer sections
 		$wp_customize->add_section( 'front_page', [
@@ -42,7 +42,7 @@ class Customizer {
 		]));
 	}
 
-	private static function footer($wp_customize) {
+	public static function footer($wp_customize) {
 
 		// Customizer Sections (hooked into global GCFA footer panel)
 		$wp_customize->add_section( 'footer_block_1', [
