@@ -82,7 +82,7 @@ get_header(); ?>
 	<h2>do you have questions about adoption or dating or pregnancy but just don’t know who to ask?</h2>
 </section>
 <section class="adpt-ctas">
-	<div class="adpt-ctas-inner wp-block-columns has-3-columns">
+	<div class="adpt-ctas-inner">
 		<div class="adpt-cta">
 			<div class="adpt-icon">
 				<?php echo Filter::svg(get_theme_mod('fp_cta_1_icon')); ?>
