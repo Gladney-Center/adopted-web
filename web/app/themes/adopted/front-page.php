@@ -88,7 +88,7 @@ get_header(); ?>
 				<?php echo Filter::svg(get_theme_mod('fp_cta_1_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
-				<h4><?php echo get_theme_mod('fp_cta_1_title'); ?></h4>
+				<h5><?php echo get_theme_mod('fp_cta_1_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_1_text'); ?></p>
 			</div>
 		</div>
@@ -97,7 +97,7 @@ get_header(); ?>
 				<?php echo Filter::svg(get_theme_mod('fp_cta_2_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
-				<h4><?php echo get_theme_mod('fp_cta_2_title'); ?></h4>
+				<h5><?php echo get_theme_mod('fp_cta_2_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_2_text'); ?></p>
 			</div>
 		</div>
@@ -106,7 +106,7 @@ get_header(); ?>
 				<?php echo Filter::svg(get_theme_mod('fp_cta_3_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
-				<h4><?php echo get_theme_mod('fp_cta_3_title'); ?></h4>
+				<h5><?php echo get_theme_mod('fp_cta_3_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_3_text'); ?></p>
 			</div>
 		</div>
