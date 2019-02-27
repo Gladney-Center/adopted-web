@@ -89,7 +89,7 @@ get_header(); ?>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner has-2-columns">
 		<div class="adpt-panel">
-		<?php echo get_theme_mod('fp_panel_block_1_left_img'); ?>
+		<!-- <?php echo get_theme_mod('fp_panel_block_1_left_img'); ?> -->
 			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/pregnant-opt1.png" alt="AdoptED pregnant section background photo" class="wp-image-991"></figure>
 			<div class="adpt-panel-overlay">
 				<div class="adpt-panel-topright">
