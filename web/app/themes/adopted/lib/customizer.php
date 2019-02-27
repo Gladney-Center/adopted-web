@@ -43,6 +43,12 @@ class Customizer {
 					'description' => 'The first set of large square panel blocks on the front page',
 					'priority' => 30,
 					'panel'  => 'front_page'
+				],
+				'panel_block_2' => [
+					'title' => 'Panel Blocks 2',
+					'description' => 'The second set of large square panel blocks on the front page',
+					'priority' => 50,
+					'panel'  => 'front_page'
 				]
 			],
 			'settings' => [
@@ -55,7 +61,15 @@ class Customizer {
 				'fp_panel_block_1_right_title',
 				'fp_panel_block_1_right_copy',
 				'fp_panel_block_1_right_img',
-				'fp_panel_block_1_right_link'
+				'fp_panel_block_1_right_link',
+				'fp_panel_block_2_left_title',
+				'fp_panel_block_2_left_copy',
+				'fp_panel_block_2_left_img',
+				'fp_panel_block_2_left_link',
+				'fp_panel_block_2_right_title',
+				'fp_panel_block_2_right_copy',
+				'fp_panel_block_2_right_img',
+				'fp_panel_block_2_right_link'
 			],
 			'controls' => [
 				'fp_stage_heading' => [
@@ -144,6 +158,76 @@ class Customizer {
 						'section' => 'panel_block_1',
 						'type' => 'textarea',
 						'settings' => 'fp_panel_block_1_right_copy'
+					]
+				],
+				'fp_panel_block_2_left_title' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Left Block Title',
+						'section' => 'panel_block_2',
+						'settings' => 'fp_panel_block_2_left_title'
+					]
+				],
+				'fp_panel_block_2_left_img' => [
+					'class' => '\\WP_Customize_Media_Control',
+					'arr' => [
+						'label' => 'Left Block Image',
+						'section' => 'panel_block_2',
+						'settings' => 'fp_panel_block_2_left_img',
+						'mime_type' => 'image'
+					]
+				],
+				'fp_panel_block_2_left_link' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Left Block Page Link',
+						'section' => 'panel_block_2',
+						'type' => 'dropdown-pages',
+						'settings' => 'fp_panel_block_2_left_link'
+					]
+				],
+				'fp_panel_block_2_left_copy' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Left Block Copy',
+						'section' => 'panel_block_2',
+						'type' => 'textarea',
+						'settings' => 'fp_panel_block_2_left_copy'
+					]
+				],
+				'fp_panel_block_2_right_title' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Right Block Title',
+						'section' => 'panel_block_2',
+						'settings' => 'fp_panel_block_2_right_title'
+					]
+				],
+				'fp_panel_block_2_right_img' => [
+					'class' => '\\WP_Customize_Media_Control',
+					'arr' => [
+						'label' => 'Right Block Image',
+						'section' => 'panel_block_2',
+						'settings' => 'fp_panel_block_2_right_img',
+						'mime_type' => 'image'
+					]
+				],
+				'fp_panel_block_2_right_link' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Right Block Page Link',
+						'section' => 'panel_block_2',
+						'type' => 'dropdown-pages',
+						'settings' => 'fp_panel_block_2_right_link'
+					]
+				],
+				'fp_panel_block_2_right_copy' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Right Block Copy',
+						'section' => 'panel_block_2',
+						'type' => 'textarea',
+						'settings' => 'fp_panel_block_2_right_copy'
 					]
 				]
 			]

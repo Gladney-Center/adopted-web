@@ -103,8 +103,14 @@ get_header(); ?>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner has-2-columns">
 		<div class="adpt-panel">
-		<!-- <?php echo get_theme_mod(); ?> -->
-			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/pregnant-opt1.png" alt="AdoptED pregnant section background photo" class="wp-image-991"></figure>
+			<figure class="wp-block-image">
+				<?php echo wp_get_attachment_image(
+					get_theme_mod('fp_panel_block_2_left_img'),
+					'full',
+					'',
+					['class' => 'w-constrained']
+				); ?>
+			</figure>
 			<div class="adpt-panel-overlay">
 				<div class="adpt-panel-topright">
 					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
@@ -117,7 +123,14 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="adpt-panel">
-			<figure class="wp-block-image"><img src="https://dev.adoption-education.com/app/uploads/2019/02/adopt-opt1.png" alt="AdoptED adoption section background photo" class="wp-image-992"></figure>
+			<figure class="wp-block-image">
+				<?php echo wp_get_attachment_image(
+					get_theme_mod('fp_panel_block_2_right_img'),
+					'full',
+					'',
+					['class' => 'w-constrained']
+				); ?>
+			</figure>
 			<div class="adpt-panel-overlay">
 				<div class="adpt-panel-topright">
 					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
