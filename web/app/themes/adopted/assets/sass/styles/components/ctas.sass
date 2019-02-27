@@ -2,21 +2,13 @@
 	min-height: 10em
 
 	.adpt-ctas-inner
-		display: flex
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
 		+body-max-width
 
-		.wp-block-column
+		.adpt-cta
+			grid-column-gap: 1em
 			background-color: $taupe
-			min-height: 10em
-			margin: 0 $teeny
-
-			&:first-of-type
-				margin-right: $teeny
-				margin-left: 0
-
-			&:last-of-type
-				margin-left: $teeny
-				margin-right: 0
 
 			.adpt-icon
 				padding: 25%
