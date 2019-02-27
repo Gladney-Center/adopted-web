@@ -117,8 +117,8 @@ get_header(); ?>
 					<span class="adpt-panel-vert">Learn More</span>
 				</div>
 				<div class="adpt-panel-info">
-					<h4>pregnant?</h4>
-					<p>An unplanned pregnancy changes everything. Your body. Your relationships. Your plans. But Gladney wants you to know: Good things can come from this.</p>
+					<h4><?php echo get_theme_mod('fp_panel_block_2_left_title'); ?></h4>
+					<p><?php echo get_theme_mod('fp_panel_block_2_left_copy'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -137,8 +137,8 @@ get_header(); ?>
 					<span class="adpt-panel-vert">Learn More</span>
 				</div>
 				<div class="adpt-panel-info">
-					<h4>i want to adopt</h4>
-					<p>Take a deep breath and consider your options. Take it from us: This child is worth it.</p>
+					<h4><?php echo get_theme_mod('fp_panel_block_2_right_title'); ?></h4>
+					<p><?php echo get_theme_mod('fp_panel_block_2_right_copy'); ?></p>
 				</div>
 			</div>
 		</div>
