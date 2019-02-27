@@ -85,7 +85,7 @@ class Customizer {
 					]
 				],
 				'fp_panel_block_1_left_img' => [
-					'class' => '\\WP_Customize_Upload_Control',
+					'class' => '\\WP_Customize_Media_Control',
 					'arr' => [
 						'label' => 'Left Block Image',
 						'section' => 'panel_block_1',
@@ -120,7 +120,7 @@ class Customizer {
 					]
 				],
 				'fp_panel_block_1_right_img' => [
-					'class' => '\\WP_Customize_Upload_Control',
+					'class' => '\\WP_Customize_Media_Control',
 					'arr' => [
 						'label' => 'Right Block Image',
 						'section' => 'panel_block_1',
