@@ -44,6 +44,12 @@ class Customizer {
 					'priority' => 30,
 					'panel'  => 'front_page'
 				],
+				'fp_ctas' => [
+					'title' => 'Call to Action Boxes',
+					'description' => 'Gray box / vector icon calls to action',
+					'priority' => 40,
+					'panel'  => 'front_page'
+				],
 				'panel_block_2' => [
 					'title' => 'Panel Blocks 2',
 					'description' => 'The second set of large square panel blocks on the front page',
@@ -62,6 +68,15 @@ class Customizer {
 				'fp_panel_block_1_right_copy',
 				'fp_panel_block_1_right_img',
 				'fp_panel_block_1_right_link',
+				'fp_cta_1_icon',
+				'fp_cta_1_title',
+				'fp_cta_1_text',
+				'fp_cta_2_icon',
+				'fp_cta_2_title',
+				'fp_cta_2_text',
+				'fp_cta_3_icon',
+				'fp_cta_3_title',
+				'fp_cta_3_text',
 				'fp_panel_block_2_left_title',
 				'fp_panel_block_2_left_copy',
 				'fp_panel_block_2_left_img',
@@ -160,12 +175,37 @@ class Customizer {
 						'settings' => 'fp_panel_block_1_right_copy'
 					]
 				],
+				'fp_cta_1_icon' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 1 Icon',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_1_icon'
+					]
+				],
+				'fp_cta_1_title' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 1 Title',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_1_title'
+					]
+				],
+				'fp_cta_1_text' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 1 Text',
+						'section' => 'fp_ctas',
+						'type' => 'textarea',
+						'settings' => 'fp_cta_1_text'
+					]
+				],
 				'fp_panel_block_2_left_title' => [
 					'class' => '\\WP_Customize_Control',
 					'arr' => [
 						'label' => 'Left Block Title',
 						'section' => 'panel_block_2',
-						'settings' => 'fp_panel_block_2_left_title'
+						'settings' => 'fp_cta_1_icon'
 					]
 				],
 				'fp_panel_block_2_left_img' => [
