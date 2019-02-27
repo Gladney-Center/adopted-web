@@ -91,13 +91,11 @@ get_header(); ?>
 		<div class="wp-block-column">
 			<div class="adpt-icon">
 				<?php echo Filter::svg(get_theme_mod('fp_cta_2_icon')); ?>
-				<?php echo Filter::svg('<adpt-icon:videoblock>'); ?>
 			</div>
 		</div>
 		<div class="wp-block-column">
 			<div class="adpt-icon">
 				<?php echo Filter::svg(get_theme_mod('fp_cta_3_icon')); ?>
-				<?php echo Filter::svg('<adpt-icon:handsicon>'); ?>
 			</div>
 		</div>
 	</div>
