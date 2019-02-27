@@ -85,16 +85,18 @@ get_header(); ?>
 	<div class="adpt-ctas-inner wp-block-columns has-3-columns">
 		<div class="wp-block-column">
 			<div class="adpt-icon">
-				<?php echo Filter::svg('<adpt-icon:questionblock>'); ?>
+				<?php echo Filter::svg(get_theme_mod('fp_cta_1_icon')); ?>
 			</div>
 		</div>
 		<div class="wp-block-column">
 			<div class="adpt-icon">
+				<?php echo Filter::svg(get_theme_mod('fp_cta_2_icon')); ?>
 				<?php echo Filter::svg('<adpt-icon:videoblock>'); ?>
 			</div>
 		</div>
 		<div class="wp-block-column">
 			<div class="adpt-icon">
+				<?php echo Filter::svg(get_theme_mod('fp_cta_3_icon')); ?>
 				<?php echo Filter::svg('<adpt-icon:handsicon>'); ?>
 			</div>
 		</div>

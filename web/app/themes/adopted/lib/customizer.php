@@ -15,7 +15,7 @@ class Customizer {
 	public static function header($wp_customize) {}
 
 	public static function front_page($wp_customize) {
-		$data = [
+		self::add([
 			'panels' => [
 				'front_page' => [
 					'title' => 'Front Page',
@@ -200,6 +200,56 @@ class Customizer {
 						'settings' => 'fp_cta_1_text'
 					]
 				],
+				'fp_cta_2_icon' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 2 Icon',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_2_icon'
+					]
+				],
+				'fp_cta_2_title' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 2 Title',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_2_title'
+					]
+				],
+				'fp_cta_2_text' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 2 Text',
+						'section' => 'fp_ctas',
+						'type' => 'textarea',
+						'settings' => 'fp_cta_2_text'
+					]
+				],
+				'fp_cta_3_icon' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 3 Icon',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_3_icon'
+					]
+				],
+				'fp_cta_3_title' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 3 Title',
+						'section' => 'fp_ctas',
+						'settings' => 'fp_cta_3_title'
+					]
+				],
+				'fp_cta_3_text' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'CTA 3 Text',
+						'section' => 'fp_ctas',
+						'type' => 'textarea',
+						'settings' => 'fp_cta_3_text'
+					]
+				],
 				'fp_panel_block_2_left_title' => [
 					'class' => '\\WP_Customize_Control',
 					'arr' => [
@@ -271,21 +321,12 @@ class Customizer {
 					]
 				]
 			]
-		];
-
-		foreach ($data['panels'] as $panelid => $panelv)
-			$wp_customize->add_panel( $panelid, $panelv );
-		foreach ($data['sections'] as $secid => $secv)
-			$wp_customize->add_section( $secid, $secv );
-		foreach ($data['settings'] as $settingid)
-			$wp_customize->add_setting( $settingid );
-		foreach ($data['controls'] as $controlid => $control)
-			$wp_customize->add_control( new $control['class']($wp_customize,$controlid,$control['arr']) );
+		], $wp_customize );
 	}
 
 	public static function footer($wp_customize) {
 
-		$data = [
+		self::add([
 			'sections' => [
 				'footer_block_1' => [
 					'title' => 'Footer Block 1',
@@ -389,13 +430,26 @@ class Customizer {
 					]
 				]
 			]
-		];
+		], $wp_customize );
+	}
 
-		foreach ($data['sections'] as $secid => $secv)
-			$wp_customize->add_section( $secid, $secv );
-		foreach ($data['settings'] as $settingid)
-			$wp_customize->add_setting( $settingid );
-		foreach ($data['controls'] as $controlid => $control)
-			$wp_customize->add_control( new $control['class']($wp_customize,$controlid,$control['arr']) );
+	private static function add( $data, $wp_customize ) {
+		if (isset($data['panels']))
+			foreach ($data['panels'] as $panelid => $panelv)
+				$wp_customize->add_panel( $panelid, $panelv );
+
+		if (isset($data['sections']))
+			foreach ($data['sections'] as $secid => $secv)
+				$wp_customize->add_section( $secid, $secv );
+
+		if (isset($data['settings']))
+			foreach ($data['settings'] as $settingid)
+				$wp_customize->add_setting( $settingid );
+
+		if (isset($data['controls']))
+			foreach ($data['controls'] as $controlid => $control)
+				$wp_customize->add_control(
+					new $control['class']($wp_customize,$controlid,$control['arr'])
+				);
 	}
 }
