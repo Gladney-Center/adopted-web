@@ -22,7 +22,7 @@ class Customizer {
 					'capability'     => 'edit_theme_options',
 					'theme_supports' => '',
 					'description' => 'Edit content within the front page of this site',
-					'priority' => 90
+					'priority' => 101
 				]
 			],
 			'sections' => [
@@ -84,6 +84,15 @@ class Customizer {
 						'settings' => 'fp_panel_block_1_left_title'
 					]
 				],
+				'fp_panel_block_1_left_img' => [
+					'class' => '\\WP_Customize_Upload_Control',
+					'arr' => [
+						'label' => 'Left Block Image',
+						'section' => 'panel_block_1',
+						'settings' => 'fp_panel_block_1_left_img',
+						'mime_type' => 'image'
+					]
+				],
 				'fp_panel_block_1_left_link' => [
 					'class' => '\\WP_Customize_Control',
 					'arr' => [
@@ -108,6 +117,15 @@ class Customizer {
 						'label' => 'Right Block Title',
 						'section' => 'panel_block_1',
 						'settings' => 'fp_panel_block_1_right_title'
+					]
+				],
+				'fp_panel_block_1_right_img' => [
+					'class' => '\\WP_Customize_Upload_Control',
+					'arr' => [
+						'label' => 'Right Block Image',
+						'section' => 'panel_block_1',
+						'settings' => 'fp_panel_block_1_right_img',
+						'mime_type' => 'image'
 					]
 				],
 				'fp_panel_block_1_right_link' => [
