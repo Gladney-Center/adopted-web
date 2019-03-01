@@ -121,6 +121,9 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+<section class="adpt-sms-facts">
+	<div class="adpt-sms-inner"></div>
+</section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner has-2-columns">
 		<div class="adpt-panel">
