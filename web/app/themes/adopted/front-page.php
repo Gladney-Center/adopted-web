@@ -123,7 +123,9 @@ get_header(); ?>
 </section>
 <section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
-		M
+		<div class="adpt-sms-aqua-box">
+			M
+		</div>
 	</div>
 </section>
 <section class="adpt-panel-block">
