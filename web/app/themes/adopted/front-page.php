@@ -91,6 +91,9 @@ get_header(); ?>
 				<h5><?php echo get_theme_mod('fp_cta_1_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_1_text'); ?></p>
 			</div>
+			<div class="adpt-cta-more">
+				<a class="btn" href="#">More</a>
+			</div>
 		</div>
 		<div class="adpt-cta">
 			<div class="adpt-icon">
@@ -100,6 +103,9 @@ get_header(); ?>
 				<h5><?php echo get_theme_mod('fp_cta_2_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_2_text'); ?></p>
 			</div>
+			<div class="adpt-cta-more">
+				<a class="btn" href="#">More</a>
+			</div>
 		</div>
 		<div class="adpt-cta">
 			<div class="adpt-icon">
@@ -108,6 +114,9 @@ get_header(); ?>
 			<div class="adpt-cta-text">
 				<h5><?php echo get_theme_mod('fp_cta_3_title'); ?></h5>
 				<p><?php echo get_theme_mod('fp_cta_3_text'); ?></p>
+			</div>
+			<div class="adpt-cta-more">
+				<a class="btn" href="#">More</a>
 			</div>
 		</div>
 	</div>
