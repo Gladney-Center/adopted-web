@@ -127,6 +127,7 @@ get_header(); ?>
 			<div class="adpt-sms-arrow teal-bg"><?php echo Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span class="sms">18% of women at risk</span>
+				<span class="send">18% of women at risk</span>
 			</div>
 		</div>
 	</div>
