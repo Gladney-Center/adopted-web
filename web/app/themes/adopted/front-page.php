@@ -124,7 +124,10 @@ get_header(); ?>
 <section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
-			M
+			<div class="adpt-sms-arrow">></div>
+			<div class="adpt-sms-text">
+				<span class="sms">18% of women at risk</span>
+			</div>
 		</div>
 	</div>
 </section>
