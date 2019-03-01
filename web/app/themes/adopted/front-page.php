@@ -124,7 +124,7 @@ get_header(); ?>
 <section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
-			<div class="adpt-sms-arrow">></div>
+			<div class="adpt-sms-arrow"><?php echo Filter::svg('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span class="sms">18% of women at risk</span>
 			</div>
