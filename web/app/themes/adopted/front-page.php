@@ -124,10 +124,10 @@ get_header(); ?>
 <section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
-			<div class="adpt-sms-arrow teal-bg"><?php echo Filter::fa('<fa:angle-right>'); ?></div>
+			<div class="adpt-sms-arrow teal-bg">&rsaquo;<?php //echo Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span class="sms">18% of women at risk</span>
-				<span class="send">18% of women at risk</span>
+				<span class="send">&uarr;</span>
 			</div>
 		</div>
 	</div>
