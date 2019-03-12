@@ -1,7 +1,5 @@
 <?php
 
-namespace AdoptED;
-
 global $post;
 $meta = get_post_meta($post->ID);
 
@@ -17,7 +15,7 @@ get_header(); ?>
 		</div>
 		<div class="wp-block-column">
 			<figure class="wp-block-image">
-				<img src="https://dev.adoption-education.com/app/uploads/2019/02/gabby-pregnant-thtbub.png" alt="Gabby is pregnant" class="wp-image-936">
+			<?php echo \AdoptED\Filter::svg('<adpt-icon:gabbyanim>'); ?>
 			</figure>
 		</div>
 	</div>
@@ -44,7 +42,7 @@ get_header(); ?>
 				</figure>
 				<div class="adpt-panel-overlay">
 					<div class="adpt-panel-topright">
-						<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+						<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
 						<span class="adpt-panel-vert">Learn More</span>
 					</div>
 					<div class="adpt-panel-info">
@@ -66,7 +64,7 @@ get_header(); ?>
 				</figure>
 				<div class="adpt-panel-overlay">
 					<div class="adpt-panel-topright">
-						<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+						<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
 						<span class="adpt-panel-vert">Learn More</span>
 					</div>
 					<div class="adpt-panel-info">
@@ -85,7 +83,7 @@ get_header(); ?>
 	<div class="adpt-ctas-inner">
 		<div class="adpt-cta">
 			<div class="adpt-icon">
-				<?php echo Filter::svg(get_theme_mod('fp_cta_1_icon')); ?>
+				<?php echo \AdoptED\Filter::svg(get_theme_mod('fp_cta_1_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
 				<h5><?php echo get_theme_mod('fp_cta_1_title'); ?></h5>
@@ -97,7 +95,7 @@ get_header(); ?>
 		</div>
 		<div class="adpt-cta">
 			<div class="adpt-icon">
-				<?php echo Filter::svg(get_theme_mod('fp_cta_2_icon')); ?>
+				<?php echo \AdoptED\Filter::svg(get_theme_mod('fp_cta_2_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
 				<h5><?php echo get_theme_mod('fp_cta_2_title'); ?></h5>
@@ -109,7 +107,7 @@ get_header(); ?>
 		</div>
 		<div class="adpt-cta">
 			<div class="adpt-icon">
-				<?php echo Filter::svg(get_theme_mod('fp_cta_3_icon')); ?>
+				<?php echo \AdoptED\Filter::svg(get_theme_mod('fp_cta_3_icon')); ?>
 			</div>
 			<div class="adpt-cta-text">
 				<h5><?php echo get_theme_mod('fp_cta_3_title'); ?></h5>
@@ -124,10 +122,10 @@ get_header(); ?>
 <section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
-			<div class="adpt-sms-arrow teal-bg"><?php echo Filter::fa('<fa:angle-right>'); ?></div>
+			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span class="sms">18% of women at risk</span>
-				<span class="send"><?php echo Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
+				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
 		</div>
 	</div>
@@ -145,7 +143,7 @@ get_header(); ?>
 			</figure>
 			<div class="adpt-panel-overlay">
 				<div class="adpt-panel-topright">
-					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+					<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
 					<span class="adpt-panel-vert">Learn More</span>
 				</div>
 				<div class="adpt-panel-info">
@@ -165,7 +163,7 @@ get_header(); ?>
 			</figure>
 			<div class="adpt-panel-overlay">
 				<div class="adpt-panel-topright">
-					<?php echo Filter::svg('<adpt-icon:rightarrow>'); ?>
+					<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
 					<span class="adpt-panel-vert">Learn More</span>
 				</div>
 				<div class="adpt-panel-info">
