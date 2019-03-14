@@ -27,4 +27,7 @@
 // ANIMATION //
 @mixin animator($anim: fadein,$time: null,$trans: null,$delay: null,$fill-mode: null)
 	-webkit-animation: $anim $time $trans $delay $fill-mode
+	-moz-animation: $anim $time $trans $delay $fill-mode
+	-ms-animation: $anim $time $trans $delay $fill-mode
+	-o-animation: $anim $time $trans $delay $fill-mode
 	animation: $anim $time $trans $delay $fill-mode
