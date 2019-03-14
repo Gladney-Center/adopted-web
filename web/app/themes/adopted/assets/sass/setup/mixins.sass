@@ -1,3 +1,4 @@
+// BOX SHADOW //
 @mixin z-depth-1
 	box-shadow: 0 2px 2px 0 black(.05), 0 3px 1px -2px black(.05), 0 1px 5px 0 black(.05)
 
@@ -17,15 +18,27 @@
 	width: 100%
 	padding: 0 $huge
 
+// BODY SIZING & LAYOUT //
 @mixin body-max-width
 	width: 100%
 	max-width: $bodyw
 	margin: 0 auto
 	padding: 0 $huge
 
-
 // ANIMATION //
-@mixin animator($anim: fadein,$time: 1s,$trans: linear,$delay: 0s,$loop: 1,$fill-mode: forwards)
+@mixin keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@-o-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+@mixin animator($anim: fadein,$time: null,$trans: null,$delay: null,$loop: null,$fill-mode: forwards)
 	-webkit-animation: $anim $time $trans $delay $loop $fill-mode
 	-moz-animation: $anim $time $trans $delay $loop $fill-mode
 	-ms-animation: $anim $time $trans $delay $loop $fill-mode
