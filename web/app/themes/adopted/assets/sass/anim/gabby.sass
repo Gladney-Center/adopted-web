@@ -2,7 +2,11 @@ svg.gabby
 	display: block
 
 	ellipse.belly.bounce
-		+animator(bellybounce, 3s, ease-in-out)
+		+animator(bellybounce, 1s, ease-in-out)
+
+	g.belly-emphasis
+		opacity: 0
+		+animator(fadein, .1s, ease-in-out, .5s)
 
 	path.mouth
 		+animator(smilefrown, .05s, ease-in-out, 1.5s)
