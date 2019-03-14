@@ -22,3 +22,9 @@
 	max-width: $bodyw
 	margin: 0 auto
 	padding: 0 $huge
+
+
+// ANIMATION //
+@mixin animator($anim: fadein,$time: null,$trans: null,$delay: null,$fill-mode: null)
+	-webkit-animation: $anim $time $trans $delay $fill-mode
+	animation: $anim $time $trans $delay $fill-mode
