@@ -20,7 +20,7 @@ class Post_Types {
                 'description'			=>	'AdoptED pregnancy statistics',
                 'menu_position'			=>	55,
                 'menu_icon'				=>  'dashicons-chart-line',
-                'public'				=>	false,
+                'public'				=>	true,
                 'hierarchical'			=>	false,
                 'exclude_from_search'	=>	true,
                 'show_in_nav_menus'		=>	false,
