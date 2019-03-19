@@ -1168,7 +1168,8 @@ body[class^="adpt-"] .wp-block-columns {
       display: flex;
       align-items: center; }
       .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms {
-        flex: 1; }
+        flex: 1;
+        display: flex; }
         .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div {
           display: inline-block; }
           .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 {
@@ -1177,6 +1178,7 @@ body[class^="adpt-"] .wp-block-columns {
             font-weight: normal;
             overflow: hidden;
             white-space: nowrap;
+            margin-right: .1em;
             border-right: 0.1em solid rgba(0, 0, 0, 0.8);
             -webkit-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
             -moz-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
