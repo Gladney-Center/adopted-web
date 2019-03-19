@@ -124,11 +124,17 @@ get_header(); ?>
 		<div class="adpt-sms-aqua-box">
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
-				<span class="sms">18% of women at risk</span>
+				<span id="adpt_sms" class="sms"></span>
 				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
 		</div>
 	</div>
+	<script>
+		var smsEl = document.getElementById('adpt_sms'),
+			counter = 0
+		
+		setInterval((el) => console.log(el),8000,smsEl)
+	</script>
 </section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner has-2-columns">
