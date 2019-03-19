@@ -41,13 +41,13 @@
 						animation: typer 5s steps(30,end) 1s,caret .5s step-end infinite
 
 						+keyframes(typer)
-							from
+							0%
 								width: 0%
-							to
+							100%
 								width: 100%
 
 						+keyframes(caret)
-							from, to
+							0%, 100%
 								border-color: transparent
 							50%
 								border-color: black(.8)
