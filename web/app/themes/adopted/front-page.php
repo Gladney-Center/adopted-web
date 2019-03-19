@@ -129,14 +129,16 @@ get_header(); ?>
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span id="adpt_sms" class="sms">
-					<h5><?php echo $stats[0]->post_content; ?></h5>
+					<span id="sms-inner">
+						<h5><?php echo $stats[0]->post_content; ?></h5>
+					</span>
 				</span>
 				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
 		</div>
 	</div>
 	<script>
-		var smsEl = document.getElementById('adpt_sms'),
+		var smsEl = document.getElementById('sms-inner'),
 			counter = 1,
 			stats = [<?php
 				$statsarr = [];
