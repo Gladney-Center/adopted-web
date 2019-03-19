@@ -146,11 +146,8 @@ get_header(); ?>
 			?>]
 		
 		setInterval(function(el) {
-			let last = Math.max(stats.length-1,0),
-				span = document.createElement('span',{'class':'typer'})
-			
-			span.innerHtml = stats[counter]
-			el.innerHtml = span
+			let last = Math.max(stats.length-1,0)
+			el.innerHTML = '<span class="typer">'+stats[counter]+'</span>'
 			return counter = (counter === last) ? 0 : counter++
 		},8000,smsEl)
 	</script>
