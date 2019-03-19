@@ -31,29 +31,33 @@
 				div.sms
 					flex: 1
 
-					h5
-						font-size: 1rem
-						font-family: $font-stack
-						overflow: hidden
-						white-space: nowrap
-						border-right: .1em solid black(.8)
-						-webkit-animation: typing 5s steps(50,end),caret .5s step-end infinite
-						-moz-animation: typing 5s steps(50,end),caret .5s step-end infinite
-						-ms-animation: typing 5s steps(50,end),caret .5s step-end infinite
-						-o-animation: typing 5s steps(50,end),caret .5s step-end infinite
-						animation: typing 5s steps(50,end),caret .5s step-end infinite
+					& > div
+						display: inline-block
 
-						+keyframes(typing)
-							0%
-								width: 0
-							100%
-								width: 100%
+						h5
+							font-size: $intsize
+							font-family: $font-stack
+							font-weight: normal
+							overflow: hidden
+							white-space: nowrap
+							border-right: .1em solid black(.8)
+							-webkit-animation: typing 5s steps(50,end),caret .5s step-end infinite
+							-moz-animation: typing 5s steps(50,end),caret .5s step-end infinite
+							-ms-animation: typing 5s steps(50,end),caret .5s step-end infinite
+							-o-animation: typing 5s steps(50,end),caret .5s step-end infinite
+							animation: typing 5s steps(50,end),caret .5s step-end infinite
 
-						+keyframes(caret)
-							0%, 100%
-								border-color: transparent
-							50%
-								border-color: black(.8)
+							+keyframes(typing)
+								0%
+									width: 0
+								100%
+									width: 100%
+
+							+keyframes(caret)
+								0%, 100%
+									border-color: transparent
+								50%
+									border-color: black(.8)
 
 				div.send
 					color: $white

@@ -1169,17 +1169,20 @@ body[class^="adpt-"] .wp-block-columns {
       align-items: center; }
       .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms {
         flex: 1; }
-        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 {
-          font-size: 1rem;
-          font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 0.1em solid rgba(0, 0, 0, 0.8);
-          -webkit-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
-          -moz-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
-          -ms-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
-          -o-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
-          animation: typing 5s steps(50, end), caret 0.5s step-end infinite; }
+        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div {
+          display: inline-block; }
+          .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 {
+            font-size: 19px;
+            font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.1em solid rgba(0, 0, 0, 0.8);
+            -webkit-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+            -moz-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+            -ms-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+            -o-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+            animation: typing 5s steps(50, end), caret 0.5s step-end infinite; }
 
 @-webkit-keyframes typing {
   0% {
@@ -1194,9 +1197,9 @@ body[class^="adpt-"] .wp-block-columns {
     width: 100%; } }
 
 @-ms-keyframes typing {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 0% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0% {
     width: 0; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100% {
     width: 100%; } }
 
 @-o-keyframes typing {
@@ -1224,9 +1227,9 @@ body[class^="adpt-"] .wp-block-columns {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-ms-keyframes caret {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100% {
     border-color: transparent; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 50% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 50% {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-o-keyframes caret {
