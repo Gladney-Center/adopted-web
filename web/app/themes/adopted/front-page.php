@@ -123,15 +123,13 @@ get_header(); ?>
 		'post_type' => 'stats',
 		'posts_per_page' => -1
 	]);
-	foreach ($stats as $stat)
-		print_r($stat->post_content);
 ?><section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span id="adpt_sms" class="sms">
-					<span class="typer"></span>
+					<span class="typer"><?php echo $stats[0]->post_content; ?></span>
 				</span>
 				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
@@ -140,7 +138,12 @@ get_header(); ?>
 	<script>
 		var smsEl = document.getElementById('adpt_sms'),
 			counter = 1,
-			stats = []
+			stats = [<?php
+				$statsarr = [];
+				foreach ($stats as $stat)
+					$statsarr[] = $stat->post_content;
+				echo implode(',',$statsarr);
+			?>]
 		
 		setInterval(function(el) {
 			let last = Math.max(stats.length-1,0),
