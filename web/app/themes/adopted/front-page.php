@@ -118,22 +118,38 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</section>
-<section class="adpt-sms-facts">
+</section><?php
+	$stats = get_posts([
+		'post_type' => 'stats',
+		'posts_per_page' => -1,
+		'fields' => ['post_content']
+	]);
+	print_r($stats);
+?><section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
-				<span id="adpt_sms" class="sms"></span>
+				<span id="adpt_sms" class="sms">
+					<span class="typer"></span>
+				</span>
 				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
 		</div>
 	</div>
 	<script>
 		var smsEl = document.getElementById('adpt_sms'),
-			counter = 0
+			counter = 1,
+			stats = []
 		
-		setInterval((el) => console.log(el),8000,smsEl)
+		setInterval(function(el) {
+			let last = Math.max(stats.length-1,0),
+				span = document.createElement('span',{'class':'typer'})
+			
+			span.innerHtml = stats[counter]
+			el.innerHtml = span
+			return counter = (counter === last) ? 0 : counter++
+		},8000,smsEl)
 	</script>
 </section>
 <section class="adpt-panel-block">
