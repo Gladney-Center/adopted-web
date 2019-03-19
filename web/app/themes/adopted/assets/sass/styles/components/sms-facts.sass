@@ -1,5 +1,8 @@
 .adpt-sms-facts
 
+	strong
+		font-weight: bold
+
 	.adpt-sms-inner
 		border-radius: $ittybitty
 		+body-max-width
@@ -27,6 +30,13 @@
 
 				span.sms
 					flex: 1
+
+					.typer
+						-webkit-animation: typer 5s steps(30,end),caret .5s ease-in-out 0s step-end infinite
+						-moz-animation: typer 5s steps(30,end),caret .5s ease-in-out 0s step-end infinite
+						-ms-animation: typer 5s steps(30,end),caret .5s ease-in-out 0s step-end infinite
+						-o-animation: typer 5s steps(30,end),caret .5s ease-in-out 0s step-end infinite
+						animation: typer 5s steps(30,end),caret .5s ease-in-out 0s step-end infinite
 
 				span.send
 					color: $white
