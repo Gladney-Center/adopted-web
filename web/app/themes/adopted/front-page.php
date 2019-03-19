@@ -129,7 +129,7 @@ get_header(); ?>
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
 				<span id="adpt_sms" class="sms">
-					<span class="typer"><?php echo $stats[0]->post_content; ?></span>
+					<div class="typer"><?php echo $stats[0]->post_content; ?></div>
 				</span>
 				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
 			</div>
@@ -147,7 +147,7 @@ get_header(); ?>
 		
 		setInterval(function(el) {
 			let last = Math.max(stats.length-1,0)
-			el.innerHTML = '<span class="typer">'+stats[counter]+'</span>'
+			el.innerHTML = '<div class="typer">'+stats[counter]+'</div>'
 			return (counter === last) ? counter = 0 : counter++
 		},10000,smsEl)
 	</script>
