@@ -128,12 +128,12 @@ get_header(); ?>
 		<div class="adpt-sms-aqua-box">
 			<div class="adpt-sms-arrow teal-bg"><?php echo \AdoptED\Filter::fa('<fa:angle-right>'); ?></div>
 			<div class="adpt-sms-text">
-				<span id="adpt_sms" class="sms">
-					<span id="sms-inner">
+				<div id="adpt_sms" class="sms">
+					<div id="sms-inner">
 						<h5><?php echo $stats[0]->post_content; ?></h5>
-					</span>
-				</span>
-				<span class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></span>
+					</div>
+				</div>
+				<div class="send"><?php echo \AdoptED\Filter::fa('<fa:long-arrow-alt-up>'); ?></div>
 			</div>
 		</div>
 	</div>

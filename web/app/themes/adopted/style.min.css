@@ -700,7 +700,7 @@ table {
 .teal {
   color: #67c8c7; }
 
-.teal-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.send {
+.teal-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send {
   background-color: #67c8c7; }
 
 .teal-fill {
@@ -1167,18 +1167,19 @@ body[class^="adpt-"] .wp-block-columns {
       border-radius: 1em;
       display: flex;
       align-items: center; }
-      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms {
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms {
         flex: 1; }
-        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 {
+        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 {
           font-size: 1rem;
           font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
           overflow: hidden;
+          white-space: nowrap;
           border-right: 0.1em solid rgba(0, 0, 0, 0.8);
-          -webkit-animation: typing 5s steps(30, end), caret 0.5s step-end infinite;
-          -moz-animation: typing 5s steps(30, end), caret 0.5s step-end infinite;
-          -ms-animation: typing 5s steps(30, end), caret 0.5s step-end infinite;
-          -o-animation: typing 5s steps(30, end), caret 0.5s step-end infinite;
-          animation: typing 5s steps(30, end), caret 0.5s step-end infinite; }
+          -webkit-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+          -moz-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+          -ms-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+          -o-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
+          animation: typing 5s steps(50, end), caret 0.5s step-end infinite; }
 
 @-webkit-keyframes typing {
   0% {
@@ -1193,9 +1194,9 @@ body[class^="adpt-"] .wp-block-columns {
     width: 100%; } }
 
 @-ms-keyframes typing {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 0% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 0% {
     width: 0; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 100% {
     width: 100%; } }
 
 @-o-keyframes typing {
@@ -1223,9 +1224,9 @@ body[class^="adpt-"] .wp-block-columns {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-ms-keyframes caret {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 100% {
     border-color: transparent; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms h5 50% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms h5 50% {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-o-keyframes caret {
@@ -1239,7 +1240,7 @@ body[class^="adpt-"] .wp-block-columns {
     border-color: transparent; }
   50% {
     border-color: rgba(0, 0, 0, 0.8); } }
-      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.send {
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send {
         color: #ffffff;
         padding: 0.125em 0.4em;
         border-radius: 50%; }
