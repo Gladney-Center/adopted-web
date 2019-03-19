@@ -121,10 +121,10 @@ get_header(); ?>
 </section><?php
 	$stats = get_posts([
 		'post_type' => 'stats',
-		'posts_per_page' => -1,
-		'fields' => ['post_content']
+		'posts_per_page' => -1
 	]);
-	print_r($stats);
+	foreach ($stats as $stat)
+		print_r($stat->post_content);
 ?><section class="adpt-sms-facts">
 	<div class="adpt-sms-inner">
 		<div class="adpt-sms-aqua-box">
