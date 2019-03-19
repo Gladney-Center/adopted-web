@@ -147,10 +147,9 @@ get_header(); ?>
 		
 		setInterval(function(el) {
 			let last = Math.max(stats.length-1,0)
-			console.log(last, counter)
 			el.innerHTML = '<span class="typer">'+stats[counter]+'</span>'
 			return (counter === last) ? counter = 0 : counter++
-		},8000,smsEl)
+		},10000,smsEl)
 	</script>
 </section>
 <section class="adpt-panel-block">
