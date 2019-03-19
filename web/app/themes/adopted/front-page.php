@@ -141,7 +141,7 @@ get_header(); ?>
 			stats = [<?php
 				$statsarr = [];
 				foreach ($stats as $stat)
-					$statsarr[] = $stat->post_content;
+					$statsarr[] = "'".$stat->post_content."'";
 				echo implode(',',$statsarr);
 			?>]
 		
