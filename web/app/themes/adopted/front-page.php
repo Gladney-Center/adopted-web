@@ -149,7 +149,7 @@ get_header(); ?>
 			let last = Math.max(stats.length-1,0)
 			console.log(last, counter)
 			el.innerHTML = '<span class="typer">'+stats[counter]+'</span>'
-			counter = (counter === last) ? 0 : counter++
+			(counter === last) ? counter = 0 : counter++
 		},8000,smsEl,counter,stats)
 	</script>
 </section>
