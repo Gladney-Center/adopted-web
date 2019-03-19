@@ -1172,6 +1172,7 @@ body[class^="adpt-"] .wp-block-columns {
         .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer {
           overflow: hidden;
           border-right: 0.1em solid rgba(0, 0, 0, 0.8);
+          width: 0%;
           -webkit-animation: typer 5s steps(30, end) 1s, caret 0.5s step-end infinite;
           -moz-animation: typer 5s steps(30, end) 1s, caret 0.5s step-end infinite;
           -ms-animation: typer 5s steps(30, end) 1s, caret 0.5s step-end infinite;
@@ -1209,34 +1210,44 @@ body[class^="adpt-"] .wp-block-columns {
     width: 100%; } }
 
 @-webkit-keyframes caret {
-  0%, 100% {
+  0% {
     border-color: transparent; }
   50% {
-    border-color: rgba(0, 0, 0, 0.8); } }
+    border-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    border-color: transparent; } }
 
 @-moz-keyframes caret {
-  0%, 100% {
+  0% {
     border-color: transparent; }
   50% {
-    border-color: rgba(0, 0, 0, 0.8); } }
+    border-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    border-color: transparent; } }
 
 @-ms-keyframes caret {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer 0% {
     border-color: transparent; }
   .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer 50% {
-    border-color: rgba(0, 0, 0, 0.8); } }
+    border-color: rgba(0, 0, 0, 0.8); }
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.sms .typer 100% {
+    border-color: transparent; } }
 
 @-o-keyframes caret {
-  0%, 100% {
+  0% {
     border-color: transparent; }
   50% {
-    border-color: rgba(0, 0, 0, 0.8); } }
+    border-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    border-color: transparent; } }
 
 @keyframes caret {
-  0%, 100% {
+  0% {
     border-color: transparent; }
   50% {
-    border-color: rgba(0, 0, 0, 0.8); } }
+    border-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    border-color: transparent; } }
       .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text span.send {
         color: #ffffff;
         padding: 0.125em 0.4em;
