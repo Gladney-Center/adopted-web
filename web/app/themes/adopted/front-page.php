@@ -145,12 +145,12 @@ get_header(); ?>
 				echo implode(',',$statsarr);
 			?>]
 		
-		setInterval(function(el, counter, stats) {
+		setInterval(function(el) {
 			let last = Math.max(stats.length-1,0)
 			console.log(last, counter)
 			el.innerHTML = '<span class="typer">'+stats[counter]+'</span>'
 			return (counter === last) ? counter = 0 : counter++
-		},8000,smsEl,counter,stats)
+		},8000,smsEl)
 	</script>
 </section>
 <section class="adpt-panel-block">
