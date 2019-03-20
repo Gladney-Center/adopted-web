@@ -1178,7 +1178,7 @@ body[class^="adpt-"] .wp-block-columns {
             font-weight: normal;
             overflow: hidden;
             white-space: nowrap;
-            padding-right: .1em;
+            padding-right: .15em;
             border-right: 0.1em solid rgba(0, 0, 0, 0.8);
             -webkit-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;
             -moz-animation: typing 5s steps(50, end), caret 0.5s step-end infinite;

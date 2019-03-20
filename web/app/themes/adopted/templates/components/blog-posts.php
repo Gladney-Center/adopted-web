@@ -7,6 +7,16 @@
 			</div>
 		</div>
 		<div class="adpt-post-blocks">
+		<?php
+			$HAPIkey = '32456ba8-4850-4027-8cd5-241c94bb255a';
+			$blogcache = get_transient('adpt_blog_cache');
+
+			if ($blogcache === false) {
+				$blogcache = wp_remote_get("https://api.hubapi.com/content/api/v2/blog-posts?hapikey=$HAPIkey&limit=3&state=PUBLISHED");
+				set_transient('adpt_blog_cache',$blogcache,WEEK_IN_SECONDS);
+			}
+			print_r($blogcache);
+		?>
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
 					<div class="view-post-link">
