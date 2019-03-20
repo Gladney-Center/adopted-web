@@ -15,7 +15,7 @@
 				$blogcache = wp_remote_get("https://api.hubapi.com/content/api/v2/blog-posts?hapikey=$HAPIkey&limit=3&state=PUBLISHED");
 				set_transient('adpt_blog_cache',$blogcache,WEEK_IN_SECONDS);
 			}
-			print_r($blogcache['body']);
+			print_r(json_decode($blogcache['body'], true));
 		?></pre>
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
