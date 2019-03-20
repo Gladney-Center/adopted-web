@@ -8,7 +8,7 @@
 		</div>
 		<div class="adpt-post-blocks">
 		<?php
-			$HAPIkey = '32456ba8-4850-4027-8cd5-241c94bb255a';
+			$HAPIkey = 'f09cae1b-d7b3-4ad8-88fb-1557f0870df4';
 			$blogcache = get_transient('adpt_blog_cache');
 
 			if ($blogcache === false) {
