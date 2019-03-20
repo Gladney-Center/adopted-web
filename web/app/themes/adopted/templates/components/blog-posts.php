@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="adpt-post-blocks">
-		<?php
+		<pre><?php
 			$HAPIkey = 'f09cae1b-d7b3-4ad8-88fb-1557f0870df4';
 			$blogcache = get_transient('adpt_blog_cache');
 
@@ -16,7 +16,7 @@
 				set_transient('adpt_blog_cache',$blogcache,WEEK_IN_SECONDS);
 			}
 			print_r($blogcache['body']);
-		?>
+		?></pre>
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
 					<div class="view-post-link">
