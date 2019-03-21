@@ -20,23 +20,21 @@
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
 					<div class="view-post-link">
-						<a href="#">View Post <i class="fas fa-long-arrow-alt-right"></i></a>
+						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
 					</div>
 				</div>
 			</div>
-			<div class="adpt-post-spacer">M</div>
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
 					<div class="view-post-link">
-						<a href="#">View Post <i class="fas fa-long-arrow-alt-right"></i></a>
+						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
 					</div>
 				</div>
 			</div>
-			<div class="adpt-post-spacer">M</div>
 			<div class="adpt-post-block">
 				<div class="adpt-post-block-inner">
 					<div class="view-post-link">
-						<a href="#">View Post <i class="fas fa-long-arrow-alt-right"></i></a>
+						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
 					</div>
 				</div>
 			</div>
