@@ -9,12 +9,12 @@ add_filter( 'body_class', function($classes) use ($meta) {
  
 get_header(); ?>
 <section class="adpt-stage">
-	<div class="wp-block-columns adpt-stage-inner">
-		<div class="wp-block-column">
+	<div class="adpt-stage-inner">
+		<div class="adpt-stage-column">
 			<h1><?php echo get_theme_mod('fp_stage_heading'); ?></h1>
 		</div>
-		<div class="wp-block-column">
-			<figure class="wp-block-image">
+		<div class="adpt-stage-column">
+			<figure class="adpt-block-anim">
 			<?php echo \AdoptED\Filter::svg('<adpt-icon:gabbyanim>'); ?>
 			</figure>
 		</div>

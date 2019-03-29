@@ -8,36 +8,26 @@
 		</div>
 		<div class="adpt-post-blocks">
 		<?php
-			$HAPIkey = 'f09cae1b-d7b3-4ad8-88fb-1557f0870df4';
+			$HAPIkey = HS_HAPI_KEY;
 			$blogcache = get_transient('adpt_blog_cache');
 
 			if ($blogcache === false) {
 				$blogcache = wp_remote_get("https://api.hubapi.com/content/api/v2/blog-posts?hapikey=$HAPIkey&limit=3&state=PUBLISHED");
 				set_transient('adpt_blog_cache',$blogcache,WEEK_IN_SECONDS);
 			}
-			//print_r(json_decode($blogcache['body'], true));
-		?>
-			<div class="adpt-post-block">
-				<div class="adpt-post-block-inner">
-					<div class="view-post-link">
-						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
-					</div>
+			$blog_body = json_decode($blogcache['body'], true);
+			//print_r($blog_body);
+
+			foreach ($blog_body['objects'] as $obj) : ?>
+				<div class="adpt-post-block">
+					<img class="w-constrained" src="<?php echo $obj['featured_image']; ?>"/>
+					<h5><?php echo $obj['html_title']; ?></h5>
+					<a class="view-post-link" target="_blank" href="<?php echo $obj['absolute_url']; ?>">
+						<span>View Post</span>
+						<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
+					</a>
 				</div>
-			</div>
-			<div class="adpt-post-block">
-				<div class="adpt-post-block-inner">
-					<div class="view-post-link">
-						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
-					</div>
-				</div>
-			</div>
-			<div class="adpt-post-block">
-				<div class="adpt-post-block-inner">
-					<div class="view-post-link">
-						<a href="#">View Post <?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?></a>
-					</div>
-				</div>
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </aside>

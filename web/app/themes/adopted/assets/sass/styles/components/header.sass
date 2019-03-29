@@ -6,6 +6,7 @@
 
 	.adpt-nav-dt
 		flex: 1
+		position: relative
 		height: 100%
 		padding: 1em 0
 		display: flex
@@ -19,7 +20,11 @@
 			padding-left: 1em
 			flex: 1
 
+			& > div
+				height: 100%
+
 			ul
+				height: 100%
 				font-weight: bold
 				color: $navy
 				display: flex
@@ -40,13 +45,17 @@
 							background-color: aecolor(#fff,.65)
 
 	.adpt-header-apps
+		position: relative
 		padding: $small 0
 		height: 100%
 		display: flex
-		justify-content: right
+		justify-content: flex-end
 
 		.adpt-app-link
+			position: relative
 			padding: 0 $teeny
+			width: auto
+			height: 100%
 
 			img
 				display: block

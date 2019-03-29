@@ -10,6 +10,25 @@ body.adpt-front-page
 	.adpt-stage
 		background-color: $sunrise
 
+		.adpt-stage-inner
+			display: flex
+			flex-wrap: nowrap
+			align-items: center
+
+			.adpt-stage-column
+				margin: 0
+				flex: 1
+				flex-basis: 100%
+
+				&:nth-child(odd)
+					margin-right: 1em
+
+				&:nth-child(even)
+					margin-left: 1em
+
+				figure
+					margin: 0
+
 		h1
 			opacity: 0
 			+animator(fadein, 2s, ease-in-out, 3s)

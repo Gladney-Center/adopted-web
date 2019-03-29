@@ -21,33 +21,37 @@
 
 		.adpt-post-blocks
 			width: 100%
-			display: flex
+			display: grid
+			grid-gap: 1em
+			grid-template-columns: repeat(3,1fr)
 
 			.adpt-post-block
-				flex: 1 1 100%
 				border-radius: $tiny
 				background-color: $periwinkle
 				position: relative
-				padding-top: 25%
+				padding: $huge $huge 0
 
-				.adpt-post-block-inner
-					position: absolute
-					top: 0
-					right: 0
-					bottom: 0
+				& > img
+					display: block
+
+				h5
+					margin-top: 1em
+					min-height: $huge
+					letter-spacing: initial
+
+				.view-post-link
+					display: flex
+					font-size: $bodytext
+					padding: $huge 0
+					color: white
+					text-transform: uppercase
+					height: 1em
 					width: 100%
-					padding: $huge $huge 0 $huge
+					align-items: center
 
-					.view-post-link
-						position: absolute
-						font-size: $bodytext
-						bottom: 0
-						padding: 1em 0
-						color: white
-						text-transform: uppercase
-
-						i
-							margin-left: $large
+					svg
+						margin-left: $large
+						height: 1em
 
 			.adpt-post-spacer
 				color: black(0)
