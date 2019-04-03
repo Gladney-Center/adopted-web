@@ -77,7 +77,20 @@ get_header(); ?>
 	</div>
 </section>
 <section class="adpt-podcast">
-	<h2>do you have questions about adoption or dating or pregnancy but just don’t know who to ask?</h2>
+	<div class="adpt-podcast-inner">
+		<div class="adpt-podcast-content heading">
+			<h2><?php echo get_theme_mod('fp_podcast_heading'); ?></h2>
+		</div>
+		<div class="adpt-podcast-content"></div>
+		<div class="adpt-podcast-content blurb">
+			<div class="adpt-podcast-blurb-inner">
+				<h5>Ask A Pro Podcast</h5>
+				<aside><?php echo get_theme_mod('fp_podcast_blurb'); ?></aside>
+				<a class="btn" href="#">Learn More</a>
+			</div>
+		</div>
+		<div class="adpt-podcast-qbubble-overlay"></div>
+	</div>
 </section>
 <section class="adpt-ctas">
 	<div class="adpt-ctas-inner">

@@ -44,16 +44,22 @@ class Customizer {
 					'priority' => 30,
 					'panel'  => 'front_page'
 				],
+				'podcast_section' => [
+					'title' => 'Podcast',
+					'description' => 'Change the podcast blurb or headline here',
+					'priority' => 40,
+					'panel'  => 'front_page'
+				],
 				'fp_ctas' => [
 					'title' => 'Call to Action Boxes',
 					'description' => 'Gray box / vector icon calls to action',
-					'priority' => 40,
+					'priority' => 50,
 					'panel'  => 'front_page'
 				],
 				'panel_block_2' => [
 					'title' => 'Panel Blocks 2',
 					'description' => 'The second set of large square panel blocks on the front page',
-					'priority' => 50,
+					'priority' => 60,
 					'panel'  => 'front_page'
 				]
 			],
@@ -68,6 +74,8 @@ class Customizer {
 				'fp_panel_block_1_right_copy',
 				'fp_panel_block_1_right_img',
 				'fp_panel_block_1_right_link',
+				'fp_podcast_heading',
+				'fp_podcast_blurb',
 				'fp_cta_1_icon',
 				'fp_cta_1_title',
 				'fp_cta_1_text',
@@ -173,6 +181,24 @@ class Customizer {
 						'section' => 'panel_block_1',
 						'type' => 'textarea',
 						'settings' => 'fp_panel_block_1_right_copy'
+					]
+				],
+				'fp_podcast_heading' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Podcast Header',
+						'section' => 'podcast_section',
+						'type' => 'textarea',
+						'settings' => 'fp_podcast_heading'
+					]
+				],
+				'fp_podcast_blurb' => [
+					'class' => '\\WP_Customize_Control',
+					'arr' => [
+						'label' => 'Podcast Blurb',
+						'section' => 'podcast_section',
+						'type' => 'textarea',
+						'settings' => 'fp_podcast_blurb'
 					]
 				],
 				'fp_cta_1_icon' => [

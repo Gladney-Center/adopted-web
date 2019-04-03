@@ -19,9 +19,20 @@ class Scripts {
         $theme_name = @end(explode('/',get_stylesheet_directory()));
 
         //styles
-        wp_enqueue_script('gladney-main', get_stylesheet_directory_uri()."/$theme_name.min.js");
+        wp_enqueue_script(
+            'gladney-main',
+            get_stylesheet_directory_uri()."/$theme_name.min.js",
+            false,
+            null,
+            true
+        );
         
         //styles
-        wp_enqueue_style('gladney-main', get_stylesheet_directory_uri().'/style.min.css', false, null);
+        wp_enqueue_style(
+            'gladney-main',
+            get_stylesheet_directory_uri().'/style.min.css',
+            false,
+            null
+        );
     }
 }

@@ -625,6 +625,36 @@
   95% {
     ry: initial; } }
 
+@-webkit-keyframes scaleIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@-moz-keyframes scaleIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@-ms-keyframes scaleIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@-o-keyframes scaleIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
   margin: 0;
@@ -916,6 +946,12 @@ svg.gabby {
     -ms-animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite;
     -o-animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite;
     animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite; }
+
+.qbubble.left {
+  transform-origin: left bottom; }
+
+.qbubble.right {
+  transform-origin: right bottom; }
 
 .adpt-header {
   position: absolute;
@@ -1318,7 +1354,41 @@ body.adpt-front-page .adpt-fold {
     text-align: center; }
 
 body.adpt-front-page .adpt-podcast {
-  background-color: #495077;
-  min-height: 20em; }
-  body.adpt-front-page .adpt-podcast h2, body.adpt-front-page .adpt-podcast h5 {
-    color: #67c8c7; }
+  color: white;
+  background-color: #495077; }
+  body.adpt-front-page .adpt-podcast .adpt-podcast-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner h2, body.adpt-front-page .adpt-podcast .adpt-podcast-inner h5 {
+      color: #67c8c7; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner h2 {
+      width: 100%;
+      max-width: 600px; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner h5 {
+      letter-spacing: 0px;
+      margin-bottom: 0.5em; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content {
+      padding: 2em 0; }
+      body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content.blurb {
+        display: flex;
+        justify-content: flex-end; }
+      body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content .adpt-podcast-blurb-inner {
+        width: 100%;
+        max-width: 300px; }
+        body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content .adpt-podcast-blurb-inner aside {
+          line-height: 1.25em;
+          font-size: 16px; }
+        body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content .adpt-podcast-blurb-inner a.btn {
+          display: inline-block;
+          background-color: #67c8c7;
+          font-size: 19px;
+          margin-top: 1em; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-qbubble-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0; }

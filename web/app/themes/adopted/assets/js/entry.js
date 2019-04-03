@@ -1,5 +1,6 @@
-const foobar = () => console.log('foobar function')
+(() => {
+	const qBubble = document.querySelector('.adpt-podcast'),
+		isInViewport = (elem) => elem.getBoundingClientRect().top < 600
 
-window._adpt = {
-	foobar: foobar
-}
+	window.addEventListener('scroll', (e) => isInViewport(qBubble) &&qBubble.classList.add('active'))
+})()
