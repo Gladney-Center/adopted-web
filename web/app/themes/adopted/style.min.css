@@ -1063,72 +1063,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 1009ms !important; }
+      animation-delay: 1037ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2791ms !important; }
+      animation-delay: 3366ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 207ms !important; }
+      animation-delay: 749ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2557ms !important; }
+      animation-delay: 3172ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: -59ms !important; }
+      animation-delay: 743ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 3166ms !important; }
+      animation-delay: 2837ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 627ms !important; }
+      animation-delay: 742ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 3025ms !important; }
+      animation-delay: 3373ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 779ms !important; }
+      animation-delay: 1331ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 3205ms !important; }
+      animation-delay: 2209ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 132ms !important; }
+      animation-delay: 798ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2249ms !important; }
+      animation-delay: 2924ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 123ms !important; }
+      animation-delay: 974ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 2263ms !important; }
+      animation-delay: 2385ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 772ms !important; }
+      animation-delay: 1126ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2599ms !important; }
+      animation-delay: 3083ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 1201ms !important; }
+      animation-delay: 378ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2234ms !important; }
+      animation-delay: 2169ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 1184ms !important; }
+      animation-delay: 650ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2777ms !important; }
+      animation-delay: 2308ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1174,7 +1174,7 @@ svg.gabby {
             font-size: 14px;
             letter-spacing: 2px;
             transition: background-color 250ms ease-in-out; }
-            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover {
+            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover, .adpt-header .adpt-nav-dt .adpt-menu ul li a:focus {
               background-color: rgba(255, 255, 255, 0.65); }
   .adpt-header .adpt-header-apps {
     position: relative;
@@ -1301,7 +1301,7 @@ svg.gabby {
             display: block;
             padding: 1.25em;
             font-size: 19px; }
-            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover {
+            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover, .adpt-header .adpt-nav-dt .adpt-menu ul li a:focus {
               background-color: rgba(0, 0, 0, 0.25); }
       body.menu-open .adpt-header .adpt-nav-dt .adpt-menu {
         visibility: visible;
