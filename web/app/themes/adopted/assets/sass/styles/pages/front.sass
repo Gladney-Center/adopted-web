@@ -88,5 +88,68 @@ body.adpt-front-page
 				right: 0
 				left: 0
 				bottom: 0
+				padding: $huge
 
 		&.active
+
+			.qbubble
+				+animator(scaleIn, 250ms, ease-in-out)
+
+			.qmark
+				transform-origin: center
+				+animator(wiggle, 4000ms, ease-in-out, infinite)
+
++MQ($mq-tportrait)
+	body.adpt-front-page
+
+		.adpt-stage
+
+			.adpt-stage-inner
+				display: block
+
+				.adpt-stage-column
+					margin: 0 !important
+
+					h1
+						font-size: 40px
+						padding: 1em
+
+		.adpt-podcast
+
+			.adpt-podcast-inner
+
+				.adpt-podcast-content
+					padding: 0
+				
+					h2
+						font-size: 40px
+						padding: $huge 1em
+
+					&.blurb
+						padding-bottom: $huge
+
+						.adpt-podcast-blurb-inner
+							max-width: unset
+							width: 50%
+
++MQ($mq-mobile)
+	body.adpt-front-page
+
+		.adpt-stage
+
+			.adpt-stage-inner
+
+				.adpt-stage-column
+
+					h1
+						font-size: 30px
+						padding: $huge 1em 0
+
+		.adpt-podcast
+
+			.adpt-podcast-inner
+
+				.adpt-podcast-content
+				
+					h2
+						font-size: 30px

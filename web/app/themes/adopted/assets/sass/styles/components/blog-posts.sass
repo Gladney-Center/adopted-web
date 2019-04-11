@@ -33,6 +33,7 @@
 
 				& > img
 					display: block
+					@extend .w-constrained
 
 				h5
 					margin-top: 1em
@@ -55,3 +56,35 @@
 
 			.adpt-post-spacer
 				color: black(0)
+
++MQ($mq-tportrait)
+	.adpt-blog
+
+		.adpt-blog-inner
+
+			.adpt-post-blocks
+				display: block
+
+				.adpt-post-block
+					border-radius: 0
+					border: 0
+					padding: 0
+					padding-top: 1em
+					padding-left: 1em
+					padding-right: 1em
+					display: flex
+					align-items: center
+
+					& > img
+						width: 40%
+						height: 40%
+
+					& > div
+						margin-left: $teeny
+
+					&:last-child
+						padding-bottom: 1em
+
+					h5
+						font-size: $intsize
+						min-height: 0

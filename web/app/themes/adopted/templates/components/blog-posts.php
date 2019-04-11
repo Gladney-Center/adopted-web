@@ -20,12 +20,14 @@
 
 			foreach ($blog_body['objects'] as $obj) : ?>
 				<div class="adpt-post-block">
-					<img class="w-constrained" src="<?php echo $obj['featured_image']; ?>"/>
-					<h5><?php echo $obj['html_title']; ?></h5>
-					<a class="view-post-link" target="_blank" href="<?php echo $obj['absolute_url']; ?>">
-						<span>View Post</span>
-						<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
-					</a>
+					<img src="<?php echo $obj['featured_image']; ?>"/>
+					<div>
+						<h5><?php echo $obj['html_title']; ?></h5>
+						<a class="view-post-link" target="_blank" href="<?php echo $obj['absolute_url']; ?>">
+							<span>View Post</span>
+							<?php echo \AdoptED\Filter::svg('<adpt-icon:rightarrow>'); ?>
+						</a>
+					</div>
 				</div>
 			<?php endforeach; ?>
 		</div>

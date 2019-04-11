@@ -10,23 +10,24 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="adpt-header">
+	<div class="adpt-mobile-menu">
+		<div class="adpt-mobile-menu-icon">
+			<div class="adpt-mobile-menu-icon-lines"></div>
+		</div>
+	</div>
 	<div class="adpt-nav-dt">
 		<div class="adpt-nav-logo">
 			<a href="<?php echo home_url(); ?>">
-				<img
-					class="v-constrained" 
-					src="<?php header_image(); ?>"
-					alt="<?php echo bloginfo('name'); ?>"
-				/>
+				<?php include 'assets/svg/adptlogo.svg'; ?>
 			</a>
 		</div>
-		<div class="adpt-menu">
+		<nav class="adpt-menu">
 			<?php wp_nav_menu(
 				[
 					'menu' => 'header-menu'
 				]
 			); ?>
-		</div>
+		</nav>
 	</div>
 	<div class="adpt-header-apps">
 		<div class="adpt-app-link">

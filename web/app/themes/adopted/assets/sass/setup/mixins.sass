@@ -18,12 +18,24 @@
 	width: 100%
 	padding: 0 $huge
 
+// MEDIA QUERY //
+@mixin MQ($breakpoint)
+	@if $breakpoint >= $mq-tablet+1
+		@media only screen and (min-width: #{$breakpoint})
+			@content
+	@else
+		@media only screen and (max-width: #{$breakpoint})
+			@content
+
 // BODY SIZING & LAYOUT //
 @mixin body-max-width
 	width: 100%
 	max-width: $bodyw
 	margin: 0 auto
 	padding: 0 $huge
+
+	+MQ($mq-tportrait)
+		padding: 0 1em
 
 // ANIMATION //
 @mixin keyframes($name)

@@ -69,3 +69,32 @@
 						font-size: $intsize
 						line-height: 125%
 						height: $huge*2
+
++MQ($mq-tportrait)
+	.adpt-panel-block
+
+		.adpt-panel-block-inner
+			display: block
+
+			.adpt-panel
+
+				&:nth-child(odd)
+					margin-right: 0
+
+				&:nth-child(even)
+					margin-left: 0
+
+				&:not(:last-of-type)
+					margin-bottom: 1em
+
+				.adpt-panel-overlay
+
+					.adpt-panel-topright
+						top: $small
+						right: $large
+
+						.adpt-panel-vert
+							top: 1em * 5
+
+					.adpt-panel-info
+						width: 70%

@@ -30,7 +30,7 @@ get_header(); ?>
 </section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner">
-		<div class="adpt-panel">
+		<article class="adpt-panel">
 			<a href="<?php echo get_permalink(get_theme_mod('fp_panel_block_1_left_link')); ?>">
 				<figure class="wp-block-image">
 					<?php echo wp_get_attachment_image(
@@ -51,8 +51,8 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
-		</div>
-		<div class="adpt-panel">
+		</article>
+		<article class="adpt-panel">
 			<a href="<?php echo get_permalink(get_theme_mod('fp_panel_block_1_right_link')); ?>">
 				<figure class="wp-block-image">
 					<?php echo wp_get_attachment_image(
@@ -73,7 +73,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
-		</div>
+		</article>
 	</div>
 </section>
 <section class="adpt-podcast">
@@ -81,7 +81,7 @@ get_header(); ?>
 		<div class="adpt-podcast-content heading">
 			<h2><?php echo get_theme_mod('fp_podcast_heading'); ?></h2>
 		</div>
-		<div class="adpt-podcast-content"></div>
+		<div class="adpt-podcast-content spacer"></div>
 		<div class="adpt-podcast-content blurb">
 			<div class="adpt-podcast-blurb-inner">
 				<h5>Ask A Pro Podcast</h5>
@@ -89,7 +89,13 @@ get_header(); ?>
 				<a class="btn" href="#">Learn More</a>
 			</div>
 		</div>
-		<div class="adpt-podcast-qbubble-overlay"></div>
+		<div class="adpt-podcast-qbubble-overlay">
+			<?php $i = 0; $a = 'aa'; while($i++ < 10) : ?>
+				<div class="qbubble-container qb-<?php echo $a; ?>">
+					<?php echo \AdoptED\Filter::svg(($i % 2 == 0) ? '<adpt-icon:qbubbleleft>' : '<adpt-icon:qbubbleright>'); ?>
+				</div>
+			<?php $a++; endwhile; ?>
+		</div>
 	</div>
 </section>
 <section class="adpt-ctas">
@@ -169,7 +175,7 @@ get_header(); ?>
 </section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner has-2-columns">
-		<div class="adpt-panel">
+		<article class="adpt-panel">
 			<figure class="wp-block-image">
 				<?php echo wp_get_attachment_image(
 					get_theme_mod('fp_panel_block_2_left_img'),
@@ -188,8 +194,8 @@ get_header(); ?>
 					<p><?php echo get_theme_mod('fp_panel_block_2_left_copy'); ?></p>
 				</div>
 			</div>
-		</div>
-		<div class="adpt-panel">
+		</article>
+		<article class="adpt-panel">
 			<figure class="wp-block-image">
 				<?php echo wp_get_attachment_image(
 					get_theme_mod('fp_panel_block_2_right_img'),
@@ -208,7 +214,7 @@ get_header(); ?>
 					<p><?php echo get_theme_mod('fp_panel_block_2_right_copy'); ?></p>
 				</div>
 			</div>
-		</div>
+		</article>
 	</div>
 </section>
 <?php get_footer();

@@ -4,6 +4,9 @@
 	height: $headerh
 	+full-width-gutter
 
+	.adpt-mobile-menu
+		display: none
+
 	.adpt-nav-dt
 		flex: 1
 		position: relative
@@ -14,6 +17,12 @@
 		.adpt-nav-logo
 			height: 100%
 			flex: 0
+
+			a
+
+				svg
+					fill: $white
+					@extend .v-constrained
 
 		.adpt-menu
 			height: 100%
@@ -61,3 +70,150 @@
 				display: block
 				height: 100%
 				width: auto
+
++MQ($mq-tportrait)
+	body.menu-open
+		overflow: hidden
+
+	.adpt-header
+		position: fixed
+		top: 0
+		z-index: 9999999
+		background-color: $white
+		padding: 0 1em
+
+		.adpt-header-apps
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 9999999
+			visibility: hidden
+			padding: $small
+			opacity: 0
+			height: auto
+			max-height: $headerh
+			width: 100%
+			transition: all 250ms
+
+			body.menu-open &
+				visibility: visible
+				opacity: 1
+
+			.adpt-app-link
+				flex: 1 1 100%
+
+				a
+
+					img
+						height: auto
+						width: 100%
+
+		.adpt-mobile-menu
+			display: block
+			color: $sunrise
+			margin-right: 1em
+
+			.adpt-mobile-menu-icon
+				width: $headerh
+				height: $headerh
+				position: relative
+				top: calc(50% - 1.5em)
+				font-size: .5em
+				cursor: pointer
+				transition: all .25s
+				-webkit-tap-highlight-color: transparent
+
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					height: 150%
+					width: 150%
+					top: -25%
+					left: -25%
+
+				.adpt-mobile-menu-icon-lines
+					top: 50%
+					margin-top: -.125em
+					transition: all 250ms
+
+					&, &:after, &:before
+						pointer-events: none
+						display: block
+						content: ''
+						width: 100%
+						height: $tiny
+						position: absolute
+						border-radius: $tiny
+						transform: rotate(0)
+						background-color: $navy
+						transition: all 250ms
+
+					&:after
+						width: $huge
+						left: 0
+						top: calc(-1em + #{$tiny})
+
+					&:before
+						width: $huge
+						left: 1em
+						top: calc(1em - #{$tiny})
+
+				body.menu-open &
+					transform: rotate(180deg)
+
+					.adpt-mobile-menu-icon-lines
+						background-color: transparent
+
+						&:after, &:before
+							left: .5em
+							top: 0
+
+						&:after
+							transform: rotate(-135deg)
+
+						&:before
+							transform: rotate(135deg)
+
+		.adpt-nav-dt
+
+			.adpt-nav-logo
+
+				a
+
+					svg
+						fill: $sunrise
+
+			.adpt-menu
+				height: auto
+				position: fixed
+				z-index: 999999
+				visibility: hidden
+				opacity: 0
+				background-color: $white
+				padding-right: 1em
+				top: $headerh
+				left: 0
+				right: 0
+				bottom: 0
+				transition: all 250ms
+
+				ul
+					padding: $medium 0
+					display: block
+
+					li
+						padding: 0
+
+						a
+							display: block
+							padding: $medium
+							font-size: $intsize
+
+							&:hover
+								background-color: aecolor(#000,.25)
+
+				body.menu-open &
+					visibility: visible
+					opacity: 1
