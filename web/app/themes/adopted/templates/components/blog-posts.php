@@ -16,7 +16,7 @@
 				set_transient('adpt_blog_cache',$blogcache,WEEK_IN_SECONDS);
 			}
 			$blog_body = json_decode($blogcache['body'], true);
-			//print_r($blog_body);
+			print_r($blog_body);
 
 			foreach ($blog_body['objects'] as $obj) : ?>
 				<div class="adpt-post-block">
