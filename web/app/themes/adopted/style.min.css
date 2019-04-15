@@ -267,363 +267,363 @@
 
 @-webkit-keyframes blink {
   0% {
-    ry: unset; }
+    ry: initial; }
   .5% {
     ry: 5; }
   1% {
-    ry: unset; }
+    ry: initial; }
   8% {
-    ry: unset; }
+    ry: initial; }
   8.5% {
     ry: 5; }
   9% {
-    ry: unset; }
+    ry: initial; }
   20% {
-    ry: unset; }
+    ry: initial; }
   20.5% {
     ry: 5; }
   21% {
-    ry: unset; }
+    ry: initial; }
   25% {
-    ry: unset; }
+    ry: initial; }
   25.5% {
     ry: 5; }
   26% {
-    ry: unset; }
+    ry: initial; }
   26.5% {
     ry: 5; }
   27% {
-    ry: unset; }
+    ry: initial; }
   40% {
-    ry: unset; }
+    ry: initial; }
   40.5% {
     ry: 5; }
   41% {
-    ry: unset; }
+    ry: initial; }
   63% {
-    ry: unset; }
+    ry: initial; }
   63.5% {
     ry: 5; }
   64% {
-    ry: unset; }
+    ry: initial; }
   80% {
-    ry: unset; }
+    ry: initial; }
   80.5% {
     ry: 5; }
   81% {
-    ry: unset; }
+    ry: initial; }
   85% {
-    ry: unset; }
+    ry: initial; }
   85.5% {
     ry: 5; }
   86% {
-    ry: unset; }
+    ry: initial; }
   88% {
-    ry: unset; }
+    ry: initial; }
   88.5% {
     ry: 5; }
   89% {
-    ry: unset; }
+    ry: initial; }
   92% {
-    ry: unset; }
+    ry: initial; }
   92.5% {
     ry: 5; }
   93% {
-    ry: unset; }
+    ry: initial; }
   94% {
-    ry: unset; }
+    ry: initial; }
   94.5% {
     ry: 5; }
   95% {
-    ry: unset; } }
+    ry: initial; } }
 
 @-moz-keyframes blink {
   0% {
-    ry: unset; }
+    ry: initial; }
   .5% {
     ry: 5; }
   1% {
-    ry: unset; }
+    ry: initial; }
   8% {
-    ry: unset; }
+    ry: initial; }
   8.5% {
     ry: 5; }
   9% {
-    ry: unset; }
+    ry: initial; }
   20% {
-    ry: unset; }
+    ry: initial; }
   20.5% {
     ry: 5; }
   21% {
-    ry: unset; }
+    ry: initial; }
   25% {
-    ry: unset; }
+    ry: initial; }
   25.5% {
     ry: 5; }
   26% {
-    ry: unset; }
+    ry: initial; }
   26.5% {
     ry: 5; }
   27% {
-    ry: unset; }
+    ry: initial; }
   40% {
-    ry: unset; }
+    ry: initial; }
   40.5% {
     ry: 5; }
   41% {
-    ry: unset; }
+    ry: initial; }
   63% {
-    ry: unset; }
+    ry: initial; }
   63.5% {
     ry: 5; }
   64% {
-    ry: unset; }
+    ry: initial; }
   80% {
-    ry: unset; }
+    ry: initial; }
   80.5% {
     ry: 5; }
   81% {
-    ry: unset; }
+    ry: initial; }
   85% {
-    ry: unset; }
+    ry: initial; }
   85.5% {
     ry: 5; }
   86% {
-    ry: unset; }
+    ry: initial; }
   88% {
-    ry: unset; }
+    ry: initial; }
   88.5% {
     ry: 5; }
   89% {
-    ry: unset; }
+    ry: initial; }
   92% {
-    ry: unset; }
+    ry: initial; }
   92.5% {
     ry: 5; }
   93% {
-    ry: unset; }
+    ry: initial; }
   94% {
-    ry: unset; }
+    ry: initial; }
   94.5% {
     ry: 5; }
   95% {
-    ry: unset; } }
+    ry: initial; } }
 
 @-ms-keyframes blink {
   0% {
-    ry: unset; }
+    ry: initial; }
   .5% {
     ry: 5; }
   1% {
-    ry: unset; }
+    ry: initial; }
   8% {
-    ry: unset; }
+    ry: initial; }
   8.5% {
     ry: 5; }
   9% {
-    ry: unset; }
+    ry: initial; }
   20% {
-    ry: unset; }
+    ry: initial; }
   20.5% {
     ry: 5; }
   21% {
-    ry: unset; }
+    ry: initial; }
   25% {
-    ry: unset; }
+    ry: initial; }
   25.5% {
     ry: 5; }
   26% {
-    ry: unset; }
+    ry: initial; }
   26.5% {
     ry: 5; }
   27% {
-    ry: unset; }
+    ry: initial; }
   40% {
-    ry: unset; }
+    ry: initial; }
   40.5% {
     ry: 5; }
   41% {
-    ry: unset; }
+    ry: initial; }
   63% {
-    ry: unset; }
+    ry: initial; }
   63.5% {
     ry: 5; }
   64% {
-    ry: unset; }
+    ry: initial; }
   80% {
-    ry: unset; }
+    ry: initial; }
   80.5% {
     ry: 5; }
   81% {
-    ry: unset; }
+    ry: initial; }
   85% {
-    ry: unset; }
+    ry: initial; }
   85.5% {
     ry: 5; }
   86% {
-    ry: unset; }
+    ry: initial; }
   88% {
-    ry: unset; }
+    ry: initial; }
   88.5% {
     ry: 5; }
   89% {
-    ry: unset; }
+    ry: initial; }
   92% {
-    ry: unset; }
+    ry: initial; }
   92.5% {
     ry: 5; }
   93% {
-    ry: unset; }
+    ry: initial; }
   94% {
-    ry: unset; }
+    ry: initial; }
   94.5% {
     ry: 5; }
   95% {
-    ry: unset; } }
+    ry: initial; } }
 
 @-o-keyframes blink {
   0% {
-    ry: unset; }
+    ry: initial; }
   .5% {
     ry: 5; }
   1% {
-    ry: unset; }
+    ry: initial; }
   8% {
-    ry: unset; }
+    ry: initial; }
   8.5% {
     ry: 5; }
   9% {
-    ry: unset; }
+    ry: initial; }
   20% {
-    ry: unset; }
+    ry: initial; }
   20.5% {
     ry: 5; }
   21% {
-    ry: unset; }
+    ry: initial; }
   25% {
-    ry: unset; }
+    ry: initial; }
   25.5% {
     ry: 5; }
   26% {
-    ry: unset; }
+    ry: initial; }
   26.5% {
     ry: 5; }
   27% {
-    ry: unset; }
+    ry: initial; }
   40% {
-    ry: unset; }
+    ry: initial; }
   40.5% {
     ry: 5; }
   41% {
-    ry: unset; }
+    ry: initial; }
   63% {
-    ry: unset; }
+    ry: initial; }
   63.5% {
     ry: 5; }
   64% {
-    ry: unset; }
+    ry: initial; }
   80% {
-    ry: unset; }
+    ry: initial; }
   80.5% {
     ry: 5; }
   81% {
-    ry: unset; }
+    ry: initial; }
   85% {
-    ry: unset; }
+    ry: initial; }
   85.5% {
     ry: 5; }
   86% {
-    ry: unset; }
+    ry: initial; }
   88% {
-    ry: unset; }
+    ry: initial; }
   88.5% {
     ry: 5; }
   89% {
-    ry: unset; }
+    ry: initial; }
   92% {
-    ry: unset; }
+    ry: initial; }
   92.5% {
     ry: 5; }
   93% {
-    ry: unset; }
+    ry: initial; }
   94% {
-    ry: unset; }
+    ry: initial; }
   94.5% {
     ry: 5; }
   95% {
-    ry: unset; } }
+    ry: initial; } }
 
 @keyframes blink {
   0% {
-    ry: unset; }
+    ry: initial; }
   .5% {
     ry: 5; }
   1% {
-    ry: unset; }
+    ry: initial; }
   8% {
-    ry: unset; }
+    ry: initial; }
   8.5% {
     ry: 5; }
   9% {
-    ry: unset; }
+    ry: initial; }
   20% {
-    ry: unset; }
+    ry: initial; }
   20.5% {
     ry: 5; }
   21% {
-    ry: unset; }
+    ry: initial; }
   25% {
-    ry: unset; }
+    ry: initial; }
   25.5% {
     ry: 5; }
   26% {
-    ry: unset; }
+    ry: initial; }
   26.5% {
     ry: 5; }
   27% {
-    ry: unset; }
+    ry: initial; }
   40% {
-    ry: unset; }
+    ry: initial; }
   40.5% {
     ry: 5; }
   41% {
-    ry: unset; }
+    ry: initial; }
   63% {
-    ry: unset; }
+    ry: initial; }
   63.5% {
     ry: 5; }
   64% {
-    ry: unset; }
+    ry: initial; }
   80% {
-    ry: unset; }
+    ry: initial; }
   80.5% {
     ry: 5; }
   81% {
-    ry: unset; }
+    ry: initial; }
   85% {
-    ry: unset; }
+    ry: initial; }
   85.5% {
     ry: 5; }
   86% {
-    ry: unset; }
+    ry: initial; }
   88% {
-    ry: unset; }
+    ry: initial; }
   88.5% {
     ry: 5; }
   89% {
-    ry: unset; }
+    ry: initial; }
   92% {
-    ry: unset; }
+    ry: initial; }
   92.5% {
     ry: 5; }
   93% {
-    ry: unset; }
+    ry: initial; }
   94% {
-    ry: unset; }
+    ry: initial; }
   94.5% {
     ry: 5; }
   95% {
-    ry: unset; } }
+    ry: initial; } }
 
 @-webkit-keyframes scaleIn {
   0% {
@@ -1017,12 +1017,14 @@ svg.gabby {
     -o-animation: fadein 1s ease-in-out 2.5s forwards;
     animation: fadein 1s ease-in-out 2.5s forwards; }
   svg.gabby ellipse.eye-white {
+    ry: 93;
     -webkit-animation: blink 30s ease-in-out 4s infinite forwards;
     -moz-animation: blink 30s ease-in-out 4s infinite forwards;
     -ms-animation: blink 30s ease-in-out 4s infinite forwards;
     -o-animation: blink 30s ease-in-out 4s infinite forwards;
     animation: blink 30s ease-in-out 4s infinite forwards; }
   svg.gabby ellipse.eye-iris {
+    ry: 61;
     -webkit-animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite;
     -moz-animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite;
     -ms-animation: eyemover 5s ease-in-out 2s 1 forwards, blink 30s ease-in-out 4s infinite;
@@ -1063,72 +1065,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 240ms !important; }
+      animation-delay: -21ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 3342ms !important; }
+      animation-delay: 2252ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 571ms !important; }
+      animation-delay: 583ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2494ms !important; }
+      animation-delay: 2319ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 681ms !important; }
+      animation-delay: 1353ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2350ms !important; }
+      animation-delay: 2560ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 747ms !important; }
+      animation-delay: -22ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 3399ms !important; }
+      animation-delay: 2405ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 855ms !important; }
+      animation-delay: 978ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2077ms !important; }
+      animation-delay: 2120ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 102ms !important; }
+      animation-delay: 278ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2943ms !important; }
+      animation-delay: 3029ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 466ms !important; }
+      animation-delay: 61ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 2359ms !important; }
+      animation-delay: 2029ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 799ms !important; }
+      animation-delay: 391ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2722ms !important; }
+      animation-delay: 2829ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 14ms !important; }
+      animation-delay: 243ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 3053ms !important; }
+      animation-delay: 2451ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 267ms !important; }
+      animation-delay: 433ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 3453ms !important; }
+      animation-delay: 2319ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
