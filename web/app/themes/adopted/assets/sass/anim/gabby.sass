@@ -2,7 +2,7 @@ svg.gabby
 	display: block
 
 	ellipse.belly.bounce
-		+animator(bellybounce, .5s, ease-in-out, 1s)
+		animation: bellybounce .5s ease-in-out 1s reverse
 
 	g.belly-emphasis
 		opacity: 0
@@ -33,6 +33,6 @@ svg.gabby
 
 	ellipse.eye-white
 		animation: blinkwhite 30s ease-in-out 4s infinite
-		
+
 	ellipse.eye-iris
 		animation: eyemover 5s ease-in-out 2s 1 forwards, blinkiris 30s ease-in-out 4s infinite

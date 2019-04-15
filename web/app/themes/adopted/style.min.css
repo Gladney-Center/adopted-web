@@ -1323,11 +1323,7 @@ button, a.button, a.btn {
 svg.gabby {
   display: block; }
   svg.gabby ellipse.belly.bounce {
-    -webkit-animation: bellybounce 0.5s ease-in-out 1s forwards;
-    -moz-animation: bellybounce 0.5s ease-in-out 1s forwards;
-    -ms-animation: bellybounce 0.5s ease-in-out 1s forwards;
-    -o-animation: bellybounce 0.5s ease-in-out 1s forwards;
-    animation: bellybounce 0.5s ease-in-out 1s forwards; }
+    animation: bellybounce .5s ease-in-out 1s reverse; }
   svg.gabby g.belly-emphasis {
     opacity: 0;
     -webkit-animation: popinout 0.5s ease-in-out 1s forwards;
@@ -1415,72 +1411,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 389ms !important; }
+      animation-delay: 74ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 3108ms !important; }
+      animation-delay: 2401ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 1022ms !important; }
+      animation-delay: 610ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 3424ms !important; }
+      animation-delay: 2103ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: -53ms !important; }
+      animation-delay: 854ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 3038ms !important; }
+      animation-delay: 2347ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: -226ms !important; }
+      animation-delay: 474ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 3171ms !important; }
+      animation-delay: 2173ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 229ms !important; }
+      animation-delay: 580ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2424ms !important; }
+      animation-delay: 2276ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: -156ms !important; }
+      animation-delay: -15ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2950ms !important; }
+      animation-delay: 2559ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 825ms !important; }
+      animation-delay: 20ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 3284ms !important; }
+      animation-delay: 2290ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 91ms !important; }
+      animation-delay: 713ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 3186ms !important; }
+      animation-delay: 2031ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: -400ms !important; }
+      animation-delay: 796ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2029ms !important; }
+      animation-delay: 2746ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: -294ms !important; }
+      animation-delay: 259ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2895ms !important; }
+      animation-delay: 3081ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
