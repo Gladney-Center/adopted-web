@@ -197,73 +197,73 @@
 
 @-webkit-keyframes bellybounce {
   0% {
-    rx: 1; }
+    rx: 281; }
   20% {
-    rx: 1; }
-  40% {
-    rx: 325; }
-  60% {
-    rx: 230; }
-  80% {
     rx: 300; }
+  40% {
+    rx: 230; }
+  60% {
+    rx: 325; }
+  80% {
+    rx: 1; }
   100% {
-    rx: 281; } }
+    rx: 1; } }
 
 @-moz-keyframes bellybounce {
   0% {
-    rx: 1; }
+    rx: 281; }
   20% {
-    rx: 1; }
-  40% {
-    rx: 325; }
-  60% {
-    rx: 230; }
-  80% {
     rx: 300; }
+  40% {
+    rx: 230; }
+  60% {
+    rx: 325; }
+  80% {
+    rx: 1; }
   100% {
-    rx: 281; } }
+    rx: 1; } }
 
 @-ms-keyframes bellybounce {
   0% {
-    rx: 1; }
+    rx: 281; }
   20% {
-    rx: 1; }
-  40% {
-    rx: 325; }
-  60% {
-    rx: 230; }
-  80% {
     rx: 300; }
+  40% {
+    rx: 230; }
+  60% {
+    rx: 325; }
+  80% {
+    rx: 1; }
   100% {
-    rx: 281; } }
+    rx: 1; } }
 
 @-o-keyframes bellybounce {
   0% {
-    rx: 1; }
+    rx: 281; }
   20% {
-    rx: 1; }
-  40% {
-    rx: 325; }
-  60% {
-    rx: 230; }
-  80% {
     rx: 300; }
+  40% {
+    rx: 230; }
+  60% {
+    rx: 325; }
+  80% {
+    rx: 1; }
   100% {
-    rx: 281; } }
+    rx: 1; } }
 
 @keyframes bellybounce {
   0% {
-    rx: 1; }
+    rx: 281; }
   20% {
-    rx: 1; }
-  40% {
-    rx: 325; }
-  60% {
-    rx: 230; }
-  80% {
     rx: 300; }
+  40% {
+    rx: 230; }
+  60% {
+    rx: 325; }
+  80% {
+    rx: 1; }
   100% {
-    rx: 281; } }
+    rx: 1; } }
 
 @-webkit-keyframes blinkiris {
   0% {
@@ -1411,72 +1411,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 74ms !important; }
+      animation-delay: 943ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2401ms !important; }
+      animation-delay: 3437ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 610ms !important; }
+      animation-delay: 777ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2103ms !important; }
+      animation-delay: 2324ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 854ms !important; }
+      animation-delay: 1036ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2347ms !important; }
+      animation-delay: 2570ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 474ms !important; }
+      animation-delay: 206ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 2173ms !important; }
+      animation-delay: 2631ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 580ms !important; }
+      animation-delay: 185ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2276ms !important; }
+      animation-delay: 3196ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: -15ms !important; }
+      animation-delay: 1145ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2559ms !important; }
+      animation-delay: 2815ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 20ms !important; }
+      animation-delay: 1055ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 2290ms !important; }
+      animation-delay: 2343ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 713ms !important; }
+      animation-delay: 1437ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2031ms !important; }
+      animation-delay: 2925ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 796ms !important; }
+      animation-delay: -206ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2746ms !important; }
+      animation-delay: 2842ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 259ms !important; }
+      animation-delay: 1238ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 3081ms !important; }
+      animation-delay: 2424ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
