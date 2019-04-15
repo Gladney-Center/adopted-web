@@ -72,11 +72,9 @@
 				width: auto
 
 +MQ($mq-tportrait)
-	body.menu-open
-		overflow: hidden
-
-		html &
-			overflow: hidden
+	html
+		body.menu-open &, body.menu-open
+		 overflow: hidden
 
 	.adpt-header
 		position: fixed
