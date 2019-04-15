@@ -7,18 +7,20 @@
 +keyframes(popinout)
     0%
         opacity: 0
-    20%
-        opacity: 0
-    40%
+    50%
         opacity: 1
     100%
         opacity: 0
 
 +keyframes(smilefrown)
     0%
-        d: path("M848.3552,2708.8157c-69.057-70.9727,152.1592-35.1623,152.1592-35.1623S917.9208,2780.3111,848.3552,2708.8157Z")
+        transform: scale3d(1,-1,1)
+    80%
+        transform: scale3d(1,-1,1)
+    90%
+        transform: scale3d(1,1,1)
     100%
-        d: path("M995.2385,2686.8689c48.5529,86.3054-156.0884-5.0236-156.0884-5.0236S946.3281,2599.9279,995.2385,2686.8689Z")
+        transform: scale3d(1,1,1)
 
 +keyframes(eyemover)
     0%
@@ -39,13 +41,11 @@
 +keyframes(bellybounce)
     0%
         transform: scale3d(0,1,1)
-    20%
-        transform: scale3d(0,1,1)
-    40%
+    25%
         transform: scale3d(1.25,1,1)
-    60%
+    50%
         transform: scale3d(.90,1,1)
-    80%
+    75%
         transform: scale3d(1.1,1,1)
     100%
         transform: scale3d(1,1,1)
