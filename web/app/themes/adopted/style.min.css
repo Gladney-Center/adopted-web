@@ -1424,72 +1424,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 78ms !important; }
+      animation-delay: 45ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 3306ms !important; }
+      animation-delay: 2319ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 353ms !important; }
+      animation-delay: 1427ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2289ms !important; }
+      animation-delay: 3350ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 1212ms !important; }
+      animation-delay: -92ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2512ms !important; }
+      animation-delay: 2217ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 1259ms !important; }
+      animation-delay: 658ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 3340ms !important; }
+      animation-delay: 2384ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 506ms !important; }
+      animation-delay: 953ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 3377ms !important; }
+      animation-delay: 2357ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 557ms !important; }
+      animation-delay: -470ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2591ms !important; }
+      animation-delay: 2479ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 232ms !important; }
+      animation-delay: 1276ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 3337ms !important; }
+      animation-delay: 2619ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: -100ms !important; }
+      animation-delay: -321ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2301ms !important; }
+      animation-delay: 3351ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 1055ms !important; }
+      animation-delay: -217ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2090ms !important; }
+      animation-delay: 3342ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 946ms !important; }
+      animation-delay: 531ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2911ms !important; }
+      animation-delay: 3443ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1556,6 +1556,8 @@ svg.gabby {
 @media only screen and (max-width: 992px) {
   body.menu-open {
     overflow: hidden; }
+    html body.menu-open {
+      overflow: hidden; }
   .adpt-header {
     position: fixed;
     top: 0;
