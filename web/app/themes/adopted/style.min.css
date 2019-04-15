@@ -197,73 +197,73 @@
 
 @-webkit-keyframes bellybounce {
   0% {
-    rx: 281; }
-  20% {
-    rx: 300; }
-  40% {
-    rx: 230; }
-  60% {
-    rx: 325; }
-  80% {
     rx: 1; }
+  20% {
+    rx: 1; }
+  40% {
+    rx: 325; }
+  60% {
+    rx: 230; }
+  80% {
+    rx: 300; }
   100% {
-    rx: 1; } }
+    rx: 281; } }
 
 @-moz-keyframes bellybounce {
   0% {
-    rx: 281; }
-  20% {
-    rx: 300; }
-  40% {
-    rx: 230; }
-  60% {
-    rx: 325; }
-  80% {
     rx: 1; }
+  20% {
+    rx: 1; }
+  40% {
+    rx: 325; }
+  60% {
+    rx: 230; }
+  80% {
+    rx: 300; }
   100% {
-    rx: 1; } }
+    rx: 281; } }
 
 @-ms-keyframes bellybounce {
   0% {
-    rx: 281; }
-  20% {
-    rx: 300; }
-  40% {
-    rx: 230; }
-  60% {
-    rx: 325; }
-  80% {
     rx: 1; }
+  20% {
+    rx: 1; }
+  40% {
+    rx: 325; }
+  60% {
+    rx: 230; }
+  80% {
+    rx: 300; }
   100% {
-    rx: 1; } }
+    rx: 281; } }
 
 @-o-keyframes bellybounce {
   0% {
-    rx: 281; }
-  20% {
-    rx: 300; }
-  40% {
-    rx: 230; }
-  60% {
-    rx: 325; }
-  80% {
     rx: 1; }
+  20% {
+    rx: 1; }
+  40% {
+    rx: 325; }
+  60% {
+    rx: 230; }
+  80% {
+    rx: 300; }
   100% {
-    rx: 1; } }
+    rx: 281; } }
 
 @keyframes bellybounce {
   0% {
-    rx: 281; }
-  20% {
-    rx: 300; }
-  40% {
-    rx: 230; }
-  60% {
-    rx: 325; }
-  80% {
     rx: 1; }
+  20% {
+    rx: 1; }
+  40% {
+    rx: 325; }
+  60% {
+    rx: 230; }
+  80% {
+    rx: 300; }
   100% {
-    rx: 1; } }
+    rx: 281; } }
 
 @-webkit-keyframes blinkiris {
   0% {
@@ -1323,7 +1323,7 @@ button, a.button, a.btn {
 svg.gabby {
   display: block; }
   svg.gabby ellipse.belly.bounce {
-    animation: bellybounce .5s ease-in-out 1s reverse; }
+    animation: bellybounce .5s ease-in-out 0s; }
   svg.gabby g.belly-emphasis {
     opacity: 0;
     -webkit-animation: popinout 0.5s ease-in-out 1s forwards;
@@ -1411,72 +1411,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 943ms !important; }
+      animation-delay: 501ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 3437ms !important; }
+      animation-delay: 3471ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 777ms !important; }
+      animation-delay: 121ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2324ms !important; }
+      animation-delay: 3117ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 1036ms !important; }
+      animation-delay: 1005ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2570ms !important; }
+      animation-delay: 2377ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 206ms !important; }
+      animation-delay: 202ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 2631ms !important; }
+      animation-delay: 2426ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 185ms !important; }
+      animation-delay: 1337ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 3196ms !important; }
+      animation-delay: 2907ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 1145ms !important; }
+      animation-delay: 806ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2815ms !important; }
+      animation-delay: 3242ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 1055ms !important; }
+      animation-delay: 414ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 2343ms !important; }
+      animation-delay: 3395ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 1437ms !important; }
+      animation-delay: 917ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2925ms !important; }
+      animation-delay: 2880ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: -206ms !important; }
+      animation-delay: 1074ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2842ms !important; }
+      animation-delay: 2112ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 1238ms !important; }
+      animation-delay: 679ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2424ms !important; }
+      animation-delay: 3443ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1529,12 +1529,12 @@ svg.gabby {
     padding: 0.75em 0;
     height: 100%;
     display: flex;
-    justify-content: flex-end; }
+    align-items: center; }
     .adpt-header .adpt-header-apps .adpt-app-link {
       position: relative;
       padding: 0 0.5em;
       width: auto;
-      height: 100%; }
+      height: 75%; }
       .adpt-header .adpt-header-apps .adpt-app-link img {
         display: block;
         height: 100%;
