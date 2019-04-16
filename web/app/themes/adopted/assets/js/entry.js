@@ -9,7 +9,9 @@
 	)
 	window.addEventListener(
 		'animationend',
-		(e) => console.log(e)
+		(e) => {
+			console.log(e.animationName)
+		}
 	)
 	mbIcon.addEventListener(
 		'click',
