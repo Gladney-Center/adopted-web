@@ -127,9 +127,9 @@
 
 @-webkit-keyframes eyemover {
   0% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   5% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   10% {
     transform: translate3d(25px, -55px, 0); }
   40% {
@@ -143,9 +143,9 @@
 
 @-moz-keyframes eyemover {
   0% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   5% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   10% {
     transform: translate3d(25px, -55px, 0); }
   40% {
@@ -159,9 +159,9 @@
 
 @-ms-keyframes eyemover {
   0% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   5% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   10% {
     transform: translate3d(25px, -55px, 0); }
   40% {
@@ -175,9 +175,9 @@
 
 @-o-keyframes eyemover {
   0% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   5% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   10% {
     transform: translate3d(25px, -55px, 0); }
   40% {
@@ -191,9 +191,9 @@
 
 @keyframes eyemover {
   0% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   5% {
-    transform: translate(0, 0, 0); }
+    transform: translate3d(0, 0, 0); }
   10% {
     transform: translate3d(25px, -55px, 0); }
   40% {
@@ -267,743 +267,43 @@
 
 @-webkit-keyframes blinkiris {
   0% {
-    ry: 61; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 61; }
-  8% {
-    ry: 61; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 61; }
-  20% {
-    ry: 61; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 61; }
-  25% {
-    ry: 61; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 61; }
-  26.25% {
-    ry: 61; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 61; }
-  40% {
-    ry: 61; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 61; }
-  63% {
-    ry: 61; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 61; }
-  80% {
-    ry: 61; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 61; }
-  85% {
-    ry: 61; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 61; }
-  88% {
-    ry: 61; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 61; }
-  92% {
-    ry: 61; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 61; }
-  94% {
-    ry: 61; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 61; } }
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1, 0.05, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 @-moz-keyframes blinkiris {
   0% {
-    ry: 61; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 61; }
-  8% {
-    ry: 61; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 61; }
-  20% {
-    ry: 61; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 61; }
-  25% {
-    ry: 61; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 61; }
-  26.25% {
-    ry: 61; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 61; }
-  40% {
-    ry: 61; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 61; }
-  63% {
-    ry: 61; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 61; }
-  80% {
-    ry: 61; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 61; }
-  85% {
-    ry: 61; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 61; }
-  88% {
-    ry: 61; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 61; }
-  92% {
-    ry: 61; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 61; }
-  94% {
-    ry: 61; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 61; } }
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1, 0.05, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 @-ms-keyframes blinkiris {
   0% {
-    ry: 61; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 61; }
-  8% {
-    ry: 61; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 61; }
-  20% {
-    ry: 61; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 61; }
-  25% {
-    ry: 61; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 61; }
-  26.25% {
-    ry: 61; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 61; }
-  40% {
-    ry: 61; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 61; }
-  63% {
-    ry: 61; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 61; }
-  80% {
-    ry: 61; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 61; }
-  85% {
-    ry: 61; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 61; }
-  88% {
-    ry: 61; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 61; }
-  92% {
-    ry: 61; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 61; }
-  94% {
-    ry: 61; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 61; } }
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1, 0.05, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 @-o-keyframes blinkiris {
   0% {
-    ry: 61; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 61; }
-  8% {
-    ry: 61; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 61; }
-  20% {
-    ry: 61; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 61; }
-  25% {
-    ry: 61; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 61; }
-  26.25% {
-    ry: 61; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 61; }
-  40% {
-    ry: 61; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 61; }
-  63% {
-    ry: 61; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 61; }
-  80% {
-    ry: 61; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 61; }
-  85% {
-    ry: 61; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 61; }
-  88% {
-    ry: 61; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 61; }
-  92% {
-    ry: 61; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 61; }
-  94% {
-    ry: 61; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 61; } }
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1, 0.05, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 @keyframes blinkiris {
   0% {
-    ry: 61; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 61; }
-  8% {
-    ry: 61; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 61; }
-  20% {
-    ry: 61; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 61; }
-  25% {
-    ry: 61; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 61; }
-  26.25% {
-    ry: 61; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 61; }
-  40% {
-    ry: 61; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 61; }
-  63% {
-    ry: 61; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 61; }
-  80% {
-    ry: 61; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 61; }
-  85% {
-    ry: 61; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 61; }
-  88% {
-    ry: 61; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 61; }
-  92% {
-    ry: 61; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 61; }
-  94% {
-    ry: 61; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 61; } }
-
-@-webkit-keyframes blinkwhite {
-  0% {
-    ry: 93; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 93; }
-  8% {
-    ry: 93; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 93; }
-  20% {
-    ry: 93; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 93; }
-  25% {
-    ry: 93; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 93; }
-  26.25% {
-    ry: 93; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 93; }
-  40% {
-    ry: 93; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 93; }
-  63% {
-    ry: 93; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 93; }
-  80% {
-    ry: 93; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 93; }
-  85% {
-    ry: 93; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 93; }
-  88% {
-    ry: 93; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 93; }
-  92% {
-    ry: 93; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 93; }
-  94% {
-    ry: 93; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 93; } }
-
-@-moz-keyframes blinkwhite {
-  0% {
-    ry: 93; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 93; }
-  8% {
-    ry: 93; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 93; }
-  20% {
-    ry: 93; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 93; }
-  25% {
-    ry: 93; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 93; }
-  26.25% {
-    ry: 93; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 93; }
-  40% {
-    ry: 93; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 93; }
-  63% {
-    ry: 93; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 93; }
-  80% {
-    ry: 93; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 93; }
-  85% {
-    ry: 93; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 93; }
-  88% {
-    ry: 93; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 93; }
-  92% {
-    ry: 93; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 93; }
-  94% {
-    ry: 93; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 93; } }
-
-@-ms-keyframes blinkwhite {
-  0% {
-    ry: 93; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 93; }
-  8% {
-    ry: 93; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 93; }
-  20% {
-    ry: 93; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 93; }
-  25% {
-    ry: 93; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 93; }
-  26.25% {
-    ry: 93; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 93; }
-  40% {
-    ry: 93; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 93; }
-  63% {
-    ry: 93; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 93; }
-  80% {
-    ry: 93; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 93; }
-  85% {
-    ry: 93; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 93; }
-  88% {
-    ry: 93; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 93; }
-  92% {
-    ry: 93; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 93; }
-  94% {
-    ry: 93; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 93; } }
-
-@-o-keyframes blinkwhite {
-  0% {
-    ry: 93; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 93; }
-  8% {
-    ry: 93; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 93; }
-  20% {
-    ry: 93; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 93; }
-  25% {
-    ry: 93; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 93; }
-  26.25% {
-    ry: 93; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 93; }
-  40% {
-    ry: 93; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 93; }
-  63% {
-    ry: 93; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 93; }
-  80% {
-    ry: 93; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 93; }
-  85% {
-    ry: 93; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 93; }
-  88% {
-    ry: 93; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 93; }
-  92% {
-    ry: 93; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 93; }
-  94% {
-    ry: 93; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 93; } }
-
-@keyframes blinkwhite {
-  0% {
-    ry: 93; }
-  .25% {
-    ry: 5; }
-  .5% {
-    ry: 93; }
-  8% {
-    ry: 93; }
-  8.25% {
-    ry: 5; }
-  8.5% {
-    ry: 93; }
-  20% {
-    ry: 93; }
-  20.25% {
-    ry: 5; }
-  20.5% {
-    ry: 93; }
-  25% {
-    ry: 93; }
-  25.25% {
-    ry: 5; }
-  25.5% {
-    ry: 93; }
-  26.25% {
-    ry: 93; }
-  26.5% {
-    ry: 5; }
-  26.75% {
-    ry: 93; }
-  40% {
-    ry: 93; }
-  40.25% {
-    ry: 5; }
-  40.5% {
-    ry: 93; }
-  63% {
-    ry: 93; }
-  63.25% {
-    ry: 5; }
-  63.5% {
-    ry: 93; }
-  80% {
-    ry: 93; }
-  80.25% {
-    ry: 5; }
-  80.5% {
-    ry: 93; }
-  85% {
-    ry: 93; }
-  85.25% {
-    ry: 5; }
-  85.5% {
-    ry: 93; }
-  88% {
-    ry: 93; }
-  88.25% {
-    ry: 5; }
-  88.5% {
-    ry: 93; }
-  92% {
-    ry: 93; }
-  92.25% {
-    ry: 5; }
-  92.5% {
-    ry: 93; }
-  94% {
-    ry: 93; }
-  94.25% {
-    ry: 5; }
-  94.5% {
-    ry: 93; } }
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1, 0.05, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
 
 @-webkit-keyframes scaleIn {
   0% {
@@ -1386,9 +686,9 @@ svg.gabby {
     -o-animation: fadein 1s ease-in-out 2.5s forwards;
     animation: fadein 1s ease-in-out 2.5s forwards; }
   svg.gabby ellipse.eye-white {
-    animation: blinkwhite 30s ease-in-out 4s infinite; }
+    animation: blink .1s ease-in-out 4s both; }
   svg.gabby ellipse.eye-iris {
-    animation: eyemover 5s ease-in-out 2s 1 forwards, blinkiris 30s ease-in-out 4s infinite; }
+    animation: eyemover 5s ease-in-out 2s 1 forwards, blink .1s ease-in-out 4s both; }
 
 .qbcxlg, .qbubble-container.qb-ah {
   width: 300px;
@@ -1424,72 +724,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 254ms !important; }
+      animation-delay: -31ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2548ms !important; }
+      animation-delay: 3096ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 179ms !important; }
+      animation-delay: 721ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 3495ms !important; }
+      animation-delay: 3118ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 822ms !important; }
+      animation-delay: -226ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2024ms !important; }
+      animation-delay: 3485ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 106ms !important; }
+      animation-delay: 37ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 2169ms !important; }
+      animation-delay: 2742ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 81ms !important; }
+      animation-delay: 984ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2647ms !important; }
+      animation-delay: 3239ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: -56ms !important; }
+      animation-delay: 231ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 3091ms !important; }
+      animation-delay: 3497ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: -17ms !important; }
+      animation-delay: 183ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 3165ms !important; }
+      animation-delay: 2897ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: -172ms !important; }
+      animation-delay: 1017ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2449ms !important; }
+      animation-delay: 2780ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 415ms !important; }
+      animation-delay: 530ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 3340ms !important; }
+      animation-delay: 2437ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 589ms !important; }
+      animation-delay: 1100ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2666ms !important; }
+      animation-delay: 2529ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {

@@ -10,7 +10,7 @@
 	window.addEventListener(
 		'animationend',
 		(e) => {
-			console.log(e.animationName)
+			console.log(e)
 		}
 	)
 	mbIcon.addEventListener(
