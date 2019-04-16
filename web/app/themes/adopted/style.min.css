@@ -1424,72 +1424,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 491ms !important; }
+      animation-delay: -200ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2515ms !important; }
+      animation-delay: 2020ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 232ms !important; }
+      animation-delay: 267ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2555ms !important; }
+      animation-delay: 2306ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: -69ms !important; }
+      animation-delay: 907ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2676ms !important; }
+      animation-delay: 2431ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 560ms !important; }
+      animation-delay: 627ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 2199ms !important; }
+      animation-delay: 2567ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 1223ms !important; }
+      animation-delay: 930ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2494ms !important; }
+      animation-delay: 2130ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 883ms !important; }
+      animation-delay: 290ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2239ms !important; }
+      animation-delay: 3222ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 195ms !important; }
+      animation-delay: 875ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 3302ms !important; }
+      animation-delay: 3414ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: -323ms !important; }
+      animation-delay: 96ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2869ms !important; }
+      animation-delay: 2748ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: -87ms !important; }
+      animation-delay: 449ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 3311ms !important; }
+      animation-delay: 2612ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 312ms !important; }
+      animation-delay: 464ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 3454ms !important; }
+      animation-delay: 2052ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1566,19 +1566,21 @@ svg.gabby {
       position: fixed;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: 1em;
       z-index: 9999999;
       visibility: hidden;
       padding: 0.75em;
       opacity: 0;
       height: auto;
-      max-height: 3em;
+      max-height: 1.5em;
       width: 100%;
       transition: all 250ms; }
       body.menu-open .adpt-header .adpt-header-apps {
         visibility: visible;
-        opacity: 1; }
+        opacity: 1;
+        height: 100%; }
       .adpt-header .adpt-header-apps .adpt-app-link {
+        height: 100%;
         flex: 1 1 100%; }
         .adpt-header .adpt-header-apps .adpt-app-link a img {
           height: auto;
