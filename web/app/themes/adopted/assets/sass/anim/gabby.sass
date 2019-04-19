@@ -2,38 +2,45 @@ svg.gabby
 	display: block
 
 	ellipse.belly.bounce
-		transform-origin: 907px 3788px
-		animation: bellybounce .5s cubic-bezier(.68,-0.55,.27,1.55) 1s both
+		animation: scalex .1s $ease-bouncy 1s both
 
 	g.belly-emphasis
-		animation: popinout .5s ease-in-out 1s both
+		animation: fadeinout .5s ease-in-out 1s both
 
 	path.mouth
-		transform-origin: 995px 2687px
-		animation: smilefrown 1.5s ease-in-out
+		animation: smilefrown 1.5s $ease-bouncy
 
 	circle.small-lead
-		opacity: 0
-		+animator(fadein, .1s, ease-in-out, 2s)
+		animation: scaley .1s $ease-bouncy 2s both
 
 	circle.med-lead
-		opacity: 0
-		+animator(fadein, .1s, ease-in-out, 2.1s)
+		animation: scaley .1s $ease-bouncy 2.1s both
 	
 	circle.lrg-lead
-		opacity: 0
-		+animator(fadein, .1s, ease-in-out, 2.2s)
+		animation: scaley .1s $ease-bouncy 2.2s both
 
 	g.cloud
-		opacity: 0
-		+animator(fadein, .1s, ease-in-out, 2.3s)
+		animation: scaley .1s $ease-bouncy 2.3s both
 
 	g.post-choice
-		opacity: 0
-		+animator(fadein, 1s, ease-in-out, 2.5s)
 
-	ellipse.eye-white
-		animation: blink .1s ease-in-out 4s both
+		path.choicepost
+			animation: scaley .1s $ease-bouncy 2.5s both
 
-	ellipse.eye-iris
-		animation: eyemover 5s ease-in-out 2s 1 forwards, blink .1s ease-in-out 4s both
+		path.adoptionsign
+			animation: scalex .1s $ease-bouncy 2.6s both
+
+		path.parentingsign
+			animation: scalex .1s $ease-bouncy 2.7s both
+
+		g#adoption
+			animation: fadein .1s ease-in-out 2.8s both
+
+		g#parenting
+			animation: fadein .1s ease-in-out 2.9s both
+
+	g.gabby-eyes
+		animation: blink 20s ease-in-out 4s infinite
+
+		ellipse.eye-iris
+			animation: eyemover 5s ease-in-out 2s 1 forwards

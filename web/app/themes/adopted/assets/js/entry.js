@@ -1,18 +1,16 @@
 (() => {
 	const qBubble = document.querySelector('.adpt-podcast'),
-		mbIcon = document.querySelector('.adpt-mobile-menu-icon'),
-		isInViewport = (elem) => elem.getBoundingClientRect().top < 800
+		mbIcon = document.querySelector('.adpt-mobile-menu-icon')
+
+	const funcs = {
+		isInViewport: (elem) => elem.getBoundingClientRect().top < 800
+	}
 
 	window.addEventListener(
 		'scroll',
-		(e) => isInViewport(qBubble) && qBubble.classList.add('active')
+		(e) => funcs.isInViewport(qBubble) && qBubble.classList.add('active')
 	)
-	window.addEventListener(
-		'animationend',
-		(e) => {
-			console.log(e)
-		}
-	)
+
 	mbIcon.addEventListener(
 		'click',
 		(e) => {
