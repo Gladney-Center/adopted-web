@@ -44,7 +44,7 @@
     "roots/wordpress": "^5.0.3",
     "roots/wp-config": "^1.0.0",
     "roots/wp-password-bcrypt": "^1.0.0",
-    "wpackagist-plugin/wordpress-seo": "^9.5",
+    "wpackagist-plugin/wordpress-seo": "^11.0",
     "gladney/gcfa-wp-plugin": "^1.0.0",
     "wpackagist-plugin/editor-blocks": "^1.1"
   },
