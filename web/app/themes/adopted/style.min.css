@@ -665,7 +665,7 @@
   100% {
     transform: rotate(0deg) scale(1); } }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, .custom-block-element, adpt-stage, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
   margin: 0;
   padding: 0;
@@ -740,7 +740,7 @@ table {
 .teal {
   color: #67c8c7; }
 
-.teal-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send {
+.teal-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .send.custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.send {
   background-color: #67c8c7; }
 
 .teal-fill {
@@ -808,6 +808,9 @@ table {
 
 .white-fill, .qbubble .qbubble-shape {
   fill: #ffffff; }
+
+.custom-block-element, adpt-stage {
+  display: block; }
 
 .v-constrained, .adpt-header .adpt-nav-dt .adpt-nav-logo a svg {
   width: auto;
@@ -955,72 +958,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 998ms !important; }
+      animation-delay: 479ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2034ms !important; }
+      animation-delay: 3248ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: -14ms !important; }
+      animation-delay: -17ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2669ms !important; }
+      animation-delay: 2539ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: -185ms !important; }
+      animation-delay: 464ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2488ms !important; }
+      animation-delay: 2177ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: -56ms !important; }
+      animation-delay: 60ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 3074ms !important; }
+      animation-delay: 3329ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 196ms !important; }
+      animation-delay: 921ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 3480ms !important; }
+      animation-delay: 3296ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 1042ms !important; }
+      animation-delay: 534ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 3283ms !important; }
+      animation-delay: 2563ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 540ms !important; }
+      animation-delay: -118ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 3228ms !important; }
+      animation-delay: 3403ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 973ms !important; }
+      animation-delay: 739ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2757ms !important; }
+      animation-delay: 3083ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 254ms !important; }
+      animation-delay: -30ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 2014ms !important; }
+      animation-delay: 2627ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: -13ms !important; }
+      animation-delay: -193ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 3031ms !important; }
+      animation-delay: 3198ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1049,7 +1052,7 @@ svg.gabby {
       height: 100%;
       padding-left: 1em;
       flex: 1; }
-      .adpt-header .adpt-nav-dt .adpt-menu > div {
+      .adpt-header .adpt-nav-dt .adpt-menu > div, .adpt-header .adpt-nav-dt .adpt-menu > .custom-block-element, .adpt-header .adpt-nav-dt .adpt-menu > adpt-stage {
         height: 100%; }
       .adpt-header .adpt-nav-dt .adpt-menu ul {
         height: 100%;
@@ -1201,15 +1204,15 @@ svg.gabby {
         visibility: visible;
         opacity: 1; } }
 
-.adpt-stage {
+adpt-stage {
   padding-top: 3em; }
-  .adpt-stage .adpt-stage-inner {
+  adpt-stage .adpt-stage-inner {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2em; }
     @media only screen and (max-width: 992px) {
-      .adpt-stage .adpt-stage-inner {
+      adpt-stage .adpt-stage-inner {
         padding: 0 1em; } }
 
 .adpt-blog {
@@ -1278,7 +1281,7 @@ svg.gabby {
       .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > img {
         width: 40%;
         height: 40%; }
-      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > div {
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > div, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > .custom-block-element, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-stage {
         margin-left: 0.5em; }
       .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block:last-child {
         padding-bottom: 1em; }
@@ -1457,12 +1460,12 @@ svg.gabby {
       border-radius: 1em;
       display: flex;
       align-items: center; }
-      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms {
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms {
         flex: 1;
         display: flex; }
-        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div {
+        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage {
           display: inline-block; }
-          .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 {
+          .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 {
             font-size: 19px;
             font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
             font-weight: normal;
@@ -1489,9 +1492,9 @@ svg.gabby {
     width: 100%; } }
 
 @-ms-keyframes typing {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 0% {
     width: 0; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 100% {
     width: 100%; } }
 
 @-o-keyframes typing {
@@ -1519,9 +1522,9 @@ svg.gabby {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-ms-keyframes caret {
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 0%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5 100%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 100% {
     border-color: transparent; }
-  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 50% {
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > div h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > .custom-block-element h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > .custom-block-element h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > .custom-block-element h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .sms.custom-block-element > adpt-stage h5 50%, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5 50% {
     border-color: rgba(0, 0, 0, 0.8); } }
 
 @-o-keyframes caret {
@@ -1535,7 +1538,7 @@ svg.gabby {
     border-color: transparent; }
   50% {
     border-color: rgba(0, 0, 0, 0.8); } }
-      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send {
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text .send.custom-block-element, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.send {
         color: #ffffff;
         padding: 0.125em 0.4em;
         border-radius: 50%; }
@@ -1583,7 +1586,7 @@ svg.gabby {
     .adpt-footer .adpt-footer-block {
       padding: 1em; } }
 
-body.adpt-front-page section:not(.adpt-stage):not(:last-of-type) {
+body.adpt-front-page section:not(:last-of-type) {
   margin-bottom: 1em; }
 
 body.adpt-front-page .adpt-stage {
@@ -1698,3 +1701,6 @@ body.adpt-front-page .adpt-podcast {
     padding: 2em 1em 0; }
   body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content h2 {
     font-size: 30px; } }
+
+body.adpt-contact adpt-stage {
+  background-color: #f68e4b; }

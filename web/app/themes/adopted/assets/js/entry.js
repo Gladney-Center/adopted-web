@@ -1,4 +1,7 @@
+import './components'
+
 (() => {
+
 	const qBubble = document.querySelector('.adpt-podcast'),
 		mbIcon = document.querySelector('.adpt-mobile-menu-icon')
 

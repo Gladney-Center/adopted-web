@@ -8,7 +8,7 @@ add_filter( 'body_class', function($classes) use ($meta) {
 });
  
 get_header(); ?>
-<section class="adpt-stage">
+<adpt-stage class="adpt-stage">
 	<div class="adpt-stage-inner">
 		<div class="adpt-stage-column">
 			<h1><?php echo get_theme_mod('fp_stage_heading'); ?></h1>
@@ -19,7 +19,7 @@ get_header(); ?>
 			</figure>
 		</div>
 	</div>
-</section>
+</adpt-stage>
 <section class="adpt-fold">
 	<div class="adpt-fold-inner">
 		<div class="adpt-fold-graybox">

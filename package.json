@@ -1,6 +1,6 @@
 {
   "name": "adopted",
-  "version": "1.0.0",
+  "version": "1.0.0-508",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://enlightenedpie@bitbucket.org/enlightenedpie/adopted.git"
   },
-  "author": "David Paul Crouch, Gavin Bintz, Ryan Doty",
+  "author": "David Paul Crouch",
   "license": "ISC",
   "homepage": "https://bitbucket.org/enlightenedpie/adopted#readme",
   "devDependencies": {
