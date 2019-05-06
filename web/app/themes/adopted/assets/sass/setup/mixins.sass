@@ -18,6 +18,14 @@
 	width: 100%
 	padding: 0 $huge
 
+// CUSTOM ELEMENTS / WEB COMPONENTS DEFAULTS //
+@mixin custom-block-element
+	display: block
+
+// SVG DROP SHADOW //
+@mixin material-depth
+	filter: drop-shadow(24px 38px 3px black(.5))
+
 // MEDIA QUERY //
 @mixin MQ($breakpoint)
 	@if $breakpoint >= $mq-tablet+1

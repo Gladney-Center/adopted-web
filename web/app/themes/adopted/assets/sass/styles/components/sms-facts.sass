@@ -43,23 +43,7 @@
 							white-space: nowrap
 							padding-right: .15em
 							border-right: .1em solid black(.8)
-							-webkit-animation: typing 5s steps(50,end),caret .5s step-end infinite
-							-moz-animation: typing 5s steps(50,end),caret .5s step-end infinite
-							-ms-animation: typing 5s steps(50,end),caret .5s step-end infinite
-							-o-animation: typing 5s steps(50,end),caret .5s step-end infinite
 							animation: typing 5s steps(50,end),caret .5s step-end infinite
-
-							+keyframes(typing)
-								0%
-									width: 0
-								100%
-									width: 100%
-
-							+keyframes(caret)
-								0%, 100%
-									border-color: transparent
-								50%
-									border-color: black(.8)
 
 				div.send
 					color: $white

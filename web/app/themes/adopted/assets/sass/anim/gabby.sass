@@ -3,6 +3,7 @@ svg.gabby
 
 	ellipse.belly.bounce
 		animation: scalex .1s $ease-bouncy 1s both
+		+material-depth
 
 	g.belly-emphasis
 		animation: fadeinout .5s ease-in-out 1s both
@@ -12,26 +13,36 @@ svg.gabby
 
 	circle.small-lead
 		animation: scaley .1s $ease-bouncy 2s both
+		+material-depth
 
 	circle.med-lead
 		animation: scaley .1s $ease-bouncy 2.1s both
+		+material-depth
 	
 	circle.lrg-lead
 		animation: scaley .1s $ease-bouncy 2.2s both
+		+material-depth
 
 	g.cloud
 		animation: scaley .1s $ease-bouncy 2.3s both
+		+material-depth
+	
+	g.g, path.k, line.e
+		+material-depth
 
 	g.post-choice
 
 		path.choicepost
 			animation: scaley .1s $ease-bouncy 2.5s both
+			+material-depth
 
 		path.adoptionsign
 			animation: scalex .1s $ease-bouncy 2.6s both
+			+material-depth
 
 		path.parentingsign
 			animation: scalex .1s $ease-bouncy 2.7s both
+			+material-depth
 
 		g#adoption
 			animation: fadein .1s ease-in-out 2.8s both
