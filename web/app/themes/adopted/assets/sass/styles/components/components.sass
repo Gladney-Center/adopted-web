@@ -1,10 +1,21 @@
-adpt-stage, adpt-inner, adpt-contact, adpt-post-footer
+adpt-stage, adpt-inner, adpt-columns, adpt-column, adpt-contact, adpt-post-footer
     +custom-block-element
     @extend div
 
 adpt-inner
     +body-max-width
 
+adpt-columns
+    display: flex
+    flex-flow: row wrap
+
+adpt-column
+    flex: 1 1 auto
+    min-height: $huge*2
+
+    &.adpt-column-collapse
+        flex: initial
+
 adpt-post-footer
     height: $huge
-    background-color: #cb5333
+    background-color: $sunrise
