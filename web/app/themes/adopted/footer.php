@@ -67,6 +67,7 @@ if (!in_array('no-blog',get_body_class())) get_template_part('templates/componen
 		</div>
 	</div>
 </footer>
+<adpt-post-footer></adpt-post-footer>
 <?php wp_footer(); ?>
 </body>
 </html>
