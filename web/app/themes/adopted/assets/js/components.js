@@ -16,26 +16,28 @@ class AdptContactForm extends HTMLFormElement {
 	}
 
 	buildForm() {
-		const text = this.innerHTML
-		return this.outerHTML = `
-			<div>
-			<span class="top-text">${text}</span><br>
-			<button type="submit">Submit</button>
-			</div>
-		`
+		let template = document.createElement('template')
+			template.innerHTML =`
+				<span class="top-text">
+					<slot name="top-text">${this.text}</slot>
+				</span><br>
+				<button type="submit">Submit</button>
+			`
+			return template
 	}
 
 	connectedCallback() {
 		this.addEventListener('submit',(e) => e.preventDefault() || console.log(e))
-		console.log(this)
 	}
 
 	constructor() {
 		super()
+
+		this.text = this.getAttribute('text') || 'Default Text'
 		this.setAttribute('role','form')
 		this.setAttribute('action','/')
-		this.attachShadow({mode: 'open'})
-		this.shadowRoot.innerHTML = '<div>Test</div>'
+
+		let form = this.appendChild(this.buildForm().content)
 	}
 }
 
