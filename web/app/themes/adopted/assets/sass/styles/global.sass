@@ -1,3 +1,6 @@
+html
+	font-size: $blockEM
+	
 body
 	overflow: auto
 	position: relative
@@ -44,10 +47,10 @@ input, select, textarea
 	font-size: $bodytext
 	outline: none !important
 	border: 0
-	color: $black
-	background-color: aecolor(#fff,.5)
+	color: black(.75)
+	background-color: aecolor(#fff,.6)
 
-input[type="text"]
+input[type="text"], input[type="email"], input[type="tel"]
 	padding: $teeny 1em
 	border-radius: $tiny
 
@@ -61,6 +64,43 @@ button, a.button, a.btn
 	opacity: .9
 	transition: opacity 250ms ease-in-out
 
+	&.skinny
+		font-size: $bodytext
+		padding: $teeny $huge
+
 	&:hover
 		cursor: pointer
 		opacity: 1
+
+.adpt-form-input:not(.no-bg)
+	position: relative
+	background-color: aecolor(#fff,.65)
+	overflow: hidden
+	border-radius: 3px
+
+	& > label.floating
+		font-size: $bodytext
+		padding: $teeny 1em
+		position: absolute
+		display: block
+		top: .25rem
+		left: 0
+		transition: all .1s ease-in-out
+
+	input:not([type="checkbox"]), textarea
+		display: block
+		position: relative
+		box-sizing: border-box
+		overflow: hidden
+		border-radius: 3px
+		border: 1px solid black(.1)
+		z-index: 1
+		background-color: transparent
+		transition: all .25s ease-in-out
+
+		&:focus, &:valid
+			border: 1px solid black(.5)
+
+			& + label.floating
+				top: 0
+				font-size: $bodytext * .75

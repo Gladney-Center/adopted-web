@@ -9,7 +9,7 @@ import './components'
 		isInViewport: (elem) => elem.getBoundingClientRect().top < 800
 	}
 
-	window.addEventListener(
+	if (qBubble) window.addEventListener(
 		'scroll',
 		(e) => funcs.isInViewport(qBubble) && qBubble.classList.add('active')
 	)
