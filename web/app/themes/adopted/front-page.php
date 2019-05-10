@@ -21,12 +21,12 @@ get_header(); ?>
 	</div>
 </adpt-stage>
 <section class="adpt-fold">
-	<div class="adpt-fold-inner">
+	<adpt-inner>
 		<div class="adpt-fold-graybox">
 			<p><?php echo get_theme_mod('fp_fold_copy'); ?></p>
 			<a class="btn" href="#">Learn More</a>
 		</div>
-	</div>
+	</adpt-inner>
 </section>
 <section class="adpt-panel-block">
 	<div class="adpt-panel-block-inner">

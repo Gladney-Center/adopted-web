@@ -1,0 +1,26 @@
+body.adpt-about
+
+    adpt-stage
+        background-color: $teal
+
+        adpt-columns
+            align-items: center
+
+            adpt-column
+                flex: 1 1 50%
+
+                &.adpt-about-icon
+                    padding: $huge*3
+
+                    svg
+                        height: 100%
+                        width: 100%
+                        +material-depth
+
+    .adpt-fold
+        background: linear-gradient(180deg, $teal 35%, teal(0) 35%)
+        margin-bottom: 1em
+
+        adpt-inner
+
+            .adpt-fold-graybox

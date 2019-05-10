@@ -2,7 +2,8 @@
 
 namespace AdoptED;
 
-if (!in_array('no-blog',get_body_class())) get_template_part('templates/components/blog-posts'); ?><footer class="adpt-footer">
+if (!in_array('no-blog',get_body_class())) get_template_part('templates/components/blog-posts');
+?><footer role="contentinfo" class="adpt-footer">
 	<div class="adpt-footer-block block-1">
 		<div class="adpt-footer-block-inner">
 			<div class="adpt-footer-heading">

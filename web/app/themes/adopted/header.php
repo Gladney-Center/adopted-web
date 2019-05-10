@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="adpt-header">
+<header role="banner" class="adpt-header">
 	<div class="adpt-mobile-menu">
 		<div class="adpt-mobile-menu-icon">
 			<div class="adpt-mobile-menu-icon-lines"></div>
@@ -21,7 +21,7 @@
 				<?php include 'assets/svg/adptlogo.svg'; ?>
 			</a>
 		</div>
-		<nav class="adpt-menu">
+		<nav role="navigation" class="adpt-menu">
 			<?php wp_nav_menu(
 				[
 					'menu' => 'header-menu'
