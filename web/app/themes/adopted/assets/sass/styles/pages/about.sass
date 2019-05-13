@@ -1,5 +1,10 @@
 body.adpt-about
 
+    nav.adpt-menu
+
+        .about > a
+            +menuactive
+
     adpt-stage
         background-color: $teal
 
@@ -60,8 +65,12 @@ body.adpt-about
         svg
             max-width: $headerh
             max-height: $headerh
+            display: block
+            margin: 1em auto
 
-        span
+        article
             width: 100%
             max-width: $bodyw / 2
             padding: 0 $huge
+            font-size: $intsize
+            margin: 0 auto

@@ -1,4 +1,6 @@
-import './components'
+import './components/stage'
+import './components/contactform'
+import './components/teambio'
 
 (() => {
 
