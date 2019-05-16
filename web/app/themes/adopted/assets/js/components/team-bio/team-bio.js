@@ -5,7 +5,7 @@ customElements.define('adpt-team-bio',
         preTemplate() {
             let template = document.createElement('template')
                 template.innerHTML =`
-                    <style type="text/css"></style>
+                    <style type="text/css">@import url('/app/themes/adopted/assets/js/components/team-bio/team-bio.sass')</style>
                 `
             return template
         }
@@ -16,8 +16,7 @@ customElements.define('adpt-team-bio',
             this.setAttribute('role','complementary')
 
             const template = document.getElementById('bio-innards').content
-            const shadow = this.attachShadow({mode:'open'})
-                .appendChild(template.cloneNode(true))
+            this.appendChild(template.cloneNode(true))
         }
     }
 )

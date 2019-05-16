@@ -1,7 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const globImporter = require('node-sass-glob-importer')
 
 module.exports = (env) => {
@@ -13,37 +12,33 @@ module.exports = (env) => {
             filename: 'app/themes/adopted/adopted.min.js',
             publicPath: '/'
         },
-        devServer: {
-            publicPath: '/',
-            port: 8888
-        },
         module: {
             rules: [
                 {
                     test: /\.sass$/,
-                    use: ExtractTextPlugin.extract({
-                        fallback: 'style-loader',
-                        use: [
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    url: false,
-                                    minimize: true,
-                                    sourceMap: true
-                                }
-                            },
-                            {
-                                loader: 'resolve-url-loader'
-                            },
-                            {
-                                loader: 'sass-loader',
-                                options: {
-                                    sourceMap: true,
-                                    importer: globImporter()
-                                }
+                    use: [
+                        {
+                            loader: MiniCssExtractPlugin.loader
+                        },
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                url: false,
+                                minimize: true,
+                                sourceMap: true
                             }
-                        ]
-                    })
+                        },
+                        {
+                            loader: 'resolve-url-loader'
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true,
+                                importer: globImporter()
+                            }
+                        }
+                    ]
                 },
                 {
                     test: /\.(js)$/,
@@ -66,10 +61,8 @@ module.exports = (env) => {
             historyApiFallback: true,
         },
         plugins: [
-            new ExtractTextPlugin({
-                filename: 'app/themes/adopted/style.min.css',
-                disable: false,
-                allChunks: true
+            new MiniCssExtractPlugin({
+                filename: 'app/themes/adopted/style.min.css'
             }),
             /* new HtmlWebpackPlugin({
                 filename: 'app.html',
