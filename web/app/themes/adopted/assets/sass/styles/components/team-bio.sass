@@ -1,7 +1,29 @@
 adpt-team-bio
-    display: flex
+    position: relative
     background-color: $navy
     color: $white
+    perspective: 1px
+    transform-style: preserve-3d
+    overflow-x: hidden
+    height: 40vh
+
+    adpt-parallax-bg
+        display: flex
+        flex: 1 0 auto
+        position: relative
+        height: 20vh
+        transform: translateZ(-1px) scale(2)
+        z-index: -1
+        justify-content: center
+        align-items: center
+
+    adpt-parallax-content
+        display: block
+        position: relative
+        z-index: 1
     
-    figure
-        margin: 0
+        figure
+            margin: 0
+
+            img
+                width: 100px

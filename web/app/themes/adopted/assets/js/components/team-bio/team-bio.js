@@ -1,22 +1,21 @@
 customElements.define('adpt-team-bio',
     class extends HTMLElement {
-        connectedCallback() {}
-
-        preTemplate() {
-            let template = document.createElement('template')
-                template.innerHTML =`
-                    <style type="text/css">@import url('/app/themes/adopted/assets/js/components/team-bio/team-bio.sass')</style>
-                `
-            return template
+        connectedCallback() {
+            this.setAttribute('role','complementary')
         }
 
         constructor() {
             super()
-            
-            this.setAttribute('role','complementary')
 
-            const template = document.getElementById('bio-innards').content
-            this.appendChild(template.cloneNode(true))
+            const parallaxContent = document.createElement('adpt-parallax-content',{is: 'div'})
+            parallaxContent.innerHTML = this.innerHTML
+            this.innerHTML = ''
+            this.appendChild(parallaxContent)
+
+            const parallaxBg = document.createElement('adpt-parallax-bg',{is: 'div'})
+            parallaxBg.setAttribute('class','adpt-parallax')
+            parallaxBg.appendChild(document.createTextNode('Parallax'))
+            this.insertBefore(parallaxBg.cloneNode(true),this.firstChild)
         }
     }
 )
