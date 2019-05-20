@@ -41,17 +41,19 @@ adpt-team-bio
             figure:not(.active)
                 flex: 1
 
+                img
+                    opacity: .75
+                    transition: all 250ms ease-in-out
+
+                    &:hover
+                        opacity: 1
+
             figure.active
                 order: -1
                 flex: 1 1 100%
 
                 img
-                    opacity: .75
-                    transition: all 250ms ease-in-out
                     flex: 1
-
-                    &:hover
-                        opacity: 1
 
                 figcaption
                     display: block
