@@ -10,16 +10,21 @@ adpt-team-bio
         left: 0
         right: 0
         bottom: 0
+        opacity: .25
         background-attachment: fixed
         background-image: url('/app/themes/adopted/assets/img/team-bio-texture.png')
 
     adpt-team-bio-content
         display: block
         position: relative
-        z-index: 1
+        +body-max-width
     
         figure
+            display: flex
             margin: 0
 
             img
                 width: 200px
+
+            figcaption
+                flex: 1
