@@ -1,12 +1,15 @@
 {
   "name": "adopted",
-  "version": "1.0.0-508",
+  "version": "1.1.0",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
+    "it": "npm --no-git-tag-version version minor -m \"%s build\"",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A",
+    "postversion": "git commit -a && git push",
     "build": "webpack --env.APP_MODE=development --mode=production",
-    "buildp": "webpack --env.APP_MODE=production --mode=production",
-    "devpush": "git add -A && git commit -a && git push"
+    "buildp": "webpack --env.APP_MODE=production --mode=production"
   },
   "repository": {
     "type": "git",
