@@ -14,7 +14,6 @@ customElements.define('adpt-team-bio',
 
             const parallaxBg = document.createElement('adpt-parallax-bg',{is: 'div'})
             parallaxBg.setAttribute('class','adpt-parallax')
-            parallaxBg.appendChild(document.createTextNode('Parallax'))
             this.insertBefore(parallaxBg.cloneNode(true),this.firstChild)
         }
     }
