@@ -10,7 +10,7 @@ customElements.define('adpt-team-bio',
 
             document.addEventListener('click',(e) => {
                 e.preventDefault()
-                console.log(e)
+                console.log(e.target.parentNode)
                 //e.target.classList.add('active')
             })
         }
