@@ -2,22 +2,19 @@ adpt-team-bio
     position: relative
     background-color: $navy
     color: $white
-    perspective: 1px
-    transform-style: preserve-3d
-    overflow-x: hidden
-    height: 40vh
+    min-height: 20em
 
     adpt-parallax-bg
-        display: flex
-        flex: 1 0 auto
-        position: relative
-        height: 20vh
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
         transform: translateZ(-1px) scale(2)
-        z-index: -1
-        justify-content: center
-        align-items: center
+        background-attachment: fixed
+        background-image: url('/app/themes/adopted/assets/img/team-bio-texture.png')
 
-    adpt-parallax-content
+    adpt-team-bio-content
         display: block
         position: relative
         z-index: 1
@@ -26,4 +23,4 @@ adpt-team-bio
             margin: 0
 
             img
-                width: 100px
+                width: 200px

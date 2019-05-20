@@ -7,7 +7,7 @@ customElements.define('adpt-team-bio',
         constructor() {
             super()
 
-            const parallaxContent = document.createElement('adpt-parallax-content',{is: 'div'})
+            const parallaxContent = document.createElement('adpt-team-bio-content',{is: 'div'})
             parallaxContent.innerHTML = this.innerHTML
             this.innerHTML = ''
             this.appendChild(parallaxContent)
