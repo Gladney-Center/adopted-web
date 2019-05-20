@@ -1,10 +1,10 @@
 {
   "name": "adopted",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
-    "it": "npm --no-git-tag-version version minor -m \"%s build\"",
+    "it": "npm --no-git-tag-version version patch",
     "preversion": "npm test",
     "version": "npm run build && git add -A",
     "postversion": "git commit -a && git push",
