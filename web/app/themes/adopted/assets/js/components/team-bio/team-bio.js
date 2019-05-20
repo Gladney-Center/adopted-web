@@ -3,13 +3,12 @@ customElements.define('adpt-team-bio',
         connectedCallback() {
             this.setAttribute('role','complementary')
 
-            let figs = this.querySelectorAll('figure')
-            for (var i = 0; i < figs.length; i++) {
-                figs[i].classList.remove('active')
-            }
-
             document.addEventListener('click',(e) => {
                 e.preventDefault()
+                let figs = this.querySelectorAll('figure')
+                for (var i = 0; i < figs.length; i++) {
+                    figs[i].classList.remove('active')
+                }
                 e.target.parentNode.classList.add('active')
             })
         }
