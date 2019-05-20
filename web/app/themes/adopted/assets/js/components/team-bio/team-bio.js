@@ -8,7 +8,8 @@ customElements.define('adpt-team-bio',
                 figs[i].classList.remove('active')
                 figs[i].addEventListener('click',(e) => {
                     e.preventDefault()
-                    e.target.classList.add('active')
+                    console.log(e)
+                    //e.target.classList.add('active')
                 })
             }
         }
