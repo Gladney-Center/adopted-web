@@ -6,12 +6,13 @@ customElements.define('adpt-team-bio',
             let figs = this.querySelectorAll('figure')
             for (var i = 0; i < figs.length; i++) {
                 figs[i].classList.remove('active')
-                figs[i].addEventListener('click',(e) => {
-                    e.preventDefault()
-                    console.log(e)
-                    //e.target.classList.add('active')
-                })
             }
+
+            document.addEventListener('click',(e) => {
+                e.preventDefault()
+                console.log(e)
+                //e.target.classList.add('active')
+            })
         }
 
         constructor() {
