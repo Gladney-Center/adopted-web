@@ -9,7 +9,9 @@ customElements.define('adpt-team-bio',
                 for (var i = 0; i < figs.length; i++) {
                     figs[i].classList.remove('active')
                 }
-                e.target.parentNode.classList.add('active')
+                let parnt = e.target.parentNode
+                parnt.parentNode.classList.add('actif')
+                parnt.classList.add('active')
             })
         }
 
@@ -24,6 +26,11 @@ customElements.define('adpt-team-bio',
             const parallaxBg = document.createElement('adpt-parallax-bg',{is: 'div'})
             parallaxBg.setAttribute('class','adpt-parallax')
             this.insertBefore(parallaxBg.cloneNode(true),this.firstChild)
+
+            let figs = this.querySelectorAll('figure>img')
+            for (var i = 0; i < figs.length; i++) {
+                figs[i].classList.add('bio-image')
+            }
         }
     }
 )

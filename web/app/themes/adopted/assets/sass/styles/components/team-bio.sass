@@ -36,8 +36,14 @@ adpt-team-bio
             figcaption
                 display: none
 
+        &.actif
+
+            &:not(.active)
+                flex: 1
+                
             &.active
                 order: -1
+                flex: 1 1 100%
 
                 img
                     flex: 1
