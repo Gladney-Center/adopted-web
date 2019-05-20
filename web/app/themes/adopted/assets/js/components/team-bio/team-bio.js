@@ -5,13 +5,16 @@ customElements.define('adpt-team-bio',
 
             document.addEventListener('click',(e) => {
                 e.preventDefault()
-                let figs = this.querySelectorAll('figure')
-                for (var i = 0; i < figs.length; i++) {
-                    figs[i].classList.remove('active')
+
+                if (e.target.matches('.bio-image')) {
+                    let figs = this.querySelectorAll('figure')
+                    for (var i = 0; i < figs.length; i++) {
+                        figs[i].classList.remove('active')
+                    }
+                    let parnt = e.target.parentNode
+                    parnt.parentNode.classList.add('actif')
+                    parnt.classList.add('active')
                 }
-                let parnt = e.target.parentNode
-                parnt.parentNode.classList.add('actif')
-                parnt.classList.add('active')
             })
         }
 
