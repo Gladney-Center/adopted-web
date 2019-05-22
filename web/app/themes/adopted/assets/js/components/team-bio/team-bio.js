@@ -4,9 +4,8 @@ customElements.define('adpt-team-bio',
             this.setAttribute('role','complementary')
 
             document.addEventListener('click',(e) => {
-                e.preventDefault()
-
                 if (e.target.matches('.bio-image')) {
+                    e.preventDefault()
                     let figs = this.querySelectorAll('figure')
                     for (var i = 0; i < figs.length; i++) {
                         figs[i].classList.remove('active')
