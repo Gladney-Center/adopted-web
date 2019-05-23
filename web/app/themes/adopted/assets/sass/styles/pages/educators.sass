@@ -1,0 +1,28 @@
+body.adpt-educators
+
+    nav.adpt-menu
+
+        .educators > a
+            +menuactive
+
+    adpt-stage
+        background-color: $rose
+
+        adpt-columns
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            grid-gap: $huge*2
+            align-items: center
+
+            adpt-column
+
+                &.adpt-educator-anim
+
+                    svg
+                        height: 100%
+                        width: 100%
+                        +material-depth
+
+                &.adpt-edu-headline
+                    display: flex
+                    align-items: center
