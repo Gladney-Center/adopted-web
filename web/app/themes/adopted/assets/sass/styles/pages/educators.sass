@@ -17,6 +17,8 @@ body.adpt-educators
             adpt-column
 
                 &.adpt-educator-anim
+                    padding-top: $huge*2
+                    padding-left: $huge
 
                     svg
                         height: 100%
@@ -26,3 +28,30 @@ body.adpt-educators
                 &.adpt-edu-headline
                     display: flex
                     align-items: center
+
+    .adpt-fold
+        background: linear-gradient(180deg, $rose 35%, teal(0) 35%)
+        margin-bottom: 1em
+
+        adpt-inner
+
+            adpt-columns
+                display: grid
+                grid-template-columns: repeat(2,1fr)
+                grid-gap: $huge*2
+
+                &.adpt-fold-graybox
+
+                adpt-column
+
+                    h2
+                        font-size: 150%
+                        color: $sunrise
+                    
+                    &.fold-text
+
+                        p:not(.emphasis)
+                            font-size: $intsize
+
+                        p.emphasis
+                            line-height: 125%
