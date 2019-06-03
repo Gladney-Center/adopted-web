@@ -68,3 +68,38 @@ body.adpt-educators
             max-width: 750px
             display: inline-block
             margin-top: 1em
+
++MQ($mq-tportrait)
+	body.adpt-educators
+        
+        .adpt-fold
+
+            adpt-inner
+
+                adpt-columns
+                    grid-template-columns: 1fr
+                    grid-template-rows: repeat(2,1fr)
+                    grid-gap: $huge
+
+        adpt-stage
+            
+            adpt-inner
+                
+                adpt-columns
+                    grid-template-columns: 1fr
+                    grid-template-rows: repeat(2, 1fr)
+                    grid-gap: $huge
+                    
+                    adpt-column
+                        margin: 0 !important
+                        
+                        &.adpt-edu-headline
+                            order: 1
+                            
+                        &.adpt-educator-anim
+                            padding: 0 .5em
+                            order: 2
+                            
+                        h1
+                            font-size: 40px
+                            padding: 0 1em

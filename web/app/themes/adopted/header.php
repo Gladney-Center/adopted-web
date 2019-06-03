@@ -15,12 +15,12 @@
 			<div class="adpt-mobile-menu-icon-lines"></div>
 		</div>
 	</div>
+	<div class="adpt-nav-logo">
+		<a href="<?php echo home_url(); ?>">
+		<?php echo \AdoptED\Filter::svg('<adpt-icon:adptlogo>'); ?>
+		</a>
+	</div>
 	<div class="adpt-nav-dt">
-		<div class="adpt-nav-logo">
-			<a href="<?php echo home_url(); ?>">
-				<?php include 'assets/svg/adptlogo.svg'; ?>
-			</a>
-		</div>
 		<nav role="navigation" class="adpt-menu">
 			<?php wp_nav_menu(
 				[
@@ -30,14 +30,20 @@
 		</nav>
 	</div>
 	<div class="adpt-header-apps">
+		<span>Get the app!</span>
 		<div class="adpt-app-link">
-			<a href="https://itunes.apple.com/us/app/gladney-cup/id1036365725?mt=8">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/apple-store-black.png" alt="AdoptED on the Apple App Store" />
+			<a href="#">
+				<i class="fab fa-apple"></i>
 			</a>
 		</div>
 		<div class="adpt-app-link">
-			<a href="https://play.google.com/store/apps/details?id=com.gladney.adopted&hl=en">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/google-play-store-black.png" alt="AdoptED on Google Play" />
+			<a href="#">
+				<i class="fab fa-android"></i>
+			</a>
+		</div>
+		<div class="adpt-app-link">
+			<a href="#">
+				<i class="fab fa-windows"></i>
 			</a>
 		</div>
 	</div>

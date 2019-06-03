@@ -4,25 +4,20 @@
 	height: $headerh
 	+full-width-gutter
 
-	.adpt-mobile-menu
-		display: none
+	.adpt-nav-logo
+		height: 100%
+		padding: 1em 0
+
+		a
+
+			svg
+				fill: $white
+				@extend .v-constrained
 
 	.adpt-nav-dt
 		flex: 1
-		position: relative
 		height: 100%
 		padding: 1em 0
-		display: flex
-
-		.adpt-nav-logo
-			height: 100%
-			flex: 0
-
-			a
-
-				svg
-					fill: $white
-					@extend .v-constrained
 
 		.adpt-menu
 			height: 100%
@@ -53,22 +48,30 @@
 						&:hover, &:focus
 							+menuactive
 
+		.adpt-mobile-menu
+			display: none
+
 	.adpt-header-apps
-		position: relative
 		padding: $small 0
 		display: flex
+		justify-content: center
 		align-items: center
+
+		& > span
+			display: block
+			padding-right: 1em
+			color: $navy
+			font-weight: bold
+			text-transform: uppercase
+			font-size: $bodytext
+			letter-spacing: 2px
 
 		.adpt-app-link
 			position: relative
 			padding: 0 $teeny
-			width: auto
-			height: 75%
 
-			img
-				display: block
-				height: 100%
-				width: auto
+			a
+				color: white(.75)
 
 +MQ($mq-tportrait)
 	html.menu-open, body.menu-open
@@ -80,33 +83,6 @@
 		z-index: 9999999
 		background-color: $white
 		padding: 0 1em
-
-		.adpt-header-apps
-			position: fixed
-			left: 0
-			right: 0
-			bottom: 1em
-			z-index: 9999999
-			visibility: hidden
-			padding: $small
-			opacity: 0
-			max-height: 1.5em
-			width: 100%
-			transition: all 250ms
-
-			body.menu-open &
-				visibility: visible
-				opacity: 1
-
-			.adpt-app-link
-				height: 100%
-				flex: 1 1 100%
-
-				a
-
-					img
-						height: auto
-						width: 100%
 
 		.adpt-mobile-menu
 			display: block
@@ -175,14 +151,40 @@
 						&:before
 							transform: rotate(135deg)
 
-		.adpt-nav-dt
+		.adpt-nav-logo
 
-			.adpt-nav-logo
+			a
+
+				svg
+					fill: $sunrise
+
+		.adpt-header-apps
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 1em
+			z-index: 9999999
+			visibility: hidden
+			padding: $small
+			opacity: 0
+			max-height: 1.5em
+			width: 100%
+			font-size: 1rem
+			transition: all 250ms
+
+			body.menu-open &
+				visibility: visible
+				opacity: 1
+
+			.adpt-app-link
+				height: 100%
+				text-align: center
+				padding: 0 1em
 
 				a
+					color: black(.75)
 
-					svg
-						fill: $sunrise
+		.adpt-nav-dt
 
 			.adpt-menu
 				height: auto
