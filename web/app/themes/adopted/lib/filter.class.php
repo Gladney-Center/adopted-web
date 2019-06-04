@@ -21,7 +21,7 @@ final class Filter {
 	public static function svg($text) {
 		return preg_replace_callback('(<adpt-icon:(\w+)>)',
 			function($matches) {
-				return @file_get_contents(get_template_directory() . "/assets/svg/$matches[1].svg") ?: '';
+				return @file_get_contents( APP_ROOT . "/src/svg/$matches[1].svg") ?: '';
 			},
 			$text
 		);

@@ -6,7 +6,7 @@ const globImporter = require('node-sass-glob-importer')
 module.exports = (env) => {
 
     return {
-        entry: ['./web/app/themes/adopted/assets/js/entry.js','./web/app/themes/adopted/assets/sass/adopted.sass'],
+        entry: ['./src/js/entry.js','./src/sass/adopted.sass'],
         output: {
             path: path.resolve(__dirname, 'web'),
             filename: 'app/themes/adopted/adopted.min.js',

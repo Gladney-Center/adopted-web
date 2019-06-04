@@ -10,6 +10,8 @@ Config::define('WP_DEBUG', true);
 Config::define('WP_DEBUG_DISPLAY', true);
 Config::define('SCRIPT_DEBUG', true);
 
+Config::define('APP_ROOT', dirname(dirname( __DIR__)));
+
 ini_set('display_errors', 1);
 
 // Enable plugin and theme updates and installation from the admin
