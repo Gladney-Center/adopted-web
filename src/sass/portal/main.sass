@@ -11,7 +11,7 @@ adpt-logo
 
 adpt-portal
     min-height: 100vh
-    width: 100vw
+    width: 100%
 
     header, main
         width: 100%
@@ -48,48 +48,48 @@ adpt-portal
                     top: -25%
                     left: -25%
 
-                    .adpt-mobile-menu-icon-lines
-                        top: 50%
-                        margin-top: -.125em
+                .adpt-mobile-menu-icon-lines
+                    top: 50%
+                    margin-top: -.125em
+                    transition: all 250ms
+
+                    &, &:after, &:before
+                        pointer-events: none
+                        display: block
+                        content: ''
+                        width: 100%
+                        height: $tiny
+                        position: absolute
+                        border-radius: $tiny
+                        transform: rotate(0)
+                        background-color: $navy
                         transition: all 250ms
 
-                        &, &:after, &:before
-                            pointer-events: none
-                            display: block
-                            content: ''
-                            width: 100%
-                            height: $tiny
-                            position: absolute
-                            border-radius: $tiny
-                            transform: rotate(0)
-                            background-color: $navy
-                            transition: all 250ms
+                        &:after
+                            width: $huge
+                            left: 0
+                            top: calc(-1em + #{$tiny})
 
-                            &:after
-                                width: $huge
-                                left: 0
-                                top: calc(-1em + #{$tiny})
+                        &:before
+                            width: $huge
+                            left: 1em
+                            top: calc(1em - #{$tiny})
 
-                            &:before
-                                width: $huge
-                                left: 1em
-                                top: calc(1em - #{$tiny})
+                            body.menu-open &
+                                transform: rotate(180deg)
 
-                                body.menu-open &
-                                    transform: rotate(180deg)
+                                .adpt-mobile-menu-icon-lines
+                                    background-color: transparent
 
-                                    .adpt-mobile-menu-icon-lines
-                                        background-color: transparent
+                                    &:after, &:before
+                                        left: .5em
+                                        top: 0
 
-                                        &:after, &:before
-                                            left: .5em
-                                            top: 0
+                                    &:after
+                                        transform: rotate(-135deg)
 
-                                        &:after
-                                            transform: rotate(-135deg)
-
-                                        &:before
-                                            transform: rotate(135deg)
+                                    &:before
+                                        transform: rotate(135deg)
 
         .header-right
             flex: 1

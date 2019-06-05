@@ -1,6 +1,6 @@
 {
   "name": "adopted",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
