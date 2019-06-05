@@ -71,17 +71,17 @@ module.exports = env => {
     const portalConfig = Object.assign({},baseConfig,{
         entry: ['./src/js/portal/portal.js','./src/sass/portal/portal.sass'],
         output: {
-            path: __dirname,
-            filename: 'assets/js/[name].min.js',
+            path: path.resolve(__dirname, 'web'),
+            filename: 'assets/js/portal.min.js',
             publicPath: '/'
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'assets/css/[name].min.css'
+                filename: 'assets/css/portal.min.css'
             }),
             new HtmlWebpackPlugin({
                 filename: 'web/portal/index.html',
-                template: 'templates/portal.html',
+                template: './templates/portal.html',
                 title: 'AdoptED Curriculum Portal',
                 inject : true,
                 hash: true
