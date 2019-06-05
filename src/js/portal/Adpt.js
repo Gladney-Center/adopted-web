@@ -10,7 +10,7 @@ const Adpt = () =>
                 </div>
             </div>
             <AdptLogo />
-            <div className="header-right">Hello World!</div>
+            <div className="header-right"></div>
         </header>
         <main></main>
     </React.Fragment>
