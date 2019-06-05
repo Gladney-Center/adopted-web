@@ -71,7 +71,7 @@ module.exports = env => {
     const portalConfig = Object.assign({},baseConfig,{
         entry: ['./src/js/portal/portal.js','./src/sass/portal/portal.sass'],
         output: {
-            path: path.resolve(__dirname),
+            path: __dirname,
             filename: 'assets/js/[name].min.js',
             publicPath: '/'
         },
