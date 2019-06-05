@@ -3,15 +3,8 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const globImporter = require('node-sass-glob-importer')
 
-module.exports = (env) => {
-
-    return {
-        entry: ['./src/js/entry.js','./src/sass/adopted.sass'],
-        output: {
-            path: path.resolve(__dirname, 'web'),
-            filename: 'app/themes/adopted/adopted.min.js',
-            publicPath: '/'
-        },
+module.exports = env => {
+    const baseConfig = {
         module: {
             rules: [
                 {
@@ -56,22 +49,46 @@ module.exports = (env) => {
         },
         performance: {
             hints: false
-        },
-        devServer: {
-            historyApiFallback: true,
+        }
+    }
+    
+    const adoptedConfig = Object.assign({},baseConfig,{
+        entry: ['./src/js/adopted.js','./src/sass/adopted.sass'],
+        output: {
+            path: path.resolve(__dirname, 'web'),
+            filename: 'app/themes/adopted/[name].min.js',
+            publicPath: '/'
         },
         plugins: [
             new MiniCssExtractPlugin({
                 filename: 'app/themes/adopted/style.min.css'
             }),
-            /* new HtmlWebpackPlugin({
-                filename: 'app.html',
-                template: 'templates/app.html',
-                title: 'SupertutorTV Courses',
-                inject : true,
-                hash: true
-            }), */
             new webpack.DefinePlugin({ 'process.env.APP_MODE': JSON.stringify(env.APP_MODE) })
         ]
-    }
+    })
+    
+    /* const portalConfig = Object.assign({},baseConfig,{
+        entry: ['./src/js/adopted.js','./src/sass/adopted.sass'],
+        output: {
+            path: path.resolve(__dirname, 'web'),
+            filename: 'app/themes/adopted/adopted.min.js',
+            publicPath: '/'
+        },
+        plugins: [
+            new MiniCssExtractPlugin({
+                filename: 'app/themes/adopted/style.min.css'
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'index.html',
+                template: 'templates/portal.html',
+                title: 'AdoptED Curriculum Portal',
+                inject : true,
+                hash: true
+            })
+        ]
+    }) */
+    return [
+        adoptedConfig,
+        //portalConfig
+    ]
 }
