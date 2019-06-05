@@ -57,7 +57,7 @@ module.exports = env => {
         entry: ['./src/js/adopted.js','./src/sass/adopted.sass'],
         output: {
             path: path.resolve(__dirname, 'web'),
-            filename: 'assets/js/[name].min.js',
+            filename: 'assets/js/adopted.min.js',
             publicPath: '/'
         },
         plugins: [
