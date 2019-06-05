@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
 
 module.exports = env => {
@@ -56,7 +57,7 @@ module.exports = env => {
         entry: ['./src/js/adopted.js','./src/sass/adopted.sass'],
         output: {
             path: path.resolve(__dirname, 'web'),
-            filename: 'app/themes/adopted/[name].min.js',
+            filename: 'assets/js/[name].min.js',
             publicPath: '/'
         },
         plugins: [
@@ -67,28 +68,28 @@ module.exports = env => {
         ]
     })
     
-    /* const portalConfig = Object.assign({},baseConfig,{
-        entry: ['./src/js/adopted.js','./src/sass/adopted.sass'],
+    const portalConfig = Object.assign({},baseConfig,{
+        entry: ['./src/js/portal/portal.js','./src/sass/portal/portal.sass'],
         output: {
-            path: path.resolve(__dirname, 'web'),
-            filename: 'app/themes/adopted/adopted.min.js',
+            path: path.resolve(__dirname),
+            filename: 'assets/js/[name].min.js',
             publicPath: '/'
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'app/themes/adopted/style.min.css'
+                filename: 'assets/css/[name].min.css'
             }),
             new HtmlWebpackPlugin({
-                filename: 'index.html',
+                filename: 'web/portal/index.html',
                 template: 'templates/portal.html',
                 title: 'AdoptED Curriculum Portal',
                 inject : true,
                 hash: true
             })
         ]
-    }) */
+    })
     return [
         adoptedConfig,
-        //portalConfig
+        portalConfig
     ]
 }
