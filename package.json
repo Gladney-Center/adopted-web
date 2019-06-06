@@ -1,15 +1,14 @@
 {
   "name": "adopted",
-  "version": "1.0.50",
+  "version": "1.0.51",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
     "it": "npm --no-git-tag-version version patch",
-    "preversion": "npm test",
     "version": "npm run build && git add -A",
     "postversion": "git commit -a && git push",
-    "build": "webpack --env.APP_MODE=development --mode=development",
-    "buildp": "webpack --env.APP_MODE=production --mode=development"
+    "build": "webpack --env.APP_MODE=development --mode=production",
+    "buildp": "webpack --env.APP_MODE=production --mode=production"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,7 @@
   "author": "David Paul Crouch",
   "license": "ISC",
   "homepage": "https://bitbucket.org/enlightenedpie/adopted#readme",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
@@ -71,6 +70,5 @@
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1"
-  },
-  "dependencies": {}
+  }
 }

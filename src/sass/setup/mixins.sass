@@ -67,3 +67,66 @@
 	-ms-animation: $anim $time $trans $delay $loop $fill-mode
 	-o-animation: $anim $time $trans $delay $loop $fill-mode
 	animation: $anim $time $trans $delay $loop $fill-mode
+
+@mixin fillThemes
+	transition: fill 250ms ease-in-out
+
+	html.rose-theme &
+		fill: $rose
+
+	html.navy-theme &
+		fill: $navy
+
+	html.aqua-theme &
+		fill: $aqua
+
+	html.maize-theme &
+		fill: $maize
+
+	html.taupe-theme &
+		fill: $taupe
+
+	html.teal-theme &
+		fill: $teal
+
+@mixin colorThemes
+	transition: color 250ms ease-in-out
+
+	html.rose-theme &
+		color: $rose
+
+	html.navy-theme &
+		color: $navy
+
+	html.aqua-theme &
+		color: $aqua
+
+	html.maize-theme &
+		color: $maize
+
+	html.taupe-theme &
+		color: $taupe
+
+	html.teal-theme &
+		color: $teal
+
+@mixin bgColorThemes
+	transition: background-color 250ms ease-in-out
+
+	html.rose-theme &
+		background-color: $rose
+
+	html.navy-theme &
+		background-color: $navy
+
+	html.aqua-theme &
+		background-color: $aqua
+
+	html.maize-theme &
+		background-color: $maize
+
+	html.taupe-theme &
+		background-color: $taupe
+
+	html.teal-theme &
+		background-color: $teal
