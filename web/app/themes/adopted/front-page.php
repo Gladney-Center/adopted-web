@@ -84,7 +84,7 @@ get_header(); ?>
 		<div class="adpt-podcast-content spacer"></div>
 		<div class="adpt-podcast-content blurb">
 			<div class="adpt-podcast-blurb-inner">
-				<h5>Ask A Pro Podcast</h5>
+				<h5>Ask A Pro</h5>
 				<aside><?php echo get_theme_mod('fp_podcast_blurb'); ?></aside>
 				<a class="btn" href="#">Learn More</a>
 			</div>
