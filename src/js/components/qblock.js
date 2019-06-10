@@ -24,7 +24,7 @@ customElements.define('adpt-qblock',
                 obj.setAttribute('type','image/svg+xml')
                 obj.innerText = 'Your browser doesn\'t support SVG'
                 
-                div.innerHTML = obj
+                div.appendChild(obj)
 
                 template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
