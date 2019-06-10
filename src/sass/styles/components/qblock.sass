@@ -5,54 +5,54 @@ adpt-qblock
         position: relative
         +body-max-width
 
-        h2, h5
-            color: $navy
-        
-        h2
+    h2, h5
+        color: $navy
+    
+    h2
+        width: 100%
+        max-width: 600px
+
+    h5
+        letter-spacing: 0px
+        margin-bottom: $teeny
+
+    adpt-qblock-content
+        padding: $huge 0
+
+        &.blurb
+            display: flex
+            justify-content: flex-end
+
+        adpt-qblock-content-inner
             width: 100%
-            max-width: 600px
+            max-width: 300px
 
-        h5
-            letter-spacing: 0px
-            margin-bottom: $teeny
+            aside
+                line-height: 1.25em
+                font-size: calc($bodytext + 2px)
 
-        adpt-qblock-content
-            padding: $huge 0
+            a.btn
+                display: inline-block
+                background-color: $navy
+                font-size: $intsize
+                margin-top: 1em
 
-            &.blurb
-                display: flex
-                justify-content: flex-end
+    adpt-qbubble-overlay
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        padding: $huge
 
-            adpt-qblock-content-inner
-                width: 100%
-                max-width: 300px
+        .qbubble-container
 
-                aside
-                    line-height: 1.25em
-                    font-size: calc($bodytext + 2px)
+            object
 
-                a.btn
-                    display: inline-block
-                    background-color: $navy
-                    font-size: $intsize
-                    margin-top: 1em
-
-        .adpt-qbubble-overlay
-            position: absolute
-            top: 0
-            right: 0
-            left: 0
-            bottom: 0
-            padding: $huge
-
-            .qbubble-container
-
-                object
-
-                    svg
-                        .qbubble
-                            +animator(scaleIn, 250ms, ease-in-out)
-                        
-                        .qmark
-                            transform-origin: center
-                            +animator(wiggle, 4000ms, ease-in-out, infinite)
+                svg
+                    .qbubble
+                        +animator(scaleIn, 250ms, ease-in-out)
+                    
+                    .qmark
+                        transform-origin: center
+                        +animator(wiggle, 4000ms, ease-in-out, infinite)
