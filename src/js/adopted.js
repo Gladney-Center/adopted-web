@@ -1,5 +1,6 @@
 import './components/stage'
 import './components/contact-form'
+import './components/qblock'
 import './components/team-bio/team-bio'
 
 (() => {

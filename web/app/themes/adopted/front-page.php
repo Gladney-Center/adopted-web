@@ -76,6 +76,7 @@ get_header(); ?>
 		</article>
 	</div>
 </section>
+<adpt-qblock></adpt-qblock>
 <section class="adpt-podcast">
 	<div class="adpt-podcast-inner">
 		<div class="adpt-podcast-content heading">

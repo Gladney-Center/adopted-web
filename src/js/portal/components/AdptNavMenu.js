@@ -7,7 +7,7 @@ const AdptNavMenu = ({toggleTheme}) =>
         <span className="main-nav">Nav menu</span>
         <div className="adptThemer">
             {colors.map((color) => 
-                <div onClick={(e) => toggleTheme(color === 'sunrise' ? '' : color)} className={["adptTheme",color+"-bg"].join(' ')}></div>
+                <div onClick={(e) => toggleTheme(color)} className={["adptTheme",color+"-bg"].join(' ')}></div>
             )}
         </div>
     </nav>
