@@ -45,9 +45,14 @@ adpt-qblock
             bottom: 0
             padding: $huge
 
-        .qbubble
-            +animator(scaleIn, 250ms, ease-in-out)
+            .qbubble-container
 
-        .qmark
-            transform-origin: center
-            +animator(wiggle, 4000ms, ease-in-out, infinite)
+                object
+
+                    svg
+                        .qbubble
+                            +animator(scaleIn, 250ms, ease-in-out)
+                        
+                        .qmark
+                            transform-origin: center
+                            +animator(wiggle, 4000ms, ease-in-out, infinite)
