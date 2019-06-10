@@ -1,6 +1,3 @@
-import qbubbleleft from '../../svg/qbubbleleft.svg'
-import qbubbleright from '../../svg/qbubbleright.svg'
-
 customElements.define('adpt-qblock',
     class extends HTMLElement {
         connectedCallback() {
@@ -19,14 +16,22 @@ customElements.define('adpt-qblock',
             a = 'a'
 
             while(i++ < 10) {
-                let div = document.createElement('div')
+                let div = document.createElement('div'),
+                    obj = document.createElement('object'),
+                    src = (i % 2 == 0) ? '/assets/svg/qbubbleleft.svg' : '/assets/svg/qbubbleright.svg'
+
                 div.classList.add('qbubble-container','qb-a'+a)
-                div.innerHTML = (i % 2 == 0) ? qbubbleleft : qbubbleright
+
+                obj.setAttribute('data',src)
+                obj.setAttribute('type','image/svg+xml')
+                obj.innerText = 'Your browser doesn\'t support SVG'
+                
+                div.innerHTML = object
+
                 template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
 
-            console.log(template)
             this.appendChild(template.cloneNode(true))
         }
     }

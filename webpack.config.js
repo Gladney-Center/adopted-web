@@ -42,7 +42,7 @@ module.exports = env => {
                     }
                 },
                 {
-                    test: /\.(eot|svg|ttf|woff|woff2|gif|png|jpg)$/,
+                    test: /\.(eot|ttf|woff|woff2|gif|png|jpg)$/,
                     exclude: /node_modules/,
                     loader: 'file-loader'
                   }
