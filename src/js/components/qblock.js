@@ -7,8 +7,8 @@ customElements.define('adpt-qblock',
         constructor() {
             super()
 
-            const template = document.createElement('adpt-podcast-qbubble-overlay',{is: 'div'})
-            template.classList.add('adpt-podcast-qbubble-overlay')
+            const template = document.createElement('adpt-qbubble-overlay',{is: 'div'})
+            template.classList.add('adpt-qbubble-overlay')
             
             let i = 0,
             a = 'a'

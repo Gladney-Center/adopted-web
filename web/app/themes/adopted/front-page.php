@@ -76,28 +76,21 @@ get_header(); ?>
 		</article>
 	</div>
 </section>
-<section class="adpt-podcast">
-	<div class="adpt-podcast-inner">
-		<div class="adpt-podcast-content heading">
+<adpt-qblock>
+	<adpt-inner>
+		<adpt-qblock-content class="heading">
 			<h2><?php echo get_theme_mod('fp_podcast_heading'); ?></h2>
-		</div>
-		<div class="adpt-podcast-content spacer"></div>
-		<div class="adpt-podcast-content blurb">
-			<div class="adpt-podcast-blurb-inner">
+		</adpt-qblock-content>
+		<adpt-qblock-content class="spacer"></adpt-qblock-content>
+		<adpt-qblock-content class="blurb">
+			<adpt-qblock-content-inner>
 				<h5>Ask A Pro</h5>
 				<aside><?php echo get_theme_mod('fp_podcast_blurb'); ?></aside>
 				<a class="btn" href="#">Learn More</a>
-			</div>
-		</div>
-		<div class="adpt-podcast-qbubble-overlay">
-			<?php $i = 0; $a = 'aa'; while($i++ < 10) : ?>
-				<div class="qbubble-container qb-<?php echo $a; ?>">
-					<?php echo \AdoptED\Filter::svg(($i % 2 == 0) ? '<adpt-icon:qbubbleleft>' : '<adpt-icon:qbubbleright>'); ?>
-				</div>
-			<?php $a++; endwhile; ?>
-		</div>
-	</div>
-</section>
+			</adpt-qblock-content-inner>
+		</adpt-qblock-content>
+	</adpt-inner>
+</adpt-qblock>
 <section class="adpt-ctas">
 	<div class="adpt-ctas-inner">
 		<div class="adpt-cta">
