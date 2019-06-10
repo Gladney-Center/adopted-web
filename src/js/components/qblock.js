@@ -1,3 +1,6 @@
+import qbubbleleft from '../../svg/qbubbleleft.svg'
+import qbubbleright from '../../svg/qbubbleright.svg'
+
 customElements.define('adpt-qblock',
     class extends HTMLElement {
         connectedCallback() {
@@ -16,7 +19,7 @@ customElements.define('adpt-qblock',
             while(i++ < 10) {
                 let div = document.createElement('div')
                 div.classList.add('qbubble-container','qb-a'+a)
-                div.innerText = (i % 2 == 0) ? '<adpt-icon:qbubbleleft>' : '<adpt-icon:qbubbleright>'
+                div.innerText = (i % 2 == 0) ? qbubbleleft : qbubbleright
                 template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
