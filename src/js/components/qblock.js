@@ -19,7 +19,7 @@ customElements.define('adpt-qblock',
             while(i++ < 10) {
                 let div = document.createElement('div')
                 div.classList.add('qbubble-container','qb-a'+a)
-                div.innerText = (i % 2 == 0) ? qbubbleleft : qbubbleright
+                div.innerHTML = (i % 2 == 0) ? qbubbleleft : qbubbleright
                 template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
