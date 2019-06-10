@@ -10,6 +10,8 @@ customElements.define('adpt-qblock',
         constructor() {
             super()
 
+            console.log(qbubbleright,qbubbleleft)
+
             const template = document.createElement('adpt-qbubble-overlay',{is: 'div'})
             template.classList.add('adpt-qbubble-overlay')
             
