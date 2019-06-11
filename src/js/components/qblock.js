@@ -7,7 +7,8 @@ customElements.define('adpt-qblock',
         constructor() {
             super()
 
-            const template = document.createElement('adpt-qbubble-overlay',{is: 'div'})
+            const template = document.createElement('adpt-qbubble-overlay',{is: 'div'}),
+                tempInner = document.createElement('adpt-inner',{is: 'div'})
             template.classList.add('adpt-qbubble-overlay')
             
             let i = 0,
@@ -26,9 +27,11 @@ customElements.define('adpt-qblock',
                 
                 div.appendChild(obj)
 
-                template.appendChild(div)
+                tempInner.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
+
+            template.appendChild(tempInner)
 
             this.appendChild(template.cloneNode(true))
         }
