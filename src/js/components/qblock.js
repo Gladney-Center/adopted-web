@@ -28,7 +28,7 @@ customElements.define('adpt-qblock',
                 
                 div.appendChild(obj)
 
-                tempInner.appendChild(div)
+                template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
 
