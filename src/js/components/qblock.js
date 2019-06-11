@@ -10,9 +10,10 @@ customElements.define('adpt-qblock',
             const template = document.createElement('adpt-qbubble-overlay',{is: 'div'}),
                 tempInner = document.createElement('adpt-inner',{is: 'div'})
             template.classList.add('adpt-qbubble-overlay')
+
+            this.appendChild(tempInner)
             
-            let i = 0,
-            a = 'a'
+            let i = 0, a = 'a'
 
             while(i++ < 10) {
                 let div = document.createElement('div'),
@@ -30,8 +31,6 @@ customElements.define('adpt-qblock',
                 tempInner.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
-
-            template.appendChild(tempInner)
 
             this.appendChild(template.cloneNode(true))
         }
