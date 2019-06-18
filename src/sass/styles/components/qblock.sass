@@ -1,5 +1,9 @@
 adpt-qblock
+    position: relative
     color: white
+
+    adpt-inner
+        position: relative
 
     h2, h5
         color: $navy
@@ -43,12 +47,21 @@ adpt-qblock
 
         .qbubble-container
 
-            object
+            svg
+                
+                .qmark
+                    transform-origin: center
+                    +animator(wiggle, 4000ms, ease-in-out, infinite)
+
+#qbubblecontainer, #askaproqbubble
+    
+    &.active
+
+        adpt-qbubble-overlay
+
+            .qbubble-container
 
                 svg
-                    .qbubble
-                        +animator(scaleIn, 250ms, ease-in-out)
                     
-                    .qmark
-                        transform-origin: center
-                        +animator(wiggle, 4000ms, ease-in-out, infinite)
+                    &.qbubble
+                        +animator(scaleIn, 250ms, ease-in-out)

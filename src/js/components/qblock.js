@@ -1,38 +1,68 @@
+import {qbubbleleft,qbubbleright} from '../imports/qbubbles'
+
 customElements.define('adpt-qblock',
     class extends HTMLElement {
         connectedCallback() {
-           
-        }
-
-        constructor() {
-            super()
-
             const template = document.createElement('adpt-qbubble-overlay',{is: 'div'}),
-                tempInner = document.createElement('adpt-inner',{is: 'div'})
-            template.classList.add('adpt-qbubble-overlay')
+                heading = document.createElement('adpt-qblock-content',{is: 'div'}),
+                spacer = document.createElement('adpt-qblock-content',{is: 'div'}),
+                blurb = document.createElement('adpt-qblock-content',{is: 'div'}),
+                inner = document.createElement('adpt-inner',{is: 'div'})
 
-            this.appendChild(tempInner)
-            
+            this.innerText = ''
+            this.removeAttribute('headline')
+            this.removeAttribute('text')
+            this.removeAttribute('link')
+
+            // QBubble factory
             let i = 0, a = 'a'
 
             while(i++ < 10) {
                 let div = document.createElement('div'),
-                    obj = document.createElement('object'),
-                    src = (i % 2 == 0) ? '/assets/svg/qbubbleleft.svg' : '/assets/svg/qbubbleright.svg'
+                    src = (i % 2 == 0) ? qbubbleleft : qbubbleright
 
                 div.classList.add('qbubble-container','qb-a'+a)
-
-                obj.setAttribute('data',src)
-                obj.setAttribute('type','image/svg+xml')
-                obj.innerText = 'Your browser doesn\'t support SVG'
                 
-                div.appendChild(obj)
+                div.innerHTML = src
 
                 template.appendChild(div)
                 a = String.fromCharCode(a.charCodeAt() + 1)
             }
 
-            this.appendChild(template.cloneNode(true))
+            template.classList.add('adpt-qbubble-overlay')
+            inner.appendChild(template)
+
+            // Heading factory
+            heading.classList.add('heading')
+            heading.innerHTML = '<h2>'+this.headline+'</h2>'
+            inner.appendChild(heading)
+             
+            // Spacer factory
+            spacer.classList.add('spacer')
+            inner.appendChild(spacer)
+ 
+            // Blurb factory
+            const blurbInner = document.createElement('adpt-qblock-content-inner',{is: 'div'})
+ 
+            blurbInner.innerHTML = `
+                <h5>Ask A Pro</h5>
+                <aside>${this.blurb}</aside>
+                <a class="btn" href="${this.link}">Learn More</a>
+            `
+ 
+            blurb.classList.add('blurb')
+            blurb.appendChild(blurbInner)
+            inner.appendChild(blurb)
+
+            this.appendChild(inner)
+        }
+
+        constructor() {
+            super()
+
+            this.headline = this.hasAttribute('headline') ? this.getAttribute('headline') : 'Headline'
+            this.blurb = this.hasAttribute('text') ? this.getAttribute('text') : this.innerText
+            this.link = this.hasAttribute('link') ? this.getAttribute('link') : '#'
         }
     }
 )

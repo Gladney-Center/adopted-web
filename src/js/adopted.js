@@ -4,8 +4,7 @@ import './components/qblock'
 import './components/team-bio/team-bio'
 
 (() => {
-
-	const qBubble = document.querySelector('.adpt-podcast'),
+	const qBubble = document.querySelector('#qbubblecontainer'),
 		mbIcon = document.querySelector('.adpt-mobile-menu-icon')
 
 	const funcs = {

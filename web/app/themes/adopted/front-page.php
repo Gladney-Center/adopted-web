@@ -76,20 +76,8 @@ get_header(); ?>
 		</article>
 	</div>
 </section>
-<adpt-qblock>
-	<adpt-inner>
-		<adpt-qblock-content class="heading">
-			<h2><?php echo get_theme_mod('fp_podcast_heading'); ?></h2>
-		</adpt-qblock-content>
-		<adpt-qblock-content class="spacer"></adpt-qblock-content>
-		<adpt-qblock-content class="blurb">
-			<adpt-qblock-content-inner>
-				<h5>Ask A Pro</h5>
-				<aside><?php echo get_theme_mod('fp_podcast_blurb'); ?></aside>
-				<a class="btn" href="#">Learn More</a>
-			</adpt-qblock-content-inner>
-		</adpt-qblock-content>
-	</adpt-inner>
+<adpt-qblock id="qbubblecontainer" headline="do you have questions about adoption or dating or pregnancy but just don’t know who to ask?">
+	Each week our approachable counselors and social workers tackle real life questions from students about life, dating, relationships, heartache, and pregnancy, among other things. Submit your questions and they could be featured on our next Ask A Pro.
 </adpt-qblock>
 <section class="adpt-ctas">
 	<div class="adpt-ctas-inner">
