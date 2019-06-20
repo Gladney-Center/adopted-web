@@ -1,6 +1,6 @@
 {
   "name": "adopted",
-  "version": "1.0.91",
+  "version": "1.0.94",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
@@ -34,6 +34,7 @@
     "@hapi/hawk": "^7.0.10",
     "@hapi/sntp": "^3.0.2",
     "@vimeo/player": "^2.6.7",
+    "@zeit/next-sass": "^1.0.1",
     "ajax": "0.0.4",
     "babel-loader": "^8.0.0",
     "core-js": "^3.1.3",
