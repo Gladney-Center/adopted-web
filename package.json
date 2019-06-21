@@ -1,15 +1,14 @@
 {
   "name": "adopted",
-  "version": "1.0.94",
+  "version": "1.1.2",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
     "it": "npm --no-git-tag-version version patch",
-    "version": "npm run build && git add -A",
+    "version": "npm run start && git add -A",
     "postversion": "git commit -am \"pushing latest changes\" && git push",
-    "build": "webpack --env.APP_MODE=development --mode=production",
-    "buildp": "webpack --env.APP_MODE=production --mode=production",
-    "next": "next"
+    "build": "next -- -p 1111",
+    "start": "next build && next start -p 1111"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,10 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/enlightenedpie/adopted#readme",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "dotenv": "^8.0.0",
     "next": "^8.1.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"
