@@ -1,0 +1,132 @@
+// BOX SHADOW //
+@mixin z-depth-1
+	box-shadow: 0 2px 2px 0 black(.05), 0 3px 1px -2px black(.05), 0 1px 5px 0 black(.05)
+
+@mixin z-depth-2
+	box-shadow: 0 4px 5px 0 black(.05), 0 1px 10px -2px black(.05), 0 2px 4px 0 black(.05)
+
+@mixin z-depth-3
+	box-shadow: 0 8px 17px 2px black(.05), 0 3px 14px 2px black(.05), 0 5px 5px -3px black(.05)
+
+@mixin z-depth-4
+	box-shadow: 0 16px 24px 2px black(.05), 0 6px 30px 5px black(.05), 0 8px 10px -7px black(.05)
+
+@mixin z-depth-5
+	box-shadow: 0 24px 38px 3px black(.05), 0 9px 46px 8px black(.05), 0 11px 15px -7px black(.05)
+
+@mixin full-width-gutter
+	width: 100%
+	padding: 0 $huge
+
+// CUSTOM ELEMENTS / WEB COMPONENTS DEFAULTS //
+@mixin custom-block-element
+	display: block
+
+// SVG DROP SHADOW //
+@mixin material-depth
+	filter: drop-shadow(2px 2px 1px black(.5))
+
+@mixin menuactive
+	background-color: aecolor(#fff,.65)
+
+// MEDIA QUERY //
+@mixin MQ($breakpoint)
+	@if $breakpoint >= $mq-tablet+1
+		@media only screen and (min-width: #{$breakpoint})
+			@content
+	@else
+		@media only screen and (max-width: #{$breakpoint})
+			@content
+
+// BODY SIZING & LAYOUT //
+@mixin body-max-width
+	width: 100%
+	max-width: $bodyw
+	margin: 0 auto
+	padding: 0 $huge
+
+	+MQ($mq-tportrait)
+		padding: 0 1em
+
+// ANIMATION //
+@mixin keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@-o-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+@mixin animator($anim: fadein,$time: null,$trans: null,$delay: null,$loop: null,$fill-mode: forwards)
+	-webkit-animation: $anim $time $trans $delay $loop $fill-mode
+	-moz-animation: $anim $time $trans $delay $loop $fill-mode
+	-ms-animation: $anim $time $trans $delay $loop $fill-mode
+	-o-animation: $anim $time $trans $delay $loop $fill-mode
+	animation: $anim $time $trans $delay $loop $fill-mode
+
+@mixin fillThemes
+	transition: fill 250ms ease-in-out
+
+	html.rose-theme &
+		fill: $rose
+
+	html.navy-theme &
+		fill: $navy
+
+	html.aqua-theme &
+		fill: $aqua
+
+	html.maize-theme &
+		fill: $maize
+
+	html.taupe-theme &
+		fill: $taupe
+
+	html.teal-theme &
+		fill: $teal
+
+@mixin colorThemes
+	transition: color 250ms ease-in-out
+
+	html.rose-theme &
+		color: $rose
+
+	html.navy-theme &
+		color: $navy
+
+	html.aqua-theme &
+		color: $aqua
+
+	html.maize-theme &
+		color: $maize
+
+	html.taupe-theme &
+		color: $taupe
+
+	html.teal-theme &
+		color: $teal
+
+@mixin bgColorThemes
+	transition: background-color 250ms ease-in-out
+
+	html.rose-theme &
+		background-color: $rose
+
+	html.navy-theme &
+		background-color: $navy
+
+	html.aqua-theme &
+		background-color: $aqua
+
+	html.maize-theme &
+		background-color: $maize
+
+	html.taupe-theme &
+		background-color: $taupe
+
+	html.teal-theme &
+		background-color: $teal

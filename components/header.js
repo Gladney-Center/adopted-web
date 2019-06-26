@@ -1,7 +1,7 @@
 import {Fragment} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import * as SVG from './svg'
+import SVG from './svg'
 
 export default () => (
     <Fragment>

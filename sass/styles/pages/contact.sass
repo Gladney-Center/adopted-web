@@ -1,0 +1,134 @@
+@mixin form-buffr
+	margin-top: 1rem
+
+body.adpt-contact
+
+	nav.adpt-menu
+
+        .contact > a
+            +menuactive
+
+	adpt-stage
+		background-color: $sunrise
+		height: 65vh
+
+		adpt-columns
+
+			adpt-column
+				position: relative
+
+				&.talk-box
+					padding: $huge*2.5 $huge*2.5 $huge*2.5 1em
+
+					svg
+						height: 100%
+						+material-depth
+
+						g.dots
+
+							& > path
+
+								&.left
+									animation: dots 1.5s ease-in-out 0s both infinite
+								
+								&.middle
+									animation: dots 1.5s ease-in-out .25s both infinite
+								
+								&.right
+									animation: dots 1.5s ease-in-out .5s both infinite
+
+
+				&.adpt-column-collapse
+					width: 40%
+
+				form
+					width: 100%
+					background-color: $teal
+					padding: $huge $huge 1em
+					position: absolute
+					top: 1em
+					+z-depth-5
+
+					h1
+						font-size: 1rem
+
+					.top-text
+						+form-buffr
+						line-height: 1.25
+						font-size: $intsize
+
+					.form-fields
+						+form-buffr
+						display: grid
+						width: 100%
+						grid-template-columns: repeat(2,1fr)
+						grid-gap: $teeny
+
+						input
+							padding: $medium $medium $tiny
+							width: 100%
+
+					.form-options
+						+form-buffr
+						width: 100%
+						padding-left: $large
+						display: grid
+						grid-template-rows: 1fr
+						grid-gap: $tiny
+
+						.adpt-form-input
+							display: flex
+							align-items: center
+
+							input[type="checkbox"]
+								height: $intsize
+								width: $intsize
+								margin: 0
+
+								& + label
+									padding-left: 1em
+									font-size: $bodytext
+					
+					.form-message
+						+form-buffr
+						width: 100%
+
+						textarea
+							width: 100%
+							padding: $large 1em 1em
+
+					.adpt-form-footer
+						display: flex
+						align-items: center
+						justify-content: center
+
+						button.contact-form-submit
+							+form-buffr
+
+	adpt-contact
+		padding-top: $huge*4
+
+		.adpt-contact-inner
+			padding: 0 1em
+			display: flex
+
+			.adpt-postbox
+				+material-depth
+				max-width: 60%
+				flex: 1
+
+				svg.postbox-svg
+					display: block
+
+			aside
+				padding: $huge $huge*2 0
+
+				h2
+					font-size: 1rem
+					color: $navy
+				
+				address
+					white-space: pre
+					text-align: left
+					font-size: $intsize
+					line-height: 1.25

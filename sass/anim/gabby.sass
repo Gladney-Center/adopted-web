@@ -1,0 +1,53 @@
+svg.gabby
+	display: block
+	+material-depth
+
+	ellipse.belly.bounce
+		animation: scalex .1s $ease-bouncy 1s both
+
+	g.belly-emphasis
+		animation: fadeinout .5s ease-in-out 1s both
+
+	path.mouth
+		animation: smilefrown 1.5s $ease-bouncy
+
+	circle.small-lead
+		animation: scaley .1s $ease-bouncy 2s both
+
+	circle.med-lead
+		animation: scaley .1s $ease-bouncy 2.1s both
+	
+	circle.lrg-lead
+		animation: scaley .1s $ease-bouncy 2.2s both
+
+	g.cloud
+		animation: scaley .1s $ease-bouncy 2.3s both
+	
+	g.g, path.k, line.e
+		+material-depth
+
+	g.post-choice
+
+		path.choicepost
+			animation: scaley .1s $ease-bouncy 2.5s both
+			+material-depth
+
+		path.adoptionsign
+			animation: scalex .1s $ease-bouncy 2.6s both
+			+material-depth
+
+		path.parentingsign
+			animation: scalex .1s $ease-bouncy 2.7s both
+			+material-depth
+
+		g#adoption
+			animation: fadein .1s ease-in-out 2.8s both
+
+		g#parenting
+			animation: fadein .1s ease-in-out 2.9s both
+
+	g.gabby-eyes
+		animation: blink 20s ease-in-out 4s infinite
+
+		ellipse.eye-iris
+			animation: eyemover 5s ease-in-out 2s 1 forwards

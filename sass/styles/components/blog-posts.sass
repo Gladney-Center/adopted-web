@@ -1,0 +1,102 @@
+.adpt-blog
+	background: $sunrise
+	background: linear-gradient(0deg, $sunrise 50%, sunrise(0) 50%)
+
+	.adpt-blog-inner
+		+body-max-width
+
+		.adpt-blog-top
+			width: 100%
+			display: flex
+			align-items: center
+
+			.adpt-blog-heading
+				padding: $large 0
+				flex: 1
+
+			.adpt-blog-link
+
+				a.btn
+					font-size: $intsize
+
+		.adpt-post-blocks
+			width: 100%
+			display: grid
+			grid-gap: 1em
+			grid-template-columns: repeat(3,1fr)
+
+			.adpt-post-block
+				border-radius: $tiny
+				background-color: $periwinkle
+				position: relative
+				padding: $huge $huge 0
+
+				& > img
+					display: block
+					@extend .w-constrained
+
+				h5
+					margin-top: 1em
+					min-height: $huge
+					letter-spacing: initial
+
+				.view-post-link
+					display: flex
+					font-size: $bodytext
+					padding: $huge 0
+					color: white
+					text-transform: uppercase
+					height: 1em
+					width: 100%
+					align-items: center
+
+					svg
+						margin-left: $large
+						height: 1em
+
+			.adpt-post-spacer
+				color: black(0)
+
++MQ($mq-tportrait)
+	.adpt-blog
+
+		.adpt-blog-inner
+
+			.adpt-post-blocks
+				display: block
+
+				.adpt-post-block
+					border-radius: 0
+					border: 0
+					padding: 0
+					padding-top: 1em
+					padding-left: 1em
+					padding-right: 1em
+					display: flex
+					align-items: center
+
+					& > img
+						width: 40%
+						height: 40%
+
+					& > div
+						margin-left: $teeny
+
+					&:last-child
+						padding-bottom: 1em
+
+					h5
+						font-size: $intsize
+						min-height: 0
+
++MQ($mq-mobile)
+	.adpt-blog
+
+		.adpt-blog-inner
+
+			.adpt-blog-top
+
+				.adpt-blog-link
+
+					a.btn
+						font-size: $smalltext

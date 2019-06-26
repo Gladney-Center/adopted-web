@@ -1,0 +1,47 @@
+.adpt-ctas
+	min-height: 10em
+
+	.adpt-ctas-inner
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 1em
+		+body-max-width
+
+		.adpt-cta
+			display: flex
+			flex-flow: column nowrap
+			position: relative
+			background-color: $taupe
+			text-align: center
+
+			p, a
+				font-size: $intsize
+
+			.adpt-icon
+				padding: 25% 25% 15%
+
+				svg
+					max-height: $huge*3
+
+			.adpt-cta-text
+				flex: 1
+				padding: 0 $medium*2
+
+				h5
+					padding-bottom: 1em
+
+				p
+					line-height: 125%
+
+			.adpt-cta-more
+				padding: 2em 35%
+
+				a
+					display: block
+					background-color: $rose
+
++MQ($mq-mobile)
+	.adpt-ctas
+
+		.adpt-ctas-inner
+			grid-template-columns: 1fr

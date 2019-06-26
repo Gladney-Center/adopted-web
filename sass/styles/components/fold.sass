@@ -1,0 +1,28 @@
+.adpt-fold
+	position: relative
+
+	adpt-inner
+
+		.adpt-fold-graybox
+			background-color: $taupe
+			padding: $large*2 $huge*3
+			border-radius: $tiny
+			+z-depth-3
+
+			p
+				margin-bottom: $large
+				display: block
+
+				span.spaced
+					line-height: $medium
+			
+			a
+				display: inline-block
+
++MQ($mq-tportrait)
+	.adpt-fold
+
+		adpt-inner
+
+			.adpt-fold-graybox
+				padding: $huge

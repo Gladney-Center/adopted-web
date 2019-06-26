@@ -2,12 +2,14 @@ import {Fragment} from 'react'
 import Header from './header'
 import Footer from './footer'
 
+import '../sass/adopted.sass'
+
 const Page = props => (
-    <Fragment>
+    <main className={props.className}>
         <Header/>
         {props.children}
         <Footer/>
-    </Fragment>
+    </main>
 )
 
 export default Page

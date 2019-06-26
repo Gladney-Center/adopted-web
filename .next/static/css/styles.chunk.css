@@ -1,0 +1,2144 @@
+/*! Theme Name: AdoptED
+	Theme URI: https://bitbucket.org\/enlightenedpie/adopted/src/master/
+	Author: David Paul Crouch, Gavin Bintz, Ryan Doty
+	Author URI: https://gladney.org
+	Description: Gladney's AdoptED website for 2019, including a future subscription educational module
+	Version: 1.1
+	License: GNU General Public License v2 or later */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes scalex {
+  0% {
+    transform: scale3d(0, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes scalex {
+  0% {
+    transform: scale3d(0, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes scalex {
+  0% {
+    transform: scale3d(0, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes scalex {
+  0% {
+    transform: scale3d(0, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes scalex {
+  0% {
+    transform: scale3d(0, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes scaley {
+  0% {
+    transform: scale3d(1, 0, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes scaley {
+  0% {
+    transform: scale3d(1, 0, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes scaley {
+  0% {
+    transform: scale3d(1, 0, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes scaley {
+  0% {
+    transform: scale3d(1, 0, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes scaley {
+  0% {
+    transform: scale3d(1, 0, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes scaleIn {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes scaleIn {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes scaleIn {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes scaleIn {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes scaleIn {
+  0% {
+    transform: scale3d(0, 0, 0); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes scaleOut {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(0, 0, 0); } }
+
+@-moz-keyframes scaleOut {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(0, 0, 0); } }
+
+@-ms-keyframes scaleOut {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(0, 0, 0); } }
+
+@-o-keyframes scaleOut {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(0, 0, 0); } }
+
+@keyframes scaleOut {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(0, 0, 0); } }
+
+@-webkit-keyframes smilefrown {
+  0% {
+    transform: scale3d(1, -1, 1); }
+  80% {
+    transform: scale3d(1, -1, 1); }
+  90% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes smilefrown {
+  0% {
+    transform: scale3d(1, -1, 1); }
+  80% {
+    transform: scale3d(1, -1, 1); }
+  90% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes smilefrown {
+  0% {
+    transform: scale3d(1, -1, 1); }
+  80% {
+    transform: scale3d(1, -1, 1); }
+  90% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes smilefrown {
+  0% {
+    transform: scale3d(1, -1, 1); }
+  80% {
+    transform: scale3d(1, -1, 1); }
+  90% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes smilefrown {
+  0% {
+    transform: scale3d(1, -1, 1); }
+  80% {
+    transform: scale3d(1, -1, 1); }
+  90% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes eyemover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  5% {
+    transform: translate3d(0, 0, 0); }
+  10% {
+    transform: translate3d(25px, -55px, 0); }
+  40% {
+    transform: translate3d(25px, -55px, 0); }
+  45% {
+    transform: translate3d(-20px, -30px, 0); }
+  95% {
+    transform: translate3d(-20px, -30px, 0); }
+  100% {
+    transform: translate3d(3px, -31px, 0); } }
+
+@-moz-keyframes eyemover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  5% {
+    transform: translate3d(0, 0, 0); }
+  10% {
+    transform: translate3d(25px, -55px, 0); }
+  40% {
+    transform: translate3d(25px, -55px, 0); }
+  45% {
+    transform: translate3d(-20px, -30px, 0); }
+  95% {
+    transform: translate3d(-20px, -30px, 0); }
+  100% {
+    transform: translate3d(3px, -31px, 0); } }
+
+@-ms-keyframes eyemover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  5% {
+    transform: translate3d(0, 0, 0); }
+  10% {
+    transform: translate3d(25px, -55px, 0); }
+  40% {
+    transform: translate3d(25px, -55px, 0); }
+  45% {
+    transform: translate3d(-20px, -30px, 0); }
+  95% {
+    transform: translate3d(-20px, -30px, 0); }
+  100% {
+    transform: translate3d(3px, -31px, 0); } }
+
+@-o-keyframes eyemover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  5% {
+    transform: translate3d(0, 0, 0); }
+  10% {
+    transform: translate3d(25px, -55px, 0); }
+  40% {
+    transform: translate3d(25px, -55px, 0); }
+  45% {
+    transform: translate3d(-20px, -30px, 0); }
+  95% {
+    transform: translate3d(-20px, -30px, 0); }
+  100% {
+    transform: translate3d(3px, -31px, 0); } }
+
+@keyframes eyemover {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  5% {
+    transform: translate3d(0, 0, 0); }
+  10% {
+    transform: translate3d(25px, -55px, 0); }
+  40% {
+    transform: translate3d(25px, -55px, 0); }
+  45% {
+    transform: translate3d(-20px, -30px, 0); }
+  95% {
+    transform: translate3d(-20px, -30px, 0); }
+  100% {
+    transform: translate3d(3px, -31px, 0); } }
+
+@-webkit-keyframes blink {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  .5% {
+    transform: scale3d(1, 0.1, 1); }
+  1% {
+    transform: scale3d(1, 1, 1); }
+  14% {
+    transform: scale3d(1, 1, 1); }
+  14.5% {
+    transform: scale3d(1, 0.1, 1); }
+  15% {
+    transform: scale3d(1, 1, 1); }
+  24% {
+    transform: scale3d(1, 1, 1); }
+  24.5% {
+    transform: scale3d(1, 0.1, 1); }
+  25% {
+    transform: scale3d(1, 1, 1); }
+  41% {
+    transform: scale3d(1, 1, 1); }
+  41.5% {
+    transform: scale3d(1, 0.1, 1); }
+  42% {
+    transform: scale3d(1, 1, 1); }
+  74% {
+    transform: scale3d(1, 1, 1); }
+  74.5% {
+    transform: scale3d(1, 0.1, 1); }
+  75% {
+    transform: scale3d(1, 1, 1); }
+  92% {
+    transform: scale3d(1, 1, 1); }
+  92.5% {
+    transform: scale3d(1, 0.1, 1); }
+  93% {
+    transform: scale3d(1, 1, 1); }
+  97% {
+    transform: scale3d(1, 1, 1); }
+  97.5% {
+    transform: scale3d(1, 0.1, 1); }
+  98% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes blink {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  .5% {
+    transform: scale3d(1, 0.1, 1); }
+  1% {
+    transform: scale3d(1, 1, 1); }
+  14% {
+    transform: scale3d(1, 1, 1); }
+  14.5% {
+    transform: scale3d(1, 0.1, 1); }
+  15% {
+    transform: scale3d(1, 1, 1); }
+  24% {
+    transform: scale3d(1, 1, 1); }
+  24.5% {
+    transform: scale3d(1, 0.1, 1); }
+  25% {
+    transform: scale3d(1, 1, 1); }
+  41% {
+    transform: scale3d(1, 1, 1); }
+  41.5% {
+    transform: scale3d(1, 0.1, 1); }
+  42% {
+    transform: scale3d(1, 1, 1); }
+  74% {
+    transform: scale3d(1, 1, 1); }
+  74.5% {
+    transform: scale3d(1, 0.1, 1); }
+  75% {
+    transform: scale3d(1, 1, 1); }
+  92% {
+    transform: scale3d(1, 1, 1); }
+  92.5% {
+    transform: scale3d(1, 0.1, 1); }
+  93% {
+    transform: scale3d(1, 1, 1); }
+  97% {
+    transform: scale3d(1, 1, 1); }
+  97.5% {
+    transform: scale3d(1, 0.1, 1); }
+  98% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes blink {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  .5% {
+    transform: scale3d(1, 0.1, 1); }
+  1% {
+    transform: scale3d(1, 1, 1); }
+  14% {
+    transform: scale3d(1, 1, 1); }
+  14.5% {
+    transform: scale3d(1, 0.1, 1); }
+  15% {
+    transform: scale3d(1, 1, 1); }
+  24% {
+    transform: scale3d(1, 1, 1); }
+  24.5% {
+    transform: scale3d(1, 0.1, 1); }
+  25% {
+    transform: scale3d(1, 1, 1); }
+  41% {
+    transform: scale3d(1, 1, 1); }
+  41.5% {
+    transform: scale3d(1, 0.1, 1); }
+  42% {
+    transform: scale3d(1, 1, 1); }
+  74% {
+    transform: scale3d(1, 1, 1); }
+  74.5% {
+    transform: scale3d(1, 0.1, 1); }
+  75% {
+    transform: scale3d(1, 1, 1); }
+  92% {
+    transform: scale3d(1, 1, 1); }
+  92.5% {
+    transform: scale3d(1, 0.1, 1); }
+  93% {
+    transform: scale3d(1, 1, 1); }
+  97% {
+    transform: scale3d(1, 1, 1); }
+  97.5% {
+    transform: scale3d(1, 0.1, 1); }
+  98% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes blink {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  .5% {
+    transform: scale3d(1, 0.1, 1); }
+  1% {
+    transform: scale3d(1, 1, 1); }
+  14% {
+    transform: scale3d(1, 1, 1); }
+  14.5% {
+    transform: scale3d(1, 0.1, 1); }
+  15% {
+    transform: scale3d(1, 1, 1); }
+  24% {
+    transform: scale3d(1, 1, 1); }
+  24.5% {
+    transform: scale3d(1, 0.1, 1); }
+  25% {
+    transform: scale3d(1, 1, 1); }
+  41% {
+    transform: scale3d(1, 1, 1); }
+  41.5% {
+    transform: scale3d(1, 0.1, 1); }
+  42% {
+    transform: scale3d(1, 1, 1); }
+  74% {
+    transform: scale3d(1, 1, 1); }
+  74.5% {
+    transform: scale3d(1, 0.1, 1); }
+  75% {
+    transform: scale3d(1, 1, 1); }
+  92% {
+    transform: scale3d(1, 1, 1); }
+  92.5% {
+    transform: scale3d(1, 0.1, 1); }
+  93% {
+    transform: scale3d(1, 1, 1); }
+  97% {
+    transform: scale3d(1, 1, 1); }
+  97.5% {
+    transform: scale3d(1, 0.1, 1); }
+  98% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes blink {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  .5% {
+    transform: scale3d(1, 0.1, 1); }
+  1% {
+    transform: scale3d(1, 1, 1); }
+  14% {
+    transform: scale3d(1, 1, 1); }
+  14.5% {
+    transform: scale3d(1, 0.1, 1); }
+  15% {
+    transform: scale3d(1, 1, 1); }
+  24% {
+    transform: scale3d(1, 1, 1); }
+  24.5% {
+    transform: scale3d(1, 0.1, 1); }
+  25% {
+    transform: scale3d(1, 1, 1); }
+  41% {
+    transform: scale3d(1, 1, 1); }
+  41.5% {
+    transform: scale3d(1, 0.1, 1); }
+  42% {
+    transform: scale3d(1, 1, 1); }
+  74% {
+    transform: scale3d(1, 1, 1); }
+  74.5% {
+    transform: scale3d(1, 0.1, 1); }
+  75% {
+    transform: scale3d(1, 1, 1); }
+  92% {
+    transform: scale3d(1, 1, 1); }
+  92.5% {
+    transform: scale3d(1, 0.1, 1); }
+  93% {
+    transform: scale3d(1, 1, 1); }
+  97% {
+    transform: scale3d(1, 1, 1); }
+  97.5% {
+    transform: scale3d(1, 0.1, 1); }
+  98% {
+    transform: scale3d(1, 1, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(2deg) scale(1); }
+  2% {
+    transform: rotate(-2deg) scale(1.02); }
+  4% {
+    transform: rotate(2.5deg) scale(1.05); }
+  6% {
+    transform: rotate(-2deg) scale(1.05); }
+  8% {
+    transform: rotate(2deg) scale(1.02); }
+  10% {
+    transform: rotate(0deg) scale(1); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+@-moz-keyframes wiggle {
+  0% {
+    transform: rotate(2deg) scale(1); }
+  2% {
+    transform: rotate(-2deg) scale(1.02); }
+  4% {
+    transform: rotate(2.5deg) scale(1.05); }
+  6% {
+    transform: rotate(-2deg) scale(1.05); }
+  8% {
+    transform: rotate(2deg) scale(1.02); }
+  10% {
+    transform: rotate(0deg) scale(1); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+@-ms-keyframes wiggle {
+  0% {
+    transform: rotate(2deg) scale(1); }
+  2% {
+    transform: rotate(-2deg) scale(1.02); }
+  4% {
+    transform: rotate(2.5deg) scale(1.05); }
+  6% {
+    transform: rotate(-2deg) scale(1.05); }
+  8% {
+    transform: rotate(2deg) scale(1.02); }
+  10% {
+    transform: rotate(0deg) scale(1); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+@-o-keyframes wiggle {
+  0% {
+    transform: rotate(2deg) scale(1); }
+  2% {
+    transform: rotate(-2deg) scale(1.02); }
+  4% {
+    transform: rotate(2.5deg) scale(1.05); }
+  6% {
+    transform: rotate(-2deg) scale(1.05); }
+  8% {
+    transform: rotate(2deg) scale(1.02); }
+  10% {
+    transform: rotate(0deg) scale(1); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(2deg) scale(1); }
+  2% {
+    transform: rotate(-2deg) scale(1.02); }
+  4% {
+    transform: rotate(2.5deg) scale(1.05); }
+  6% {
+    transform: rotate(-2deg) scale(1.05); }
+  8% {
+    transform: rotate(2deg) scale(1.02); }
+  10% {
+    transform: rotate(0deg) scale(1); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@-moz-keyframes typing {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@-ms-keyframes typing {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@-o-keyframes typing {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@keyframes typing {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@-webkit-keyframes caret {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+@-moz-keyframes caret {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+@-ms-keyframes caret {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+@-o-keyframes caret {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+@keyframes caret {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+@-webkit-keyframes dots {
+  0% {
+    opacity: .25; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: .25; } }
+
+@-moz-keyframes dots {
+  0% {
+    opacity: .25; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: .25; } }
+
+@-ms-keyframes dots {
+  0% {
+    opacity: .25; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: .25; } }
+
+@-o-keyframes dots {
+  0% {
+    opacity: .25; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: .25; } }
+
+@keyframes dots {
+  0% {
+    opacity: .25; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: .25; } }
+
+html, body, div, adpt-stage, adpt-inner, adpt-columns, adpt-column, adpt-contact, adpt-post-footer, adpt-team-bio, adpt-parallax-content, adpt-parallax-bg, adpt-qblock, adpt-qbubble-overlay, adpt-qblock-content, adpt-qblock-content-inner, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  box-sizing: inherit; }
+  *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; }
+
+html {
+  box-sizing: border-box;
+  line-height: 1;
+  -webkit-overflow-scrolling: touch; }
+
+body {
+  line-height: 1; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.maize {
+  color: #f2d176; }
+
+.maize-bg {
+  background-color: #f2d176; }
+
+.maize-fill {
+  fill: #f2d176; }
+
+.rose {
+  color: #de6273; }
+
+.rose-bg {
+  background-color: #de6273; }
+
+.rose-fill {
+  fill: #de6273; }
+
+.periwinkle {
+  color: #7e8fad; }
+
+.periwinkle-bg {
+  background-color: #7e8fad; }
+
+.periwinkle-fill, .qbubble .qmark {
+  fill: #7e8fad; }
+
+.teal {
+  color: #67c8c7; }
+
+.teal-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.send {
+  background-color: #67c8c7; }
+
+.teal-fill {
+  fill: #67c8c7; }
+
+.aqua {
+  color: #d1ecee; }
+
+.aqua-bg {
+  background-color: #d1ecee; }
+
+.aqua-fill {
+  fill: #d1ecee; }
+
+.seafoam {
+  color: #6aada4; }
+
+.seafoam-bg {
+  background-color: #6aada4; }
+
+.seafoam-fill {
+  fill: #6aada4; }
+
+.sunrise {
+  color: #f68e4b; }
+
+.sunrise-bg {
+  background-color: #f68e4b; }
+
+.sunrise-fill {
+  fill: #f68e4b; }
+
+.navy {
+  color: #495077; }
+
+.navy-bg {
+  background-color: #495077; }
+
+.navy-fill {
+  fill: #495077; }
+
+.taupe {
+  color: #f5f4f4; }
+
+.taupe-bg {
+  background-color: #f5f4f4; }
+
+.taupe-fill {
+  fill: #f5f4f4; }
+
+.black {
+  color: black; }
+
+.black-bg {
+  background-color: black; }
+
+.black-fill {
+  fill: black; }
+
+.white {
+  color: #ffffff; }
+
+.white-bg {
+  background-color: #ffffff; }
+
+.white-fill, .qbubble .qbubble-shape {
+  fill: #ffffff; }
+
+.v-constrained, .adpt-header .adpt-nav-logo a svg {
+  width: auto;
+  height: 100%; }
+
+.w-constrained, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > img {
+  width: 100%;
+  height: auto; }
+
+.notbold {
+  font-weight: 400 !important; }
+
+.input-block {
+  padding: 1em 0;
+  width: 100%; }
+  .input-block input {
+    margin-right: 2em; }
+  .input-block input:not(:last-of-type) {
+    margin-bottom: 0.5em; }
+
+html, body {
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 24px; }
+
+body {
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  font-weight: 800; }
+
+h1, h2, h3, h4 {
+  font-family: atrament-web, sans-serif;
+  text-transform: uppercase; }
+
+h1, h4 {
+  color: #495077; }
+
+h1, h2 {
+  font-size: 54px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 24px; }
+
+h6 {
+  font-size: 0.8rem; }
+
+input, select, textarea {
+  font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-size: 0.66667rem;
+  outline: none !important;
+  border: 0;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.6); }
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  padding: 0.5em 1em;
+  border-radius: 0.25em; }
+
+button, a.button, a.btn {
+  font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif !important;
+  border-radius: 1.5em;
+  padding: 0.75em 1.5em;
+  border: 0;
+  color: white;
+  background-color: #495077;
+  opacity: .9;
+  transition: opacity 250ms ease-in-out; }
+  button.skinny, a.button.skinny, a.btn.skinny {
+    font-size: 0.66667rem;
+    padding: 0.5em 2em; }
+  button:hover, a.button:hover, a.btn:hover {
+    cursor: pointer;
+    opacity: 1; }
+
+.adpt-form-input:not(.no-bg) {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  border-radius: 3px; }
+  .adpt-form-input:not(.no-bg) > label.floating {
+    font-size: 0.66667rem;
+    padding: 0.5em 1em;
+    position: absolute;
+    display: block;
+    top: .25rem;
+    left: 0;
+    transition: all .1s ease-in-out; }
+  .adpt-form-input:not(.no-bg) input:not([type="checkbox"]), .adpt-form-input:not(.no-bg) textarea {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: transparent;
+    transition: all .25s ease-in-out; }
+    .adpt-form-input:not(.no-bg) input:not([type="checkbox"]):focus, .adpt-form-input:not(.no-bg) input:not([type="checkbox"]):valid, .adpt-form-input:not(.no-bg) textarea:focus, .adpt-form-input:not(.no-bg) textarea:valid {
+      border: 1px solid rgba(0, 0, 0, 0.5); }
+      .adpt-form-input:not(.no-bg) input:not([type="checkbox"]):focus + label.floating, .adpt-form-input:not(.no-bg) input:not([type="checkbox"]):valid + label.floating, .adpt-form-input:not(.no-bg) textarea:focus + label.floating, .adpt-form-input:not(.no-bg) textarea:valid + label.floating {
+        top: 0;
+        font-size: 0.5rem; }
+
+@media only screen and (max-width: 992px) {
+  h1, h2 {
+    font-size: 30px; } }
+
+svg.gabby {
+  display: block;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+  svg.gabby ellipse.belly.bounce {
+    animation: scalex 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 1s both; }
+  svg.gabby g.belly-emphasis {
+    animation: fadeinout .5s ease-in-out 1s both; }
+  svg.gabby path.mouth {
+    animation: smilefrown 1.5s cubic-bezier(0.215, 0.855, 0.655, 1.51); }
+  svg.gabby circle.small-lead {
+    animation: scaley 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2s both; }
+  svg.gabby circle.med-lead {
+    animation: scaley 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.1s both; }
+  svg.gabby circle.lrg-lead {
+    animation: scaley 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.2s both; }
+  svg.gabby g.cloud {
+    animation: scaley 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.3s both; }
+  svg.gabby g.g, svg.gabby path.k, svg.gabby line.e {
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+  svg.gabby g.post-choice path.choicepost {
+    animation: scaley 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.5s both;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+  svg.gabby g.post-choice path.adoptionsign {
+    animation: scalex 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.6s both;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+  svg.gabby g.post-choice path.parentingsign {
+    animation: scalex 0.1s cubic-bezier(0.215, 0.855, 0.655, 1.51) 2.7s both;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+  svg.gabby g.post-choice g#adoption {
+    animation: fadein .1s ease-in-out 2.8s both; }
+  svg.gabby g.post-choice g#parenting {
+    animation: fadein .1s ease-in-out 2.9s both; }
+  svg.gabby g.gabby-eyes {
+    animation: blink 20s ease-in-out 4s infinite; }
+    svg.gabby g.gabby-eyes ellipse.eye-iris {
+      animation: eyemover 5s ease-in-out 2s 1 forwards; }
+
+.qbcxlg, .qbubble-container.qb-ah {
+  width: 300px;
+  height: auto;
+  max-width: 300px; }
+
+.qbclrg, .qbubble-container.qb-ac, .qbubble-container.qb-ag {
+  width: 225px;
+  height: auto;
+  max-width: 225px; }
+
+.qbcmed, .qbubble-container.qb-ab, .qbubble-container.qb-af, .qbubble-container.qb-ai {
+  width: 188px;
+  height: auto;
+  max-width: 188px; }
+
+.qbcsml, .qbubble-container.qb-aa, .qbubble-container.qb-ad, .qbubble-container.qb-ae, .qbubble-container.qb-aj {
+  width: 150px;
+  height: auto;
+  max-width: 150px; }
+
+.qbubble {
+  display: block;
+  transform: scale(0); }
+  .qbubble.left {
+    transform-origin: left bottom; }
+  .qbubble.right {
+    transform-origin: right bottom; }
+
+.qbubble-container {
+  position: absolute; }
+  .qbubble-container.qb-aa {
+    top: 2em;
+    right: 3em; }
+    .qbubble-container.qb-aa .qbubble {
+      animation-delay: 177ms !important; }
+    .qbubble-container.qb-aa .qmark {
+      animation-delay: 2671ms !important; }
+  .qbubble-container.qb-ab {
+    top: 2em;
+    right: 272px; }
+    .qbubble-container.qb-ab .qbubble {
+      animation-delay: 188ms !important; }
+    .qbubble-container.qb-ab .qmark {
+      animation-delay: 2527ms !important; }
+  .qbubble-container.qb-ac {
+    top: calc(2em + 100px);
+    left: calc((1400px - 60px) / 2); }
+    .qbubble-container.qb-ac .qbubble {
+      animation-delay: 979ms !important; }
+    .qbubble-container.qb-ac .qmark {
+      animation-delay: 2092ms !important; }
+  .qbubble-container.qb-ad {
+    top: calc(2em + 150px);
+    right: 2em; }
+    .qbubble-container.qb-ad .qbubble {
+      animation-delay: 418ms !important; }
+    .qbubble-container.qb-ad .qmark {
+      animation-delay: 2504ms !important; }
+  .qbubble-container.qb-ae {
+    top: calc(2em + 270px);
+    left: calc(2em + 400px); }
+    .qbubble-container.qb-ae .qbubble {
+      animation-delay: 1002ms !important; }
+    .qbubble-container.qb-ae .qmark {
+      animation-delay: 2559ms !important; }
+  .qbubble-container.qb-af {
+    top: calc(2em + 200px);
+    right: calc(2em + 170px); }
+    .qbubble-container.qb-af .qbubble {
+      animation-delay: 165ms !important; }
+    .qbubble-container.qb-af .qmark {
+      animation-delay: 2121ms !important; }
+  .qbubble-container.qb-ag {
+    top: calc(2em + 425px);
+    left: calc(2em + 250px); }
+    .qbubble-container.qb-ag .qbubble {
+      animation-delay: 389ms !important; }
+    .qbubble-container.qb-ag .qmark {
+      animation-delay: 2655ms !important; }
+  .qbubble-container.qb-ah {
+    bottom: 2em;
+    left: calc(2em + 600px); }
+    .qbubble-container.qb-ah .qbubble {
+      animation-delay: 179ms !important; }
+    .qbubble-container.qb-ah .qmark {
+      animation-delay: 2650ms !important; }
+  .qbubble-container.qb-ai {
+    top: calc(2em + 250px);
+    left: 6em; }
+    .qbubble-container.qb-ai .qbubble {
+      animation-delay: 1069ms !important; }
+    .qbubble-container.qb-ai .qmark {
+      animation-delay: 3235ms !important; }
+  .qbubble-container.qb-aj {
+    bottom: calc(2em + 1em);
+    left: 2em; }
+    .qbubble-container.qb-aj .qbubble {
+      animation-delay: 950ms !important; }
+    .qbubble-container.qb-aj .qmark {
+      animation-delay: 2410ms !important; }
+
+@media only screen and (max-width: 992px) {
+  .qbubble-container[class*="qb-"]:not(.qb-aa) {
+    display: none; } }
+
+adpt-stage, adpt-inner, adpt-columns, adpt-column, adpt-contact, adpt-post-footer, adpt-team-bio, adpt-parallax-content, adpt-parallax-bg, adpt-qblock, adpt-qbubble-overlay, adpt-qblock-content, adpt-qblock-content-inner {
+  display: block; }
+
+adpt-inner, adpt-columns, adpt-column {
+  height: 100%; }
+
+adpt-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2em; }
+  @media only screen and (max-width: 992px) {
+    adpt-inner {
+      padding: 0 1em; } }
+
+adpt-columns {
+  display: flex;
+  flex-flow: row wrap; }
+
+adpt-column {
+  flex: 1 1 auto;
+  min-height: 4em; }
+  adpt-column.adpt-column-collapse {
+    flex: initial; }
+
+adpt-post-footer {
+  height: 2em;
+  background-color: #cb733a; }
+
+.adpt-header {
+  position: absolute;
+  display: flex;
+  height: 3em;
+  z-index: 999;
+  width: 100%;
+  padding: 0 2em; }
+  .adpt-header .adpt-nav-logo {
+    height: 100%;
+    padding: 1em 0; }
+    .adpt-header .adpt-nav-logo a svg {
+      fill: #ffffff; }
+  .adpt-header .adpt-nav-dt {
+    flex: 1;
+    height: 100%;
+    padding: 1em 0; }
+    .adpt-header .adpt-nav-dt .adpt-menu {
+      height: 100%;
+      padding-left: 1em;
+      flex: 1; }
+      .adpt-header .adpt-nav-dt .adpt-menu > div, .adpt-header .adpt-nav-dt .adpt-menu > adpt-stage, .adpt-header .adpt-nav-dt .adpt-menu > adpt-inner, .adpt-header .adpt-nav-dt .adpt-menu > adpt-columns, .adpt-header .adpt-nav-dt .adpt-menu > adpt-column, .adpt-header .adpt-nav-dt .adpt-menu > adpt-contact, .adpt-header .adpt-nav-dt .adpt-menu > adpt-post-footer, .adpt-header .adpt-nav-dt .adpt-menu > adpt-team-bio, .adpt-header .adpt-nav-dt .adpt-menu > adpt-parallax-content, .adpt-header .adpt-nav-dt .adpt-menu > adpt-parallax-bg, .adpt-header .adpt-nav-dt .adpt-menu > adpt-qblock, .adpt-header .adpt-nav-dt .adpt-menu > adpt-qbubble-overlay, .adpt-header .adpt-nav-dt .adpt-menu > adpt-qblock-content, .adpt-header .adpt-nav-dt .adpt-menu > adpt-qblock-content-inner {
+        height: 100%; }
+      .adpt-header .adpt-nav-dt .adpt-menu ul {
+        height: 100%;
+        font-weight: bold;
+        color: #495077;
+        display: flex;
+        align-items: center; }
+        .adpt-header .adpt-nav-dt .adpt-menu ul li {
+          padding: 0 0.5em; }
+          .adpt-header .adpt-nav-dt .adpt-menu ul li a {
+            padding: 0.5em;
+            border-radius: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.66667rem;
+            letter-spacing: 2px;
+            transition: background-color 250ms ease-in-out; }
+            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover, .adpt-header .adpt-nav-dt .adpt-menu ul li a:focus {
+              background-color: rgba(255, 255, 255, 0.65); }
+    .adpt-header .adpt-nav-dt .adpt-mobile-menu {
+      display: none; }
+  .adpt-header .adpt-header-apps {
+    padding: 0.75em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .adpt-header .adpt-header-apps > span {
+      display: block;
+      padding-right: 1em;
+      color: #495077;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.66667rem;
+      letter-spacing: 2px; }
+    .adpt-header .adpt-header-apps .adpt-app-link {
+      position: relative;
+      padding: 0 0.5em; }
+      .adpt-header .adpt-header-apps .adpt-app-link a {
+        color: rgba(255, 255, 255, 0.75); }
+
+@media only screen and (max-width: 992px) {
+  html.menu-open, body.menu-open {
+    overflow: hidden; }
+  .adpt-header {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    background-color: #ffffff;
+    padding: 0 1em; }
+    .adpt-header .adpt-mobile-menu {
+      display: block;
+      color: #f68e4b;
+      margin-right: 1em; }
+      .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon {
+        width: 3em;
+        height: 3em;
+        position: relative;
+        top: calc(50% - 1.5em);
+        font-size: .5em;
+        cursor: pointer;
+        transition: all .25s;
+        -webkit-tap-highlight-color: transparent; }
+        .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 150%;
+          width: 150%;
+          top: -25%;
+          left: -25%; }
+        .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines {
+          top: 50%;
+          margin-top: -.125em;
+          transition: all 250ms; }
+          .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines, .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:after, .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:before {
+            pointer-events: none;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 0.25em;
+            position: absolute;
+            border-radius: 0.25em;
+            transform: rotate(0);
+            background-color: #495077;
+            transition: all 250ms; }
+          .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:after {
+            width: 2em;
+            left: 0;
+            top: calc(-1em + 0.25em); }
+          .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:before {
+            width: 2em;
+            left: 1em;
+            top: calc(1em - 0.25em); }
+        body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon {
+          transform: rotate(180deg); }
+          body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines {
+            background-color: transparent; }
+            body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:after, body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:before {
+              left: .5em;
+              top: 0; }
+            body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:after {
+              transform: rotate(-135deg); }
+            body.menu-open .adpt-header .adpt-mobile-menu .adpt-mobile-menu-icon .adpt-mobile-menu-icon-lines:before {
+              transform: rotate(135deg); }
+    .adpt-header .adpt-nav-logo a svg {
+      fill: #f68e4b; }
+    .adpt-header .adpt-header-apps {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 1em;
+      z-index: 9999999;
+      visibility: hidden;
+      padding: 0.75em;
+      opacity: 0;
+      max-height: 1.5em;
+      width: 100%;
+      font-size: 1rem;
+      transition: all 250ms; }
+      body.menu-open .adpt-header .adpt-header-apps {
+        visibility: visible;
+        opacity: 1; }
+      .adpt-header .adpt-header-apps .adpt-app-link {
+        height: 100%;
+        text-align: center;
+        padding: 0 1em; }
+        .adpt-header .adpt-header-apps .adpt-app-link a {
+          color: rgba(0, 0, 0, 0.75); }
+    .adpt-header .adpt-nav-dt .adpt-menu {
+      height: auto;
+      position: fixed;
+      z-index: 999999;
+      visibility: hidden;
+      opacity: 0;
+      background-color: #ffffff;
+      padding-right: 1em;
+      top: 3em;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 250ms; }
+      .adpt-header .adpt-nav-dt .adpt-menu ul {
+        padding: 1.25em 0;
+        display: block; }
+        .adpt-header .adpt-nav-dt .adpt-menu ul li {
+          padding: 0; }
+          .adpt-header .adpt-nav-dt .adpt-menu ul li a {
+            display: block;
+            padding: 1.25em;
+            font-size: 0.8rem; }
+            .adpt-header .adpt-nav-dt .adpt-menu ul li a:hover, .adpt-header .adpt-nav-dt .adpt-menu ul li a:focus {
+              background-color: rgba(0, 0, 0, 0.25); }
+      body.menu-open .adpt-header .adpt-nav-dt .adpt-menu {
+        visibility: visible;
+        opacity: 1; } }
+
+adpt-stage {
+  padding-top: 3em;
+  margin-bottom: -3em; }
+  adpt-stage .adpt-stage-inner, adpt-stage adpt-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em; }
+    @media only screen and (max-width: 992px) {
+      adpt-stage .adpt-stage-inner, adpt-stage adpt-inner {
+        padding: 0 1em; } }
+
+.adpt-blog {
+  background: #f68e4b;
+  background: linear-gradient(0deg, #f68e4b 50%, rgba(246, 142, 75, 0) 50%); }
+  .adpt-blog .adpt-blog-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em; }
+    @media only screen and (max-width: 992px) {
+      .adpt-blog .adpt-blog-inner {
+        padding: 0 1em; } }
+    .adpt-blog .adpt-blog-inner .adpt-blog-top {
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      .adpt-blog .adpt-blog-inner .adpt-blog-top .adpt-blog-heading {
+        padding: 1.5em 0;
+        flex: 1; }
+      .adpt-blog .adpt-blog-inner .adpt-blog-top .adpt-blog-link a.btn {
+        font-size: 0.8rem; }
+    .adpt-blog .adpt-blog-inner .adpt-post-blocks {
+      width: 100%;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(3, 1fr); }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block {
+        border-radius: 0.25em;
+        background-color: #7e8fad;
+        position: relative;
+        padding: 2em 2em 0; }
+        .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > img {
+          display: block; }
+        .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block h5 {
+          margin-top: 1em;
+          min-height: 2em;
+          letter-spacing: initial; }
+        .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block .view-post-link {
+          display: flex;
+          font-size: 0.66667rem;
+          padding: 2em 0;
+          color: white;
+          text-transform: uppercase;
+          height: 1em;
+          width: 100%;
+          align-items: center; }
+          .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block .view-post-link svg {
+            margin-left: 1.5em;
+            height: 1em; }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-spacer {
+        color: rgba(0, 0, 0, 0); }
+
+@media only screen and (max-width: 992px) {
+  .adpt-blog .adpt-blog-inner .adpt-post-blocks {
+    display: block; }
+    .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block {
+      border-radius: 0;
+      border: 0;
+      padding: 0;
+      padding-top: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+      display: flex;
+      align-items: center; }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > img {
+        width: 40%;
+        height: 40%; }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > div, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-stage, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-inner, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-columns, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-column, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-contact, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-post-footer, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-team-bio, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-parallax-content, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-parallax-bg, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-qblock, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-qbubble-overlay, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-qblock-content, .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block > adpt-qblock-content-inner {
+        margin-left: 0.5em; }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block:last-child {
+        padding-bottom: 1em; }
+      .adpt-blog .adpt-blog-inner .adpt-post-blocks .adpt-post-block h5 {
+        font-size: 0.8rem;
+        min-height: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .adpt-blog .adpt-blog-inner .adpt-blog-top .adpt-blog-link a.btn {
+    font-size: 0.5rem; } }
+
+adpt-team-bio {
+  position: relative;
+  background-color: #495077;
+  color: #ffffff;
+  min-height: 20em; }
+  adpt-team-bio adpt-parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .25;
+    background-attachment: fixed;
+    background-image: url("/app/themes/adopted/assets/img/team-bio-texture.png"); }
+  adpt-team-bio adpt-team-bio-content {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em;
+    padding: 2em;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 992px) {
+      adpt-team-bio adpt-team-bio-content {
+        padding: 0 1em; } }
+    adpt-team-bio adpt-team-bio-content figure {
+      display: flex;
+      margin: 0;
+      cursor: pointer;
+      width: 25%;
+      padding: 1em; }
+      adpt-team-bio adpt-team-bio-content figure img {
+        width: 100%;
+        height: auto;
+        display: block;
+        flex: 1;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.05), 0 6px 30px 5px rgba(0, 0, 0, 0.05), 0 8px 10px -7px rgba(0, 0, 0, 0.05); }
+      adpt-team-bio adpt-team-bio-content figure figcaption {
+        font-size: 0.75em;
+        display: none; }
+    adpt-team-bio adpt-team-bio-content.actif figure:not(.active) img {
+      opacity: .75;
+      transition: all 250ms ease-in-out; }
+      adpt-team-bio adpt-team-bio-content.actif figure:not(.active) img:hover {
+        opacity: 1; }
+    adpt-team-bio adpt-team-bio-content.actif figure.active {
+      order: -1;
+      flex: 1 1 100%; }
+      adpt-team-bio adpt-team-bio-content.actif figure.active figcaption {
+        display: block;
+        padding: 2em;
+        flex: 3; }
+
+.adpt-fold {
+  position: relative; }
+  .adpt-fold adpt-inner .adpt-fold-graybox {
+    background-color: #f5f4f4;
+    padding: 3em 6em;
+    border-radius: 0.25em;
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.05), 0 3px 14px 2px rgba(0, 0, 0, 0.05), 0 5px 5px -3px rgba(0, 0, 0, 0.05); }
+    .adpt-fold adpt-inner .adpt-fold-graybox p {
+      margin-bottom: 1.5em;
+      display: block; }
+      .adpt-fold adpt-inner .adpt-fold-graybox p span.spaced {
+        line-height: 1.25em; }
+    .adpt-fold adpt-inner .adpt-fold-graybox a {
+      display: inline-block; }
+
+@media only screen and (max-width: 992px) {
+  .adpt-fold adpt-inner .adpt-fold-graybox {
+    padding: 2em; } }
+
+.adpt-panel-block .adpt-panel-block-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  position: relative; }
+  @media only screen and (max-width: 992px) {
+    .adpt-panel-block .adpt-panel-block-inner {
+      padding: 0 1em; } }
+  .adpt-panel-block .adpt-panel-block-inner .adpt-panel {
+    flex: 1;
+    position: relative;
+    background-color: #67c8c7;
+    border-radius: 0.25em;
+    overflow: hidden;
+    opacity: .85;
+    transition: opacity 250ms ease-in-out; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:hover {
+      cursor: pointer;
+      opacity: 1; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:nth-child(odd) {
+      margin-right: 0.5em; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:nth-child(even) {
+      margin-left: 0.5em; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel figure {
+      width: 100%;
+      margin: 0; }
+      .adpt-panel-block .adpt-panel-block-inner .adpt-panel figure img {
+        display: block; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white; }
+      .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-topright {
+        width: 100px;
+        top: 2em;
+        right: 2em;
+        position: absolute;
+        text-align: right; }
+        .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-topright .adpt-panel-vert {
+          font-size: 0.8rem;
+          transform: rotate(90deg);
+          text-transform: uppercase;
+          display: block;
+          position: absolute;
+          right: -2.5em;
+          top: 6em; }
+      .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-info {
+        width: 50%;
+        bottom: 2em;
+        right: 2em;
+        position: absolute; }
+        .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-info h4 {
+          margin-bottom: 1em;
+          color: white; }
+        .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-info p {
+          font-size: 0.8rem;
+          line-height: 125%;
+          height: 4em; }
+
+@media only screen and (max-width: 992px) {
+  .adpt-panel-block .adpt-panel-block-inner {
+    display: block; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:nth-child(odd) {
+      margin-right: 0; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:nth-child(even) {
+      margin-left: 0; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel:not(:last-of-type) {
+      margin-bottom: 1em; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-topright {
+      top: 0.75em;
+      right: 1.5em; }
+      .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-topright .adpt-panel-vert {
+        top: 5em; }
+    .adpt-panel-block .adpt-panel-block-inner .adpt-panel .adpt-panel-overlay .adpt-panel-info {
+      width: 70%; } }
+
+.adpt-ctas {
+  min-height: 10em; }
+  .adpt-ctas .adpt-ctas-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em; }
+    @media only screen and (max-width: 992px) {
+      .adpt-ctas .adpt-ctas-inner {
+        padding: 0 1em; } }
+    .adpt-ctas .adpt-ctas-inner .adpt-cta {
+      display: flex;
+      flex-flow: column nowrap;
+      position: relative;
+      background-color: #f5f4f4;
+      text-align: center; }
+      .adpt-ctas .adpt-ctas-inner .adpt-cta p, .adpt-ctas .adpt-ctas-inner .adpt-cta a {
+        font-size: 0.8rem; }
+      .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-icon {
+        padding: 25% 25% 15%; }
+        .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-icon svg {
+          max-height: 6em; }
+      .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-cta-text {
+        flex: 1;
+        padding: 0 2.5em; }
+        .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-cta-text h5 {
+          padding-bottom: 1em; }
+        .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-cta-text p {
+          line-height: 125%; }
+      .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-cta-more {
+        padding: 2em 35%; }
+        .adpt-ctas .adpt-ctas-inner .adpt-cta .adpt-cta-more a {
+          display: block;
+          background-color: #de6273; }
+
+@media only screen and (max-width: 767px) {
+  .adpt-ctas .adpt-ctas-inner {
+    grid-template-columns: 1fr; } }
+
+.adpt-sms-facts strong {
+  font-weight: bold; }
+
+.adpt-sms-facts .adpt-sms-inner {
+  border-radius: 0.125em;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2em; }
+  @media only screen and (max-width: 992px) {
+    .adpt-sms-facts .adpt-sms-inner {
+      padding: 0 1em; } }
+  .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box {
+    background-color: rgba(103, 200, 199, 0.4);
+    padding: 3em 1em;
+    color: #ffffff;
+    display: flex; }
+    .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-arrow {
+      padding: 0.5em 1em;
+      border-radius: 0.25em;
+      line-height: 0;
+      margin-right: 1em; }
+    .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text {
+      flex: 1;
+      color: black;
+      background-color: #ffffff;
+      padding: 0 .5em 0 1em;
+      border-radius: 1em;
+      display: flex;
+      align-items: center; }
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms {
+        flex: 1;
+        display: flex; }
+        .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > div, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-stage, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-columns, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-column, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-contact, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-post-footer, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-team-bio, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-parallax-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-parallax-bg, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qbubble-overlay, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock-content, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock-content-inner, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock-content-inner {
+          display: inline-block; }
+          .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > div h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-stage h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-columns h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-column h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-contact h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-post-footer h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-team-bio h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-parallax-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-parallax-bg h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qbubble-overlay h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock-content h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.sms > adpt-qblock-content-inner h5, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.sms > adpt-qblock-content-inner h5 {
+            font-size: 0.8rem;
+            font-family: mr-eaves-modern, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-right: .15em;
+            border-right: 0.1em solid rgba(0, 0, 0, 0.8);
+            animation: typing 5s steps(50, end), caret 0.5s step-end infinite; }
+      .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text div.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-stage.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-inner.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-columns.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-column.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-contact.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-post-footer.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-team-bio.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-content.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-parallax-bg.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qbubble-overlay.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content.send, .adpt-sms-facts .adpt-sms-inner .adpt-sms-aqua-box .adpt-sms-text adpt-qblock-content-inner.send {
+        color: #ffffff;
+        padding: 0.125em 0.4em;
+        border-radius: 50%; }
+
+.adpt-footer {
+  position: relative;
+  background-color: #f68e4b;
+  display: flex;
+  width: 100%;
+  padding: 0 2em; }
+  .adpt-footer adpt-inner {
+    display: flex;
+    padding: 1em; }
+  .adpt-footer .adpt-footer-block {
+    flex: 1;
+    padding: 2em 1em 0.75em; }
+    .adpt-footer .adpt-footer-block .adpt-footer-block-inner {
+      font-size: 0.8rem; }
+      .adpt-footer .adpt-footer-block .adpt-footer-block-inner i {
+        margin-right: 1em; }
+      .adpt-footer .adpt-footer-block .adpt-footer-block-inner .adpt-footer-heading {
+        height: 24px;
+        width: 100%; }
+      .adpt-footer .adpt-footer-block .adpt-footer-block-inner .adpt-footer-info {
+        padding: 1em 0; }
+        .adpt-footer .adpt-footer-block .adpt-footer-block-inner .adpt-footer-info .footer-info-inner {
+          display: block;
+          padding-bottom: 0.5em; }
+      .adpt-footer .adpt-footer-block .adpt-footer-block-inner input {
+        max-width: 80%;
+        width: 100%; }
+      .adpt-footer .adpt-footer-block .adpt-footer-block-inner button, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.button, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.btn {
+        font-size: 0.8rem;
+        display: inline-block;
+        padding: 0.5em 1em; }
+        .adpt-footer .adpt-footer-block .adpt-footer-block-inner button i.fas, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.button i.fas, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.btn i.fas {
+          font-size: 0.66667rem;
+          margin-right: 0.5em; }
+    .adpt-footer .adpt-footer-block.block-3 .adpt-footer-info .footer-info-inner {
+      padding-bottom: 1em; }
+    .adpt-footer .adpt-footer-block.block-4 .gcfa-logo {
+      width: 100%;
+      padding: 1em 4em 1em 0; }
+
+@media only screen and (max-width: 992px) {
+  .adpt-footer adpt-inner {
+    display: block;
+    padding-top: 1em; }
+    .adpt-footer adpt-inner .adpt-footer-block {
+      padding: 1em; } }
+
+adpt-qblock {
+  position: relative;
+  color: white; }
+  adpt-qblock adpt-inner {
+    position: relative; }
+  adpt-qblock h2, adpt-qblock h5 {
+    color: #495077; }
+  adpt-qblock h2 {
+    width: 100%;
+    max-width: 600px; }
+  adpt-qblock h5 {
+    letter-spacing: 0px;
+    margin-bottom: 0.5em; }
+  adpt-qblock adpt-qblock-content {
+    padding: 2em 0; }
+    adpt-qblock adpt-qblock-content.blurb {
+      display: flex;
+      justify-content: flex-end; }
+    adpt-qblock adpt-qblock-content adpt-qblock-content-inner {
+      width: 100%;
+      max-width: 300px; }
+      adpt-qblock adpt-qblock-content adpt-qblock-content-inner aside {
+        line-height: 110%;
+        font-size: calc($bodytext + 2px); }
+      adpt-qblock adpt-qblock-content adpt-qblock-content-inner a.btn {
+        display: inline-block;
+        background-color: #495077;
+        font-size: 0.8rem;
+        margin-top: 1em; }
+  adpt-qblock adpt-qbubble-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2em; }
+    adpt-qblock adpt-qbubble-overlay .qbubble-container svg .qmark {
+      transform-origin: center;
+      -webkit-animation: wiggle 4000ms ease-in-out infinite forwards;
+      -moz-animation: wiggle 4000ms ease-in-out infinite forwards;
+      -ms-animation: wiggle 4000ms ease-in-out infinite forwards;
+      -o-animation: wiggle 4000ms ease-in-out infinite forwards;
+      animation: wiggle 4000ms ease-in-out infinite forwards; }
+
+#qbubblecontainer.active adpt-qbubble-overlay .qbubble-container svg.qbubble, #askaproqbubble.active adpt-qbubble-overlay .qbubble-container svg.qbubble {
+  -webkit-animation: scaleIn 250ms ease-in-out forwards;
+  -moz-animation: scaleIn 250ms ease-in-out forwards;
+  -ms-animation: scaleIn 250ms ease-in-out forwards;
+  -o-animation: scaleIn 250ms ease-in-out forwards;
+  animation: scaleIn 250ms ease-in-out forwards; }
+
+main.adpt-front-page section {
+  margin-bottom: 1em; }
+
+main.adpt-front-page .adpt-stage {
+  background-color: #f68e4b;
+  padding-bottom: 2em; }
+  main.adpt-front-page .adpt-stage .adpt-stage-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; }
+    main.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column {
+      margin: 0;
+      flex: 1;
+      flex-basis: 100%; }
+      main.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column:nth-child(odd) {
+        margin-right: 1em; }
+      main.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column:nth-child(even) {
+        margin-left: 1em; }
+      main.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column figure {
+        margin: 0; }
+  main.adpt-front-page .adpt-stage h1 {
+    opacity: 0;
+    -webkit-animation: fadein 2s ease-in-out 3s forwards;
+    -moz-animation: fadein 2s ease-in-out 3s forwards;
+    -ms-animation: fadein 2s ease-in-out 3s forwards;
+    -o-animation: fadein 2s ease-in-out 3s forwards;
+    animation: fadein 2s ease-in-out 3s forwards; }
+
+main.adpt-front-page .adpt-fold adpt-inner .adpt-fold-graybox {
+  text-align: center; }
+
+main.adpt-front-page adpt-qblock {
+  color: white;
+  background-color: #495077; }
+  main.adpt-front-page adpt-qblock h2, main.adpt-front-page adpt-qblock h5 {
+    color: #67c8c7; }
+  main.adpt-front-page adpt-qblock adpt-qblock-content adpt-qblock-content-inner a.btn {
+    background-color: #67c8c7; }
+
+@media only screen and (max-width: 992px) {
+  body.adpt-front-page .adpt-stage .adpt-stage-inner {
+    display: block; }
+    body.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column {
+      margin: 0 !important; }
+      body.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column h1 {
+        font-size: 40px;
+        padding: 1em; }
+  body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content {
+    padding: 0; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content h2 {
+      font-size: 40px;
+      padding: 2em 1em; }
+    body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content.blurb {
+      padding-bottom: 2em; }
+      body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content.blurb .adpt-podcast-blurb-inner {
+        max-width: unset;
+        width: 50%; } }
+
+@media only screen and (max-width: 767px) {
+  body.adpt-front-page .adpt-stage .adpt-stage-inner .adpt-stage-column h1 {
+    font-size: 30px;
+    padding: 2em 1em 0; }
+  body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content h2 {
+    font-size: 30px; } }
+
+body.adpt-about nav.adpt-menu .about > a {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+body.adpt-about adpt-stage {
+  background-color: #67c8c7; }
+  body.adpt-about adpt-stage adpt-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+    align-items: center; }
+    body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon {
+      padding: 5em;
+      margin-bottom: 1em; }
+      body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon svg {
+        height: 100%;
+        width: 100%;
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+    body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-headline {
+      display: flex;
+      align-items: center; }
+
+body.adpt-about .adpt-fold adpt-inner adpt-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4em; }
+  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column h2 {
+    font-size: 175%;
+    color: #f68e4b; }
+  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p:not(.emphasis) {
+    font-size: 0.8rem; }
+  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p.emphasis {
+    line-height: 125%; }
+
+body.adpt-about .adpt-about-blurb {
+  padding: 3em 0 2em;
+  text-align: center;
+  margin-bottom: 1em; }
+  body.adpt-about .adpt-about-blurb h3 {
+    color: #495077; }
+  body.adpt-about .adpt-about-blurb svg {
+    max-width: 3em;
+    max-height: 3em;
+    display: block;
+    margin: 1em auto; }
+  body.adpt-about .adpt-about-blurb article {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 2em;
+    font-size: 0.8rem;
+    margin: 0 auto; }
+
+body.adpt-contact nav.adpt-menu .contact > a {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+body.adpt-contact adpt-stage {
+  background-color: #f68e4b;
+  height: 65vh; }
+  body.adpt-contact adpt-stage adpt-columns adpt-column {
+    position: relative; }
+    body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box {
+      padding: 5em 5em 5em 1em; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg {
+        height: 100%;
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.left {
+          animation: dots 1.5s ease-in-out 0s both infinite; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.middle {
+          animation: dots 1.5s ease-in-out .25s both infinite; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.right {
+          animation: dots 1.5s ease-in-out .5s both infinite; }
+    body.adpt-contact adpt-stage adpt-columns adpt-column.adpt-column-collapse {
+      width: 40%; }
+    body.adpt-contact adpt-stage adpt-columns adpt-column form {
+      width: 100%;
+      background-color: #67c8c7;
+      padding: 2em 2em 1em;
+      position: absolute;
+      top: 1em;
+      box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.05), 0 9px 46px 8px rgba(0, 0, 0, 0.05), 0 11px 15px -7px rgba(0, 0, 0, 0.05); }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form h1 {
+        font-size: 1rem; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form .top-text {
+        margin-top: 1rem;
+        line-height: 1.25;
+        font-size: 0.8rem; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields {
+        margin-top: 1rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5em; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields input {
+          padding: 1.25em 1.25em 0.25em;
+          width: 100%; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options {
+        margin-top: 1rem;
+        width: 100%;
+        padding-left: 1.5em;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 0.25em; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input {
+          display: flex;
+          align-items: center; }
+          body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] {
+            height: 0.8rem;
+            width: 0.8rem;
+            margin: 0; }
+            body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] + label {
+              padding-left: 1em;
+              font-size: 0.66667rem; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-message {
+        margin-top: 1rem;
+        width: 100%; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-message textarea {
+          width: 100%;
+          padding: 1.5em 1em 1em; }
+      body.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        body.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer button.contact-form-submit {
+          margin-top: 1rem; }
+
+body.adpt-contact adpt-contact {
+  padding-top: 8em; }
+  body.adpt-contact adpt-contact .adpt-contact-inner {
+    padding: 0 1em;
+    display: flex; }
+    body.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox {
+      filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+      max-width: 60%;
+      flex: 1; }
+      body.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox svg.postbox-svg {
+        display: block; }
+    body.adpt-contact adpt-contact .adpt-contact-inner aside {
+      padding: 2em 4em 0; }
+      body.adpt-contact adpt-contact .adpt-contact-inner aside h2 {
+        font-size: 1rem;
+        color: #495077; }
+      body.adpt-contact adpt-contact .adpt-contact-inner aside address {
+        white-space: pre;
+        text-align: left;
+        font-size: 0.8rem;
+        line-height: 1.25; }
+
+body.adpt-educators nav.adpt-menu .educators > a {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+body.adpt-educators adpt-stage {
+  background-color: #de6273; }
+  body.adpt-educators adpt-stage adpt-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+    align-items: center;
+    padding-bottom: 3em; }
+    body.adpt-educators adpt-stage adpt-columns adpt-column.adpt-educator-anim {
+      padding-top: 4em;
+      padding-left: 2em; }
+      body.adpt-educators adpt-stage adpt-columns adpt-column.adpt-educator-anim svg {
+        height: 100%;
+        width: 100%;
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
+    body.adpt-educators adpt-stage adpt-columns adpt-column.adpt-edu-headline {
+      display: flex;
+      align-items: center; }
+
+body.adpt-educators .adpt-fold adpt-inner adpt-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4em; }
+  body.adpt-educators .adpt-fold adpt-inner adpt-columns adpt-column h2 {
+    font-size: 150%;
+    color: #f68e4b; }
+  body.adpt-educators .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p:not(.emphasis) {
+    font-size: 0.8rem; }
+  body.adpt-educators .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p.emphasis {
+    line-height: 125%; }
+
+body.adpt-educators .adpt-section-headline {
+  text-align: center;
+  padding: 4em;
+  margin-bottom: 1em; }
+  body.adpt-educators .adpt-section-headline h3 {
+    color: #495077; }
+  body.adpt-educators .adpt-section-headline p {
+    max-width: 750px;
+    display: inline-block;
+    margin-top: 1em; }
+
+@media only screen and (max-width: 992px) {
+  body.adpt-educators .adpt-fold adpt-inner adpt-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em; }
+  body.adpt-educators adpt-stage adpt-inner adpt-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em; }
+    body.adpt-educators adpt-stage adpt-inner adpt-columns adpt-column {
+      margin: 0 !important; }
+      body.adpt-educators adpt-stage adpt-inner adpt-columns adpt-column.adpt-edu-headline {
+        order: 1; }
+      body.adpt-educators adpt-stage adpt-inner adpt-columns adpt-column.adpt-educator-anim {
+        padding: 0 .5em;
+        order: 2; }
+      body.adpt-educators adpt-stage adpt-inner adpt-columns adpt-column h1 {
+        font-size: 40px;
+        padding: 0 1em; } }
+
+body.adpt-askapro nav.adpt-menu .askapro > a {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+body.adpt-askapro adpt-stage {
+  background-color: #67c8c7;
+  margin-bottom: 0; }
+  body.adpt-askapro adpt-stage adpt-qblock adpt-qblock-content adpt-qblock-content-inner aside {
+    color: black; }
+
+body.adpt-students nav.adpt-menu .students > a {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+body.adpt-students adpt-stage {
+  position: relative;
+  z-index: 1;
+  background-color: #f68e4b;
+  height: 100vh;
+  padding-top: 0;
+  overflow: hidden; }
+  body.adpt-students adpt-stage svg {
+    position: absolute;
+    opacity: .1; }
+  body.adpt-students adpt-stage adpt-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    text-align: center; }
+
+body.adpt-students .adpt-fold {
+  z-index: 5;
+  margin-bottom: 1em; }
+  body.adpt-students .adpt-fold adpt-inner .adpt-fold-graybox {
+    min-height: 6em;
+    padding: 3em 10%;
+    text-align: center; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
