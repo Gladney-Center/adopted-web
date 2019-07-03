@@ -1,14 +1,14 @@
 {
   "name": "adopted",
-  "version": "1.1.3",
+  "version": "1.1.5",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "scripts": {
-    "it": "npm --no-git-tag-version version patch",
-    "version": "npm run start && git add -A",
-    "postversion": "git commit -am \"pushing latest changes\" && git push",
-    "build": "next -- -p 1111",
-    "start": "next build"
+    "build": "npm --no-git-tag-version version patch",
+    "version": "next build && git add -A",
+    "postversion": "git commit -am \"pushing latest changes\" && git push && npm run start",
+    "dev": "next -- -p 1111",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "dotenv": "^8.0.0",
-    "firebase": "^6.2.2",
+    "firebase": "^6.2.4",
+    "firebase-tools": "^7.0.2",
     "next": "^8.1.0",
+    "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

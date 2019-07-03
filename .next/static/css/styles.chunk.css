@@ -1113,72 +1113,72 @@ svg.gabby {
     top: 2em;
     right: 3em; }
     .qbubble-container.qb-aa .qbubble {
-      animation-delay: 177ms !important; }
+      animation-delay: 889ms !important; }
     .qbubble-container.qb-aa .qmark {
-      animation-delay: 2671ms !important; }
+      animation-delay: 2743ms !important; }
   .qbubble-container.qb-ab {
     top: 2em;
     right: 272px; }
     .qbubble-container.qb-ab .qbubble {
-      animation-delay: 188ms !important; }
+      animation-delay: 796ms !important; }
     .qbubble-container.qb-ab .qmark {
-      animation-delay: 2527ms !important; }
+      animation-delay: 2778ms !important; }
   .qbubble-container.qb-ac {
     top: calc(2em + 100px);
     left: calc((1400px - 60px) / 2); }
     .qbubble-container.qb-ac .qbubble {
-      animation-delay: 979ms !important; }
+      animation-delay: 875ms !important; }
     .qbubble-container.qb-ac .qmark {
-      animation-delay: 2092ms !important; }
+      animation-delay: 2579ms !important; }
   .qbubble-container.qb-ad {
     top: calc(2em + 150px);
     right: 2em; }
     .qbubble-container.qb-ad .qbubble {
-      animation-delay: 418ms !important; }
+      animation-delay: 70ms !important; }
     .qbubble-container.qb-ad .qmark {
-      animation-delay: 2504ms !important; }
+      animation-delay: 2945ms !important; }
   .qbubble-container.qb-ae {
     top: calc(2em + 270px);
     left: calc(2em + 400px); }
     .qbubble-container.qb-ae .qbubble {
-      animation-delay: 1002ms !important; }
+      animation-delay: 265ms !important; }
     .qbubble-container.qb-ae .qmark {
-      animation-delay: 2559ms !important; }
+      animation-delay: 2064ms !important; }
   .qbubble-container.qb-af {
     top: calc(2em + 200px);
     right: calc(2em + 170px); }
     .qbubble-container.qb-af .qbubble {
-      animation-delay: 165ms !important; }
+      animation-delay: 957ms !important; }
     .qbubble-container.qb-af .qmark {
-      animation-delay: 2121ms !important; }
+      animation-delay: 2623ms !important; }
   .qbubble-container.qb-ag {
     top: calc(2em + 425px);
     left: calc(2em + 250px); }
     .qbubble-container.qb-ag .qbubble {
-      animation-delay: 389ms !important; }
+      animation-delay: 796ms !important; }
     .qbubble-container.qb-ag .qmark {
-      animation-delay: 2655ms !important; }
+      animation-delay: 3275ms !important; }
   .qbubble-container.qb-ah {
     bottom: 2em;
     left: calc(2em + 600px); }
     .qbubble-container.qb-ah .qbubble {
-      animation-delay: 179ms !important; }
+      animation-delay: 1033ms !important; }
     .qbubble-container.qb-ah .qmark {
-      animation-delay: 2650ms !important; }
+      animation-delay: 2475ms !important; }
   .qbubble-container.qb-ai {
     top: calc(2em + 250px);
     left: 6em; }
     .qbubble-container.qb-ai .qbubble {
-      animation-delay: 1069ms !important; }
+      animation-delay: 1048ms !important; }
     .qbubble-container.qb-ai .qmark {
-      animation-delay: 3235ms !important; }
+      animation-delay: 3343ms !important; }
   .qbubble-container.qb-aj {
     bottom: calc(2em + 1em);
     left: 2em; }
     .qbubble-container.qb-aj .qbubble {
-      animation-delay: 950ms !important; }
+      animation-delay: 281ms !important; }
     .qbubble-container.qb-aj .qmark {
-      animation-delay: 2410ms !important; }
+      animation-delay: 3169ms !important; }
 
 @media only screen and (max-width: 992px) {
   .qbubble-container[class*="qb-"]:not(.qb-aa) {
@@ -1760,11 +1760,16 @@ adpt-team-bio {
         .adpt-footer .adpt-footer-block .adpt-footer-block-inner button i.fas, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.button i.fas, .adpt-footer .adpt-footer-block .adpt-footer-block-inner a.btn i.fas {
           font-size: 0.66667rem;
           margin-right: 0.5em; }
+    .adpt-footer .adpt-footer-block.block-1 svg {
+      height: 100%;
+      fill: white; }
     .adpt-footer .adpt-footer-block.block-3 .adpt-footer-info .footer-info-inner {
       padding-bottom: 1em; }
     .adpt-footer .adpt-footer-block.block-4 .gcfa-logo {
       width: 100%;
-      padding: 1em 4em 1em 0; }
+      padding: 2em 0; }
+      .adpt-footer .adpt-footer-block.block-4 .gcfa-logo svg {
+        fill: white; }
 
 @media only screen and (max-width: 992px) {
   .adpt-footer adpt-inner {
@@ -1889,147 +1894,147 @@ main.adpt-front-page adpt-qblock {
   body.adpt-front-page .adpt-podcast .adpt-podcast-inner .adpt-podcast-content h2 {
     font-size: 30px; } }
 
-body.adpt-about nav.adpt-menu .about > a {
+#__next.adpt-about nav.adpt-menu .about > a {
   background-color: rgba(255, 255, 255, 0.65); }
 
-body.adpt-about adpt-stage {
+main.adpt-about adpt-stage {
   background-color: #67c8c7; }
-  body.adpt-about adpt-stage adpt-columns {
+  main.adpt-about adpt-stage adpt-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4em;
     align-items: center; }
-    body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon {
+    main.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon {
       padding: 5em;
       margin-bottom: 1em; }
-      body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon svg {
+      main.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-icon svg {
         height: 100%;
         width: 100%;
         filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
-    body.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-headline {
+    main.adpt-about adpt-stage adpt-columns adpt-column.adpt-about-headline {
       display: flex;
       align-items: center; }
 
-body.adpt-about .adpt-fold adpt-inner adpt-columns {
+main.adpt-about .adpt-fold adpt-inner adpt-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4em; }
-  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column h2 {
+  main.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column h2 {
     font-size: 175%;
     color: #f68e4b; }
-  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p:not(.emphasis) {
+  main.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p:not(.emphasis) {
     font-size: 0.8rem; }
-  body.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p.emphasis {
+  main.adpt-about .adpt-fold adpt-inner adpt-columns adpt-column.fold-text p.emphasis {
     line-height: 125%; }
 
-body.adpt-about .adpt-about-blurb {
+main.adpt-about .adpt-about-blurb {
   padding: 3em 0 2em;
   text-align: center;
   margin-bottom: 1em; }
-  body.adpt-about .adpt-about-blurb h3 {
+  main.adpt-about .adpt-about-blurb h3 {
     color: #495077; }
-  body.adpt-about .adpt-about-blurb svg {
+  main.adpt-about .adpt-about-blurb svg {
     max-width: 3em;
     max-height: 3em;
     display: block;
     margin: 1em auto; }
-  body.adpt-about .adpt-about-blurb article {
+  main.adpt-about .adpt-about-blurb article {
     width: 100%;
     max-width: 700px;
     padding: 0 2em;
     font-size: 0.8rem;
     margin: 0 auto; }
 
-body.adpt-contact nav.adpt-menu .contact > a {
+#__next.adpt-contact nav.adpt-menu .contact > a {
   background-color: rgba(255, 255, 255, 0.65); }
 
-body.adpt-contact adpt-stage {
+main.adpt-contact adpt-stage {
   background-color: #f68e4b;
   height: 65vh; }
-  body.adpt-contact adpt-stage adpt-columns adpt-column {
+  main.adpt-contact adpt-stage adpt-columns adpt-column {
     position: relative; }
-    body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box {
+    main.adpt-contact adpt-stage adpt-columns adpt-column.talk-box {
       padding: 5em 5em 5em 1em; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg {
+      main.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg {
         height: 100%;
         filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5)); }
-        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.left {
+        main.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.left {
           animation: dots 1.5s ease-in-out 0s both infinite; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.middle {
+        main.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.middle {
           animation: dots 1.5s ease-in-out .25s both infinite; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.right {
+        main.adpt-contact adpt-stage adpt-columns adpt-column.talk-box svg g.dots > path.right {
           animation: dots 1.5s ease-in-out .5s both infinite; }
-    body.adpt-contact adpt-stage adpt-columns adpt-column.adpt-column-collapse {
+    main.adpt-contact adpt-stage adpt-columns adpt-column.adpt-column-collapse {
       width: 40%; }
-    body.adpt-contact adpt-stage adpt-columns adpt-column form {
+    main.adpt-contact adpt-stage adpt-columns adpt-column form {
       width: 100%;
       background-color: #67c8c7;
       padding: 2em 2em 1em;
       position: absolute;
       top: 1em;
       box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.05), 0 9px 46px 8px rgba(0, 0, 0, 0.05), 0 11px 15px -7px rgba(0, 0, 0, 0.05); }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form h1 {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form h1 {
         font-size: 1rem; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form .top-text {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form .top-text {
         margin-top: 1rem;
         line-height: 1.25;
         font-size: 0.8rem; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields {
         margin-top: 1rem;
         display: grid;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5em; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields input {
+        main.adpt-contact adpt-stage adpt-columns adpt-column form .form-fields input {
           padding: 1.25em 1.25em 0.25em;
           width: 100%; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form .form-options {
         margin-top: 1rem;
         width: 100%;
         padding-left: 1.5em;
         display: grid;
         grid-template-rows: 1fr;
         grid-gap: 0.25em; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input {
+        main.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input {
           display: flex;
           align-items: center; }
-          body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] {
+          main.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] {
             height: 0.8rem;
             width: 0.8rem;
             margin: 0; }
-            body.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] + label {
+            main.adpt-contact adpt-stage adpt-columns adpt-column form .form-options .adpt-form-input input[type="checkbox"] + label {
               padding-left: 1em;
               font-size: 0.66667rem; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form .form-message {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form .form-message {
         margin-top: 1rem;
         width: 100%; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column form .form-message textarea {
+        main.adpt-contact adpt-stage adpt-columns adpt-column form .form-message textarea {
           width: 100%;
           padding: 1.5em 1em 1em; }
-      body.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer {
+      main.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer {
         display: flex;
         align-items: center;
         justify-content: center; }
-        body.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer button.contact-form-submit {
+        main.adpt-contact adpt-stage adpt-columns adpt-column form .adpt-form-footer button.contact-form-submit {
           margin-top: 1rem; }
 
-body.adpt-contact adpt-contact {
+main.adpt-contact adpt-contact {
   padding-top: 8em; }
-  body.adpt-contact adpt-contact .adpt-contact-inner {
+  main.adpt-contact adpt-contact .adpt-contact-inner {
     padding: 0 1em;
     display: flex; }
-    body.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox {
+    main.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox {
       filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
       max-width: 60%;
       flex: 1; }
-      body.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox svg.postbox-svg {
+      main.adpt-contact adpt-contact .adpt-contact-inner .adpt-postbox svg.postbox-svg {
         display: block; }
-    body.adpt-contact adpt-contact .adpt-contact-inner aside {
+    main.adpt-contact adpt-contact .adpt-contact-inner aside {
       padding: 2em 4em 0; }
-      body.adpt-contact adpt-contact .adpt-contact-inner aside h2 {
+      main.adpt-contact adpt-contact .adpt-contact-inner aside h2 {
         font-size: 1rem;
         color: #495077; }
-      body.adpt-contact adpt-contact .adpt-contact-inner aside address {
+      main.adpt-contact adpt-contact .adpt-contact-inner aside address {
         white-space: pre;
         text-align: left;
         font-size: 0.8rem;
@@ -2100,13 +2105,13 @@ body.adpt-educators .adpt-section-headline {
         font-size: 40px;
         padding: 0 1em; } }
 
-body.adpt-askapro nav.adpt-menu .askapro > a {
+#__next.adpt-askapro nav.adpt-menu .askapro > a {
   background-color: rgba(255, 255, 255, 0.65); }
 
-body.adpt-askapro adpt-stage {
+main.adpt-askapro adpt-stage {
   background-color: #67c8c7;
   margin-bottom: 0; }
-  body.adpt-askapro adpt-stage adpt-qblock adpt-qblock-content adpt-qblock-content-inner aside {
+  main.adpt-askapro adpt-stage adpt-qblock adpt-qblock-content adpt-qblock-content-inner aside {
     color: black; }
 
 body.adpt-students nav.adpt-menu .students > a {
@@ -2139,6 +2144,23 @@ body.adpt-students .adpt-fold {
     min-height: 6em;
     padding: 3em 10%;
     text-align: center; }
+
+.adpt-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #de6273; }
+  .adpt-error > div, .adpt-error > adpt-stage, .adpt-error > adpt-inner, .adpt-error > adpt-columns, .adpt-error > adpt-column, .adpt-error > adpt-contact, .adpt-error > adpt-post-footer, .adpt-error > adpt-team-bio, .adpt-error > adpt-parallax-content, .adpt-error > adpt-parallax-bg, .adpt-error > adpt-qblock, .adpt-error > adpt-qbubble-overlay, .adpt-error > adpt-qblock-content, .adpt-error > adpt-qblock-content-inner {
+    display: flex;
+    align-items: center; }
+  .adpt-error h1 {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.5); }
+  .adpt-error h2 {
+    color: #ffffff;
+    font-size: 1rem; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

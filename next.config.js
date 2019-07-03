@@ -1,6 +1,8 @@
 const withSass = require('@zeit/next-sass')
-module.exports = withSass({
-    webpack(config, options) {
-        return config
-    }
-})
+const withPlugins = require('next-compose-plugins')
+
+var plugins = [ [ withSass ] ]
+
+const adptConfig = ({})
+
+module.exports = withPlugins( plugins, adptConfig )

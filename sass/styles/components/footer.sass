@@ -42,6 +42,12 @@
 					font-size: $bodytext
 					margin-right: $teeny
 
+		&.block-1
+
+			svg
+				height: 100%
+				fill: white()
+
 		&.block-3
 			
 			.adpt-footer-info
@@ -53,7 +59,10 @@
 
 			.gcfa-logo
 				width: 100%
-				padding: 1em $huge * 2 1em 0
+				padding: $huge 0
+
+				svg
+					fill: white()
 
 +MQ($mq-tportrait)
 	.adpt-footer
