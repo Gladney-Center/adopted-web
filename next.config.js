@@ -3,6 +3,8 @@ const withPlugins = require('next-compose-plugins')
 
 var plugins = [ [ withSass ] ]
 
-const adptConfig = ({})
+const adptConfig = ({
+    distDir: 'public'
+})
 
 module.exports = withPlugins( plugins, adptConfig )

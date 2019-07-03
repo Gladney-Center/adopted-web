@@ -1,0 +1,28 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/lib/loader.js??ref--6-2!sass/adopted.sass": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {},
+        "bySource": {},
+        "usedIds": []
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/lib/loader.js??ref--6-2!sass/adopted.sass 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {},
+    "bySource": {},
+    "usedIds": []
+  }
+}
