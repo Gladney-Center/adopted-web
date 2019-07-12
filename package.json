@@ -1,32 +1,46 @@
 {
-  "name": "adopted",
-  "version": "1.1.6",
+  "name": "adopted-next",
+  "version": "1.2.0",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
-  "scripts": {
-    "build": "npm --no-git-tag-version version patch",
-    "version": "next build && git add -A",
-    "postversion": "git commit -am \"pushing latest changes\" && git push && npm run start",
-    "dev": "next -- -p 1111",
-    "start": "next start"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://enlightenedpie@bitbucket.org/enlightenedpie/adopted.git"
+    "url": "git+https://enlightenedpie@bitbucket.org/gladneyit/adopted.git"
   },
-  "author": "David Paul Crouch",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/enlightenedpie/adopted#readme",
+  "author": "David Crouch <david.crouch@gladney.org>",
+  "license": "MIT",
+  "scripts": {
+    "next:dev": "yarn install && next ./app -- -p 1111",
+    "next:start": "yarn install && next start ./app -p 1111",
+    "next:deploy": "yarn next:build && firebase deploy",
+    "next:build": "yarn install && cpx \"app/static/**/*.*\" public/static && next build ./app && cd \"functions\" && yarn",
+    "next:serve": "yarn next:build && firebase serve",
+    "test": "echo \"The current version is $npm_package_version\"",
+    "postversion": "git add -A && git commit -a && git push",
+    "up:patch": "yarn version --patch --no-git-tag-version",
+    "up:minor": "yarn version --minor --no-git-tag-version",
+    "up:major": "yarn version --major --no-git-tag-version"
+  },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "dotenv": "^8.0.0",
+    "axios": "^0.19.0",
+    "core-js": "3.1.4",
+    "express": "^4.17.1",
     "firebase": "^6.2.4",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.0.0",
     "firebase-tools": "^7.0.2",
-    "next": "^8.1.0",
+    "fs": "^0.0.1-security",
+    "next": "^9.0.0",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "sitemap": "^3.2.2"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "rimraf": "^2.6.3"
   }
 }

@@ -1,20 +1,27 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
   "hosting": {
     "public": "public",
+    "rewrites": [
+      {
+        "source": "/robots.txt",
+        "function": "createRobots"
+      },
+      {
+        "source": "/sitemap.xml",
+        "function": "createSitemap"
+      },
+      {
+        "source": "**/**",
+        "function": "next"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
   },
-  "storage": {
-    "rules": "storage.rules"
+  "functions": {
+    "source": "functions"
   }
 }
