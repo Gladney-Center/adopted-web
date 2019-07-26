@@ -3,8 +3,43 @@
     "public": "public",
     "redirects": [
       {
-        "source": "/shmoop",
+        "source": "/for-students",
+        "destination": "/students",
+        "type": 301
+      },
+      {
+        "source": "/for-educators",
+        "destination": "/educators",
+        "type": 301
+      },
+      {
+        "source": "/about-us",
+        "destination": "/about",
+        "type": 301
+      },
+      {
+        "source": "/connect-with-us",
+        "destination": "/contact",
+        "type": 301
+      },
+      {
+        "source": "/library.html",
         "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/questions.html",
+        "destination": "/educators",
+        "type": 301
+      },
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "https://blog.adoption-education.com",
         "type": 301
       }
     ],

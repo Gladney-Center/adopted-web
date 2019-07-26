@@ -47,6 +47,11 @@ const AskAPro = props => {
                     </adpt-inner>
                 </adpt-qblock>
             </adpt-stage>
+            <section>
+                <adpt-inner>
+                <iframe src="//fast.wistia.net/embed/playlists/szxkdnbhhq?media_0_0%5BautoPlay%5D=false&media_0_0%5BcontrolsVisibleOnLoad%5D=false&theme=slide&version=v1&videoFoam=false&videoOptions%5BautoPlay%5D=true&videoOptions%5BinlineOptionsOnly%5D=true&videoOptions%5BplayerColor%5D=7E8FAD&videoOptions%5Bversion%5D=v1&videoOptions%5BvideoHeight%5D=360&videoOptions%5BvideoWidth%5D=640&videoOptions%5BvolumeControl%5D=true" allowtransparency="true" frameborder="0" scrolling="no" className="wistia_playlist" name="wistia_playlist" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="960" height="540"></iframe>
+                </adpt-inner>
+            </section>
         </main>
     )
 }
