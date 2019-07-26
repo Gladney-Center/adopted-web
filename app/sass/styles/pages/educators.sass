@@ -1,10 +1,12 @@
-body.adpt-educators
+#__next.adpt-educators
 
     nav.adpt-menu
 
         .educators > a
             +menuactive
 
+main.adpt-educators
+    
     adpt-stage
         background-color: $rose
 
@@ -39,8 +41,6 @@ body.adpt-educators
                 grid-template-columns: repeat(2,1fr)
                 grid-gap: $huge*2
 
-                &.adpt-fold-graybox
-
                 adpt-column
 
                     h2
@@ -54,6 +54,66 @@ body.adpt-educators
 
                         p.emphasis
                             line-height: 125%
+
+    .adpt-perks-grid
+
+        adpt-inner
+            padding: $huge*2
+
+            h3
+                color: navy()
+                font-family: $font-stack
+                font-size: $intsize
+                padding-right: $huge
+
+            & > div
+                display: grid
+                grid-template-columns: repeat(2,1fr)
+                grid-gap: $huge*2
+                padding: $huge*2
+
+                svg
+                    display: block
+                    max-width: $huge*1.5
+                    padding-bottom: 1em
+                
+                h4
+                    padding-bottom: 1em
+
+    .adpt-perks-panels
+        display: flex
+        color: white()
+
+        & > article
+            position: relative
+            width: 50%
+
+            svg
+                display: block
+
+            &:first-child
+                background-color: navy()
+
+            &:last-child
+                background-color: periwinkle()
+
+            & > div
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                text-align: center
+                padding: $huge $huge*4
+                display: flex
+                flex-flow: column nowrap
+                justify-content: center
+                align-items: center
+                line-height: 110%
+
+                h4
+                    color: white()
+                    padding-bottom: 1em
 
     .adpt-section-headline
         text-align: center

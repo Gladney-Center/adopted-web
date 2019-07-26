@@ -1,4 +1,4 @@
-import { Fragment, useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
 import SVG from './svg'
 import PageContext from './context'
@@ -9,7 +9,11 @@ export default (props) => {
     return (
         <header role="banner" className="adpt-header">
             <div className="adpt-mobile-menu">
-                <div className="adpt-mobile-menu-icon">
+                <div className="adpt-mobile-menu-icon" onClick={(e) => {
+                    e.preventDefault()
+                    document.documentElement.classList.toggle('menu-open')
+                    document.body.classList.toggle('menu-open')
+                }}>
                     <div className="adpt-mobile-menu-icon-lines"></div>
                 </div>
             </div>
@@ -37,9 +41,7 @@ export default (props) => {
                 <span>{header.app.text}</span>
                 {header.app.apps.map((app,i) => (
                     <div key={i} className="adpt-app-link">
-                        <Link href={app.link}>
-                            <a><i className={["fab",app.icon].join(' ')}></i></a>
-                        </Link>
+                        <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
                     </div>
                 ))}
             </div>

@@ -2,6 +2,8 @@ import { useContext } from 'react'
 import PageContext from '../components/context'
 import Head from 'next/head'
 import SVG from '../components/svg'
+import AdoptEDSan from '../components/AdoptEDSan'
+import AdptTeamBio from '../components/AdptTeamBio'
 
 const About = props => {
     const { meta, content } = useContext(PageContext)['about']
@@ -20,7 +22,7 @@ const About = props => {
                             <SVG.Educated/>
                         </adpt-column>
                         <adpt-column class="adpt-about-headline">
-                            <h1>{content.stage.headline}</h1>
+                            <h1><AdoptEDSan str={content.stage.headline}/></h1>
                         </adpt-column>
                     </adpt-columns>
                 </adpt-inner>
@@ -29,7 +31,7 @@ const About = props => {
                 <adpt-inner>
                     <adpt-columns class="adpt-fold-graybox">
                         <adpt-column class="fold-headline">
-                            <h2>{content.fold.headline}</h2>
+                            <h2><AdoptEDSan str={content.fold.headline}/></h2>
                         </adpt-column>
                         <adpt-column class="fold-text">
                             <p className="emphasis">{content.fold['text-emphasis']}</p>
@@ -44,14 +46,7 @@ const About = props => {
                 <SVG.GladneyLogo/>
                 <article>{content.blurb.text}</article>
             </section>
-            <adpt-team-bio>
-                {content.teambio.map((person) => (
-                    <figure>
-                        <img src={person.image} alt={person.name}/>
-                        <figcaption>{person.bio}</figcaption>
-                    </figure>
-                ))}
-            </adpt-team-bio>
+            <AdptTeamBio data={content.teambio}/>
         </main>
     )
 }

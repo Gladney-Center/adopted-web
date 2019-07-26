@@ -1,6 +1,9 @@
 const functions = require('firebase-functions'),
     fs = require('fs'),
     next = require('next'),
+    express = require('express'),
+    cors = require('cors')({origin: true}),
+    request = require('request'),
     dev = process.env.NODE_ENV !== 'production',
     nextApp = next({ dev, conf: { distDir: 'next' } }),
     handle = nextApp.getRequestHandler()
@@ -27,7 +30,23 @@ const createSitemap = zePath => {
     </urlset>`
 }
 
+const hsApp = express()
+
+const hubspotSucks = (req, res) => {
+    let hsUrl = 'https://api.hubapi.com/content/api/v2/blog-posts?hapikey=f09cae1b-d7b3-4ad8-88fb-1557f0870df4&limit=3'
+
+    request(hsUrl,(err,resp, body) => {
+        if(!err && resp.statusCode == 200) res.send(resp.body)
+    })
+
+}
+
+hsApp.use(cors)
+hsApp.use(hubspotSucks)
+
 process.env.BASE_TITLE = 'AdoptED | Adoption Education'
+
+exports.hubspotSucks = functions.https.onRequest(hsApp)
 
 exports.createRobots = functions.https.onRequest((req,res) => {
     res.setHeader('Content-Type', 'text/plain')

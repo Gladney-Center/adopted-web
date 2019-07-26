@@ -1,14 +1,16 @@
-import { Fragment, useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
 import SVG from './svg'
 import PageContext from './context'
+import AdoptEDSan from './AdoptEDSan'
+import AdptFetchBlogs from './AdptFetchBlogs'
 
 export default (props) => {
     const { footer } = useContext(PageContext).common
 
     let {info,pregnant,presentedby} = footer
     return (
-        <Fragment>
+        <>
             <footer role="contentinfo" className="adpt-footer">
                 <adpt-inner>
                     <div className="adpt-footer-block block-1">
@@ -26,13 +28,9 @@ export default (props) => {
                     <div className="adpt-footer-block block-2">
                         <div className="adpt-footer-block-inner">
                             <div className="adpt-footer-heading">
-                                <h4>Curriculum Portal</h4>
+                                <h4><AdoptEDSan str={"AdoptED Blog"}/></h4>
                             </div>
-                            <div className="input-block">
-                                <input type="text" placeholder="Username" name="adpt-user"/>
-                                <input type="text" placeholder="Password" name="adpt-pwd"/>
-                            </div>
-                            <button>Login</button>
+                            <AdptFetchBlogs/>
                         </div>
                     </div>
                     <div className="adpt-footer-block block-3">
@@ -43,12 +41,8 @@ export default (props) => {
                             <div className="adpt-footer-info">
                                 <span className="footer-info-inner">{pregnant.text}</span>
                                 <span className="footer-info-inner">
-                                    <Link href={pregnant.weblink}>
-                                        <a className="btn"><i className="fas fa-globe"></i>Website</a>
-                                    </Link>
-                                    <Link href={pregnant.callink}>
-                                        <a className="btn"><i className="fas fa-phone"></i>Call Now</a>
-                                    </Link>
+                                    <a href={pregnant.weblink} className="btn"><i className="fas fa-globe"></i>Website</a>
+                                    <a href={pregnant.callink} className="btn"><i className="fas fa-phone"></i>Call Now</a>
                                 </span>
                             </div>
                         </div>
@@ -56,7 +50,7 @@ export default (props) => {
                     <div className="adpt-footer-block block-4">
                         <div className="adpt-footer-block-inner">
                             <div className="adpt-footer-heading" data-mutable="true">
-                                <h4>{presentedby}</h4>
+                                <h4><AdoptEDSan str={presentedby}/></h4>
                             </div>
                             <div className="gcfa-logo">
                                 <SVG.GladneyLogoFull/>
@@ -66,5 +60,5 @@ export default (props) => {
                 </adpt-inner>
             </footer>
             <adpt-post-footer></adpt-post-footer>
-        </Fragment>
+        </>
 )}

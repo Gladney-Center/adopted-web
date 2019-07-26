@@ -51,6 +51,22 @@ main.adpt-contact
 					top: 1em
 					+z-depth-5
 
+					.formInnerWrap
+						position: relative
+
+						.formCover
+							position: absolute
+							top: 0
+							bottom: 0
+							left: 0
+							right: 0
+							z-index: 200
+							background-color: teal()
+							padding: $huge
+							display: flex
+							justify-content: center
+							align-items: center
+
 					h1
 						font-size: 1rem
 
@@ -82,7 +98,7 @@ main.adpt-contact
 							display: flex
 							align-items: center
 
-							input[type="checkbox"]
+							input[type="radio"]
 								height: $intsize
 								width: $intsize
 								margin: 0
