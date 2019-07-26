@@ -1,6 +1,6 @@
 {
   "name": "adopted-next",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "repository": {
@@ -18,9 +18,9 @@
     "test": "echo \"The current version is $npm_package_version\"",
     "version": "yarn next:build",
     "postversion": "git add -A && git commit -a && git push",
-    "up:patch": "yarn version --patch --no-git-tag-version",
-    "up:minor": "yarn version --minor --no-git-tag-version",
-    "up:major": "yarn version --major --no-git-tag-version"
+    "up:patch": "npm version patch --no-git-tag-version",
+    "up:minor": "npm version minor --no-git-tag-version",
+    "up:major": "npm version major --no-git-tag-version"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
