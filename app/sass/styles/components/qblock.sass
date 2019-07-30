@@ -65,3 +65,13 @@ adpt-qblock
                     
                     &.qbubble
                         +animator(scaleIn, 250ms, ease-in-out)
+
++MQ($mq-mobile)
+    #qbubblecontainer, #askaproqbubble
+    
+        &.active
+
+            adpt-qbubble-overlay
+
+                .qb-aa
+                    top: 8.75em
