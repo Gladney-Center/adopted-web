@@ -29,7 +29,10 @@ export default (props) => {
                             {header.nav.map((nv,i) => (
                                 <li key={i} className={["menu-item",nv.class].join(' ')}>
                                     <Link href={nv.link}>
-                                        <a>{nv.label}</a>
+                                        <a onClick={(e) => {
+                                            document.documentElement.classList.toggle('menu-open')
+                                            document.body.classList.toggle('menu-open')
+                                        }}>{nv.label}</a>
                                     </Link>
                                 </li>
                             ))}
