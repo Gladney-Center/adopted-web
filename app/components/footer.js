@@ -28,7 +28,7 @@ export default (props) => {
                     <div className="adpt-footer-block block-2">
                         <div className="adpt-footer-block-inner">
                             <div className="adpt-footer-heading">
-                                <h4><a href="https://blog.adoption-education.com"><AdoptEDSan str={"AdoptED Blog"}/></a></h4>
+                                <h4><a href="https://blog.adoption-education.com"><AdoptEDSan str={"AdoptED Blog"}/><i className="fas fa-arrow-right"/></a></h4>
                             </div>
                             <AdptFetchBlogs/>
                         </div>

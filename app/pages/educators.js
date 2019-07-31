@@ -22,7 +22,7 @@ const Educators = props => {
                             <SVG.Clipboard/>
                         </adpt-column>
                         <adpt-column class="adpt-edu-headline">
-                            <h1>{content.stage.headline}</h1>
+                            <h1><AdoptEDSan str={content.stage.headline}/></h1>
                         </adpt-column>
                     </adpt-columns>
                 </adpt-inner>
