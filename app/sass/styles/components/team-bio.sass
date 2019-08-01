@@ -35,21 +35,24 @@ adpt-team-bio
     
         figure
             display: flex
-            position: relative
             margin: 0
 
-            h4
-                position: absolute
-                bottom: 1em
-                right: 1em
-
-            img
-                width: 100%
-                height: auto
+            picture
+                position: relative
                 display: block
                 flex: 1
-                cursor: pointer
-                +z-depth-4
+
+                h4
+                    position: absolute
+                    bottom: 1em
+                    right: 1em
+
+                img
+                    width: 100%
+                    height: auto
+                    display: block
+                    cursor: pointer
+                    +z-depth-4
 
             figcaption
                 flex: 2
@@ -74,9 +77,6 @@ adpt-team-bio
                 order: -1
                 grid-column: 1 / 4
 
-                img
-                    max-width: 32%
-
                 h4
                     right: unset
                     left: 1em
@@ -86,3 +86,22 @@ adpt-team-bio
                     opacity: 1
                     visibility: visible
                     padding: 1em $huge
+
++MQ($mq-mobile)
+    adpt-team-bio
+
+        adpt-team-bio-content
+            display: block
+
+            figure
+                display: block
+                padding-bottom: 1em
+
+            &.actif
+
+                figure.active
+                    order: -1
+                    grid-column: 1 / 4
+
+                    figcaption
+                        padding: 1em 0

@@ -17,13 +17,17 @@ export default class AdptTeamBio extends Component {
                     <h4>Meet Our Team</h4>
                 </section>
                 <adpt-team-bio-content class="actif">
-                    {data.map((person, i) => (
+                    {data.map((person, i) => {
+                        //let key = Math.ceil((Math.random()+i)*(Math.random()*600000000)).toString(36)
+                        return (
                         <figure className={this.state.active === i ? 'active' : 'narp'}>
-                            <img className="bio-image" src={person.image} alt={person.name} onClick={(e) => this.setState({active:i})}/>
+                            <picture>
+                                <img className="bio-image" src={person.image} alt={person.name} onClick={(e) => this.setState({active:i})}/>
+                                <h4>{person.name}</h4>
+                            </picture>
                             <figcaption>{person.bio}</figcaption>
-                            <h4>{person.name}</h4>
                         </figure>
-                    ))}
+                    )})}
                 </adpt-team-bio-content>
             </adpt-team-bio>
         )

@@ -24,6 +24,7 @@ main.adpt-contact
 
 					svg
 						height: 100%
+						display: block
 						+material-depth
 
 						g.dots
@@ -151,3 +152,53 @@ main.adpt-contact
 					text-align: left
 					font-size: $intsize
 					line-height: 1.25
+
++MQ($mq-mobile)
+	main.adpt-contact
+		
+		adpt-stage
+			height: unset
+			margin-bottom: 0
+			
+			adpt-inner
+				
+				adpt-columns
+					display: block
+					
+					adpt-column
+						
+						&.adpt-column-collapse
+							width: 100%
+							padding-bottom: 3em
+
+							form
+								position: unset
+
+								.formInnerWrap
+
+									.form-fields
+										display: block
+
+										div.adpt-form-input:not(:last-of-type)
+											margin-bottom: 1em
+
+									.form-options
+										padding-left: .5em
+
+						&.talk-box
+							padding: 2em 1em
+							width: 100%
+
+							svg
+								width: 100%
+		
+		adpt-contact
+			padding-top: $huge
+			padding-bottom: $huge
+
+			.adpt-contact-inner
+				display: block
+
+				.adpt-postbox
+					max-width: unset
+					width: 100%
