@@ -33,7 +33,7 @@ const createSitemap = zePath => {
 const hsApp = express()
 
 const hubspotSucks = (req, res) => {
-    let hsUrl = 'https://api.hubapi.com/content/api/v2/blog-posts?hapikey=f09cae1b-d7b3-4ad8-88fb-1557f0870df4&limit=3'
+    let hsUrl = 'https://api.hubapi.com/content/api/v2/blog-posts?hapikey=f09cae1b-d7b3-4ad8-88fb-1557f0870df4&limit=3&state=PUBLISHED'
 
     request(hsUrl,(err,resp, body) => {
         if(!err && resp.statusCode == 200) res.send(resp.body)

@@ -18,11 +18,11 @@ const About = props => {
             <adpt-stage>
                 <adpt-inner>
                     <adpt-columns>
-                        <adpt-column class="adpt-about-icon">
-                            <SVG.Educated/>
-                        </adpt-column>
                         <adpt-column class="adpt-about-headline">
                             <h1><AdoptEDSan str={content.stage.headline}/></h1>
+                        </adpt-column>
+                        <adpt-column class="adpt-about-icon">
+                            <SVG.Educated/>
                         </adpt-column>
                     </adpt-columns>
                 </adpt-inner>

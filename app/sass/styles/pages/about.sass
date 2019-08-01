@@ -21,6 +21,7 @@ main.adpt-about
                 &.adpt-about-icon
                     padding: $huge*2.5
                     margin-bottom: 1em
+                    order: -1
 
                     svg
                         height: 100%
@@ -75,3 +76,54 @@ main.adpt-about
             padding: 0 $huge
             margin: 0 auto
             line-height: 125%
+
++MQ($mq-tportrait)
+	main.adpt-about
+
+        adpt-stage
+            
+            adpt-inner
+                
+                adpt-columns
+
+                    adpt-column
+
+                        &.adpt-about-icon
+                            padding: 4em 2em
+                            margin-bottom: 3em
+
++MQ($mq-mobile)
+	main.adpt-about
+
+        adpt-stage
+            
+            adpt-inner
+                
+                adpt-columns
+                    display: block
+
+                    adpt-column
+
+                        &.adpt-about-icon
+                            padding: 1em 1em $huge*1.5
+
+                        &.adpt-about-headline
+                            padding: 1em 0
+        
+        .adpt-fold
+
+            adpt-inner
+
+                .adpt-fold-graybox
+                    padding: 1em
+
+                adpt-columns
+                    display: block
+
+                    adpt-column
+
+                        h2
+                            font-size: 125%
+
+                        &.fold-headline
+                            padding-bottom: 1em
