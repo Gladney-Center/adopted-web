@@ -2,90 +2,85 @@ adpt-team-bio
     position: relative
     background-color: $navy
     color: $white
-    min-height: 20em
+
+    &:before
+        content: ' '
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        opacity: .4
+        background-attachment: fixed
+        background-image: url('/static/img/team-bio-texture.png')
 
     h4
         color: white()
 
     .adpt-bio-heading
-        padding: $huge 0 1em 0
+        position: relative
+        z-index: 2
         text-align: center
+        +body-max-width
+        padding: 2em
 
         h4
             font-size: 1.5em
+            margin-bottom: 1em
 
-    adpt-parallax-bg
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        opacity: .25
-        background-attachment: fixed
-        background-image: url('/static/img/team-bio-texture.png')
+        img
+            width: 100%
+            height: auto
+            display: block
+            +z-depth-4
 
     adpt-team-bio-content
         display: grid
-        grid-template-columns: repeat(3,1fr)
-        grid-template-rows: repeat(2,auto)
+        grid-template-columns: repeat(4,1fr)
         grid-gap: $huge
         position: relative
+        z-index: 2
         +body-max-width
-        padding: $huge
     
         figure
-            display: flex
             margin: 0
+            text-align: center
 
             picture
                 position: relative
                 display: block
-                flex: 1
+                padding: 0 1.5em
 
                 h4
-                    position: absolute
-                    bottom: 1em
-                    right: 1em
+                    padding-top: 1em
 
                 img
                     width: 100%
                     height: auto
                     display: block
-                    cursor: pointer
                     +z-depth-4
+                    border-radius: 50%
 
             figcaption
-                flex: 2
                 line-height: 110%
-                display: none
-                opacity: 0
-                visibility: hidden
-                transition: all 250ms ease-in-out
+                font-size: $intsize
+                padding: 1em .5em
 
-        &.actif
++MQ($mq-tportrait)
+    adpt-team-bio
 
-            figure:not(.active)
+        .adpt-bio-heading
+            padding: 2em
 
-                img
-                    opacity: .75
-                    transition: all 250ms ease-in-out
+        adpt-team-bio-content
+            grid-template-columns: repeat(2,1fr)
 
-                    &:hover
-                        opacity: 1
+            figure
 
-            figure.active
-                order: -1
-                grid-column: 1 / 4
-
-                h4
-                    right: unset
-                    left: 1em
-
-                figcaption
-                    display: block
-                    opacity: 1
-                    visibility: visible
-                    padding: 1em $huge
+                picture
+                    padding: 0 .5em
 
 +MQ($mq-mobile)
     adpt-team-bio
@@ -96,12 +91,3 @@ adpt-team-bio
             figure
                 display: block
                 padding-bottom: 1em
-
-            &.actif
-
-                figure.active
-                    order: -1
-                    grid-column: 1 / 4
-
-                    figcaption
-                        padding: 1em 0

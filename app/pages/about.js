@@ -46,7 +46,7 @@ const About = props => {
                 <SVG.GladneyLogo/>
                 <article>{content.blurb.text}</article>
             </section>
-            <AdptTeamBio data={content.teambio}/>
+            <AdptTeamBio/>
         </main>
     )
 }

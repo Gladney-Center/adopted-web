@@ -2,6 +2,12 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import SVG from './svg'
 import PageContext from './context'
+import AdoptEDSan from './AdoptEDSan'
+
+const toggleMenuOpen = (e) => {
+    document.documentElement.classList.toggle('menu-open')
+    document.body.classList.toggle('menu-open')
+}
 
 export default (props) => {
     const { header } = useContext(PageContext).common
@@ -11,15 +17,17 @@ export default (props) => {
             <div className="adpt-mobile-menu">
                 <div className="adpt-mobile-menu-icon" onClick={(e) => {
                     e.preventDefault()
-                    document.documentElement.classList.toggle('menu-open')
-                    document.body.classList.toggle('menu-open')
+                    toggleMenuOpen(e)
                 }}>
                     <div className="adpt-mobile-menu-icon-lines"></div>
                 </div>
             </div>
             <div className="adpt-nav-logo">
                 <Link href="/">
-                    <a><SVG.AdptLogo/></a>
+                    <a onClick={(e) => {
+                        document.documentElement.classList.remove('menu-open')
+                        document.body.classList.remove('menu-open')
+                    }}><SVG.AdptLogo/></a>
                 </Link>
             </div>
             <div className="adpt-nav-dt">
@@ -29,10 +37,7 @@ export default (props) => {
                             {header.nav.map((nv,i) => (
                                 <li key={i} className={["menu-item",nv.class].join(' ')}>
                                     <Link href={nv.link}>
-                                        <a onClick={(e) => {
-                                            document.documentElement.classList.toggle('menu-open')
-                                            document.body.classList.toggle('menu-open')
-                                        }}>{nv.label}</a>
+                                        <a onClick={toggleMenuOpen}>{nv.label}</a>
                                     </Link>
                                 </li>
                             ))}
@@ -41,7 +46,7 @@ export default (props) => {
                 </nav>
             </div>
             <div className="adpt-header-apps">
-                <span>{header.app.text}</span>
+                <span><AdoptEDSan str={header.app.text}/></span>
                 {header.app.apps.map((app,i) => (
                     <div key={i} className="adpt-app-link">
                         <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>

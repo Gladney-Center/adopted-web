@@ -129,8 +129,8 @@ const Educators = props => {
                         <SVG.Microphone/>
                     </div>
                     <div class="adpt-cta-text">
-                    <h5>Ask A Pro Podcast</h5>
-                    <p>Our Podcast is all about meeting students where they are and answering those tough questions. Our hosts, Kathryn & Haleigh, are a little quirky and filled with relevant answers to important questions.</p>
+                    <h5>Ask A Pro</h5>
+                    <p>"Ask A Pro" is all about meeting students where they are and answering those tough questions. Our hosts, Kathryn & Haleigh, are a little quirky and filled with relevant answers to important questions.</p>
                     </div>
                     <div class="adpt-cta-more">
                     <a class="btn" href="#">More</a>
