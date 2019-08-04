@@ -59,14 +59,10 @@ const Educators = props => {
             </section>
             <section className="adpt-perks-panels">
                 {content.perksPanels.map((pan,p) => {
-                    let Icon = SVG[pan.bg]
                     return (
                         <article>
-                            <Icon/>
-                            <div>
-                                <h4><AdoptEDSan str={pan.headline}/></h4>
-                                <span>{pan.text}</span>
-                            </div>
+                            <h4><AdoptEDSan str={pan.headline}/></h4>
+                            <span>{pan.text}</span>
                         </article>
                 )})}
             </section>

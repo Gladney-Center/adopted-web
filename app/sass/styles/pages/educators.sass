@@ -87,33 +87,26 @@ main.adpt-educators
         & > article
             position: relative
             width: 50%
-
-            svg
-                display: block
+            text-align: center
+            background-attachment: fixed
+            background-origin: center
+            background-size: 60%
+            padding: 6em 4em
 
             &:first-child
                 background-color: navy()
+                background-image: url('/static/img/geo1-01.png')
 
             &:last-child
                 background-color: periwinkle()
+                background-image: url('/static/img/geo2-01.png')
 
-            & > div
-                position: absolute
-                top: 0
-                bottom: 0
-                left: 0
-                right: 0
-                text-align: center
-                padding: $huge $huge*4
-                display: flex
-                flex-flow: column nowrap
-                justify-content: center
-                align-items: center
+            h4
+                color: white()
+                padding-bottom: 1em
+
+            span
                 line-height: 110%
-
-                h4
-                    color: white()
-                    padding-bottom: 1em
 
     .adpt-section-headline
         text-align: center
@@ -151,9 +144,6 @@ main.adpt-educators
 
             & > article
                 width: 100%
-
-                & > div
-                    padding: 1em
 
         .adpt-perks-grid
 
@@ -212,6 +202,8 @@ main.adpt-educators
         .adpt-perks-panels
 
             & > article
+                padding: 2em 1em
+                background-size: 85%
 
                 & > div
                     display: block
