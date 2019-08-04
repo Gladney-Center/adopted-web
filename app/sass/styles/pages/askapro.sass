@@ -9,7 +9,7 @@ main.adpt-askapro
 
     adpt-stage
         background-color: $teal
-        margin-bottom: 0
+        padding-bottom: 3em
 
         adpt-qblock
             
@@ -20,8 +20,33 @@ main.adpt-askapro
                     aside
                         color: black
 
+    .adpt-fold
+        text-align: center
+
+        adpt-inner
+
+            .adpt-fold-graybox
+                display: flex
+                justify-content: center
+
+                & > div
+                    display: flex
+
+                    a
+
+                        i
+                            width: 2em
+                            border-radius: 1em
+                            background-color: $navy
+                            flex: 1 1 100%
+                            color: $white
+                            padding: .5em
+                            
+                        &:not(:last-of-type)
+                            margin-right: 1em
+
     .adpt-askapro-vids
-        padding: 1em 0
+        padding: 2em 0
 
         adpt-inner
             display: grid

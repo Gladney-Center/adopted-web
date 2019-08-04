@@ -44,12 +44,33 @@ const AskAPro = props => {
                     </adpt-inner>
                 </adpt-qblock>
             </adpt-stage>
+            <section className="adpt-fold">
+                <adpt-inner>
+                    <div className="adpt-fold-graybox">
+                        <div>
+                            <a href="https://www.facebook.com/GladneyAdoptED/">
+                                <i title="AdoptED Facebook Page" class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gladneyadopted/">
+                                <i title="AdoptED Instagram Account" class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i title="AdoptED Twitter Page" class="fab fa-twitter"></i>
+                            </a>
+                            <Link href="/contact">
+                                <a>
+                                    <i title="Takes you to the AdoptED Contact Form" class="fas fa-envelope"></i>
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                </adpt-inner>
+            </section>
             <section className="adpt-askapro-vids">
                 <adpt-inner>
                     <aside>
-                        <h4>Check out our video responses</h4>
-                        <p>Submit your questions and they could be featured on our next Ask A Pro. Just DM us on Instagram or <Link href="/contact">
-                        <a>contact us</a></Link> through this website!</p>
+                        <h4>{content.sidebar.headline}</h4>
+                        <p>{content.sidebar.text}</p>
                     </aside>
                     <div>
                         <iframe src="//fast.wistia.net/embed/playlists/szxkdnbhhq?media_0_0%5BautoPlay%5D=false&media_0_0%5BcontrolsVisibleOnLoad%5D=false&theme=slide&version=v1&videoFoam=false&videoOptions%5BautoPlay%5D=true&videoOptions%5BinlineOptionsOnly%5D=true&videoOptions%5BplayerColor%5D=7E8FAD&videoOptions%5Bversion%5D=v1&videoOptions%5BvideoHeight%5D=360&videoOptions%5BvideoWidth%5D=640&videoOptions%5BvolumeControl%5D=true" allowtransparency="true" frameborder="0" scrolling="no" className="wistia_playlist" name="wistia_playlist" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen></iframe>
