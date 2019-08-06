@@ -4,6 +4,9 @@ import Link from 'next/link'
 import PageContext from '../components/context'
 import SVG from '../components/svg'
 import AdoptEDSan from '../components/AdoptEDSan'
+import AdptFAQ from '../components/AdptFAQ'
+import AdptReferAFriend from '../components/AdptReferAFriend'
+import AdptVidGrid from '../components/AdptVidGrid'
 
 const Educators = props => {
     const { meta, content } = useContext(PageContext)['educators']
@@ -27,7 +30,7 @@ const Educators = props => {
                     </adpt-columns>
                 </adpt-inner>
             </adpt-stage>
-            <section class="adpt-fold">
+            <section className="adpt-fold">
                 <adpt-inner>
                     <adpt-columns class="adpt-fold-graybox">
                         <adpt-column class="fold-headline">
@@ -61,91 +64,68 @@ const Educators = props => {
                 {content.perksPanels.map((pan,p) => {
                     return (
                         <article>
-                            <h4><AdoptEDSan str={pan.headline}/></h4>
+                            <h3><AdoptEDSan str={pan.headline}/></h3>
                             <span>{pan.text}</span>
                         </article>
                 )})}
             </section>
-            <section class="adpt-section-headline">
+            <section className="adpt-section-headline">
                 <h3>{content.overview.headline}</h3>
                 <p>{content.overview.text}</p>
             </section>
-            <section class="adpt-ctas">
-                <div class="adpt-ctas-inner">
-                    <div class="adpt-cta">
-                        <div class="adpt-icon">
+            <section className="adpt-ctas">
+                <div className="adpt-ctas-inner">
+                    <div className="adpt-cta">
+                        <div className="adpt-icon">
                             <SVG.WritingBlock/>
                         </div>
-                        <div class="adpt-cta-text">
+                        <div className="adpt-cta-text">
                             <h5>Sample Lesson Plans</h5>
                             <p>AdoptED gives teachers the opportunity to pick and choose from our curriculum and customize according to their scheduling needs</p>
                         </div>
-                        <div class="adpt-cta-more">
-                            <a class="btn" href="#">More</a>
+                        <div className="adpt-cta-more">
+                            <a className="btn">More</a>
                         </div>
                     </div>
-                    <div class="adpt-cta">
-                        <div class="adpt-icon">
-                            <SVG.VideoBlock/>
+                    <div className="adpt-cta">
+                        <div className="adpt-icon">
+                            <SVG.Microphone/>
                         </div>
-                        <div class="adpt-cta-text">
-                            <h5>Teaching AdoptED To-Go</h5>
-                            <p>Check out our instructional video on best practices in teaching AdoptED To-Go to your students. Be sure and let us know what works best for you and your students!</p>
+                        <div className="adpt-cta-text">
+                            <h5>Ask A Pro</h5>
+                            <p>"Ask A Pro" is all about meeting students where they are and answering those tough questions. Our team are full of relevant answers to important questions.</p>
                         </div>
-                        <div class="adpt-cta-more">
-                        <a class="btn" href="#">More</a>
+                        <div className="adpt-cta-more">
+                            <Link href="/ask-a-pro">
+                                <a className="btn">More</a>
+                            </Link>
                         </div>
                     </div>
-                    <div class="adpt-cta">
-                    <div class="adpt-icon">
-                        <SVG.StateBuilding/>
-                    </div>
-                    <div class="adpt-cta-text">
-                    <h5>State Standards</h5>
-                    <p>Our goal is to have AdoptED meet your State's curriculum standards</p>
-                    </div>
-                    <div class="adpt-cta-more">
-                    <a class="btn" href="#">More</a>
-                    </div>
-                    </div>
-                    <div class="adpt-cta">
-                    <div class="adpt-icon">
-                        <SVG.GladneyLogo/>
-                    </div>
-                    <div class="adpt-cta-text">
-                    <h5>Gladney Site Visit</h5>
-                    <p>Gladney exists to give children loving, caring families here at home and around the world. That's the heart of our mission.</p>
-                    </div>
-                    <div class="adpt-cta-more">
-                    <a class="btn" href="#">More</a>
-                    </div>
-                    </div>
-                    <div class="adpt-cta">
-                    <div class="adpt-icon">
-                        <SVG.Microphone/>
-                    </div>
-                    <div class="adpt-cta-text">
-                    <h5>Ask A Pro</h5>
-                    <p>"Ask A Pro" is all about meeting students where they are and answering those tough questions. Our hosts, Kathryn & Haleigh, are a little quirky and filled with relevant answers to important questions.</p>
-                    </div>
-                    <div class="adpt-cta-more">
-                    <a class="btn" href="#">More</a>
-                    </div>
-                    </div>
-                    <div class="adpt-cta">
-                    <div class="adpt-icon">
-                        <SVG.Megaphone/>
-                    </div>
-                    <div class="adpt-cta-text">
-                    <h5>AdoptED Ambassador</h5>
-                    <p>Educators sharing with peers about the AdoptED program are our biggest champions. We want to reward you for continuing to spread the word!</p>
-                    </div>
-                    <div class="adpt-cta-more">
-                    <a class="btn" href="#">More</a>
-                    </div>
+                    <div className="adpt-cta">
+                        <div className="adpt-icon">
+                            <SVG.Megaphone/>
+                        </div>
+                        <div className="adpt-cta-text">
+                            <h5>AdoptED Ambassador</h5>
+                            <p>Educators sharing with peers about the AdoptED program are our biggest champions. We want to reward you for continuing to spread the word!</p>
+                        </div>
+                        <div className="adpt-cta-more">
+                            <a className="btn" href="#referafriend">More</a>
+                        </div>
                     </div>
                 </div>
             </section>
+            <section id="videos">
+                <adpt-inner>
+                    <AdptVidGrid/>
+                </adpt-inner>
+            </section>
+            <section className="adpt-educ-faq" id="faq">
+                <adpt-inner>
+                    <AdptFAQ/>
+                </adpt-inner>
+            </section>
+            <AdptReferAFriend/>
         </main>
     )
 }

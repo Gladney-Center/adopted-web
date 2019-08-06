@@ -6,6 +6,9 @@
             +menuactive
 
 main.adpt-educators
+
+    section:not(:last-of-type)
+        margin-bottom: 1em
     
     adpt-stage
         background-color: $rose
@@ -45,15 +48,15 @@ main.adpt-educators
 
                     h2
                         font-size: 150%
+                        line-height: 125%
                         color: $sunrise
                     
                     &.fold-text
 
-                        p:not(.emphasis)
+                        p
                             font-size: $intsize
-
-                        p.emphasis
                             line-height: 125%
+                            margin-bottom: 0
 
     .adpt-perks-grid
 
@@ -101,7 +104,7 @@ main.adpt-educators
                 background-color: periwinkle()
                 background-image: url('/static/img/geo2-01.png')
 
-            h4
+            h3
                 color: white()
                 padding-bottom: 1em
 
@@ -120,6 +123,16 @@ main.adpt-educators
             max-width: 750px
             display: inline-block
             margin-top: 1em
+
+    .adpt-educ-faq
+        background-color: $rose
+        padding: 2em 8% 0
+        overflow: hidden
+
+        adpt-inner
+            background-size: cover
+            background-image: url('/static/img/paper.png')
+            +material-depth
 
 +MQ($mq-tportrait)
     main.adpt-educators

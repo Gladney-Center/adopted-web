@@ -1,0 +1,38 @@
+adpt-refer-a-friend
+	padding: 6em 15%
+	background-color: $seafoam
+	text-align: center
+	position: relative
+
+	&:before
+		position: absolute
+		z-index: 1
+		content: ' '
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-size: cover
+		opacity: .75
+		background-image: url('/static/img/geo3-01.png')
+
+	& > *
+		position: relative
+		z-index: 2
+
+	h4
+		font-size: 2rem
+		padding-bottom: 1em
+
+	p
+		padding: 0 15%
+
+		&:not(:last-of-type)
+			margin-bottom: 1em
+		
+		&.emphasis
+			font-weight: bold
+	
+		a.btn
+			display: inline-block
+			margin-top: 1em

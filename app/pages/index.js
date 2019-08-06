@@ -108,7 +108,9 @@ const Front = props => {
                                     <p>{cta.text}</p>
                                 </div>
                                 <div className="adpt-cta-more">
-                                    <a className="btn" href="#">More</a>
+                                    <Link href={cta.link}>
+                                        <a className="btn">More</a>
+                                    </Link>
                                 </div>
                             </div>
                         )

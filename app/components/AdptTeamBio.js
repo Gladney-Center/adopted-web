@@ -7,7 +7,7 @@ const AdptTeamBio = props => {
     const data = useContext(PageContext)['components']['teambio']
 
     return (
-        <adpt-team-bio role="complementary">
+        <adpt-team-bio id="team" role="complementary">
             <adpt-parallax-bg class="adpt-parallax"></adpt-parallax-bg>
             <section className="adpt-bio-heading">
                 <h4><AdoptEDSan str={data.headline}/></h4>

@@ -1,0 +1,24 @@
+.adpt-vidgrid-header
+	display: flex
+	align-items: center
+
+	h4
+		font-size: 1.25rem
+		padding: 1.5em 0
+		flex: 1
+	
+	p
+		font-size: $intsize
+		flex: 2
+
+.vidgrid-cont
+	display: grid
+	grid-template-columns: repeat(2,1fr)
+	grid-gap: 1em
+
+	.adpt-video-embed-inner
+		padding: 56.25% 1em 1em 0
+		position: relative
+		overflow: hidden
+		border-radius: .25em
+		+z-depth-4

@@ -19,9 +19,9 @@ export default (props) => {
                                 <SVG.AdptLogo/>
                             </div>
                             <div className="adpt-footer-info">
-                                <span className="footer-info-inner">{info.email}</span>
-                                <span className="footer-info-inner">{info.phone}</span>
-                                <span className="footer-info-inner"><address>{info.address}</address></span>
+                                <span className="footer-info-inner"><i class="fas fa-envelope"></i>{info.email}</span>
+                                <span className="footer-info-inner"><i class="fas fa-phone"></i>{info.phone}</span>
+                                <span className="footer-info-inner"><i class="fas fa-map-marker-alt"></i><address>{info.address}</address></span>
                             </div>
                         </div>
                     </div>

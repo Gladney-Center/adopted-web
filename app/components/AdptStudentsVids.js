@@ -9,16 +9,15 @@ export default class AdptStudentsVids extends Component {
 	
 	componentDidMount() {
 		const wistEmbed = document.createElement('script'),
-			wistExternal = document.createElement('script')
+		wistExt = document.createElement('script')
 
 		wistEmbed.src = 'https://fast.wistia.com/embed/medias/qx6z98rzv6.jsonp'
-		wistEmbed.async = true
-		
-		wistExternal.src = 'https://fast.wistia.com/assets/external/E-v1.js'
-		wistExternal.async = true
+		wistExt.src = 'https://fast.wistia.com/assets/external/E-v1.js'
+
+		wistExt.async = wistEmbed.async = true
 
 		document.body.appendChild(wistEmbed)
-		document.body.appendChild(wistExternal)
+		document.body.appendChild(wistExt)
 
 		this.setState({
 			init: true
