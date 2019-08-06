@@ -8,16 +8,9 @@ export default class AdptStudentsVids extends Component {
 	}
 	
 	componentDidMount() {
-		const wistEmbed = document.createElement('script'),
-		wistExt = document.createElement('script')
+		window._wq = window._wq || []
 
-		wistEmbed.src = 'https://fast.wistia.com/embed/medias/qx6z98rzv6.jsonp'
-		wistExt.src = 'https://fast.wistia.com/assets/external/E-v1.js'
-
-		wistExt.async = wistEmbed.async = true
-
-		document.body.appendChild(wistEmbed)
-		document.body.appendChild(wistExt)
+		_wq.push({ id: "_all", onReady: (video) => console.log(video.name())})
 
 		this.setState({
 			init: true
