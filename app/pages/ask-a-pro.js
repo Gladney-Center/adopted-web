@@ -54,8 +54,11 @@ const AskAPro = props => {
                             <a href="https://www.instagram.com/gladneyadopted/">
                                 <i title="AdoptED Instagram Account" class="fab fa-instagram"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://twitter.com/gladney_center">
                                 <i title="AdoptED Twitter Page" class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/gladneycenter">
+                                <i title="AdoptED Youtube Page" class="fab fa-youtube"></i>
                             </a>
                             <Link href="/contact">
                                 <a>

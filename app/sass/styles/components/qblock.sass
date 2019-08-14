@@ -17,6 +17,7 @@ adpt-qblock
         margin-bottom: $teeny
 
     adpt-qblock-content
+        position: relative
         padding: $huge 0
 
         &.blurb
@@ -31,7 +32,11 @@ adpt-qblock
                 line-height: 110%
                 font-size: calc($bodytext + 2px)
 
-            a.btn
+            .adpt-lm-btn
+                position: relative
+                z-index: 200
+
+            .btn
                 display: inline-block
                 background-color: $navy
                 font-size: $intsize

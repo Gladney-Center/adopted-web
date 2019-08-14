@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import Link from 'next/link'
 import PageContext from './context'
 
 const AdptReferAFriend = props => {
@@ -10,7 +11,9 @@ const AdptReferAFriend = props => {
 			<p>{data.text}</p>
 			<p className="emphasis">{data.emphasis}</p>
 			<p>
-				<a className="btn">Refer A Friend</a>
+				<Link href="/contact">
+					<a className="btn">Refer A Friend</a>
+				</Link>
 			</p>
 		</adpt-refer-a-friend>
 	)

@@ -153,12 +153,30 @@ main.adpt-contact
 					font-size: $intsize
 					line-height: 1.25
 
++MQ($mq-tablet)
+	main.adpt-contact
+
+		adpt-stage
+			height: unset
+			margin-bottom: 3em
+
+			adpt-inner
+				
+				adpt-columns
+					
+					adpt-column
+
+						&.talk-box
+							padding: 5em 3em 5em 0
+							flex: 1
+
+						&.adpt-column-collapse
+							flex: 2
+
 +MQ($mq-mobile)
 	main.adpt-contact
 		
 		adpt-stage
-			height: unset
-			margin-bottom: 0
 			
 			adpt-inner
 				

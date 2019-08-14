@@ -86,7 +86,7 @@ const Front = props => {
                             <h5>{content.qblock.blurb.subheading}</h5>
                             <aside>{content.qblock.blurb.text}</aside>
                             <Link href={content.qblock.blurb.link}>
-                                <a className="btn">Learn More</a>
+                                <a className="adpt-lm-btn btn">Learn More</a>
                             </Link>
                         </adpt-qblock-content-inner>
                     </adpt-qblock-content>
