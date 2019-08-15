@@ -110,7 +110,9 @@ const Educators = props => {
                             <p>Educators sharing with peers about the AdoptED program are our biggest champions. We want to reward you for continuing to spread the word!</p>
                         </div>
                         <div className="adpt-cta-more">
-                            <a className="btn" href="#referafriend">More</a>
+                            <Link href="#referafriend">
+                                <a className="btn">More</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

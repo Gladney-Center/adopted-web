@@ -1,12 +1,12 @@
 import { useContext } from 'react'
-import Link from 'next/link'
 import SVG from './svg'
 import PageContext from './context'
 import AdoptEDSan from './AdoptEDSan'
 import AdptFetchBlogs from './AdptFetchBlogs'
+import AdptSocialIcons from './AdptSocialIcons'
 
 export default (props) => {
-    const { footer } = useContext(PageContext).common
+    const { footer, header } = useContext(PageContext).common
 
     let {info,pregnant,presentedby} = footer
     return (
@@ -22,6 +22,15 @@ export default (props) => {
                                 <span className="footer-info-inner"><i className="fas fa-envelope"></i>{info.email}</span>
                                 <span className="footer-info-inner"><i className="fas fa-phone"></i>{info.phone}</span>
                                 <span className="footer-info-inner"><i className="fas fa-map-marker-alt"></i><address>{info.address}</address></span>
+                            </div>
+                            <AdptSocialIcons/>
+                            <div className="adpt-footer-apps">
+                                <span><AdoptEDSan str={header.app.text}/></span>
+                                {header.app.apps.map((app,i) => (
+                                    <div key={i} className="adpt-app-link">
+                                        <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

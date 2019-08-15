@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import PageContext from '../components/context'
 import SVG from '../components/svg'
+import AdptSocialIcons from '../components/AdptSocialIcons'
 
 const AskAPro = props => {
     const { meta, content } = useContext(PageContext)['askapro']
@@ -47,25 +48,7 @@ const AskAPro = props => {
             <section className="adpt-fold">
                 <adpt-inner>
                     <div className="adpt-fold-graybox">
-                        <div>
-                            <a href="https://www.facebook.com/GladneyAdoptED/">
-                                <i title="AdoptED Facebook Page" class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/gladneyadopted/">
-                                <i title="AdoptED Instagram Account" class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com/gladney_center">
-                                <i title="AdoptED Twitter Page" class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.youtube.com/user/gladneycenter">
-                                <i title="AdoptED Youtube Page" class="fab fa-youtube"></i>
-                            </a>
-                            <Link href="/contact">
-                                <a>
-                                    <i title="Takes you to the AdoptED Contact Form" class="fas fa-envelope"></i>
-                                </a>
-                            </Link>
-                        </div>
+                        <AdptSocialIcons/>
                     </div>
                 </adpt-inner>
             </section>
