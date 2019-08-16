@@ -1,7 +1,6 @@
 .adpt-footer
 	position: relative
 	background-color: $sunrise
-	display: flex
 	+full-width-gutter
 
 	adpt-inner
@@ -9,9 +8,38 @@
 		padding: 1em
 		max-width: 1700px
 
+		&#addenda
+			align-items: center
+			justify-content: center
+			text-align: center
+
+			adpt-social-icons
+				font-size: $bodytext
+				text-align: center
+				justify-content: center
+
+			.adpt-footer-apps
+				padding-top: 1em
+				display: flex
+				align-items: center
+				justify-content: center
+
+				& > span
+					font-weight: bold
+					font-size: .75rem
+					text-transform: uppercase
+					display: block
+					padding-right: 1em
+
+				.adpt-app-link
+					font-size: 1rem
+
+					&:not(:last-of-type)
+						padding-right: .5em
+
 	.adpt-footer-block
 		flex: 1
-		padding: $huge 1em $small
+		padding: $huge 1em 0
 
 		.adpt-footer-block-inner
 			font-size: $intsize
@@ -63,25 +91,6 @@
 			svg
 				height: 100%
 				fill: white()
-
-			adpt-social-icons
-				font-size: $bodytext
-				text-align: center
-
-			.adpt-footer-apps
-				padding-top: 1em
-				display: flex
-				align-items: center
-
-				& > span
-					font-weight: bold
-					font-size: .75rem
-					text-transform: uppercase
-					display: block
-					padding-right: 1em
-
-				.adpt-app-link
-					font-size: 1rem
 
 		&.block-2
 

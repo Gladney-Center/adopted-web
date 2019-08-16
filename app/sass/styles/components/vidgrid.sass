@@ -22,3 +22,14 @@
 		overflow: hidden
 		border-radius: .25em
 		+z-depth-2
+
++MQ($mq-mobile)
+	.adpt-vidgrid-header
+		flex-flow: column nowrap
+		padding-bottom: 1em
+
+		h4
+			padding: 1em 0
+		
+	.vidgrid-cont
+		grid-template-columns: 1fr

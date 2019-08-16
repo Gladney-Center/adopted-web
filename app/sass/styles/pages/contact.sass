@@ -177,6 +177,7 @@ main.adpt-contact
 	main.adpt-contact
 		
 		adpt-stage
+			margin-bottom: 0
 			
 			adpt-inner
 				
@@ -191,6 +192,7 @@ main.adpt-contact
 
 							form
 								position: unset
+								padding: $huge 1em 1em
 
 								.formInnerWrap
 
@@ -212,11 +214,14 @@ main.adpt-contact
 		
 		adpt-contact
 			padding-top: $huge
-			padding-bottom: $huge
 
 			.adpt-contact-inner
-				display: block
+				flex-flow: column nowrap
 
 				.adpt-postbox
 					max-width: unset
 					width: 100%
+				
+				aside
+					padding: 0 $huge $huge
+					order: -1

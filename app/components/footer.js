@@ -5,6 +5,8 @@ import AdoptEDSan from './AdoptEDSan'
 import AdptFetchBlogs from './AdptFetchBlogs'
 import AdptSocialIcons from './AdptSocialIcons'
 
+const theDate = new Date()
+
 export default (props) => {
     const { footer, header } = useContext(PageContext).common
 
@@ -22,15 +24,6 @@ export default (props) => {
                                 <span className="footer-info-inner"><i className="fas fa-envelope"></i>{info.email}</span>
                                 <span className="footer-info-inner"><i className="fas fa-phone"></i>{info.phone}</span>
                                 <span className="footer-info-inner"><i className="fas fa-map-marker-alt"></i><address>{info.address}</address></span>
-                            </div>
-                            <AdptSocialIcons/>
-                            <div className="adpt-footer-apps">
-                                <span><AdoptEDSan str={header.app.text}/></span>
-                                {header.app.apps.map((app,i) => (
-                                    <div key={i} className="adpt-app-link">
-                                        <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
-                                    </div>
-                                ))}
                             </div>
                         </div>
                     </div>
@@ -66,6 +59,22 @@ export default (props) => {
                             </div>
                         </div>
                     </div>
+                </adpt-inner>
+                <adpt-inner id="addenda">
+                    <span>
+                        <AdptSocialIcons/>
+                        <div className="adpt-footer-apps">
+                            <span><AdoptEDSan str={header.app.text}/></span>
+                            {header.app.apps.map((app,i) => (
+                                <div key={i} className="adpt-app-link">
+                                    <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
+                                </div>
+                            ))}
+                        </div>
+                        <div>
+                            <small>©&nbsp;{theDate.getFullYear()} Gladney Center for Adoption, all rights reserved&nbsp;|&nbsp;<a href="https://resource.adoption-education.com/adopted-privacy-policy">privacy policy</a></small>
+                        </div>
+                    </span>
                 </adpt-inner>
             </footer>
             <adpt-post-footer></adpt-post-footer>
