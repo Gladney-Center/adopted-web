@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import PageContext from '../components/context'
 import SVG from '../components/svg'
+import SMSStats from '../components/AdptStatBlock'
+import AdptStatBlock from '../components/AdptStatBlock';
 
 const Front = props => {
     const { meta, content } = useContext(PageContext)['front']
@@ -117,21 +119,7 @@ const Front = props => {
                     })}
                 </div>
             </section>
-            <section className="adpt-sms-facts">
-                <div className="adpt-sms-inner">
-                    <div className="adpt-sms-aqua-box">
-                        <div className="adpt-sms-arrow teal-bg"><i className="fas fa-angle-right"></i></div>
-                        <div className="adpt-sms-text">
-                            <div id="adpt_sms" className="sms">
-                                <div id="sms-inner">
-                                    <h5></h5>
-                                </div>
-                            </div>
-                            <div className="send"><i className="fas fa-long-arrow-alt-up"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <AdptStatBlock/>
             <section className="adpt-panel-block">
                 <div className="adpt-panel-block-inner">
                     {content.block2.map((block,i) => {

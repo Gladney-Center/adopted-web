@@ -4,6 +4,7 @@ import Link from 'next/link'
 import PageContext from '../components/context'
 import SVG from '../components/svg'
 import AdptStudentsVids from '../components/AdptStudentsVids'
+import AdptStatBlock from '../components/AdptStatBlock'
 
 const Students = props => {
     const { meta, content } = useContext(PageContext)['students']
@@ -34,6 +35,7 @@ const Students = props => {
                 </adpt-inner>
             </section>
             <AdptStudentsVids/>
+            <AdptStatBlock/>
         </main>
     )
 }
