@@ -20,6 +20,7 @@ export default class AdoptED extends Document {
             <Html>
                 <Head/>
                 <body className="adpt-mounted">
+                    <noscript>You need to enable JavaScript to run this app.</noscript>
                     <Main/>
                     <NextScript/>
                 </body>
