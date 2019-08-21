@@ -1,32 +1,43 @@
 import { useEffect, useState, useContext } from 'react'
-import Link from 'next/link'
 import PageContext from './context'
 import Countup, { startAnimation } from 'react-countup'
 
+const isInViewport = (el) => {
+	let rect = el.getBoundingClientRect()
+	return rect.top <= 500
+}
+
 export default () => {
-	const data = useContext(PageContext)['components']['statblock']
+	const data = useContext(PageContext)['components']['statblock'],
+		[inView, setInView] = useState(false)
 
-	console.log(data)
-
-	useEffect(() => {},[])
+	useEffect(() => {
+		window.addEventListener('scroll',(e) => {
+			let el = document.getElementById('adpt-sms-box'),
+				iV = isInViewport(el)
+			return (!iV) ? iV : (!inView) ? setInView(true) : null
+		})
+		return null
+	},[])
 
 	return (
 		<section className="adpt-stat-block">
 			<adpt-inner>
 				<adpt-stat-block id="adpt-sms-box">
-					<h3>{data.title}</h3>
+					<h2>{data.title}</h2>
 					<adpt-stats-grid>
 						{data.stats.map((stat,i) => {
+							let endNum = inView ? stat.num : 0
 							return (
 								<adpt-stats-cell>
 									<span className="statNum">
 										<h4>
 											<Countup
 												start={0}
-												end={stat.num}
-												delay={(i*.75)}
+												end={endNum}
+												delay={(i*.5)}
 												suffix={stat.suffix}
-												duration={2}
+												duration={5}
 												useEasing={true}
 											/>
 										</h4>
