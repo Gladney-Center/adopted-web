@@ -5,10 +5,12 @@ import AdoptEDSan from './AdoptEDSan'
 import AdptFetchBlogs from './AdptFetchBlogs'
 import AdptSocialIcons from './AdptSocialIcons'
 
+import { adptKeygen } from '../utilities/functions'
+
 const theDate = new Date()
 
 export default (props) => {
-    const { footer, header } = useContext(PageContext).common
+    const { footer, header } = useContext(PageContext)['common']
 
     let {info,pregnant,presentedby} = footer
     return (
@@ -66,7 +68,7 @@ export default (props) => {
                         <div className="adpt-footer-apps">
                             <span><AdoptEDSan str={header.app.text}/></span>
                             {header.app.apps.map((app,i) => (
-                                <div key={i} className="adpt-app-link">
+                                <div key={adptKeygen()} className="adpt-app-link">
                                     <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
                                 </div>
                             ))}
