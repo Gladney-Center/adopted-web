@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { adptKeygen } from '../utilities/functions'
 
 export default class AdptFetchBlogs extends Component {
     state = {
@@ -29,11 +30,13 @@ export default class AdptFetchBlogs extends Component {
 
         return (
             <div>
-                {this.state.blogs.map((blog,k) => (
-                    <p>
-                        <a href={blog.link} title={blog.desc}>{blog.title}</a>
+                {this.state.blogs.map((blog,k) => {
+                    let key = adptKeygen()
+                    return (
+                    <p data-key={key} key={key}>
+                        <a key={key} href={blog.link} title={blog.desc}>{blog.title}</a>
                     </p>
-                ))}
+                )})}
             </div>
         )
     }

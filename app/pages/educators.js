@@ -8,6 +8,8 @@ import AdptFAQ from '../components/AdptFAQ'
 import AdptReferAFriend from '../components/AdptReferAFriend'
 import AdptVidGrid from '../components/AdptVidGrid'
 
+import { adptKeygen } from '../utilities/functions'
+
 const Educators = props => {
     const { meta, content } = useContext(PageContext)['educators']
 
@@ -47,9 +49,10 @@ const Educators = props => {
                     <h3>{content.perksGrid.headline}</h3>
                     <div>
                         {content.perksGrid.grid.map((grd,g) => {
-                            let Icon = SVG[grd.icon]
+                            let Icon = SVG[grd.icon],
+                                key = adptKeygen()
                             return (
-                                <article>
+                                <article data-key={key} key={key}>
                                     <Icon/>
                                     <div>
                                         <h4>{grd.headline}</h4>
@@ -62,8 +65,9 @@ const Educators = props => {
             </section>
             <section className="adpt-perks-panels">
                 {content.perksPanels.map((pan,p) => {
+                    let key = adptKeygen()
                     return (
-                        <article>
+                        <article data-key={key} key={key}>
                             <h3><AdoptEDSan str={pan.headline}/></h3>
                             <span>{pan.text}</span>
                         </article>

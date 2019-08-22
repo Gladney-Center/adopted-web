@@ -2,6 +2,8 @@ import { useEffect, useState, useContext } from 'react'
 import PageContext from './context'
 import Countup, { startAnimation } from 'react-countup'
 
+import { adptKeygen } from '../utilities/functions'
+
 const isInViewport = () => {
 	let el = document.querySelector('#adptstatblock'),
 		rect = el !== null ? el.getBoundingClientRect() : { top: 601 }
@@ -26,10 +28,11 @@ export default () => {
 					<h2>{data.title}</h2>
 					<adpt-stats-grid>
 						{data.stats.map((stat,i) => {
-							let endNum = inView ? stat.num : 0
+							let endNum = inView ? stat.num : 0,
+								key = adptKeygen()
 							return (
-								<adpt-stats-cell>
-									<span className="statNum">
+								<adpt-stats-cell key={key} data-key={key}>
+									<span className="statNum" key={key}>
 										<h4>
 											<Countup
 												start={0}

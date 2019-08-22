@@ -2,6 +2,8 @@ import { useContext } from 'react'
 import AdoptEDSan from './AdoptEDSan'
 import PageContext from './context'
 
+import { adptKeygen } from '../utilities/functions'
+
 const AdptTeamBio = props => {
 
     const data = useContext(PageContext)['components']['teambio']
@@ -15,16 +17,17 @@ const AdptTeamBio = props => {
             </section>
             <adpt-team-bio-content>
                 {data.people.map((person, i) => {
-                    //let key = Math.ceil((Math.random()+i)*(Math.random()*600000000)).toString(36)
+                    let key = adptKeygen()
                     return (
-                    <figure className='narp'>
-                        <picture>
-                            <img className="bio-image" src={person.image} alt={person.name}/>
-                            <h4>{person.name}</h4>
-                        </picture>
-                        <figcaption>{person.bio}</figcaption>
-                    </figure>
-                )})}
+                        <figure className='narp' key={key} data-key={key}>
+                            <picture>
+                                <img className="bio-image" src={person.image} alt={person.name}/>
+                                <h4>{person.name}</h4>
+                            </picture>
+                            <figcaption>{person.bio}</figcaption>
+                        </figure>
+                    )
+                })}
             </adpt-team-bio-content>
         </adpt-team-bio>
     )
