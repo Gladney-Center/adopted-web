@@ -9,21 +9,20 @@ const isInViewport = (el) => {
 
 export default () => {
 	const data = useContext(PageContext)['components']['statblock'],
+		el = document.getElementById('adpt-stat-block'),
 		[inView, setInView] = useState(false)
 
 	useEffect(() => {
-		window.addEventListener('scroll',(e) => {
-			let el = document.getElementById('adpt-sms-box'),
-				iV = isInViewport(el)
+		if (el) window.addEventListener('scroll',(e) => {
+			let iV = isInViewport(el)
 			return (!iV) ? iV : (!inView) ? setInView(true) : null
 		})
-		return null
-	},[])
+	},[inView])
 
 	return (
 		<section className="adpt-stat-block">
 			<adpt-inner>
-				<adpt-stat-block id="adpt-sms-box">
+				<adpt-stat-block id="adpt-stat-block">
 					<h2>{data.title}</h2>
 					<adpt-stats-grid>
 						{data.stats.map((stat,i) => {
@@ -38,7 +37,6 @@ export default () => {
 												delay={(i*.5)}
 												suffix={stat.suffix}
 												duration={5}
-												useEasing={true}
 											/>
 										</h4>
 									</span>

@@ -26,6 +26,9 @@ export default class AdptApp extends App {
                 ...obj
             })
         })
+
+        window._wq = window._wq || []
+		_wq.push({ id: "_all", onReady: (video) => null})
     }
 
     componentWillUnmount() {
