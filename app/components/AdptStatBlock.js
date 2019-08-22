@@ -2,19 +2,19 @@ import { useEffect, useState, useContext } from 'react'
 import PageContext from './context'
 import Countup, { startAnimation } from 'react-countup'
 
-const isInViewport = (el) => {
-	let rect = el.getBoundingClientRect()
-	return rect.top <= 500
+const isInViewport = () => {
+	let el = document.querySelector('#adptstatblock'),
+		rect = el !== null ? el.getBoundingClientRect() : { top: 601 }
+	return rect.top <= 600
 }
 
 export default () => {
 	const data = useContext(PageContext)['components']['statblock'],
-		el = document.getElementById('adpt-stat-block'),
 		[inView, setInView] = useState(false)
 
 	useEffect(() => {
-		if (el) window.addEventListener('scroll',(e) => {
-			let iV = isInViewport(el)
+		window.addEventListener('scroll',(e) => {
+			let iV = isInViewport()
 			return (!iV) ? iV : (!inView) ? setInView(true) : null
 		})
 	},[inView])
@@ -22,7 +22,7 @@ export default () => {
 	return (
 		<section className="adpt-stat-block">
 			<adpt-inner>
-				<adpt-stat-block id="adpt-stat-block">
+				<adpt-stat-block id="adptstatblock">
 					<h2>{data.title}</h2>
 					<adpt-stats-grid>
 						{data.stats.map((stat,i) => {
