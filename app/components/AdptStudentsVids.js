@@ -10,7 +10,7 @@ export default class AdptStudentsVids extends Component {
 	componentDidMount() {
 		window._wq = window._wq || []
 
-		_wq.push({ id: "_all", onReady: (video) => console.log(video.name())})
+		_wq.push({ id: "_all", onReady: (video) => null})
 
 		this.setState({
 			init: true

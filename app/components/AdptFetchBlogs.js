@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import Link from 'next/link'
 
 export default class AdptFetchBlogs extends Component {
     state = {
@@ -32,9 +31,7 @@ export default class AdptFetchBlogs extends Component {
             <div>
                 {this.state.blogs.map((blog,k) => (
                     <p>
-                        <Link href={blog.link}>
-                            <a title={blog.desc}>{blog.title}</a>
-                        </Link>
+                        <a href={blog.link} title={blog.desc}>{blog.title}</a>
                     </p>
                 ))}
             </div>
