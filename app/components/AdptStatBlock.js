@@ -2,13 +2,7 @@ import { useEffect, useState, useContext } from 'react'
 import PageContext from './context'
 import Countup, { startAnimation } from 'react-countup'
 
-import { adptKeygen } from '../utilities/functions'
-
-const isInViewport = () => {
-	let el = document.querySelector('#adptstatblock'),
-		rect = el !== null ? el.getBoundingClientRect() : { top: 601 }
-	return rect.top <= 600
-}
+import { adptKeygen, isInViewport } from '../utilities/functions'
 
 export default () => {
 	const data = useContext(PageContext)['components']['statblock'],
@@ -16,7 +10,7 @@ export default () => {
 
 	useEffect(() => {
 		window.addEventListener('scroll',(e) => {
-			let iV = isInViewport()
+			let iV = isInViewport('#adptstatblock', 600)
 			return (!iV) ? iV : (!inView) ? setInView(true) : null
 		})
 	},[inView])

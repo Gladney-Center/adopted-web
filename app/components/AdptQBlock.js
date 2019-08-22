@@ -3,11 +3,7 @@ import Link from 'next/link'
 import PageContext from './context'
 import SVG from './svg'
 
-const isInViewport = () => {
-	let el = document.querySelector('#qbubblecontainer'),
-		rect = el !== null ? el.getBoundingClientRect() : { top: 401 }
-	return rect.top <= 400
-}
+import { adptKeygen, isInViewport } from '../utilities/functions'
 
 export default (props) => {
 	let { button } = props,
@@ -17,10 +13,10 @@ export default (props) => {
 		[inView, setInView] = useState(false)
 
 	useEffect(() => {
-		if (isInViewport()) return setInView(true)
+		if (isInViewport('#qbubblecontainer')) return setInView(true)
 
 		window.addEventListener('scroll',(e) => {
-			let iV = isInViewport()
+			let iV = isInViewport('#qbubblecontainer')
 			return (!iV) ? iV : (!inView) ? setInView(true) : null
 		})
 	},[inView])
@@ -30,10 +26,11 @@ export default (props) => {
 			<adpt-inner>
 				<adpt-qbubble-overlay class="adpt-qbubble-overlay">
 					{[...Array(10)].map((x,i) => {
-						let cls = a
+						let cls = a,
+							key = adptKeygen()
 						a = String.fromCharCode(a.charCodeAt() + 1)
 						return (
-							<div key={Math.ceil((Math.random()+i)*(Math.random()*660000000)).toString(36)} className={['qbubble-container','qb-a'+cls].join(' ')}>
+							<div key={key} data-key={key} className={['qbubble-container','qb-a'+cls].join(' ')}>
 								{(i % 2 == 0) ? <SVG.QBubbleLeft/> : <SVG.QBubbleRight/>}
 							</div>
 						)
