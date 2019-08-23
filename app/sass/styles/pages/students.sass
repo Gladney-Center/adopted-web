@@ -67,6 +67,10 @@ main.adpt-students
 
                 adpt-column
                     padding: 3em
+                    order: 1
+
+                    &.adptHeroArt
+                        order: 0
 
                     .studentsApps
                         display: flex
@@ -102,3 +106,24 @@ main.adpt-students
     .adpt-interview-request
         padding: 2em 0
         background-color: $rose
+
++MQ($mq-mobile)
+    main.adpt-students
+
+        .adpt-app-pitch
+            margin-bottom: 2em
+
+            adpt-inner
+
+                adpt-columns
+                    grid-template-columns: 1fr
+                    grid-gap: 2em
+
+                    adpt-column
+                        padding: 0
+
+                        h4
+                            font-size: 125%
+
+                        .studentsApps
+                            justify-content: center

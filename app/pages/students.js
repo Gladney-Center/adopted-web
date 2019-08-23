@@ -43,7 +43,7 @@ const Students = props => {
             <section className="adpt-app-pitch">
                 <adpt-inner>
                     <adpt-columns>
-                        <adpt-column>
+                        <adpt-column class="adptHeroArt">
                             <SVG.GabbyAndGuy/>
                         </adpt-column>
                         <adpt-column>
