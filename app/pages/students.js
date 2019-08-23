@@ -5,12 +5,14 @@ import PageContext from '../components/context'
 import SVG from '../components/svg'
 import AdptStudentsVids from '../components/AdptStudentsVids'
 import AdptStatBlock from '../components/AdptStatBlock'
+import HubspotForm from 'react-hubspot-form'
 
 import { adptKeygen } from '../utilities/functions'
 
 const Students = props => {
     const { meta, content } = useContext(PageContext)['students'],
-        { footer, header } = useContext(PageContext)['common']
+        { header } = useContext(PageContext)['common'],
+        { qblock } = useContext(PageContext)['components']
 
     document.getElementById('__next').className = 'adpt-students'
 
@@ -60,6 +62,25 @@ const Students = props => {
                     </adpt-columns>
                 </adpt-inner>
             </section>
+            <section className="adpt-student-askapro-proxy">
+                <adpt-student-askapro id="askaproproxy">
+                    <h4>{qblock.blurb.subheading}</h4>
+                    <p>{qblock.blurb.text}</p>
+                    <p>
+                        <Link href={qblock.blurb.link}>
+                            <a className="btn">Ask A Pro</a>
+                        </Link>
+                    </p>
+                </adpt-student-askapro>
+            </section>
+            {/* <section className="adpt-interview-request">
+                <adpt-inner>
+                    <HubspotForm
+                    portalId="4985317" 
+                    formId="3befdc32-a4b5-420d-838a-57396bfe0859"
+                />
+                </adpt-inner>
+            </section> */}
         </main>
     )
 }
