@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import HubspotForm from 'react-hubspot-form'
 
 export default class ContactForm extends Component {
     state = {
@@ -52,6 +53,19 @@ export default class ContactForm extends Component {
         let { data } = this.props
 
         return (
+            <>
+            {/* <adpt-contact-form>
+                <header className="adpt-form-header">
+                    <h1>{data.heading}</h1>
+                    <main className="top-text">{data.text}</main>
+                </header>
+                <HubspotForm
+                    portalId="4985317" 
+                    formId="44af6bfa-e1ac-4cef-ad46-0d0994a88c72" 
+                    cssClass="doodieMcDoodie"
+                    onReady={(form) => console.log(form)}
+                />
+            </adpt-contact-form> */}
             <form action="/" role="form" onSubmit={this.sendForm}>
                 <header className="adpt-form-header">
                     <h1>{data.heading}</h1>
@@ -111,7 +125,7 @@ export default class ContactForm extends Component {
                     <span class="formErrors">There was an error. Please try again later.</span>
                 </div> : null}
             </form>
+            </>
         )
-
     }
 }

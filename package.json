@@ -1,6 +1,6 @@
 {
   "name": "adopted-next",
-  "version": "1.2.41",
+  "version": "1.2.42",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "repository": {
@@ -27,6 +27,7 @@
     "axios": "^0.19.0",
     "core-js": "3.1.4",
     "countup.js": "^2.0.4",
+    "cypress": "^3.4.1",
     "express": "^4.17.1",
     "firebase": "^6.2.4",
     "firebase-admin": "^8.0.0",
