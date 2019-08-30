@@ -1,8 +1,6 @@
 import { useContext } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import PageContext from '../components/context'
-import SVG from '../components/svg'
 import AdptSocialIcons from '../components/AdptSocialIcons'
 import AdptQBlock from '../components/AdptQBlock'
 import PageWrapper from '../components/PageWrapper'
