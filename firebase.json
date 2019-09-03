@@ -3,6 +3,11 @@
     "public": "public",
     "redirects": [
       {
+        "source": "/sample-lesson-plan",
+        "destination": "https://firebasestorage.googleapis.com/v0/b/adopted-web.appspot.com/o/lessonplans%2FAdoption-101.pdf?alt=media&token=ff3bc28b-8b25-4014-a48b-7be62d8d5a48",
+        "type": 302
+      },
+      {
         "source": "/for-students",
         "destination": "/students",
         "type": 301

@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import NavMenu from './Menu'
+import PortalActions from './Actions'
 import SVG from '../svg'
 
 import '../../sass/portal.sass'
@@ -19,6 +21,9 @@ export default ({children}) => {
 
     return (
         <adpt-portal>
+            <Head>
+                <title>{'AdoptED Online Learning Portal' || process.env.BASE_TITLE}</title>
+            </Head>
             <menu onClick={toggleMenu}>
                 <NavMenu toggleTheme={toggleTheme}/>
             </menu>
@@ -31,6 +36,7 @@ export default ({children}) => {
 				<adpt-logo>
 					<SVG.AdptLogo/>
 				</adpt-logo>
+                <PortalActions/>
             </header>
             {children}
 		</adpt-portal>

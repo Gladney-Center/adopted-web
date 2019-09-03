@@ -90,7 +90,9 @@ const Educators = props => {
                                 <p>AdoptED gives teachers the opportunity to pick and choose from our curriculum and customize according to their scheduling needs</p>
                             </div>
                             <div className="adpt-cta-more">
-                                <a className="btn">More</a>
+                                <Link href="/sample-lesson-plan">
+                                    <a className="btn">More</a>
+                                </Link>
                             </div>
                         </div>
                         <div className="adpt-cta">
