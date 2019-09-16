@@ -4,10 +4,41 @@
     align-items: center
     height: 100vh
     background-color: $rose
+    flex-flow: column nowrap
 
     & > div
         display: flex
         align-items: center
+        padding: 1em
+        max-width: 650px
+        color: white
+        font-family: atrament-web
+
+        svg
+            +material-depth
+            display: block
+            height: 12em
+            width: auto
+            transform-origin: 50% 50% 0
+            transform: scale3d(-1,1,1)
+        
+        & > div
+            padding: 2em
+            flex: 1
+            text-align: center
+
+            icon-grid
+                display: flex
+                padding: 2em
+
+                a
+                    font-size: 135%
+                    flex: 1 1 auto
+                    opacity: .8
+                    transition: opacity 100ms ease-in-out
+
+                    &:hover
+                        opacity: 1
 
     h1
         padding: $smalltext 1rem

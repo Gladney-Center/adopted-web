@@ -168,6 +168,112 @@ const SVG = {
             <path className="a528a901-b227-4ab5-8bea-a0df74243e7a" d="M181.374,123.014s4.8,7.608-5.445,33.934c28.768-12.021,29.581-27.586,29.581-27.586"/>
         </svg>
     ),
+    GabbyVanna: () => (
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 1118">
+            <defs>
+                <style>{`
+                .ab4a6225-0797-475b-8100-27c1c8cc5636, .b58ed1a4-a8b0-4290-bf58-179d1acb7af4, .f0cc0293-65e6-4de2-aaff-dcdd99072e3b {
+                    fill: none;
+                }
+
+                .a072bf87-e531-4a85-99d3-ed203cde4a65 {
+                    clip-path: url(#e680d946-0647-49d5-8c25-172efafd57e4);
+                }
+
+                .f05059c8-e420-44aa-9663-02952cd7adbe {
+                    clip-path: url(#eda1d727-694e-4f42-8ac6-080b6bbbb446);
+                }
+
+                .a15dadf9-c619-4cbe-aab9-d678c7b993d4 {
+                    clip-path: url(#f09722b9-c269-4c5e-be0c-0b37f503c475);
+                }
+
+                .a622e5f1-7dd1-4105-afaf-d4dcc95e8932 {
+                    fill: #775e48;
+                }
+
+                .f689b80a-8d86-4951-8d8c-b71314524b9f {
+                    fill: #9d7b60;
+                }
+
+                .f1a2efa8-ee4e-4a3f-8f92-cc86d9ffc527 {
+                    fill: #dcc1b2;
+                }
+
+                .b58ed1a4-a8b0-4290-bf58-179d1acb7af4 {
+                    stroke: #d9c2b1;
+                    stroke-miterlimit: 10;
+                    stroke-width: 38.668px;
+                }
+
+                .b58ed1a4-a8b0-4290-bf58-179d1acb7af4, .f0cc0293-65e6-4de2-aaff-dcdd99072e3b, .fa37b668-b621-4675-8d6d-bcac5987bdc4 {
+                    stroke-linecap: round;
+                }
+
+                .b5369ebd-202e-4284-bd13-11aaa0224cd1 {
+                    fill: #495077;
+                }
+
+                .af7483e6-de23-4ee3-a454-1440955f5e80 {
+                    fill: #fff;
+                }
+
+                .a6e2a9d8-0c9d-4a67-8298-051d56daa0c6 {
+                    fill: #050606;
+                }
+
+                .fa37b668-b621-4675-8d6d-bcac5987bdc4 {
+                    fill: #231f20;
+                }
+
+                .f0cc0293-65e6-4de2-aaff-dcdd99072e3b, .fa37b668-b621-4675-8d6d-bcac5987bdc4 {
+                    stroke: #231f20;
+                    stroke-linejoin: round;
+                    stroke-width: 8.056px;
+                }
+                `}</style>
+                <clipPath id="e680d946-0647-49d5-8c25-172efafd57e4" transform="translate(-115.7 -154.315)">
+                <rect className="ab4a6225-0797-475b-8100-27c1c8cc5636" x="7" width="598" height="1313"/>
+                </clipPath>
+                <clipPath id="eda1d727-694e-4f42-8ac6-080b6bbbb446" transform="translate(-115.7 -154.315)">
+                <rect className="ab4a6225-0797-475b-8100-27c1c8cc5636" y="35" width="571" height="659"/>
+                </clipPath>
+                <clipPath id="f09722b9-c269-4c5e-be0c-0b37f503c475" transform="translate(-115.7 -154.315)">
+                <rect className="ab4a6225-0797-475b-8100-27c1c8cc5636" x="3" y="36" width="571" height="659"/>
+                </clipPath>
+            </defs>
+            <g id="a9319087-cb20-4d71-8ced-218a1620b68f" data-name="Layer 2">
+                <g id="a042063f-3743-4e86-9ec2-74e958f81186" data-name="Layer 1">
+                <g className="a072bf87-e531-4a85-99d3-ed203cde4a65">
+                    <g>
+                    <g className="f05059c8-e420-44aa-9663-02952cd7adbe">
+                        <g className="a15dadf9-c619-4cbe-aab9-d678c7b993d4">
+                        <g>
+                            <polygon className="a622e5f1-7dd1-4105-afaf-d4dcc95e8932" points="92.569 439.664 135.868 425.052 234.405 427.431 253.001 350.542 114.921 283.138 81.928 204.685 27.905 204.685 32.616 322.174 44.439 390.683 92.569 439.664"/>
+                            <path className="f689b80a-8d86-4951-8d8c-b71314524b9f" d="M434,317.579c-5.167,1.77-13.812-20.362-18.944-10.008-19.417,39.176-35.075,153.1-53.855,162-3.011,72.142-11.574,112.292-11.574,112.292C437.375,574.8,434,475.937,434,475.937Z" transform="translate(-115.7 -154.315)"/>
+                            <path className="f1a2efa8-ee4e-4a3f-8f92-cc86d9ffc527" d="M305.673,518.314h0A109.643,109.643,0,0,1,196.505,420.44l-8.243-77.5C187.638,226.1,232.221,222,297.429,222h62.34a68.386,68.386,0,0,1,68.148,75.5L414.84,420.44A109.643,109.643,0,0,1,305.673,518.314Z" transform="translate(-115.7 -154.315)"/>
+                            <path className="f689b80a-8d86-4951-8d8c-b71314524b9f" d="M208.269,594.1s-27.119-127.112-1.807-335.434l221.614,61.214,6.75,42.37,20.249-63.114s28.453-103.323-51.016-131.138c-131.812-46.136-212.581,39.222-212.581,39.222s-73.994,7.062-73.994,54.729S123.9,488.17,123.9,488.17,120.521,587.034,208.269,594.1Z" transform="translate(-115.7 -154.315)"/>
+                        </g>
+                        </g>
+                    </g>
+                    <path className="b58ed1a4-a8b0-4290-bf58-179d1acb7af4" d="M308.873,570.592S379.951,793.27,479.111,825.558" transform="translate(-115.7 -154.315)"/>
+                    <line className="b58ed1a4-a8b0-4290-bf58-179d1acb7af4" x1="124.596" y1="801.349" x2="140.708" y2="1099.418"/>
+                    <line className="b58ed1a4-a8b0-4290-bf58-179d1acb7af4" x1="200.424" y1="801.452" x2="193.775" y2="1099.315"/>
+                    <path className="b5369ebd-202e-4284-bd13-11aaa0224cd1" d="M340.274,956H206.686a20.143,20.143,0,0,1-19.9-23.241l58.166-373.714A20.143,20.143,0,0,1,264.852,542h34.705a20.144,20.144,0,0,1,20.025,17.961L360.3,933.676A20.143,20.143,0,0,1,340.274,956Z" transform="translate(-115.7 -154.315)"/>
+                    <circle className="af7483e6-de23-4ee3-a454-1440955f5e80" cx="156.8" cy="214.185" r="30.5"/>
+                    <circle className="a6e2a9d8-0c9d-4a67-8298-051d56daa0c6" cx="157.3" cy="214.685" r="20"/>
+                    <circle className="af7483e6-de23-4ee3-a454-1440955f5e80" cx="259.8" cy="214.185" r="30.5"/>
+                    <circle className="a6e2a9d8-0c9d-4a67-8298-051d56daa0c6" cx="260.05" cy="215.435" r="20"/>
+                    <path className="fa37b668-b621-4675-8d6d-bcac5987bdc4" d="M350.217,454.649C371.225,430,299.8,446.454,299.8,446.454S329.055,479.482,350.217,454.649Z" transform="translate(-115.7 -154.315)"/>
+                    <path className="f0cc0293-65e6-4de2-aaff-dcdd99072e3b" d="M219.888,327.3s10.435-24.7,32.339-16.649" transform="translate(-115.7 -154.315)"/>
+                    <path className="f0cc0293-65e6-4de2-aaff-dcdd99072e3b" d="M376.858,311.97s16.648-5.912,31.149,16.647" transform="translate(-115.7 -154.315)"/>
+                    <path className="b58ed1a4-a8b0-4290-bf58-179d1acb7af4" d="M243.847,565.687c-17.419,43.005-44.705,82.308-55.6,127.826s-58.594,189.944-52.717,200.215" transform="translate(-115.7 -154.315)"/>
+                    </g>
+                </g>
+                </g>
+            </g>
+            </svg>
+    ),
     GladneyLogo: () => (
         <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Gladney Center for Adoption" viewBox="0 0 388 370">
             <defs>
