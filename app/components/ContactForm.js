@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import HubspotForm from 'react-hubspot-form'
+import axios from 'axios'
 
 export default class ContactForm extends Component {
     state = {
@@ -26,23 +27,21 @@ export default class ContactForm extends Component {
                 value: pair[1]
             })
         }
-
-        obj = JSON.stringify(obj)
         
-        await fetch('https://api.hsforms.com/submissions/v3/integration/submit/4985317/44af6bfa-e1ac-4cef-ad46-0d0994a88c72',{
+        await axios('https://api.hsforms.com/submissions/v3/integration/submit/4985317/44af6bfa-e1ac-4cef-ad46-0d0994a88c72',obj,{
             method: 'POST',
-            body: obj,
             headers: {
                 'Content-Type': 'application/json',
                 'Content-Length': obj.length
             }
         }).then(res => res.json())
         .then(resp => {
-            if (typeof resp.status !== 'undefined' && resp.status === 'error') return this.setState({
+            let { data } = resp
+            if (typeof data.status !== 'undefined' && data.status === 'error') return this.setState({
                 error: true
             })
             
-            if (resp.inlineMessage) return this.setState({
+            if (data.inlineMessage) return this.setState({
                 submitted: true
             })
         })
