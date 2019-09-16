@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import { adptKeygen } from '../utilities/functions'
-import axios from 'axios'
 
 export default class AdptFetchBlogs extends Component {
     state = {
@@ -9,10 +8,10 @@ export default class AdptFetchBlogs extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://us-central1-adopted-web.cloudfunctions.net/hubspotSucks')
+        fetch('https://us-central1-adopted-web.cloudfunctions.net/hubspotSucks')
+        .then(res => res.json())
         .then(resp => {
-            console.log(resp)
-            let objs = resp.data.objects
+            let objs = resp.objects
 
             objs.map((obj,i) => {
                 this.state.blogs.push({

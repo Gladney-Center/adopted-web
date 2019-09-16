@@ -8,8 +8,8 @@ const Error = () => (
         </Head>
         <div className="adpt-error">
             <div>
-                <h1>404</h1>
-                <h2>Error. The page could not be found.</h2>
+                <h1>Error.</h1>
+                <h2>Sorry, something went wrong.</h2>
             </div>
         </div>
     </>
