@@ -49,7 +49,7 @@ export default (props) => {
                 <span><AdoptEDSan str={header.app.text}/></span>
                 {header.app.apps.map((app,i) => (
                     <div key={i} className="adpt-app-link">
-                        <a href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
+                        <a title={app.label} href={app.link}><i className={["fab",app.icon].join(' ')}></i></a>
                     </div>
                 ))}
             </div>

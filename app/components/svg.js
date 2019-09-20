@@ -105,7 +105,7 @@ const SVG = {
         </svg>
     ),
     GabbyAndGuy: () => (
-        <svg id="e56459a8-c514-45de-8193-803777b2472b" data-name="Gabby & Guy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 431 650">
+        <svg data-id="e56459a8-c514-45de-8193-803777b2472b" data-name="Gabby & Guy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 431 650">
             <defs>
                 <style>{`.a528a901-b227-4ab5-8bea-a0df74243e7a{fill:#e6e6e6;}.a21adcdf-e740-488b-86a8-002daf1d3e61{fill:#485077;}.f181510a-0a3c-4c43-923e-4d229c622946{fill:#dcc1b1;}.eea140fd-3943-4fa9-8faa-0b2114b96b58{fill:#050505;}.afbd94ec-a5cd-4e05-9b0a-10f163aba310,.b6b09c25-a3c2-440e-b96d-92d6d36845f4,.e26ee595-981a-4c04-a557-4d55e0f96451{fill:none;stroke-linecap:round;}.e26ee595-981a-4c04-a557-4d55e0f96451{stroke:#231f20;stroke-width:3.286px;}.afbd94ec-a5cd-4e05-9b0a-10f163aba310,.e26ee595-981a-4c04-a557-4d55e0f96451{stroke-linejoin:round;}.feaf59db-517e-48e1-81e4-3e83602b44d3{fill:#fff;}.faf543c5-bbe1-4a24-8db3-f880290d4513{fill:#231f20;}.afbd94ec-a5cd-4e05-9b0a-10f163aba310{stroke:#485077;}.afbd94ec-a5cd-4e05-9b0a-10f163aba310,.b6b09c25-a3c2-440e-b96d-92d6d36845f4{stroke-width:15.775px;}.b6b09c25-a3c2-440e-b96d-92d6d36845f4{stroke:#d9c1b1;stroke-miterlimit:10;}.fd7af66e-7a8e-4473-9423-ab4eb15881d0{fill:#f58c4b;}.b02ef474-10b2-47b1-bb4d-f4505fe4b56e{fill:#775e49;}.acb3d685-fb27-4957-837c-c53466a28ff0{fill:#9c7b61;}.f0802c31-436a-4be6-9598-18e770b85bd7{fill:#dc6172;}`}</style>
             </defs>
@@ -358,7 +358,7 @@ const SVG = {
         </svg>
     ),
     RightArrow: () => (
-        <svg id="b609ef51-f1a4-48d6-8c3f-5b2d43347e3e" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 16">
+        <svg data-id="b609ef51-f1a4-48d6-8c3f-5b2d43347e3e" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 16">
             <defs>
                 <style>{`.wht {fill:none;stroke:#fff;stroke-miterlimit:10;}`}</style>
             </defs>
@@ -417,7 +417,7 @@ const SVG = {
         </svg>
     ),
     Postbox: () => (
-        <svg id="fd362c59-a690-49a3-b74d-5ae499a560da" className="postbox-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777 333">
+        <svg data-id="fd362c59-a690-49a3-b74d-5ae499a560da" className="postbox-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777 333">
             <defs>
                 <style>{`.f31b5d7b-559f-4161-8817-beeed5a60716{fill:#484f77;}.e116ed4b-7a9e-4565-8aad-2b88568e2ebb{fill:#7d90ae;}.bb9a7015-8744-41f2-9e94-385d793a8fc8{fill:#7d90ad;}.adadf4b9-7ed8-4513-b2ff-0e5c3f998ebf{fill:#3f4857;}.b85186a0-3d5d-41df-a73c-43e13b834660{fill:#fff;}.f029cd6c-c72a-4c2d-b8d2-8308f4f18eba{fill:#6aada4;}.b66302e4-cac5-4154-b535-9f6072a82765{fill:#65c8c7;}.a06738d4-449b-41f5-9953-9b2fdad98a2e,.b9b71a0e-c0dc-41b0-afeb-aa2692d96431{fill:none;stroke:#d1ecf0;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}.a06738d4-449b-41f5-9953-9b2fdad98a2e{stroke-dasharray:8.95 8.95;}`}</style>
             </defs>
@@ -466,7 +466,7 @@ const SVG = {
         </svg>
     ),
     Clipboard: () => (
-        <svg id="b962785f-4e57-41eb-a5cf-0747ecc00dd4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1678.6 1492.7" role="img" aria-labelledby="clipboarddesc">
+        <svg data-id="b962785f-4e57-41eb-a5cf-0747ecc00dd4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1678.6 1492.7" role="img" aria-labelledby="clipboarddesc">
             <desc id="clipboarddesc">It's just a boring clipboard with some super uninformative bullet points supposedly relating to adoption education.</desc>
             <defs>
                 <style>{`.af122315-08d3-40f4-b307-e0e1cac0ad94{fill:#68c8c7;}.b536e90d-2eec-482d-a7de-68b42b570cf9{fill:#f1f2f2;}.b9f74912-7d93-435c-b4b0-7bb227c37a32{fill:#f2d176;}.faf7e68c-ad62-4d6b-8d57-40ad3c399aef{fill:#f68e4b;}.b26afeab-89e9-47d6-8080-7894d6f5e55f,.e79d3e94-23bf-484f-b451-0a0dfeedcd8e{fill:#d1ecf0;}.e79d3e94-23bf-484f-b451-0a0dfeedcd8e{stroke:#d1ecf0;stroke-miterlimit:10;stroke-width:5px;}.e9cc079e-99df-472d-9584-8573147a73fe{fill:#e06174;}.a1f3bf50-799c-4c66-98dd-0486c82e118d{fill:#4a5179;}.a46c7335-2ddc-45fd-add7-3cf84c0e7c7b{fill:#7e8fad;}.a9765d4d-aa8f-4c0c-baef-e5fe3a214fd2{fill:#495077;}.e78c3aa2-d375-4469-a31a-297bd52bc6ca{fill:#66c7c7;}`}
@@ -573,7 +573,7 @@ const SVG = {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 454"><defs><style>{`.baa8d554-ba0e-4c84-97f2-df2b33d9ef7f{fill:#495077;}.a11bd13b-f1f2-40e3-bd71-cccfc06732e9{fill:#f68e4b;}`}</style></defs><g id="b656c3de-d75b-4964-9bc7-bd64b74c6c41" data-name="Layer 2"><g id="bae6103c-e54c-4ef8-bd8e-9689790f866a" data-name="Layer 1"><path className="baa8d554-ba0e-4c84-97f2-df2b33d9ef7f" d="M247,162.5v68.7a64,64,0,0,1-.5,8.8A93.8,93.8,0,0,1,153,325h-4a93.8,93.8,0,0,1-93.5-85,64,64,0,0,1-.5-8.8V93.8A93.8,93.8,0,0,1,148.8,0H153a93.8,93.8,0,0,1,94,93.8Z"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="55" y="88" width="66" height="12"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="55" y="234" width="66" height="12"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="181" y="88" width="66" height="12"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="181" y="234" width="66" height="12"/><path className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" d="M153.2,380h-4.4A148.8,148.8,0,0,1,0,231.2V162.1A6.1,6.1,0,0,1,6.1,156H121v13H12v62.4A136.7,136.7,0,0,0,148.6,368h4.8A136.7,136.7,0,0,0,290,231.4V169H181V156H295.9a6.1,6.1,0,0,1,6.1,6.1v69.1A148.8,148.8,0,0,1,153.2,380Z"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="145" y="374" width="12" height="74"/><rect className="a11bd13b-f1f2-40e3-bd71-cccfc06732e9" x="69" y="442" width="164" height="12"/></g></g></svg>
     ),
     Geo1: () => (
-        <svg id="a8874b01-4030-4c40-902f-a062f11e3c65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 754 561">
+        <svg data-id="a8874b01-4030-4c40-902f-a062f11e3c65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 754 561">
             <defs>
                 <style>{`.b59622d0-74f9-43c1-8389-4bbf3998df63,.ebe73236-3c77-418c-af12-d95e3faf618f,.efab874e-8085-4b78-a1be-e3460ff19c19{opacity: 0.43;}.b59622d0-74f9-43c1-8389-4bbf3998df63,.bea1a5c5-cc62-4cf7-9558-434aa6f2d0fb,.bf9ff892-b36c-41c6-8da8-92966a592fdf,.ebe73236-3c77-418c-af12-d95e3faf618f{fill: #7d90ad;}.bea1a5c5-cc62-4cf7-9558-434aa6f2d0fb,.ebe73236-3c77-418c-af12-d95e3faf618f{fill-rule: evenodd;}`}</style>
             </defs>
