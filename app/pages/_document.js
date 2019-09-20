@@ -4,7 +4,7 @@ export default class AdoptED extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head/>
                 <body className="adpt-mounted">
                     <noscript>You need to enable JavaScript to run this app.</noscript>
