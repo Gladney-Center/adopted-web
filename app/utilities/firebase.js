@@ -4,6 +4,4 @@ import 'firebase/database'
 import 'firebase/firestore'
 import config from '../config'
 
-const config = config
-
 export default !firebase.apps.length ? firebase.initializeApp(config) : firebase.app()
