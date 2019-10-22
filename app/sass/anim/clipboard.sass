@@ -1,0 +1,23 @@
+svg.clipboard
+	+material-depth
+	display: block
+	position: relative
+
+	g.checkbox
+		display: block
+		position: relative
+
+		path.checkmark
+			animation: checkmark 250ms $ease-bouncy 1500ms both
+
+		&.two
+			path.checkmark
+				animation-delay: 2000ms
+
+		&.three
+			path.checkmark
+				animation-delay: 2500ms
+
+		&.four
+			path.checkmark
+				animation-delay: 3000ms

@@ -1,6 +1,6 @@
 {
   "name": "adopted-next",
-  "version": "1.3.9",
+  "version": "1.3.12",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "repository": {
@@ -34,7 +34,7 @@
     "firebase-functions": "^3.0.0",
     "firebase-tools": "^7.2.2",
     "fs": "^0.0.1-security",
-    "next": "^9.0.0",
+    "next": "9.1.1",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -42,7 +42,8 @@
     "react-dom": "^16.8.6",
     "react-hubspot-form": "^1.3.7",
     "react-router-dom": "^5.0.1",
-    "sitemap": "^3.2.2"
+    "sitemap": "^3.2.2",
+    "xml2json": "^0.11.2"
   },
   "devDependencies": {
     "cpx": "^1.5.0",

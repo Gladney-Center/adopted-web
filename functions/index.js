@@ -4,9 +4,12 @@ const functions = require('firebase-functions'),
     express = require('express'),
     cors = require('cors')({origin: true}),
     request = require('request'),
+    parser = require('xml2json'),
     dev = process.env.NODE_ENV !== 'production',
     nextApp = next({ dev, conf: { distDir: 'next' } }),
     handle = nextApp.getRequestHandler()
+
+console.log(dev)
 
 const createSitemap = zePath => {
     const skipFiles = ['/index','/404','/robots.txt','/sitemap.xml'],
@@ -41,12 +44,24 @@ const hubspotSucks = (req, res) => {
 
 }
 
+const hsImport = (req, res) => {
+    let blogObj = {
+        adoptionsbygladney : 'https://blog.adoptionsbygladney.com/rss.xml',
+        adopted : 'https://blog.adoption-education.com/rss.xml'
+    }
+    console.log(req.body)
+
+    res.send(blogObj.adoptionsbygladney)
+}
+
 hsApp.use(cors)
 hsApp.use(hubspotSucks)
+hsApp.use(hsImport)
 
 process.env.BASE_TITLE = 'AdoptED | Adoption Education'
 
 exports.hubspotSucks = functions.https.onRequest(hsApp)
+exports.hsImport = functions.https.onRequest(hsApp)
 
 exports.createRobots = functions.https.onRequest((req,res) => {
     res.setHeader('Content-Type', 'text/plain')
