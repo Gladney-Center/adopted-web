@@ -9,6 +9,8 @@ const functions = require('firebase-functions'),
     nextApp = next({ dev, conf: { distDir: 'next' } }),
     handle = nextApp.getRequestHandler()
 
+const hsApp = express()
+
 const createSitemap = zePath => {
     const skipFiles = ['/index','/404','/robots.txt','/sitemap.xml'],
         rootURL = 'https://adoption-education.com',
@@ -31,28 +33,42 @@ const createSitemap = zePath => {
     </urlset>`
 }
 
-const hsApp = express()
-
 const hubspotSucks = (req, res) => {
     let blogObj = {
-        adoptionsbygladney : 'https://blog.adoptionsbygladney.com/rss.xml',
-        adopted : 'https://blog.adoption-education.com/rss.xml'
-    }
+        abg: 'https://blog.adoptionsbygladney.com/rss.xml',
+        adopted: 'https://blog.adoption-education.com/rss.xml'
+    },
+    hsUrl = blogObj[req.params.blog] || blogObj.adopted
 
-    console.log(req.body)
+    request(hsUrl,(err,resp,body) => {
+        if(!err && resp.statusCode == 200) {
+            let cnvrtd = parser.toJson(resp.body,{
+                object: true,
+                coerce: true
+            }),
+            obj = cnvrtd.rss.channel,
+            objects = obj.item.filter((item,i) => i < 3)
 
-    let hsUrl = blogObj.adoptionsbygladney
-
-    request('https://blog.adoptionsbygladney.com/rss.xml',(err,resp,body) => {
-        if(!err && resp.statusCode == 200) res.send(resp.body)
+            res.json({
+                title: obj.title,
+                link: obj.link,
+                description: obj.description,
+                objects: objects.map((obj,i) => {
+                    for (var key in obj) if ( !['title','pubDate','link'].includes(key) ) delete obj[key]
+                    return obj
+                })
+            })
+        }
     })
 
 }
 
-hsApp.use(cors)
-hsApp.use(hubspotSucks)
-
 process.env.BASE_TITLE = 'AdoptED | Adoption Education'
+
+hsApp.use(cors)
+hsApp.use('/:blog?',hubspotSucks)
+
+// Cloud Function Definitions //
 
 exports.hubspotSucks = functions.https.onRequest(hsApp)
 
