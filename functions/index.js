@@ -1,3 +1,4 @@
+require('datejs')
 const functions = require('firebase-functions'),
     fs = require('fs'),
     next = require('next'),
@@ -54,7 +55,11 @@ const hubspotSucks = (req, res) => {
                 link: obj.link,
                 description: obj.description,
                 objects: objects.map((obj,i) => {
+
                     for (var key in obj) if ( !['title','pubDate','link'].includes(key) ) delete obj[key]
+
+                    obj['pubDate'] = Date.parse(obj['pubDate']).toString("MMMM d, yyyy")
+
                     return obj
                 })
             })

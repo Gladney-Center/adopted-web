@@ -8,16 +8,15 @@ export default class AdptFetchBlogs extends Component {
     }
 
     componentDidMount() {
-        fetch('https://us-central1-adopted-web.cloudfunctions.net/hubspotSucks')
+        fetch('https://us-central1-adopted-web.cloudfunctions.net/hubspotSucks/adopted')
         .then(res => res.json())
         .then(resp => {
             let objs = resp.objects
 
             objs.map((obj,i) => {
                 this.state.blogs.push({
-                    title: obj.html_title,
-                    link: obj.url,
-                    desc: obj.meta_description
+                    title: obj.title,
+                    link: obj.link
                 })
             })
 
@@ -33,10 +32,11 @@ export default class AdptFetchBlogs extends Component {
                 {this.state.blogs.map((blog,k) => {
                     let key = adptKeygen()
                     return (
-                    <p data-key={key} key={key}>
-                        <a key={key} href={blog.link} title={blog.desc}>{blog.title}</a>
-                    </p>
-                )})}
+                        <p data-key={key} key={key}>
+                            <a key={key} href={blog.link} title={blog.title}>{blog.title}</a>
+                        </p>
+                    )
+                })}
             </div>
         )
     }
