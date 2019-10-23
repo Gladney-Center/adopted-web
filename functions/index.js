@@ -9,8 +9,6 @@ const functions = require('firebase-functions'),
     nextApp = next({ dev, conf: { distDir: 'next' } }),
     handle = nextApp.getRequestHandler()
 
-console.log(dev)
-
 const createSitemap = zePath => {
     const skipFiles = ['/index','/404','/robots.txt','/sitemap.xml'],
         rootURL = 'https://adoption-education.com',
@@ -36,32 +34,27 @@ const createSitemap = zePath => {
 const hsApp = express()
 
 const hubspotSucks = (req, res) => {
-    let hsUrl = 'https://api.hubapi.com/content/api/v2/blog-posts?hapikey=f09cae1b-d7b3-4ad8-88fb-1557f0870df4&limit=3&state=PUBLISHED'
+    let blogObj = {
+        adoptionsbygladney : 'https://blog.adoptionsbygladney.com/rss.xml',
+        adopted : 'https://blog.adoption-education.com/rss.xml'
+    }
 
-    request(hsUrl,(err,resp, body) => {
+    console.log(req.body)
+
+    let hsUrl = blogObj.adoptionsbygladney
+
+    request('https://blog.adoptionsbygladney.com/rss.xml',(err,resp,body) => {
         if(!err && resp.statusCode == 200) res.send(resp.body)
     })
 
 }
 
-const hsImport = (req, res) => {
-    let blogObj = {
-        adoptionsbygladney : 'https://blog.adoptionsbygladney.com/rss.xml',
-        adopted : 'https://blog.adoption-education.com/rss.xml'
-    }
-    console.log(req.body)
-
-    res.send(blogObj.adoptionsbygladney)
-}
-
 hsApp.use(cors)
 hsApp.use(hubspotSucks)
-hsApp.use(hsImport)
 
 process.env.BASE_TITLE = 'AdoptED | Adoption Education'
 
 exports.hubspotSucks = functions.https.onRequest(hsApp)
-exports.hsImport = functions.https.onRequest(hsApp)
 
 exports.createRobots = functions.https.onRequest((req,res) => {
     res.setHeader('Content-Type', 'text/plain')
