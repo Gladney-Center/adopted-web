@@ -1,6 +1,6 @@
 {
   "name": "adopted-next",
-  "version": "1.3.15",
+  "version": "1.3.16",
   "description": "Gladney's AdoptED website for 2019, including a future subscription educational module",
   "private": true,
   "repository": {
@@ -13,7 +13,7 @@
     "next:dev": "yarn install && next ./app -- -p 1111",
     "next:start": "yarn install && next start ./app -p 1111",
     "next:deploy": "yarn next:build && firebase deploy",
-    "next:build": "yarn install && cpx \"app/static/**/*.*\" public/static && next build ./app && cd \"functions\" && yarn",
+    "next:build": "yarn install && cpx \"app/public/static/**/*.*\" public/static && next build ./app && cd \"functions\" && yarn",
     "next:serve": "yarn next:build && firebase serve",
     "test": "echo \"The current version is $npm_package_version\"",
     "version": "yarn next:deploy",
