@@ -29,7 +29,7 @@
     "countup.js": "^2.0.4",
     "cypress": "^3.4.1",
     "datejs": "^1.0.0-rc3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "^6.2.4",
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.0.0",
